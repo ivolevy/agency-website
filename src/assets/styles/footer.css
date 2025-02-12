@@ -1,0 +1,11 @@
+.footer{
+    width: 98%;
+    background-color: var(--gris-oscuro);
+    margin: 0 auto;
+    border-radius: 15px;
+    height: auto;
+}
+
+.footerText{
+    color: var(--gris-claro);
+}

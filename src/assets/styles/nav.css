@@ -1,0 +1,171 @@
+.nav{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 100000;
+}
+
+nav {
+  padding-right: 1.5%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 65px;
+  width: 100%;
+  width: 50%;
+  border-radius: 40px;
+  margin-top: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 80px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right; /* Los enlaces del menú se centran */
+  flex-grow: 1; /* Esto hace que los enlaces tomen el espacio disponible */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--gris-oscuros) !important;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  color: var(--rosa)!important;
+}
+
+/* CSS */
+.navButton {
+  border-radius: 35px;
+  padding: 12px 17px;
+  transition: 0.5s;
+  color: var(--gris-oscuro) !important;
+  background-color: var(--rosa);  
+  cursor: pointer;
+}
+
+.navButton:hover {
+  background-color: pink;
+  color: #000 !important;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: #fff;
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Esto asegura que los elementos de la lista se apilen verticalmente */
+  align-items: center; /* Centra los enlaces dentro del menú */
+}
+
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  color: var(--rosa) !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  .menubar.active ul {
+    display: flex; /* Muestra los enlaces cuando el menú está abierto */
+  }
+  nav{
+    padding-right: 3%;
+    width: 90%;
+  }
+}
