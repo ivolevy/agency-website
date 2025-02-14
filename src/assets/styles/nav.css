@@ -12,7 +12,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*background-color: #fff;*/
   background-color: #fff;
   height: 65px;
   width: 100%;
@@ -35,8 +34,8 @@ nav .logo img {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: right; /* Los enlaces del menú se centran */
-  flex-grow: 1; /* Esto hace que los enlaces tomen el espacio disponible */
+  justify-content: right; 
+  flex-grow: 1;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -59,7 +58,6 @@ nav ul li a:hover {
   color: var(--rosa)!important;
 }
 
-/* CSS */
 .navButton {
   border-radius: 35px;
   padding: 12px 17px;
@@ -135,8 +133,8 @@ nav ul li a:hover {
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: column; /* Esto asegura que los elementos de la lista se apilen verticalmente */
-  align-items: center; /* Centra los enlaces dentro del menú */
+  flex-direction: column;
+  align-items: center;
 }
 
 .menubar ul li {
@@ -156,6 +154,80 @@ nav ul li a:hover {
   color: var(--rosa) !important;
 }
 
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.747);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 35px;
+  width: 60%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  border: none !important;
+  transform: scale(0.8);  /* Inicia con zoom reducido */
+  transition: transform 0.5s ease;  /* Transición suave para el zoom */
+}
+
+/* Efecto al abrir */
+.modal.show .modal-content {
+  transform: scale(1);  /* Cuando el modal se muestra, se escala a su tamaño original */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #004D29;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
   .hamburger {
     display: block;
@@ -164,9 +236,9 @@ nav ul li a:hover {
     display: none;
   }
   .menubar.active ul {
-    display: flex; /* Muestra los enlaces cuando el menú está abierto */
+    display: flex;
   }
-  nav{
+  nav {
     padding-right: 3%;
     width: 90%;
     padding-left: 3%;
@@ -180,5 +252,8 @@ nav ul li a:hover {
   }
   .navButton:hover {
     background-color: #000;
+  }
+  .modal-content{
+    width: 90%;
   }
 }

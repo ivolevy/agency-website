@@ -19,7 +19,7 @@ export const Faq = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen p-4">
-      <h2 className="text-2xl font-bold text-center mb-4">Consultas frecuentes</h2>
+      <h2 className="text-2xl font-bold text-center mb-4">Preguntas frecuentes</h2>
       <div className="w-full max-w-2xl shadow-lg p-6 faqs">
         {faqs.map((question, index) => (
           <div key={index} className="border-b last:border-none">
