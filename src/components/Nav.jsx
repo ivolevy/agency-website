@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../assets/styles/nav.css";
-import NavImage from '../assets/images/logo/dota.png'
+import turbo from '../assets/images/logo/turboestudio.png'
 
 export const NavComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,12 +13,11 @@ export const NavComponent = () => {
     <nav className="">
       {/* Logo Section */}
       <div className="logo">
-        <img src={NavImage} alt="logo" />
+        <img src={turbo} alt="logo" />
       </div>
 
       {/* Desktop Menu */}
       <ul className="desktop-menu">
-       
         <li>
           <a href="#">Soluciones</a>
         </li>
@@ -43,7 +42,6 @@ export const NavComponent = () => {
       {/* Mobile Menu */}
       <div className={`menubar ${isMenuOpen ? "active" : ""}`}>
         <ul>
-         
           <li>
             <a href="#">Soluciones</a>
           </li>

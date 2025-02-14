@@ -7,11 +7,10 @@ module.exports = {
         'rosa': "var(--rosa)",
         "gris-claro": "var(--gris-claro)",
         "gris-oscuro": "var(--gris-oscuro)",
-        "gris-opaco": "var(--gris-opaco)",
+        'gris-fondo': '#fafafa',
       },
     },
   },
   plugins: [
-    require('daisyui'),
   ],
 };

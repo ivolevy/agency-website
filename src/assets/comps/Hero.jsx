@@ -13,7 +13,6 @@ export const Hero = () => {
             </p>
             <button className="btn btn-primary">Get Started</button>
             <button className="btn btn-primary">Get Started</button>
-
           </div>
         </div>
       </div>

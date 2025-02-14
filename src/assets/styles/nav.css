@@ -6,11 +6,13 @@
 }
 
 nav {
+  padding-left: 1.5%;
   padding-right: 1.5%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*background-color: #fff;*/
   background-color: #fff;
   height: 65px;
   width: 100%;
@@ -26,7 +28,7 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 80px;
+  height: 26px;
   width: auto;
 }
 
@@ -46,7 +48,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--gris-oscuros) !important;
+  color: #000 !important;
   font-size: 0.9rem;
   font-weight: 400;
   padding: 4px 8px;
@@ -62,7 +64,7 @@ nav ul li a:hover {
   border-radius: 35px;
   padding: 12px 17px;
   transition: 0.5s;
-  color: var(--gris-oscuro) !important;
+  color: #000 !important;
   background-color: var(--rosa);  
   cursor: pointer;
 }
@@ -167,5 +169,16 @@ nav ul li a:hover {
   nav{
     padding-right: 3%;
     width: 90%;
+    padding-left: 3%;
+  }
+  .navButton {
+    border-radius: 35px !important;
+    padding: 12px 17px !important;
+    transition: 0.5s;
+    background-color: var(--rosa);  
+    cursor: pointer;
+  }
+  .navButton:hover {
+    background-color: #000;
   }
 }
