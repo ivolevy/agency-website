@@ -7,3 +7,8 @@
     margin: 0 auto;
     flex-direction: column;
 }
+
+.borderRadius{
+    border-radius: 35px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
