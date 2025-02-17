@@ -27,7 +27,7 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 26px;
+  height: 30px;
   width: auto;
 }
 
@@ -48,8 +48,8 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #000 !important;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 0.83rem;
+  font-weight: lighter;
   padding: 4px 8px;
   border-radius: 5px;
 }
@@ -61,15 +61,21 @@ nav ul li a:hover {
 .navButton {
   border-radius: 35px;
   padding: 12px 17px;
-  transition: 0.5s;
   color: #000 !important;
-  background-color: var(--rosa);  
+  background: linear-gradient(to bottom, #ff80bf, #ea9c9c);
   cursor: pointer;
+  transition: all 0.3s ease-in-out, color 0.3s ease-in-out !important;
+  font-size: 0.88rem;
 }
 
 .navButton:hover {
-  background-color: pink;
-  color: #000 !important;
+  background: linear-gradient(to bottom, #ea9c9c, #ff80bf);
+  color: #fff !important; /* Cambia a un color diferente */
+}
+
+.navButton2{
+  background-color: transparent !;
+  border-radius: 35px;
 }
 
 .hamburger {
@@ -183,13 +189,12 @@ nav ul li a:hover {
   width: 60%;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   border: none !important;
-  transform: scale(0.8);  /* Inicia con zoom reducido */
-  transition: transform 0.5s ease;  /* Transición suave para el zoom */
+  transform: scale(0.8);  
+  transition: transform 0.5s ease; 
 }
 
-/* Efecto al abrir */
 .modal.show .modal-content {
-  transform: scale(1);  /* Cuando el modal se muestra, se escala a su tamaño original */
+  transform: scale(1); 
 }
 
 .close {

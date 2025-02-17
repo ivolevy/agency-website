@@ -6,3 +6,10 @@
 .faqCard{
     border-radius: 35px;
 }
+
+@media (max-width: 1024px){
+    .faqs{
+        width: 96%;
+        margin: 0 auto;
+    }
+}

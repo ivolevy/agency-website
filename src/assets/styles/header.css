@@ -1,5 +1,4 @@
 .header{
-    /*padding-top: 10px;*/
     height: 100vh;
     border-radius: 0 0 15px 15px; /* Radio solo para las esquinas inferiores */
     overflow-x: hidden; 
@@ -25,4 +24,3 @@
   font-size: 42px !important;
   font-weight: 600;
 }
-

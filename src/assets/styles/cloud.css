@@ -1,0 +1,16 @@
+.cloud{
+    height: auto !important;
+    margin-bottom: 20vh;
+}
+
+.contactCloud{
+    border-radius: 35px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);;
+}
+
+@media (max-width: 1024px){
+    .cloud{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
