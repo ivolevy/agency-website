@@ -1,11 +1,3 @@
-:root {
-  --rosa: #FFA7C4;
-  --gris-claro: #D7D6CE;
-  --gris-oscuro: #2A2A2A;
-  --gris-opaco: #353535;
-  --negro-mate: #090909;
-}
-
 @font-face {
   font-family: 'Hero';
   src: url('./assets/fonts/hero/Hero-Regular.ttf') format('truetype');
@@ -25,8 +17,18 @@
   font-style: normal;
 }
 
+:root {
+  --rosa: #FFA7C4;
+  --gris-claro: #D7D6CE;
+  --gris-oscuro: #2A2A2A;
+  --gris-opaco: #353535;
+  --negro-mate: #090909;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .app{
-  /*background-color: #FAFAFA;*/
   background-color: #fafafa;
 }

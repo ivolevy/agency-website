@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--rosa)!important;
+  color: #4b5563 !important;
 }
 
 .navButton {
@@ -157,7 +157,7 @@ nav ul li a:hover {
 }
 
 .menubar ul li a:hover {
-  color: var(--rosa) !important;
+  color: #4b5563 !important;
 }
 
 /* Modal */
@@ -195,6 +195,14 @@ nav ul li a:hover {
 
 .modal.show .modal-content {
   transform: scale(1); 
+}
+
+.formButton{
+  transition: all 0.5s ease;
+}
+
+.formButton:hover{
+  color: #767373 !important;
 }
 
 .close {

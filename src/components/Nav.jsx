@@ -77,7 +77,7 @@ const ContactForm = ({ onClose }) => {
                 ></textarea>
               </div>
               <div className="mb-4 text-center">
-                <button type="submit" className="w-1/4 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-all">
+                <button type="submit" className="w-1/4 py-3 md navButton">
                   Enviar
                 </button>
               </div>
@@ -119,7 +119,7 @@ export const NavComponent = () => {
         <img src={turbo} alt="logo" />
       </div>
       <ul className="desktop-menu">
-        <li><a href="#">Servicios</a></li>
+        <li><a href="#services">Servicios</a></li>
         <li><a href="#">Proyectos</a></li>
         <li><a href="#" className="navButton" onClick={openModal}>Trabajemos juntos</a></li>
       </ul>
@@ -130,7 +130,7 @@ export const NavComponent = () => {
       </div>
       <div className={`menubar ${isMenuOpen ? "active" : ""}`}>
         <ul>
-          <li><a href="#">Servicios</a></li>
+          <li><a href="#services">Servicios</a></li>
           <li><a href="#">Proyectos</a></li>
           <li><a href="#" className="navButton" onClick={openModal}>Trabajemos juntos</a></li>
         </ul>

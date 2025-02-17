@@ -8,24 +8,27 @@
     margin: 0 auto;
 }
 
-footer .logoFooter {
-    display: flex;
-    align-items: center;
-}
-  
-footer .logoFooter img {
-    height: 26px;
-    width: auto;
+.email{
+    text-decoration: none;
+    color: #3a3a3a;
 }
 
-.mailLink{
+.icon{
+    color: #000000;
+}
+
+.legalLinks {
+    color: #ff80bf !important;
     text-decoration: none !important;
 }
 
+.legalLinks:hover {
+    text-decoration: underline !important;
+}
+
+
 @media screen and (min-width: 1025px) {
-    .mail{
-        margin-top: 17px !important;
-    }
+    
 }
 
 @media screen and (max-width: 1024px) {

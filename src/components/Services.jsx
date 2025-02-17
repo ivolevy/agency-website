@@ -1,5 +1,4 @@
 import '../assets/styles/services.css';
-
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 
 const data = [
@@ -19,7 +18,7 @@ const ServiceCard = ({ title, description, image }) => (
 
 export default function Services() {
   return (
-    <div className="p-8 rounded-lg">
+    <div className="p-8 rounded-lg" id="services">
       <div className="bg-white p-6 borderRadius shadow-md">
         <h2 className="text-xl font-bold">Kit Digital</h2>
         <p className="text-gray-500 text-sm">Impulsa tu negocio con soluciones digitales avanzadas.</p>
