@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../assets/styles/nav.css";
 import "../assets/styles/contact.css";
-import turbo from '../assets/images/logo/turboestudio.png';
+import dota from '../assets/images/logo/dota.webp';
 import { FaTimes } from 'react-icons/fa';
 import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
@@ -116,7 +116,7 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <img src={turbo} alt="logo" />
+        <img src={dota} alt="logo" />
       </div>
       <ul className="desktop-menu">
         <li><a href="#services">Servicios</a></li>

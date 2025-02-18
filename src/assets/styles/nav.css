@@ -27,7 +27,7 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 30px;
+  height: 40px;
   width: auto;
 }
 
@@ -268,5 +268,9 @@ form button {
   }
   .modal-content{
     width: 90%;
+  }
+  nav .logo img {
+    height: 36px;
+    width: auto;
   }
 }

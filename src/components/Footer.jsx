@@ -1,5 +1,5 @@
 import "../assets/styles/footer.css";
-import turbo from '../assets/images/logo/turboestudio.png';
+import dota from '../assets/images/logo/dota.webp';
 import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
@@ -42,7 +42,7 @@ export const Footer = () => {
         &copy; {new Date().getFullYear()} Turbo Estudio. Todos los derechos reservados.
       </div>
       <div className="flex justify-center mt-4">
-        <img src={turbo} alt="Turbo Estudio" className="w-36" />
+        <img src={dota} alt="Dota solutions" className="w-24" />
       </div>
     </footer>
   );
