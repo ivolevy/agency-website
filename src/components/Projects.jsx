@@ -26,7 +26,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="text-center py-16 projects min-h-screen flex flex-col justify-center">
+    <section className="text-center py-16 projects min-h-screen flex flex-col justify-center" id="projects">
       <h2 className="text-4xl font-bold">
         PROYECTOS <span className="italic font-light">DESTACADOS</span>
       </h2>

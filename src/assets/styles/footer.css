@@ -37,5 +37,8 @@
       width: 90%;
       padding-left: 3%;
     }
+    .footerImg{
+        width: 65px !important;
+    }
   }
   

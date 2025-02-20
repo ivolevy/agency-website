@@ -116,11 +116,11 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <img src={dota} alt="logo" />
+        <img src={dota} alt="dota solutions" />
       </div>
       <ul className="desktop-menu">
         <li><a href="#services">Servicios</a></li>
-        <li><a href="#">Proyectos</a></li>
+        <li><a href="#projects">Proyectos</a></li>
         <li><a href="#" className="navButton" onClick={openModal}>Trabajemos juntos</a></li>
       </ul>
       <div className={`hamburger ${isMenuOpen ? "hamburger-active" : ""}`} onClick={toggleNav}>
@@ -131,7 +131,7 @@ export const NavComponent = () => {
       <div className={`menubar ${isMenuOpen ? "active" : ""}`}>
         <ul>
           <li><a href="#services">Servicios</a></li>
-          <li><a href="#">Proyectos</a></li>
+          <li><a href="#projects">Proyectos</a></li>
           <li><a href="#" className="navButton" onClick={openModal}>Trabajemos juntos</a></li>
         </ul>
       </div>

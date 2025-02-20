@@ -39,10 +39,10 @@ export const Footer = () => {
 
       {/* Copyright y Logo */}
       <div className="text-center text-sm text-gray-500 mt-4">
-        &copy; {new Date().getFullYear()} Turbo Estudio. Todos los derechos reservados.
+        &copy; {new Date().getFullYear()} dota solutions. Todos los derechos reservados.
       </div>
       <div className="flex justify-center mt-4">
-        <img src={dota} alt="Dota solutions" className="w-24" />
+        <img src={dota} alt="dota solutions" className="w-24 footerImg" />
       </div>
     </footer>
   );

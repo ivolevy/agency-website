@@ -6,13 +6,13 @@ export const Hero = () => {
       <div className="relative">
         {/* Título principal */}
         <h1 className="text-5xl md:text-6xl font-bold text-black leading-tight">
-          Domina tu mercado <br /> con <span className="text-black">DATOS</span>
+          Impulsamos tu Negocio con <br /> Soluciones <span className="text-black">Digitales</span>
         </h1>
 
         {/* Subtítulo */}
         <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-          Tableros listos para usar, visualizaciones dinámicas y diseño inteligente:
-          todo para transformar tu conocimiento del mercado.
+        Desde tu sitio web hasta campañas avanzadas, 
+        diseñamos servicios que potencian tu marca y multiplican resultados
         </p>
 
         {/* Botones */}

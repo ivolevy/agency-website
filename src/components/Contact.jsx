@@ -11,7 +11,7 @@ export const Contact = () => {
         >
           {/* Título */}
           <h2 className="text-white text-4xl md:text-5xl font-bold">
-            Empezá a dominar el mercado con <span className="font-extrabold">#Turbodato</span>
+            Empezá a dominar el mercado con <span className="font-extrabold">Nosotros</span>
           </h2>
 
           {/* Subtítulo */}
