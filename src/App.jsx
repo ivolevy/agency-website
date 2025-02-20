@@ -7,9 +7,9 @@ import { Projects } from './components/Projects.jsx'
 import { Faq } from './components/Faq.jsx'
 import { Contact } from './components/Contact.jsx'
 import { Footer } from './components/Footer.jsx'
+import { Analytics } from "@vercel/analytics/react" // Importá Analytics
 
 function App() {
-
   return (
     <>
       <div className="app">
@@ -20,6 +20,7 @@ function App() {
         <Contact />
         <Footer />
       </div>
+      <Analytics /> {/* Acá colocamos Analytics */}
     </>
   )
 }
