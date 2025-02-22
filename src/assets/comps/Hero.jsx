@@ -21,7 +21,7 @@ export const Hero = () => {
             Contactános
           </button>
           <button className="navButton2 border border-black text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all">
-            Conocé la solución
+            Agendá una llamada
           </button>
         </div>
       </div>

@@ -3,6 +3,7 @@ import dota from '../assets/images/logo/dota.webp';
 import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
+import { SiCalendly } from "react-icons/si";
 
 export const Footer = () => {
   return (
@@ -26,13 +27,14 @@ export const Footer = () => {
         {/* Sección de Iconos y Correo */}
         <div className="w-1/3 flex flex-col items-end text-black">
           <div className="flex space-x-5">
-            <a href="#" className="text-5xl hover:text-gray-700 icon"><AiFillInstagram /></a>
-            <a href="#" className="text-5xl hover:text-gray-700 icon"><FaWhatsapp /></a>
-            <a href="#" className="text-5xl hover:text-gray-700 icon"><TbBrandLinkedinFilled /></a>
+            <a href="https://www.linkedin.com/company/dota-solutions/?viewAsMember=true" target="_blank" className="text-2xl hover:text-gray-700 icon"><TbBrandLinkedinFilled /></a>
+            <a href="https://www.instagram.com/dotasolutions/" target="_blank" className="text-2xl hover:text-gray-700 icon"><AiFillInstagram /></a>
+            <a href="https://calendly.com/solutionsdota/30min" target="_blank" className="text-2xl hover:text-gray-700 icon"><SiCalendly /></a>
+            <a href="#" className="text-2xl hover:text-gray-700 icon"><FaWhatsapp /></a>
           </div>
           {/* Correo Electrónico */}
           <div className="mt-2 text-sm text-gray-600">
-            <a href="mailto:contacto@turboestudio.com" className="hover:underline email">contacto@turboestudio.com</a>
+            <a href="mailto:solutionsdota@gmail.com" className="hover:underline email">solutionsdota@gmail.com</a>
           </div>
         </div>
       </div>

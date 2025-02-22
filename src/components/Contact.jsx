@@ -23,6 +23,8 @@ export const Contact = () => {
               Hablá con ventas
             </button>
           </div>
+          <br />
+          <p>Agendá una <a href="#">llamada de auditoria gratuita</a></p>
         </div>
       </div>
     </>

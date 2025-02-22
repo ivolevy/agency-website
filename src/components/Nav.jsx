@@ -84,7 +84,7 @@ const ContactForm = ({ onClose }) => {
             </form>
           </div>
           <div className="socialMedia w-full flex justify-center space-x-6 p-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+            <a href="https://www.instagram.com/dotasolutions/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
               <AiFillInstagram size={24} />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
