@@ -11,12 +11,12 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Sección Izquierda */}
-        <div className="w-1/3 text-left text-sm font-medium text-black hidden md:block">
+        <div className="w-full md:w-1/3 text-center md:text-left text-sm font-medium text-black hidden md:block">
           TRABAJA CON NOSOTROS · ACCESO USUARIOS
         </div>
 
-        {/* Sección de Enlaces CENTRADA (columna en mobile, fila en desktop) */}
-        <div className="w-1/3 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-2 text-center text-sm text-black">
+        {/* Sección de Enlaces CENTRADA */}
+        <div className="w-full md:w-1/3 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-2 text-center text-sm text-black">
           <a href="#" className="legalLinks">Aviso legal</a>
           <span className="hidden md:inline">·</span>
           <a href="#" className="legalLinks">Política de privacidad</a>
@@ -24,8 +24,9 @@ export const Footer = () => {
           <a href="#" className="legalLinks">Cookies</a>
         </div>
 
-        {/* Sección de Iconos y Correo */}
-        <div className="w-1/3 flex flex-col items-end text-black">
+        {/* Sección de Iconos y Correo (Centrada en Mobile) */}
+        <div className="w-full md:w-1/3 flex flex-col items-center justify-center min-h-[150px] 
+                        md:items-end md:justify-end text-black">
           <div className="flex space-x-5">
             <a href="https://www.linkedin.com/company/dota-solutions/?viewAsMember=true" target="_blank" className="text-2xl hover:text-gray-700 icon"><TbBrandLinkedinFilled /></a>
             <a href="https://www.instagram.com/dotasolutions/" target="_blank" className="text-2xl hover:text-gray-700 icon"><AiFillInstagram /></a>
