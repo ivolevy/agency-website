@@ -1,14 +1,15 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fontsource/museomoderno';
 
 import { Header } from './components/Header.jsx'
 import Services from './components/Services.jsx'
 import { Steps } from './components/Steps.jsx'
 import { Projects } from './components/Projects.jsx'
 import { Faq } from './components/Faq.jsx'
-import { Contact } from './components/Contact.jsx'
+import { Cloud } from './components/Cloud.jsx'
+import { Contact } from './components/Contact.jsx';
 import { Footer } from './components/Footer.jsx'
-import { Analytics } from "@vercel/analytics/react" // Importá Analytics
 
 function App() {
   return (
@@ -19,10 +20,10 @@ function App() {
         <Steps />
         <Projects />
         <Faq />
+        <Cloud />
         <Contact />
         <Footer />
       </div>
-      <Analytics /> {/* Acá colocamos Analytics */}
     </>
   )
 }

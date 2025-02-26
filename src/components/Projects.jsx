@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "../assets/styles/projects.css";
 
 export const Projects = () => {
@@ -26,28 +27,30 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="text-center py-16 projects min-h-screen flex flex-col justify-center" id="projects">
+    <section className="text-center py-20 projects h-auto flex flex-col justify-center" id="projects">
       <h2 className="text-4xl font-bold">
         PROYECTOS <span className="italic font-light">DESTACADOS</span>
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 px-4">
-        {projects.map((project) => (
-          <div
+        {projects.map((project, index) => (
+          <motion.div
             key={project.id}
             className={`projectClouds overflow-hidden shadow-lg p-4 ${project.bgColor}`}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <div
               className="relative flex items-center justify-center h-52 bg-cover bg-center rounded-lg"
               style={{ backgroundImage: `url(${project.img})` }}
             >
-              <h3
-                className={`text-2xl font-bold ${project.textColor} bg-opacity-70 p-2 rounded-lg`}
-              >
+              <h3 className={`text-2xl font-bold ${project.textColor} bg-opacity-70 p-2 rounded-lg`}>
                 {project.title}
               </h3>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

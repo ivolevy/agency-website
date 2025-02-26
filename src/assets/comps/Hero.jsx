@@ -20,9 +20,14 @@ export const Hero = () => {
           <button className="border border-transparent text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all navButton">
             Contactános
           </button>
-          <button className="navButton2 border border-black text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all">
+          <a
+            href="https://calendly.com/solutionsdota/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navButton2 border border-black text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all"
+          >
             Agendá una llamada
-          </button>
+          </a>
         </div>
       </div>
 

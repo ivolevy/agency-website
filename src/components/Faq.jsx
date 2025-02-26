@@ -18,7 +18,7 @@ export const Faq = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen p-4">
+    <div className="flex flex-col justify-center items-center h-auto p-4 faqsSection">
       <h2 className="text-2xl font-bold text-center mb-4">Preguntas frecuentes</h2>
       <div className="w-full max-w-2xl shadow-lg p-6 faqs">
         {faqs.map((question, index) => (
