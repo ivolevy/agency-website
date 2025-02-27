@@ -1,36 +1,55 @@
 import { useState } from "react";
 import "../assets/styles/nav.css";
 import "../assets/styles/contact.css";
-import dota from '../assets/images/logo/dota.webp';
+import dota from "../assets/images/logo/dota.webp";
+
+const menuItems = [
+  { id: "services", label: "Servicios" },
+  { id: "projects", label: "Proyectos" },
+  { id: "contact", label: "Trabajemos juntos", className: "navButton" },
+];
 
 export const NavComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const toggleNav = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleNav = () => setIsMenuOpen((prev) => !prev);
 
   return (
     <nav>
       <div className="logo">
-        <img src={dota} alt="dota solutions" />
+        <img src={dota} alt="Dota Solutions" />
       </div>
+
       <ul className="desktop-menu">
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact" className="navButton">Trabajemos juntos</a></li>
+        {menuItems.map(({ id, label, className }) => (
+          <li key={id}>
+            <a href={`#${id}`} className={className}>
+              {label}
+            </a>
+          </li>
+        ))}
       </ul>
-      <div className={`hamburger ${isMenuOpen ? "hamburger-active" : ""}`} onClick={toggleNav}>
+
+      <button
+        className={`hamburger ${isMenuOpen ? "hamburger-active" : ""}`}
+        onClick={toggleNav}
+        aria-label="Abrir menú de navegación"
+        aria-expanded={isMenuOpen}
+      >
         <span className="line"></span>
         <span className="line"></span>
         <span className="line"></span>
-      </div>
+      </button>
+
       <div className={`menubar ${isMenuOpen ? "active" : ""}`}>
         <ul>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact" className="navButton">Trabajemos juntos</a></li>
+          {menuItems.map(({ id, label, className }) => (
+            <li key={id}>
+              <a href={`#${id}`} className={className} onClick={toggleNav}>
+                {label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

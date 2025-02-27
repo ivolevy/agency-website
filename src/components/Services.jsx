@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "../assets/styles/services.css";
 
 const ServiceCard = ({ title, description, image, link, isPopular }) => (
-  <motion.div
+  <motion.article
     className="relative bg-white borderRadius p-10 flex flex-col items-center text-center shadow-md min-h-[200px]"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -14,17 +14,18 @@ const ServiceCard = ({ title, description, image, link, isPopular }) => (
         MÁS POPULAR
       </span>
     )}
-    <h3 className="font-semibold text-2xl">{title}</h3>
+    <h2 className="font-semibold text-2xl">{title}</h2> {/* Cambié a h2 */}
     <p className="text-gray-500 text-sm mt-2">{description}</p>
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
       className="mt-2 px-4 py-2 rounded-md shadow-md bg-black text-white hover:bg-gray-700 transition"
+      aria-label={`Ver más sobre ${title}`}
     >
       Ver más
     </a>
-  </motion.div>
+  </motion.article>
 );
 
 export default function Services() {

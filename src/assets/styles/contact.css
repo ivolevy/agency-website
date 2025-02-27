@@ -4,7 +4,14 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
     margin-bottom: 80px;
     width: 80%;
+    background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
 }
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border-color: #ea9c9c !important; /* Color naranja */
+    box-shadow: 0 0 5px #ea9c9c !important;
+}  
 
 .roundedForm{
     border-radius: 35px;
@@ -22,5 +29,5 @@
 }
 
 .contactButton:hover{
-    background-color: #dedede !important;
+    background-color: #ea9c9c6e !important;
 }

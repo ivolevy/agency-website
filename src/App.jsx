@@ -7,7 +7,7 @@ import Services from './components/Services.jsx'
 import { Steps } from './components/Steps.jsx'
 import { Projects } from './components/Projects.jsx'
 import { Faq } from './components/Faq.jsx'
-import { Cloud } from './components/Cloud.jsx'
+/* import { Cloud } from './components/Cloud.jsx' */
 import { Contact } from './components/Contact.jsx';
 import { Footer } from './components/Footer.jsx'
 
@@ -20,7 +20,7 @@ function App() {
         <Steps />
         <Projects />
         <Faq />
-        <Cloud />
+        {/* <Cloud /> */}
         <Contact />
         <Footer />
       </div>
