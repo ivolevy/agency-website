@@ -31,11 +31,10 @@ export const Projects = () => {
 
   return (
     <section className="text-center py-20 projects h-auto flex flex-col justify-center" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title" className="text-4xl font-bold">
-        PROYECTOS <span className="italic font-light">DESTACADOS</span>
+      <h2 className="servicesTitle text-center mb-5">
+        <span className="underline">Proyectos</span> recientes
       </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
         {projects.map((project, index) => (
           <motion.article
             key={project.id}
