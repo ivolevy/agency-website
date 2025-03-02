@@ -50,39 +50,58 @@ export const Contact = () => {
   };
 
   return (
+    <>
+    <h2 className="servicesTitle text-center mb-5">
+        Empecemos a crear juntos!
+      </h2>
     <div className="flex flex-col items-center lg:flex-row mx-auto text-center" id="contact">
       {/* Lado Izquierdo: Información + Redes Sociales */}
-      <div className="lg:w-1/2 flex flex-col items-center justify-center text-center p-6">
-        <h2 className="text-2xl font-bold text-white mb-4">Empezá a dominar el mercado con Nosotros</h2>
-        <p className="text-gray-600 mb-2">Cuéntanos qué necesitas y te responderemos lo antes posible.</p>
-        <p className="text-gray-600 mb-4">También puedes agendar una reunión con nosotros.</p>
+      <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
+        <h2 className="text-xs text-white font-thin contactSpan">contacto</h2>
+        <h3 className="text-3xl font-bold text-white">Empezá a dominar el mercado con nosotros</h3>
+        <p className="text-gray-600 mb-4">Contanos qué necesitas y charlemos sobre eso.</p>
 
         {/* Redes Sociales */}
-        <div className="flex items-center justify-center space-x-4 mb-4">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-600 text-3xl">
-            <AiFillInstagram />
+        <div className="flex items-center space-x-4 mb-4">
+          <a 
+            href="https://www.instagram.com/" 
+            target="_blank" rel="noopener noreferrer" 
+            className="text-pink-500 hover:text-pink-600 text-3xl" 
+            aria-label="Instagram" title="Instagram"
+          >
+            <AiFillInstagram className="contactIcon"/>
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 text-3xl">
-            <TbBrandLinkedinFilled />
+          <a 
+            href="https://www.linkedin.com/" 
+            target="_blank" rel="noopener noreferrer" 
+            className="text-blue-700 hover:text-blue-800 text-3xl"
+            aria-label="Linkedin" title="Linkedin"
+          >
+            <TbBrandLinkedinFilled className="contactIcon"/>
           </a>
-          <a href="https://wa.me/tuNumero" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-600 text-3xl">
-            <FaWhatsapp />
+          <a 
+            href="https://wa.me/1138240929" 
+            target="_blank" rel="noopener noreferrer" 
+            className="text-green-500 hover:text-green-600 text-3xl"
+            aria-label="Whatsapp" title="Whatsapp"
+          >
+            <FaWhatsapp className="contactIcon"/>
           </a>
         </div>
 
         {/* Email */}
-        <p className="text-gray-600 mb-4">
-          📧 <a href="mailto:contacto@tuempresa.com" className="text-blue-500 hover:underline">contacto@tuempresa.com</a>
+        <p className="text-gray-600 ">
+          <a href="mailto:solutionsdota@gmail.com" className="text-white contactEmail">solutionsdota@gmail.com</a>
         </p>
 
         {/* Agendar Llamada */}
-        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-          <SiCalendly className="mr-2" /> Agendar llamada gratuita
+        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-centerhover:bg-blue-600 text-white font-semibold">
+          Agendá una llamada gratuita
         </a>
       </div>
 
       {/* Lado Derecho: Formulario */}
-      <form onSubmit={handleSubmit} className="lg:w-1/2 bg-white p-6 roundedForm shadow-md flex flex-col items-center text-center">
+      <form onSubmit={handleSubmit} className="lg:w-1/2 bg-white p-6 roundedForm responsiveForm shadow-md flex flex-col items-center text-center">
         <div className="flex flex-col md:flex-row gap-4 mb-4 w-full">
           <input
             type="text"
@@ -92,6 +111,7 @@ export const Contact = () => {
             onChange={handleChange}
             required
             className="w-full md:w-1/2 p-3 border border-gray-300 roundedForm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            aria-label="Nombre"
           />
           <input
             type="text"
@@ -101,6 +121,7 @@ export const Contact = () => {
             onChange={handleChange}
             required
             className="w-full md:w-1/2 p-3 border border-gray-300 roundedForm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            aria-label="Empresa"
           />
         </div>
 
@@ -112,6 +133,7 @@ export const Contact = () => {
           onChange={handleChange}
           required
           className="w-full p-3 mb-4 border border-gray-300 roundedForm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          aria-label="Email"
         />
 
         <textarea
@@ -122,6 +144,7 @@ export const Contact = () => {
           required
           rows="4"
           className="w-full p-3 border border-gray-300 roundedForm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          aria-label="Mensaje"
         ></textarea>
 
         <button type="submit" className="contactButton mt-3">
@@ -131,5 +154,6 @@ export const Contact = () => {
         {status && <p className="text-green-600 text-center mt-3">{status}</p>}
       </form>
     </div>
+    </>
   );
 };

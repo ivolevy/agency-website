@@ -4,6 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiCalendly } from "react-icons/si";
+import { Link } from 'react-router-dom'; // Importa Link de react-router-dom
 
 export const Footer = () => {
   return (
@@ -17,11 +18,12 @@ export const Footer = () => {
 
         {/* Sección de Enlaces CENTRADA */}
         <div className="w-full md:w-1/3 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-2 text-center text-sm text-black">
-          <a href="#" className="legalLinks">Aviso legal</a>
+        <Link to="/aviso-legal" target="_blank" className="legalLinks">Aviso legal</Link>
           <span className="hidden md:inline">·</span>
-          <a href="#" className="legalLinks">Política de privacidad</a>
+          {/* Aquí usa Link de React Router */}
+          <Link to="/politica-de-privacidad" target="_blank" className="legalLinks">Política de privacidad</Link>
           <span className="hidden md:inline">·</span>
-          <a href="#" className="legalLinks">Cookies</a>
+          <Link to="/cookies" target="_blank" className="legalLinks">Cookies</Link>
         </div>
 
         {/* Sección de Iconos y Correo (Centrada en Mobile) */}
@@ -31,7 +33,7 @@ export const Footer = () => {
             <a href="https://www.linkedin.com/company/dota-solutions/?viewAsMember=true" target="_blank" className="text-2xl hover:text-gray-700 icon"><TbBrandLinkedinFilled /></a>
             <a href="https://www.instagram.com/dotasolutions/" target="_blank" className="text-2xl hover:text-gray-700 icon"><AiFillInstagram /></a>
             <a href="https://calendly.com/solutionsdota/30min" target="_blank" className="text-2xl hover:text-gray-700 icon"><SiCalendly /></a>
-            <a href="#" className="text-2xl hover:text-gray-700 icon"><FaWhatsapp /></a>
+            <a href="https://wa.me/1138240929" className="text-2xl hover:text-gray-700 icon"><FaWhatsapp /></a>
           </div>
           {/* Correo Electrónico */}
           <div className="mt-2 text-sm text-gray-600">

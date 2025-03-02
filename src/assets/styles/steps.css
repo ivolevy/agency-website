@@ -11,3 +11,10 @@
     margin-top: -15px;
     margin-bottom: 15px;
 }
+
+@media (max-width: 1024px){
+    .stepsSection{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
