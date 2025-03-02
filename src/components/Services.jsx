@@ -37,13 +37,13 @@ export default function Services() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
         <ServiceCard
           title="Kit digital Web"
-          description="Obtené tu sitio web rápido, económico y listo para generar leads..."
+          description="Obtené tu sitio web rápido, económico y listo para generar leads."
           link="https://tu-sitio.com/kit-digital"
           isPopular={true}
         />
         <ServiceCard
           title="Paid Media"
-          description="Maximizá tu inversión publicitaria con campañas efectivas en Google..."
+          description="Maximizá tu inversión publicitaria con campañas efectivas en Google & Meta"
           link="https://tu-sitio.com/meta-ads"
         />
         <ServiceCard
@@ -53,7 +53,7 @@ export default function Services() {
         />
         <ServiceCard
           title="Branding"
-          description="Dale identidad y personalidad a tu negocio con un diseño visual sólido..."
+          description="Dale identidad y personalidad a tu negocio con un diseño visual sólido."
           link="https://tu-sitio.com/branding"
         />
       </div>

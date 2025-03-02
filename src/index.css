@@ -9,4 +9,5 @@ html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     /*font-family: "MuseoModerno", sans-serif !important;*/
+    background-color: #fafafa  !important;
 }
