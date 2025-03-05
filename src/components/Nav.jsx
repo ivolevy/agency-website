@@ -17,7 +17,9 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <img src={dota} alt="Dota Solutions" />
+        <a href="#header">
+          <img src={dota} alt="Dota Solutions" />
+        </a>
       </div>
 
       <ul className="desktop-menu">

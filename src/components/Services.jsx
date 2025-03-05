@@ -37,7 +37,7 @@ export default function Services() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
         <ServiceCard
           title="Kit digital Web"
-          description="Obtené tu sitio web rápido, económico y listo para generar leads."
+          description="Obtené tu sitio web rápido, económico y listo para generar leads desde 140USD."
           link="https://tu-sitio.com/kit-digital"
           isPopular={true}
         />

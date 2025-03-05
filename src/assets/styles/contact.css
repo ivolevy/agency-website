@@ -55,4 +55,28 @@ input:focus, textarea:focus {
     .responsiveForm{
         width: 100% !important;
     }
+    .contactSubtitle{
+        margin-bottom: 20px;
+    }
+    .contactText{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .contactContainer{
+        width: 90% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .responsiveData{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .contactSubtitle{
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+    .responsiveForm{
+    }
 }

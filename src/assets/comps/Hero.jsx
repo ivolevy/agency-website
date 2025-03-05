@@ -9,7 +9,7 @@ const containerVariants = {
 export const Hero = () => {
   return (
     <motion.div
-      className="w-full h-screen flex flex-col items-center justify-center text-center bg-[#FAFAFA]"
+      className="hero w-full h-screen flex flex-col items-center justify-center text-center bg-[#FAFAFA]"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -17,7 +17,7 @@ export const Hero = () => {
       <motion.div className="relative">
         {/* Título principal */}
         <motion.h1
-          className="text-5xl md:text-6xl font-bold text-black leading-tight"
+          className="text-5xl md:text-6xl font-bold text-black leading-tight heroTitle"
           variants={containerVariants}
           transition={{ delay: 0.2 }}
         >
@@ -26,7 +26,7 @@ export const Hero = () => {
 
         {/* Subtítulo */}
         <motion.p
-          className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto"
+          className="heroText text-lg text-gray-600 mt-4 max-w-2xl mx-auto"
           variants={containerVariants}
           transition={{ delay: 0.4 }}
         >
