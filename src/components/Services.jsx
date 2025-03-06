@@ -8,13 +8,10 @@ const ServiceCard = ({ title, description, image, link, isPopular }) => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     viewport={{ once: true, amount: 0.3 }}
+    aria-labelledby={`service-${title}`}
+    role="article"
   >
-    {isPopular && (
-      <span className="absolute top-4 right-4 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full">
-        MÁS POPULAR
-      </span>
-    )}
-    <h2 className="font-semibold text-2xl">{title}</h2> {/* Cambié a h2 */}
+    <h3 id={`service-${title}`} className="font-semibold text-2xl">{title}</h3> {/* Cambié a h3 para evitar usar múltiples h2 */}
     <p className="text-gray-500 text-sm mt-2">{description}</p>
     <a
       href={link}
@@ -22,6 +19,7 @@ const ServiceCard = ({ title, description, image, link, isPopular }) => (
       rel="noopener noreferrer"
       className="mt-2 px-4 py-2 rounded-md shadow-md bg-black text-white hover:bg-gray-700 transition"
       aria-label={`Ver más sobre ${title}`}
+      title={`Ver más detalles sobre ${title}`}
     >
       Ver más
     </a>
@@ -39,7 +37,6 @@ export default function Services() {
           title="Kit digital Web"
           description="Obtené tu sitio web rápido, económico y listo para generar leads desde 140USD."
           link="https://tu-sitio.com/kit-digital"
-          isPopular={true}
         />
         <ServiceCard
           title="Paid Media"

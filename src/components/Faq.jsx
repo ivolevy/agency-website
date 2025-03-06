@@ -41,10 +41,12 @@ export const Faq = () => {
             <button
               className="flex justify-between items-center w-full p-4 text-left text-gray-900 font-medium hover:bg-gray-100 transition-all faqCard"
               onClick={() => toggleFAQ(index)}
+              aria-expanded={openIndex === index} // Atributo accesible
+              aria-controls={`faq-answer-${index}`} // Relaciona el botón con el contenido de la respuesta
             >
               {faq.question}
               <span
-                className={`transform transition-transform duration-500 ${
+                className={`transform transition-transform duration-300 ${
                   openIndex === index ? "rotate-180" : "rotate-0"
                 }`}
               >
@@ -56,6 +58,7 @@ export const Faq = () => {
               </span>
             </button>
             <div
+              id={`faq-answer-${index}`} // Identificador para el contenido
               className={`overflow-hidden transition-all duration-700 ease-in-out ${
                 openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               }`}

@@ -4,9 +4,9 @@ import "../assets/styles/contact.css";
 import dota from "../assets/images/logo/dota.webp";
 
 const menuItems = [
-  { id: "services", label: "Servicios" },
-  { id: "projects", label: "Proyectos" },
-  { id: "contact", label: "Trabajemos juntos", className: "navButton" },
+  { id: "services", label: "Servicios", title: "Descubre nuestros servicios digitales" },
+  { id: "projects", label: "Proyectos", title: "Ver nuestros proyectos anteriores" },
+  { id: "contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar a trabajar juntos", className: "navButton" },
 ];
 
 export const NavComponent = () => {
@@ -17,15 +17,15 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <a href="#header">
-          <img src={dota} alt="Dota Solutions" />
+        <a href="#header" title="Dota Solutions - Agencia Digital">
+          <img src={dota} alt="Dota Solutions - Agencia Digital que ofrece desarrollo web, SEO y publicidad" />
         </a>
       </div>
 
       <ul className="desktop-menu">
-        {menuItems.map(({ id, label, className }) => (
+        {menuItems.map(({ id, label, className, title }) => (
           <li key={id}>
-            <a href={`#${id}`} className={className}>
+            <a href={`#${id}`} className={className} title={title}>
               {label}
             </a>
           </li>
@@ -45,9 +45,9 @@ export const NavComponent = () => {
 
       <div className={`menubar ${isMenuOpen ? "active" : ""}`}>
         <ul>
-          {menuItems.map(({ id, label, className }) => (
+          {menuItems.map(({ id, label, className, title }) => (
             <li key={id}>
-              <a href={`#${id}`} className={className} onClick={toggleNav}>
+              <a href={`#${id}`} className={className} title={title} onClick={toggleNav}>
                 {label}
               </a>
             </li>

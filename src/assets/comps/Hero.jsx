@@ -8,15 +8,17 @@ const containerVariants = {
 
 export const Hero = () => {
   return (
-    <motion.div
+    <motion.section
       className="hero w-full h-screen flex flex-col items-center justify-center text-center bg-[#FAFAFA]"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      aria-labelledby="hero-title"
     >
       <motion.div className="relative">
         {/* Título principal */}
         <motion.h1
+          id="hero-title"
           className="text-5xl md:text-6xl font-bold text-black leading-tight heroTitle"
           variants={containerVariants}
           transition={{ delay: 0.2 }}
@@ -30,7 +32,7 @@ export const Hero = () => {
           variants={containerVariants}
           transition={{ delay: 0.4 }}
         >
-          Desde tu sitio web hasta campañas avanzadas, diseñamos servicios que potencian tu marca y multiplican resultados
+          Desde tu sitio web hasta campañas avanzadas, diseñamos servicios que potencian tu marca y multiplican resultados.
         </motion.p>
 
         {/* Botones */}
@@ -42,6 +44,7 @@ export const Hero = () => {
           <button
             className="border border-transparent text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all navButton"
             aria-label="Contactarnos"
+            title="Haz clic para contactarnos y comenzar a mejorar tu presencia digital"
           >
             Contactános
           </button>
@@ -51,6 +54,7 @@ export const Hero = () => {
             rel="noopener noreferrer"
             className="border border-black text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all navButton2"
             aria-label="Agendar una llamada"
+            title="Agendar una llamada de 30 minutos con nosotros"
           >
             Agendá una llamada
           </a>
@@ -65,6 +69,6 @@ export const Hero = () => {
       >
         Algunos de los sitios que monitoreamos:
       </motion.p>
-    </motion.div>
+    </motion.section>
   );
 };

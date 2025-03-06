@@ -16,7 +16,7 @@ export const Steps = () => {
       <h2 id="steps-title" className="text-lg mb-5 text-center stepsTitle">
         Querés saber cómo vamos a <span className="text-pink-400">trabajar?</span> Mirá los pasos.
       </h2>
-      <div className="relative flex flex-col items-center w-full max-w-3xl">
+      <div className="relative flex flex-col items-center w-full max-w-3xl" role="list">
         <div className="absolute w-1 bg-pink-300 rounded-full h-full left-1/2 transform -translate-x-1/2"></div>
         {steps.map((step, index) => (
           <motion.div
@@ -26,6 +26,7 @@ export const Steps = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true, amount: 0.3 }}
+            role="listitem"
           >
             <div className="w-1/2 flex flex-col items-center bg-white p-4 steps">
               <h3 className="text-lg font-semibold mt-2 text-center stepsTitleSquare">{step.title}</h3>
@@ -37,6 +38,7 @@ export const Steps = () => {
                   rel="noopener noreferrer"
                   className="link text-pink-400 hover:underline"
                   aria-label={`Agenda una auditoría gratuita para ${step.title}`}
+                  title={`Agendar una llamada para la ${step.title}`}
                 >
                   Agendá una llamada.
                 </a>
