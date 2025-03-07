@@ -41,13 +41,14 @@ export const Hero = () => {
           variants={containerVariants}
           transition={{ delay: 0.6 }}
         >
-          <button
+          <a
             className="border border-transparent text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all navButton"
             aria-label="Contactarnos"
             title="Haz clic para contactarnos y comenzar a mejorar tu presencia digital"
+            href="#contact"
           >
             Contactános
-          </button>
+          </a>
           <a
             href="https://calendly.com/solutionsdota/30min"
             target="_blank"

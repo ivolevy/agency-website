@@ -63,7 +63,7 @@ export const Contact = () => {
         {/* Redes Sociales */}
         <div className="flex items-center space-x-4 mb-4">
           <a 
-            href="https://www.instagram.com/" 
+            href="https://www.instagram.com/dotasolutions" 
             target="_blank" rel="noopener noreferrer" 
             className="text-pink-500 hover:text-pink-600 text-3xl" 
             aria-label="Instagram" title="Instagram"
@@ -71,7 +71,7 @@ export const Contact = () => {
             <AiFillInstagram className="contactIcon"/>
           </a>
           <a 
-            href="https://www.linkedin.com/" 
+            href="https://www.linkedin.com/dota-solutions" 
             target="_blank" rel="noopener noreferrer" 
             className="text-blue-700 hover:text-blue-800 text-3xl"
             aria-label="Linkedin" title="Linkedin"
