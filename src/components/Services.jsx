@@ -44,7 +44,7 @@ export default function Services() {
           link="https://tu-sitio.com/meta-ads"
         />
         <ServiceCard
-          title="Sitios Web Custom"
+          title="Sitios Web"
           description="Crea una web a medida para destacar en el mercado."
           link="https://tu-sitio.com/sitios-custom"
         />
