@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fontsource/museomoderno';
+import { Analytics } from "@vercel/analytics/react";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
@@ -17,14 +18,12 @@ import { Privacy } from './assets/comps/legal/Privacy.jsx';
 import { Legal } from './assets/comps/legal/Legal.jsx';
 import { Cookies } from './assets/comps/legal/Cookies.jsx';
 
-// Layout general donde se renderizan Header y Footer si no estamos en la página de privacidad o aviso legal
 function Layout() {
-  const location = useLocation(); // Usamos useLocation para detectar la ruta actual
+  const location = useLocation();
 
   return (
     <>
-      {/* Renderizamos el Header solo si NO estamos en las rutas de política de privacidad o aviso legal */}
-      {location.pathname !== '/politica-de-privacidad' && location.pathname !== '/aviso-legal'&& location.pathname !== '/cookies' && <Header />}
+      {location.pathname !== '/politica-de-privacidad' && location.pathname !== '/aviso-legal' && location.pathname !== '/cookies' && <Header />}
       
       <Routes>
         <Route path="/" element={<>
@@ -39,7 +38,6 @@ function Layout() {
         <Route path="/cookies" element={<Cookies />} />
       </Routes>
 
-      {/* Renderizamos el Footer solo si NO estamos en las rutas de política de privacidad o aviso legal */}
       {location.pathname !== '/politica-de-privacidad' && location.pathname !== '/aviso-legal' && location.pathname !== '/cookies' && <Footer />}
     </>
   );
@@ -51,6 +49,7 @@ function App() {
       <Routes>
         <Route path="/*" element={<Layout />} />
       </Routes>
+      <Analytics /> {/* Agrega esto aquí para que Vercel Analytics funcione */}
     </Router>
   );
 }
