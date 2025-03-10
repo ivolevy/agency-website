@@ -42,7 +42,7 @@ export const Hero = () => {
           transition={{ delay: 0.6 }}
         >
           <a
-            className="border border-transparent font-light transition-all navButton"
+            className="border border-transparent font-light transition-all headerButton"
             aria-label="Contactarnos"
             title="Haz clic para contactarnos y comenzar a mejorar tu presencia digital"
             href="#contact"
