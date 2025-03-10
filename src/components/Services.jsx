@@ -17,7 +17,7 @@ const ServiceCard = ({ title, description, image, link, isPopular }) => (
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="mt-2 px-4 py-2 rounded-md shadow-md bg-black text-white hover:bg-gray-700 transition"
+      className="border border-black text-black font-light py-2 px-6 hover:bg-gray-100 transition-all navButton2"
       aria-label={`Ver más sobre ${title}`}
       title={`Ver más detalles sobre ${title}`}
     >

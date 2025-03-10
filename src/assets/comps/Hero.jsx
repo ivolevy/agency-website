@@ -42,7 +42,7 @@ export const Hero = () => {
           transition={{ delay: 0.6 }}
         >
           <a
-            className="border border-transparent text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all navButton"
+            className="border border-transparent font-light transition-all navButton"
             aria-label="Contactarnos"
             title="Haz clic para contactarnos y comenzar a mejorar tu presencia digital"
             href="#contact"
@@ -53,7 +53,7 @@ export const Hero = () => {
             href="https://calendly.com/solutionsdota/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-black text-black font-light py-3 px-6 rounded-full hover:bg-gray-100 transition-all navButton2"
+            className="border border-black text-black font-light py-3 px-6 hover:bg-gray-100 transition-all navButton2"
             aria-label="Agendar una llamada"
             title="Agendar una llamada de 30 minutos con nosotros"
           >
