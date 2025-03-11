@@ -94,7 +94,7 @@ export const Contact = () => {
         </p>
 
         {/* Agendar Llamada */}
-        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-centerhover:bg-blue-600 text-black-600 font-semibold">
+        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-centerhover:bg-blue-600 text-gray-600 font-semibold">
           Agendá una llamada gratuita
         </a>
       </div>
