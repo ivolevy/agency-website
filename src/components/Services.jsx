@@ -33,10 +33,10 @@ export default function Services() {
         Nos <span className="underline">especializamos</span> en ...
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-        <ServiceCard
-          title="Sitios Web Express"
-          description="Obtené tu sitio web rápido, económico y listo para generar leads desde 140USD."
-          link="https://tu-sitio.com/kit-digital"
+         <ServiceCard
+          title="Sitios Web"
+          description="Crea una web a medida para destacar en el mercado."
+          link="https://tu-sitio.com/sitios-custom"
         />
         <ServiceCard
           title="Paid Media"
@@ -44,9 +44,9 @@ export default function Services() {
           link="https://tu-sitio.com/meta-ads"
         />
         <ServiceCard
-          title="Sitios Web"
-          description="Crea una web a medida para destacar en el mercado."
-          link="https://tu-sitio.com/sitios-custom"
+          title="Sitios Web Express"
+          description="Obtené tu sitio web rápido, económico y listo para generar leads desde 140USD."
+          link="https://tu-sitio.com/kit-digital"
         />
         <ServiceCard
           title="Branding"
