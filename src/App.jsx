@@ -58,7 +58,7 @@ function App() {
       <Routes>
         <Route path="/*" element={<Layout />} />
       </Routes>
-      <Analytics /> {/* Agrega esto aquí para que Vercel Analytics funcione */}
+      <Analytics /> {/* Vercel Analytics */}
     </Router>
   );
 }

@@ -4,7 +4,7 @@ import dota from "../../assets/images/logo/dota.webp/";
 export const NotFound = () => {
     return (
       <div className="flex flex-col justify-center items-center h-screen w-screen text-center notfound">
-        {/* <img src={dota} alt="" /> */}
+        <img src={dota} alt="" className="logoNotFound mb-4"/>
         <h1 className="text-base font-bold">404 - Not Found</h1>
         <h2 className="ups font-bold">UPS!</h2>
         <p className="mb-4">La página a la que intentas acceder no existe</p>
