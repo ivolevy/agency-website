@@ -14,6 +14,15 @@ export const NavComponent = () => {
 
   const toggleNav = () => setIsMenuOpen((prev) => !prev);
 
+  // Función para hacer scroll suave
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav>
       <div className="logo">
@@ -25,7 +34,7 @@ export const NavComponent = () => {
       <ul className="desktop-menu">
         {menuItems.map(({ id, label, className, title }) => (
           <li key={id}>
-            <a href={`#${id}`} className={className} title={title}>
+            <a href={`#${id}`} className={className} title={title} onClick={(e) => { e.preventDefault(); scrollToSection(id); }}>
               {label}
             </a>
           </li>
@@ -47,7 +56,7 @@ export const NavComponent = () => {
         <ul>
           {menuItems.map(({ id, label, className, title }) => (
             <li key={id}>
-              <a href={`#${id}`} className={className} title={title} onClick={toggleNav}>
+              <a href={`#${id}`} className={className} title={title} onClick={(e) => { e.preventDefault(); scrollToSection(id); }}>
                 {label}
               </a>
             </li>
