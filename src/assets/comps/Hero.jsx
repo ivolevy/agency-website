@@ -23,7 +23,7 @@ export const Hero = () => {
           variants={containerVariants}
           transition={{ delay: 0.2 }}
         >
-          Impulsamos tu Negocio con <br /> Soluciones <span className="text-black">Digitales</span>
+          Soluciones Digitales <br /> 100% Personalizadas
         </motion.h1>
 
         {/* Subtítulo */}
@@ -32,7 +32,7 @@ export const Hero = () => {
           variants={containerVariants}
           transition={{ delay: 0.4 }}
         >
-          Desde tu sitio web hasta campañas avanzadas, diseñamos servicios que potencian tu marca y multiplican resultados.
+          Digitaliza y centralizá tu negocio con soluciones web y de gestión 100% personalizadas.
         </motion.p>
 
         {/* Botones */}

@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fontsource/museomoderno';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 
@@ -59,6 +60,7 @@ function App() {
         <Route path="/*" element={<Layout />} />
       </Routes>
       <Analytics /> {/* Vercel Analytics */}
+      <SpeedInsights /> {/* Vercel Speed Insights */}
     </Router>
   );
 }
