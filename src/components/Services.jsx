@@ -428,7 +428,7 @@ export default function Services() {
           </div>
         </motion.div>
 
-        {/* CTA mejorado */}
+        {/* CTA mejorado
         <motion.div
           className="text-center bg-gradient-to-r from-red-50 to-purple-50 p-10 borderRadius border border-gray-100 shadow-sm"
           initial={{ opacity: 0 }}
@@ -450,6 +450,7 @@ export default function Services() {
             </motion.button>
           </div>
         </motion.div>
+        */}
       </div>
     </section>
   );
