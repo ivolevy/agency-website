@@ -3,7 +3,6 @@ import emailjs from "emailjs-com";
 import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
-import { SiCalendly } from "react-icons/si";
 import "../assets/styles/contact.css";
 
 export const Contact = () => {
@@ -93,10 +92,6 @@ export const Contact = () => {
           <a href="mailto:solutionsdota@gmail.com" className="text-white contactEmail">solutionsdota@gmail.com</a>
         </p>
 
-        {/* Agendar Llamada */}
-        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-centerhover:bg-blue-600 text-gray-600 font-semibold">
-          Agendá una llamada gratuita
-        </a>
       </div>
 
       {/* Lado Derecho: Formulario */}

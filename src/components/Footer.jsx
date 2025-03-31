@@ -3,7 +3,6 @@ import dota from '../assets/images/logo/dota.webp';
 import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
-import { SiCalendly } from "react-icons/si";
 import { Link } from 'react-router-dom'; // Importa Link de react-router-dom
 
 export const Footer = () => {
@@ -32,7 +31,6 @@ export const Footer = () => {
           <div className="flex space-x-5">
             <a href="https://www.linkedin.com/company/dota-solutions/?viewAsMember=true" target="_blank" className="text-2xl hover:text-gray-700 icon"><TbBrandLinkedinFilled /></a>
             <a href="https://www.instagram.com/dotasolutions/" target="_blank" className="text-2xl hover:text-gray-700 icon"><AiFillInstagram /></a>
-            <a href="https://calendly.com/solutionsdota/30min" target="_blank" className="text-2xl hover:text-gray-700 icon"><SiCalendly /></a>
             <a href="https://wa.me/1138240929" className="text-2xl hover:text-gray-700 icon"><FaWhatsapp /></a>
           </div>
           {/* Correo Electrónico */}
