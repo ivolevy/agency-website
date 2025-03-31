@@ -25,7 +25,7 @@ const roiData = [
 // Componente de tarjeta mejorado
 const ServiceCard = ({ title, description, icon, metrics, color, hoverColor }) => (
   <motion.article
-    className="relative bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:border-gray-200 transition-all"
+    className="relative bg-white borderRadius p-6 shadow-md border hover:border-gray-200 transition-all"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
@@ -69,14 +69,14 @@ const ServiceCard = ({ title, description, icon, metrics, color, hoverColor }) =
 // Componente de testimonio
 const Testimonial = ({ quote, author, company, image }) => (
   <motion.div
-    className="bg-white p-5 rounded-xl shadow-md border border-gray-100"
+    className="bg-white p-5 borderRadius shadow-md border border-gray-100"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
     viewport={{ once: true }}
   >
     <div className="flex items-center mb-4">
-      <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-3">
+      <div className="w-12 h-12 borderRadius bg-gray-200 overflow-hidden mr-3">
         {image ? (
           <img src={image || "/placeholder.svg"} alt={author} className="w-full h-full object-cover" />
         ) : (
@@ -104,7 +104,7 @@ export default function Services() {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <motion.span 
-            className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium mb-3"
+            className="inline-block px-3 py-1 bg-blue-100 text-blue-800 borderRadius text-xs font-medium mb-3"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -135,7 +135,7 @@ export default function Services() {
 
         {/* Gráfico principal mejorado */}
         <motion.div
-          className="bg-white rounded-xl shadow-md p-8 mb-10 border border-gray-100"
+          className="bg-white borderRadius shadow-md p-8 mb-10 border border-gray-100"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -147,12 +147,12 @@ export default function Services() {
               <p className="text-gray-500 text-sm mt-1">Comparativa de empresas con y sin sistemas personalizados</p>
             </div>
             <div className="mt-3 md:mt-0 flex items-center">
-              <div className="bg-green-100 text-green-800 text-xs px-3 py-1.5 rounded-full flex items-center mr-3">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-1.5"></span>
+              <div className="bg-green-100 text-green-800 text-xs px-3 py-1.5 borderRadius flex items-center mr-3">
+                <span className="w-2 h-2 bg-green-500 borderRadius mr-1.5"></span>
                 <span>Con sistema personalizado</span>
               </div>
-              <div className="bg-gray-100 text-gray-600 text-xs px-3 py-1.5 rounded-full flex items-center">
-                <span className="w-2 h-2 bg-gray-400 rounded-full mr-1.5"></span>
+              <div className="bg-gray-100 text-gray-600 text-xs px-3 py-1.5 borderRadius flex items-center">
+                <span className="w-2 h-2 bg-gray-400 borderRadius mr-1.5"></span>
                 <span>Sin sistema</span>
               </div>
             </div>
@@ -359,7 +359,7 @@ export default function Services() {
 
         {/* Sección de ROI */}
         <motion.div
-          className="bg-white rounded-xl shadow-md p-8 mb-10 border border-gray-100"
+          className="bg-white borderRadius shadow-md p-8 mb-10 border border-gray-100"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -392,7 +392,7 @@ export default function Services() {
               <h4 className="text-lg font-semibold text-gray-800 mb-4">¿Por qué nuestros sistemas generan tanto valor?</h4>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <div className="bg-green-100 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-green-100 p-1 borderRadius mr-3 mt-1">
                     <TrendingUp size={16} className="text-green-600" />
                   </div>
                   <p className="text-gray-600 text-sm">
@@ -400,7 +400,7 @@ export default function Services() {
                   </p>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-blue-100 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-blue-100 p-1 borderRadius mr-3 mt-1">
                     <Users size={16} className="text-blue-600" />
                   </div>
                   <p className="text-gray-600 text-sm">
@@ -408,7 +408,7 @@ export default function Services() {
                   </p>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-amber-100 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-amber-100 p-1 borderRadius mr-3 mt-1">
                     <Shield size={16} className="text-amber-600" />
                   </div>
                   <p className="text-gray-600 text-sm">
@@ -416,7 +416,7 @@ export default function Services() {
                   </p>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-rose-100 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-rose-100 p-1 borderRadius mr-3 mt-1">
                     <DollarSign size={16} className="text-rose-600" />
                   </div>
                   <p className="text-gray-600 text-sm">
@@ -430,7 +430,7 @@ export default function Services() {
 
         {/* CTA mejorado */}
         <motion.div
-          className="text-center bg-gradient-to-r from-red-50 to-purple-50 p-10 rounded-xl border border-gray-100 shadow-sm"
+          className="text-center bg-gradient-to-r from-red-50 to-purple-50 p-10 borderRadius border border-gray-100 shadow-sm"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
