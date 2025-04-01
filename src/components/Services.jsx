@@ -23,31 +23,52 @@ const roiData = [
 ];
 
 // Componente de tarjeta mejorado
-const ServiceCard = ({ title, description, icon, metrics, color, hoverColor }) => (
+const ServiceCard = ({ title, description, icon, metrics, color }) => (
   <motion.article
-    className="relative bg-white borderRadius p-6 shadow-md border hover:border-gray-200 transition-all"
-    initial={{ opacity: 0, y: 50 }}
+    className="relative bg-white borderRadius p-6 shadow-lg hover:shadow-xl transition-all"
+    initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
+    transition={{ 
+      duration: 0.5,
+      ease: "easeOut"
+    }}
     viewport={{ once: true, amount: 0.3 }}
-    whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
+    whileHover={{ 
+      scale: 1.01,
+      transition: {
+        duration: 0.15,
+        ease: "easeOut"
+      }
+    }}
     aria-labelledby={`service-${title}`}
     role="article"
   >
     <div className="flex items-start mb-4">
-      <div className={`p-3 rounded-lg ${color} text-white mr-4 shadow-md`}>
+      <motion.div 
+        className={`p-3 rounded-lg ${color} text-white mr-4`}
+        whileHover={{ 
+          scale: 1.05,
+          transition: {
+            duration: 0.15,
+            ease: "easeOut"
+          }
+        }}
+      >
         {icon}
-      </div>
+      </motion.div>
       <div>
-        <h3 id={`service-${title}`} className="font-semibold text-lg text-gray-800">{title}</h3>
-        <p className="text-gray-600 text-sm mt-1">{description}</p>
+        <h3 id={`service-${title}`} className="font-semibold text-xl text-gray-800 mb-2">{title}</h3>
+        <p className="text-gray-600">{description}</p>
       </div>
     </div>
     {metrics && (
       <div className="mt-5 pt-5 border-t border-gray-100">
         <div className="grid grid-cols-2 gap-4">
           {metrics.map((metric, index) => (
-            <div key={index} className="flex flex-col">
+            <div 
+              key={index} 
+              className="flex flex-col"
+            >
               <span className="text-xs font-medium text-gray-500">{metric.label}</span>
               <div className="flex items-baseline">
                 <span className={`text-xl font-bold ${metric.color || "text-gray-800"}`}>{metric.value}</span>
@@ -365,66 +386,42 @@ export default function Services() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-            <div>
-              <h3 className="font-bold text-xl text-gray-800">Retorno de inversión proyectado</h3>
-              <p className="text-gray-500 text-sm mt-1">Basado en datos reales de clientes</p>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <ResponsiveContainer width="100%" height={250}>
-                <BarChart data={roiData} margin={{ top: 10, right: 10, left: 10, bottom: 20 }}>
-                  <CartesianGrid vertical={false} stroke="#f5f5f5" />
-                  <XAxis dataKey="name" axisLine={false} tickLine={false} />
-                  <YAxis axisLine={false} tickLine={false} />
-                  <Tooltip 
-                    contentStyle={{ borderRadius: '8px', border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
-                    formatter={(value) => [`${value}%`, 'ROI']}
-                    labelFormatter={(label) => `Período: ${label}`}
-                  />
-                  <Bar dataKey="value" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-            <div className="flex flex-col justify-center">
-              <h4 className="text-lg font-semibold text-gray-800 mb-4">¿Por qué nuestros sistemas generan tanto valor?</h4>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <div className="bg-green-100 p-1 borderRadius mr-3 mt-1">
-                    <TrendingUp size={16} className="text-green-600" />
-                  </div>
-                  <p className="text-gray-600 text-sm">
-                    <span className="font-medium">Adaptación perfecta:</span> Diseñados específicamente para tus procesos, eliminando funcionalidades innecesarias y potenciando las críticas.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-blue-100 p-1 borderRadius mr-3 mt-1">
-                    <Users size={16} className="text-blue-600" />
-                  </div>
-                  <p className="text-gray-600 text-sm">
-                    <span className="font-medium">Adopción superior:</span> Interfaces intuitivas diseñadas para tus usuarios específicos, reduciendo la curva de aprendizaje.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-amber-100 p-1 borderRadius mr-3 mt-1">
-                    <Shield size={16} className="text-amber-600" />
-                  </div>
-                  <p className="text-gray-600 text-sm">
-                    <span className="font-medium">Seguridad reforzada:</span> Protocolos de seguridad adaptados a tus necesidades específicas y cumplimiento normativo.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-rose-100 p-1 borderRadius mr-3 mt-1">
-                    <DollarSign size={16} className="text-rose-600" />
-                  </div>
-                  <p className="text-gray-600 text-sm">
-                    <span className="font-medium">Escalabilidad rentable:</span> Crecimiento modular que te permite invertir solo en lo que necesitas, cuando lo necesitas.
-                  </p>
-                </li>
-              </ul>
-            </div>
+          <div className="flex flex-col justify-center">
+            <h4 className="text-lg font-semibold text-gray-800 mb-4">¿Por qué nuestros sistemas generan tanto valor?</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <div className="bg-green-100 p-1 borderRadius mr-3 mt-1">
+                  <TrendingUp size={16} className="text-green-600" />
+                </div>
+                <p className="text-gray-600 text-sm">
+                  <span className="font-medium">Adaptación perfecta:</span> Diseñados específicamente para tus procesos, eliminando funcionalidades innecesarias y potenciando las críticas.
+                </p>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-blue-100 p-1 borderRadius mr-3 mt-1">
+                  <Users size={16} className="text-blue-600" />
+                </div>
+                <p className="text-gray-600 text-sm">
+                  <span className="font-medium">Adopción superior:</span> Interfaces intuitivas diseñadas para tus usuarios específicos, reduciendo la curva de aprendizaje.
+                </p>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-amber-100 p-1 borderRadius mr-3 mt-1">
+                  <Shield size={16} className="text-amber-600" />
+                </div>
+                <p className="text-gray-600 text-sm">
+                  <span className="font-medium">Seguridad reforzada:</span> Protocolos de seguridad adaptados a tus necesidades específicas y cumplimiento normativo.
+                </p>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-rose-100 p-1 borderRadius mr-3 mt-1">
+                  <DollarSign size={16} className="text-rose-600" />
+                </div>
+                <p className="text-gray-600 text-sm">
+                  <span className="font-medium">Escalabilidad rentable:</span> Crecimiento modular que te permite invertir solo en lo que necesitas, cuando lo necesitas.
+                </p>
+              </li>
+            </ul>
           </div>
         </motion.div>
 

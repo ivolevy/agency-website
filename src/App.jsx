@@ -22,13 +22,27 @@ import { Cookies } from './assets/comps/legal/Cookies.jsx';
 /* 404 */
 import { NotFound } from './assets/comps/Notfound.jsx';
 
+const LEGAL_ROUTES = [
+  '/404',
+  '/politica-de-privacidad',
+  '/aviso-legal',
+  '/cookies'
+];
+
+const LEGAL_ROUTES_CONFIG = [
+  { path: '/politica-de-privacidad', element: <Privacy /> },
+  { path: '/aviso-legal', element: <Legal /> },
+  { path: '/cookies', element: <Cookies /> },
+  { path: '/404', element: <NotFound /> }
+];
+
 function Layout() {
   const location = useLocation();
+  const isLegalRoute = LEGAL_ROUTES.includes(location.pathname);
 
   return (
     <>
-      {/* Renderizamos el header solo si no estamos en la página 404 */}
-      {location.pathname !== '/404' && location.pathname !== '/politica-de-privacidad' && location.pathname !== '/aviso-legal' && location.pathname !== '/cookies' && <Header />}
+      {!isLegalRoute && <Header />}
       
       <Routes>
         <Route path="/" element={<>
@@ -38,17 +52,13 @@ function Layout() {
           <Faq />
           <Contact />
         </>} />
-        <Route path="/politica-de-privacidad" element={<Privacy />} />
-        <Route path="/aviso-legal" element={<Legal />} />
-        <Route path="/cookies" element={<Cookies />} />
-        {/* Ruta 404 */}
-        <Route path="/404" element={<NotFound />} />
-        {/* Redirigir cualquier ruta no definida a /404 */}
+        {LEGAL_ROUTES_CONFIG.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
         <Route path="*" element={<Navigate to="/404" />} />
       </Routes>
 
-      {/* Renderizamos el footer solo si no estamos en la página 404 */}
-      {location.pathname !== '/404' && location.pathname !== '/politica-de-privacidad' && location.pathname !== '/aviso-legal' && location.pathname !== '/cookies' && <Footer />}
+      {!isLegalRoute && <Footer />}
     </>
   );
 }
@@ -59,8 +69,8 @@ function App() {
       <Routes>
         <Route path="/*" element={<Layout />} />
       </Routes>
-      <Analytics /> {/* Vercel Analytics */}
-      <SpeedInsights /> {/* Vercel Speed Insights */}
+      <Analytics />
+      <SpeedInsights />
     </Router>
   );
 }
