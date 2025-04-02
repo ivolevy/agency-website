@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, AreaChart, Area, Tooltip } from 'recharts';
-import { Clock, Database, BarChart2, Zap, Users, Shield, TrendingUp, DollarSign } from 'lucide-react';
+import { Clock, Database, BarChart2, Zap, Users, Shield, TrendingUp, DollarSign, Timer, Cpu } from 'lucide-react';
 import "../assets/styles/services.css";
 
 // Datos mejorados para los gráficos
@@ -25,7 +25,7 @@ const roiData = [
 // Componente de tarjeta mejorado
 const ServiceCard = ({ title, description, icon, metrics, color }) => (
   <motion.article
-    className="relative bg-white borderRadius p-6 shadow-lg hover:shadow-xl transition-all"
+    className="relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ 
@@ -43,7 +43,7 @@ const ServiceCard = ({ title, description, icon, metrics, color }) => (
     aria-labelledby={`service-${title}`}
     role="article"
   >
-    <div className="flex items-start mb-4">
+    <div className="flex items-start mb-3">
       <motion.div 
         className={`p-3 rounded-lg ${color} text-white mr-4`}
         whileHover={{ 
@@ -57,12 +57,12 @@ const ServiceCard = ({ title, description, icon, metrics, color }) => (
         {icon}
       </motion.div>
       <div>
-        <h3 id={`service-${title}`} className="font-semibold text-xl text-gray-800 mb-2">{title}</h3>
+        <h3 id={`service-${title}`} className="font-semibold text-xl text-gray-800 mb-1">{title}</h3>
         <p className="text-gray-600">{description}</p>
       </div>
     </div>
     {metrics && (
-      <div className="mt-5 pt-5 border-t border-gray-100">
+      <div className="mt-3 pt-3 border-t border-gray-100">
         <div className="grid grid-cols-2 gap-4">
           {metrics.map((metric, index) => (
             <div 
@@ -125,13 +125,13 @@ export default function Services() {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <motion.span 
-            className="inline-block px-3 py-1 bg-blue-100 text-blue-800 borderRadius text-xs font-medium mb-3"
+            className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-lg text-xs font-medium mb-3"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
             viewport={{ once: true }}
           >
-            SOLUCIONES EMPRESARIALES
+            SOLUCIONES DIGITALES 100% PERSONALIZADAS
           </motion.span>
           <motion.h2 
             className="text-3xl md:text-4xl font-bold mb-3 text-gray-800"
@@ -140,7 +140,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Sistemas hechos a medida para vos
+            Centraliza tu negocio con sistemas de gestión personalizados
           </motion.h2>
           <motion.p 
             className="text-gray-600 max-w-3xl mx-auto"
@@ -149,14 +149,13 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Centralizá cada actividad de tu negocio en un solo lugar y optimizá tus procesos con soluciones 
-            personalizadas que se adaptan perfectamente a tus necesidades específicas.
+            Optimiza y automatiza tus procesos clave con soluciones digitales integrales que mejoran la productividad y reducen costos.
           </motion.p>
         </div>
 
         {/* Gráfico principal mejorado */}
         <motion.div
-          className="bg-white borderRadius shadow-md p-8 mb-10 border border-gray-100"
+          className="bg-white rounded-xl shadow-md p-8 mb-10 border border-gray-100"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -168,12 +167,12 @@ export default function Services() {
               <p className="text-gray-500 text-sm mt-1">Comparativa de empresas con y sin sistemas personalizados</p>
             </div>
             <div className="mt-3 md:mt-0 flex items-center">
-              <div className="bg-green-100 text-green-800 text-xs px-3 py-1.5 borderRadius flex items-center mr-3">
-                <span className="w-2 h-2 bg-green-500 borderRadius mr-1.5"></span>
+              <div className="bg-green-100 text-green-800 text-xs px-3 py-1.5 rounded-lg flex items-center mr-3">
+                <span className="w-2 h-2 bg-green-500 rounded-lg mr-1.5"></span>
                 <span>Con sistema personalizado</span>
               </div>
-              <div className="bg-gray-100 text-gray-600 text-xs px-3 py-1.5 borderRadius flex items-center">
-                <span className="w-2 h-2 bg-gray-400 borderRadius mr-1.5"></span>
+              <div className="bg-gray-100 text-gray-600 text-xs px-3 py-1.5 rounded-lg flex items-center">
+                <span className="w-2 h-2 bg-gray-400 rounded-lg mr-1.5"></span>
                 <span>Sin sistema</span>
               </div>
             </div>
@@ -273,9 +272,9 @@ export default function Services() {
           />
           
           <ServiceCard
-            title="Automatización de procesos"
-            description="Elimina tareas repetitivas y reduce el tiempo dedicado a operaciones manuales con flujos de trabajo inteligentes."
-            icon={<Zap size={24} />}
+            title="Automatización inteligente"
+            description="Reducimos costos operativos al evitar el uso de herramientas dispersas, optimizando tareas repetitivas con soluciones personalizadas."
+            icon={<Zap className="w-6 h-6" />}
             color="bg-amber-500"
             metrics={[
               { 
@@ -309,7 +308,7 @@ export default function Services() {
           
           <ServiceCard
             title="Métricas en tiempo real"
-            description="Dashboards personalizados con visualización instantánea de los KPIs que realmente importan para tu negocio."
+            description="Dashboards personalizables con KPIs clave visibles en tiempo real, mejorando la precisión en proyecciones financieras y planificación."
             icon={<BarChart2 size={24} />}
             color="bg-purple-500"
             metrics={[
@@ -344,8 +343,8 @@ export default function Services() {
           
           <ServiceCard
             title="Optimización de tiempos"
-            description="Reduce los tiempos de espera y mejora la experiencia de tus clientes y empleados con procesos optimizados."
-            icon={<Clock size={24} />}
+            description="Reduce tiempos de respuesta y mejora la experiencia del cliente, aumentando la retención y satisfacción."
+            icon={<Clock className="w-6 h-6" />}
             color="bg-rose-500"
             metrics={[
               { 
@@ -380,48 +379,62 @@ export default function Services() {
 
         {/* Sección de ROI */}
         <motion.div
-          className="bg-white borderRadius shadow-md p-8 mb-10 border border-gray-100"
+          className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-col justify-center">
-            <h4 className="text-lg font-semibold text-gray-800 mb-4">¿Por qué nuestros sistemas generan tanto valor?</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <div className="bg-green-100 p-1 borderRadius mr-3 mt-1">
-                  <TrendingUp size={16} className="text-green-600" />
-                </div>
-                <p className="text-gray-600 text-sm">
-                  <span className="font-medium">Adaptación perfecta:</span> Diseñados específicamente para tus procesos, eliminando funcionalidades innecesarias y potenciando las críticas.
-                </p>
-              </li>
-              <li className="flex items-start">
-                <div className="bg-blue-100 p-1 borderRadius mr-3 mt-1">
-                  <Users size={16} className="text-blue-600" />
-                </div>
-                <p className="text-gray-600 text-sm">
-                  <span className="font-medium">Adopción superior:</span> Interfaces intuitivas diseñadas para tus usuarios específicos, reduciendo la curva de aprendizaje.
-                </p>
-              </li>
-              <li className="flex items-start">
-                <div className="bg-amber-100 p-1 borderRadius mr-3 mt-1">
-                  <Shield size={16} className="text-amber-600" />
-                </div>
-                <p className="text-gray-600 text-sm">
-                  <span className="font-medium">Seguridad reforzada:</span> Protocolos de seguridad adaptados a tus necesidades específicas y cumplimiento normativo.
-                </p>
-              </li>
-              <li className="flex items-start">
-                <div className="bg-rose-100 p-1 borderRadius mr-3 mt-1">
-                  <DollarSign size={16} className="text-rose-600" />
-                </div>
-                <p className="text-gray-600 text-sm">
-                  <span className="font-medium">Escalabilidad rentable:</span> Crecimiento modular que te permite invertir solo en lo que necesitas, cuando lo necesitas.
-                </p>
-              </li>
-            </ul>
+          <div className="flex items-start mb-6">
+            <div className="p-3 rounded-lg bg-blue-500 text-white mr-4">
+              <TrendingUp size={24} />
+            </div>
+            <div>
+              <h4 className="font-semibold text-xl text-gray-800 mb-2">¿Por qué elegir una aplicación web?</h4>
+              <p className="text-gray-600">Descubre las ventajas de nuestras soluciones web sobre las aplicaciones de escritorio tradicionales.</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex items-start">
+              <div className="p-3 rounded-lg bg-blue-100 text-blue-600 mr-4">
+                <TrendingUp size={20} />
+              </div>
+              <div>
+                <h5 className="font-medium text-gray-800 mb-1">Más económico</h5>
+                <p className="text-gray-600 text-sm">Sin instalación ni configuración en cada dispositivo. Reduce costos de implementación y mantenimiento.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="p-3 rounded-lg bg-blue-100 text-blue-600 mr-4">
+                <Users size={20} />
+              </div>
+              <div>
+                <h5 className="font-medium text-gray-800 mb-1">Acceso universal</h5>
+                <p className="text-gray-600 text-sm">Disponible desde cualquier dispositivo con internet: PC, notebook, tablet o celular.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="p-3 rounded-lg bg-blue-100 text-blue-600 mr-4">
+                <Shield size={20} />
+              </div>
+              <div>
+                <h5 className="font-medium text-gray-800 mb-1">Mantenimiento sencillo</h5>
+                <p className="text-gray-600 text-sm">Actualizaciones centralizadas y remotas. Sin necesidad de configurar cada dispositivo.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="p-3 rounded-lg bg-blue-100 text-blue-600 mr-4">
+                <DollarSign size={20} />
+              </div>
+              <div>
+                <h5 className="font-medium text-gray-800 mb-1">Escalabilidad flexible</h5>
+                <p className="text-gray-600 text-sm">Adapta el sistema a tus necesidades cambiantes sin reinstalaciones ni licencias adicionales.</p>
+              </div>
+            </div>
           </div>
         </motion.div>
 
