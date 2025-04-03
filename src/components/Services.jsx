@@ -25,7 +25,7 @@ const roiData = [
 // Componente de tarjeta mejorado
 const ServiceCard = ({ title, description, icon, metrics, color }) => (
   <motion.article
-    className="relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all"
+    className="relative bg-white borderRadius p-6 shadow-lg hover:shadow-xl transition-all"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ 
@@ -125,7 +125,7 @@ export default function Services() {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <motion.span 
-            className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-lg text-xs font-medium mb-3"
+            className="inline-block px-3 py-1 bg-pink-50 text-pink-400 rounded-lg text-xs font-medium mb-3"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -155,7 +155,7 @@ export default function Services() {
 
         {/* Gráfico principal mejorado */}
         <motion.div
-          className="bg-white rounded-xl shadow-md p-8 mb-10 border border-gray-100"
+          className="bg-white borderRadius shadow-md p-8 mb-10 border border-gray-100"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -379,7 +379,7 @@ export default function Services() {
 
         {/* Sección de ROI */}
         <motion.div
-          className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100"
+          className="bg-white borderRadius p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
