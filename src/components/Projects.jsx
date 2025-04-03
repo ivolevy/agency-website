@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink, Github } from 'lucide-react';
 import "../assets/styles/projects.css";
+import construction from "../assets/images/projects/constructionSystem.webp";
 
 export const Projects = () => {
   const projects = [
@@ -34,7 +35,7 @@ export const Projects = () => {
       id: 3,
       title: "Construction Management",
       description: "Sistema de gestión integral para empresas constructoras con control de stock, proveedores, proyectos y facturación",
-      img: "/src/assets/images/projects/constructionSystem.webp",
+      img: {construction},
       textColor: "text-white",
       bgColor: "bg-gray-900",
       altText: "Dashboard del sistema de gestión de construcción",
