@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, AreaChart, Area, Tooltip } from 'recharts';
-import { Clock, Database, BarChart2, Zap, Users, Shield, TrendingUp, DollarSign, Timer, Cpu } from 'lucide-react';
+import { XAxis, YAxis, CartesianGrid, ResponsiveContainer, AreaChart, Area, Tooltip } from 'recharts';
+import { Clock, Database, BarChart2, Zap, Users, Shield, TrendingUp, DollarSign } from 'lucide-react';
 import "../assets/styles/services.css";
 
 // Datos mejorados para los gráficos
@@ -140,7 +140,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Centraliza tu negocio con sistemas de gestión personalizados
+            <u>Centraliza</u> tu negocio con sistemas de gestión personalizados
           </motion.h2>
           <motion.p 
             className="text-gray-600 max-w-3xl mx-auto"
@@ -238,7 +238,7 @@ export default function Services() {
           <ServiceCard
             title="Centralización de datos"
             description="Unifica toda la información crítica de tu empresa en un solo sistema integrado, eliminando silos de información y duplicidades."
-            icon={<Database size={24} />}
+            icon={<Database className="w-6 h-6" />}
             color="bg-blue-500"
             metrics={[
               { 
@@ -309,7 +309,7 @@ export default function Services() {
           <ServiceCard
             title="Métricas en tiempo real"
             description="Dashboards personalizables con KPIs clave visibles en tiempo real, mejorando la precisión en proyecciones financieras y planificación."
-            icon={<BarChart2 size={24} />}
+            icon={<BarChart2 className="w-6 h-6" />}
             color="bg-purple-500"
             metrics={[
               { 

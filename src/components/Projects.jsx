@@ -32,15 +32,15 @@ export const Projects = () => {
     },
     {
       id: 3,
-      title: "Carlos Galán",
-      description: "Plataforma e-learning para cursos de desarrollo profesional",
-      img: "/images/proyecto3.jpg",
+      title: "Construction Management",
+      description: "Sistema de gestión integral para empresas constructoras con control de stock, proveedores, proyectos y facturación",
+      img: "/src/assets/images/projects/constructionSystem.webp",
       textColor: "text-white",
       bgColor: "bg-gray-900",
-      altText: "Imagen del proyecto Carlos Galán",
-      tags: ["E-learning", "Next.js", "MongoDB", "AWS"],
-      achievements: ["+ 3,000 estudiantes", "95% completitud", "4.8/5 valoración"],
-      link: "#",
+      altText: "Dashboard del sistema de gestión de construcción",
+      tags: ["Dashboard", "Next.js", "React", "Gestión", "Demo"],
+      achievements: ["Control de inventario", "Gestión de proveedores", "Balance financiero", "Facturación"],
+      link: "https://v0-construction-management-site.vercel.app",
       github: "#"
     },
   ];
@@ -105,11 +105,9 @@ export const Projects = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                  <p className="text-white/90 text-sm">{project.description}</p>
-                </div>
               </div>
+
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">{project.title}</h3>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map(tag => (
@@ -134,9 +132,9 @@ export const Projects = () => {
               <div className="flex justify-between items-center pt-4 border-t border-gray-100">
                 <motion.a
                   href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.15 }}
                 >
                   Ver proyecto
                   <ExternalLink size={16} className="ml-2" />
@@ -144,6 +142,8 @@ export const Projects = () => {
                 
                 <motion.a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-800"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.15 }}
