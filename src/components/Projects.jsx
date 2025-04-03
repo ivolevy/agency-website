@@ -35,7 +35,7 @@ export const Projects = () => {
       id: 3,
       title: "Construction Management",
       description: "Sistema de gestión integral para empresas constructoras con control de stock, proveedores, proyectos y facturación",
-      img: {construction},
+      img: construction,
       textColor: "text-white",
       bgColor: "bg-gray-900",
       altText: "Dashboard del sistema de gestión de construcción",
