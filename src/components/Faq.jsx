@@ -4,25 +4,33 @@ import "../assets/styles/faq.css";
 
 const faqs = [
   {
-    question: "¿Qué es el Kit Digital Web?",
-    answer: "El Kit Digital Web es un sitio web que parte desde un template a elección y está hecho en WordPress. Es de entrega casi inmediata, ideal para una presencia digital básica e inicial, con un precio accesible y todas las funcionalidades esenciales para comenzar en el mundo digital."
+    question: "¿Cuánto tiempo toma desarrollar sistemas y sitios personalizados?",
+    answer: "Desarrollamos sitios web completos en menos de dos semanas, gracias a nuestra metodología ágil y equipo altamente capacitado. Para sistemas más complejos, el tiempo puede variar según la funcionalidad requerida, pero siempre trabajamos con entregas incrementales para que puedas comenzar a usar las funcionalidades principales rápidamente mientras se desarrollan las demás."
   },
   {
-    question: "¿Me conviene el Kit Digital o un sitio custom?",
-    answer: "La mejor opción depende de tus necesidades y objetivos. Si buscás una solución rápida y accesible, el Kit Digital es ideal. Si necesitás un diseño a medida con funcionalidades específicas, un sitio custom puede ser la mejor alternativa. Hablemos y te ayudaremos a elegir la opción que mejor se adapte a tu negocio."
+    question: "¿Por qué es mejor una aplicación web que una de escritorio?",
+    answer: "Las aplicaciones web ofrecen múltiples ventajas: acceso desde cualquier dispositivo con internet, actualizaciones automáticas sin necesidad de instalación, menor costo de mantenimiento, mejor seguridad y escalabilidad. Además, permiten trabajo remoto y colaboración en tiempo real entre equipos."
   },
   {
-    question: "¿Con qué frecuencia se actualizan los datos?",
-    answer: "Los datos se actualizan en tiempo real o cada 24 horas, dependiendo del servicio contratado.",
+    question: "¿Qué ventajas tiene un sistema personalizado sobre uno genérico?",
+    answer: "Un sistema personalizado se adapta exactamente a tus procesos y necesidades específicas. Esto significa mayor eficiencia, menos tiempo perdido en tareas manuales, mejor integración con tus sistemas existentes y una experiencia de usuario optimizada para tu equipo. Además, puedes agregar funcionalidades únicas que te den ventaja competitiva."
   },
   {
-    question: "¿Cómo comienzo a usar TURBODATO?",
-    answer: "Para comenzar, registrate en nuestra plataforma, configurá tu cuenta y empezá a analizar tus datos de inmediato.",
+    question: "¿Cómo garantizan la seguridad de los datos en los sistemas?",
+    answer: "Implementamos múltiples capas de seguridad: encriptación de datos, autenticación de dos factores, backups automáticos, y cumplimiento con estándares de seguridad internacionales. Además, realizamos auditorías regulares y actualizaciones de seguridad para mantener tu sistema protegido."
   },
   {
-    question: "¿Ofrecen soporte técnico?",
-    answer: "Sí, ofrecemos soporte técnico 24/7 a través de chat en vivo, correo electrónico y teléfono.",
+    question: "¿Qué beneficios obtengo al automatizar mis procesos?",
+    answer: "La automatización reduce errores humanos, ahorra tiempo en tareas repetitivas, mejora la precisión en los datos, permite tomar decisiones basadas en información en tiempo real y aumenta la productividad general. Nuestros clientes reportan un aumento promedio del 40% en eficiencia operativa después de implementar nuestros sistemas."
   },
+  {
+    question: "¿Qué alcance tienen nuestros sistemas?",
+    answer: "Nuestros sistemas se adaptan a cualquier tipo de negocio, desde pequeños emprendimientos hasta grandes empresas. Ofrecemos desde funcionalidades básicas hasta las más avanzadas, incluyendo gestión completa de inventario, ventas, facturación, recursos humanos, y análisis detallado con gráficos y métricas de rendimiento en tiempo real. Además, integramos inteligencia artificial para predicciones y automatización avanzada, asegurando que tu sistema crezca junto con tu negocio."
+  },
+  {
+    question: "¿Cuánto tiempo toma desarrollar un sitio web?",
+    answer: "Desarrollamos sitios web completos en menos de dos semanas, gracias a nuestra metodología ágil y equipo altamente capacitado. Esto incluye diseño, desarrollo, optimización SEO y todas las funcionalidades necesarias para tu presencia online."
+  }
 ];
 
 export const Faq = () => {
