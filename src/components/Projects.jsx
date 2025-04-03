@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ExternalLink, Github } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import "../assets/styles/projects.css";
 import construction from "../assets/images/projects/constructionSystem.webp";
 
@@ -13,7 +13,7 @@ export const Projects = () => {
       textColor: "text-yellow-400",
       bgColor: "bg-black",
       altText: "Imagen del proyecto Tengo un Plan",
-      tags: ["Fintech", "Dashboard", "React", "Node.js"],
+      tags: ["Dashboard", "Finanzas", "Reportes", "Análisis"],
       achievements: ["+ 5,000 usuarios activos", "98% satisfacción", "ROI 250%"],
       link: "#",
       github: "#"
@@ -26,7 +26,7 @@ export const Projects = () => {
       textColor: "text-black",
       bgColor: "bg-[#F5F1E5]",
       altText: "Imagen del proyecto estudio versus.",
-      tags: ["SaaS", "Arquitectura", "Vue.js", "AWS"],
+      tags: ["Proyectos", "Clientes", "Recursos", "Facturación"],
       achievements: ["+ 200 estudios", "- 40% tiempo gestión", "+ 65% productividad"],
       link: "#",
       github: "#"
@@ -39,7 +39,7 @@ export const Projects = () => {
       textColor: "text-white",
       bgColor: "bg-gray-900",
       altText: "Dashboard del sistema de gestión de construcción",
-      tags: ["Dashboard", "Next.js", "React", "Gestión", "Demo"],
+      tags: ["Inventario", "Proveedores", "Facturación", "Proyectos"],
       achievements: ["Control de inventario", "Gestión de proveedores", "Balance financiero", "Facturación"],
       link: "https://v0-construction-management-site.vercel.app",
       github: "#"
@@ -139,17 +139,6 @@ export const Projects = () => {
                 >
                   Ver proyecto
                   <ExternalLink size={16} className="ml-2" />
-                </motion.a>
-                
-                <motion.a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-800"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.15 }}
-                >
-                  <Github size={20} />
                 </motion.a>
               </div>
             </motion.article>
