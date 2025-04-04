@@ -53,7 +53,7 @@ export const Hero = () => {
 
         {/* Botones */}
         <motion.div
-          className="mt-6 flex gap-4 justify-center"
+          className="mt-6 flex gap-2 justify-center"
           variants={itemVariants}
         >
           <a
