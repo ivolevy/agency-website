@@ -26,10 +26,6 @@ const faqs = [
   {
     question: "¿Qué alcance tienen nuestros sistemas?",
     answer: "Nuestros sistemas se adaptan a cualquier tipo de negocio, desde pequeños emprendimientos hasta grandes empresas. Ofrecemos desde funcionalidades básicas hasta las más avanzadas, incluyendo gestión completa de inventario, ventas, facturación, recursos humanos, y análisis detallado con gráficos y métricas de rendimiento en tiempo real. Además, integramos inteligencia artificial para predicciones y automatización avanzada, asegurando que tu sistema crezca junto con tu negocio."
-  },
-  {
-    question: "¿Cuánto tiempo toma desarrollar un sitio web?",
-    answer: "Desarrollamos sitios web completos en menos de dos semanas, gracias a nuestra metodología ágil y equipo altamente capacitado. Esto incluye diseño, desarrollo, optimización SEO y todas las funcionalidades necesarias para tu presencia online."
   }
 ];
 
@@ -49,8 +45,8 @@ export const Faq = () => {
             <button
               className="flex justify-between items-center w-full p-4 text-left text-gray-900 font-medium hover:bg-gray-100 transition-all faqCard"
               onClick={() => toggleFAQ(index)}
-              aria-expanded={openIndex === index} // Atributo accesible
-              aria-controls={`faq-answer-${index}`} // Relaciona el botón con el contenido de la respuesta
+              aria-expanded={openIndex === index}
+              aria-controls={`faq-answer-${index}`}
             >
               {faq.question}
               <span
@@ -66,7 +62,7 @@ export const Faq = () => {
               </span>
             </button>
             <div
-              id={`faq-answer-${index}`} // Identificador para el contenido
+              id={`faq-answer-${index}`}
               className={`overflow-hidden transition-all duration-700 ease-in-out ${
                 openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               }`}

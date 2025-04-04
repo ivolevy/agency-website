@@ -282,3 +282,30 @@ form button {
     width: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  .menubar {
+    width: 100%;
+    left: -100%;
+    padding: 15% 0;
+  }
+  .menubar.active {
+    left: 0;
+  }
+  .menubar ul li {
+    margin-bottom: 20px;
+  }
+  .menubar ul li a {
+    font-size: 1.1rem;
+  }
+  .navButton {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>dotasolutions.vercel.app/</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://dotasolutions.vercel.app/</loc>
+    <lastmod>2025-04-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>dotasolutions.vercel.app/aviso-legal</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>dotasolutions.vercel.app/politica-de-privacidad</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>dotasolutions.vercel.app/cookies</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>dotasolutions.vercel.app/404</loc>
-    <lastmod>2025-03-05</lastmod>
+    <loc>https://dotasolutions.vercel.app/aviso-legal</loc>
+    <lastmod>2025-04-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://dotasolutions.vercel.app/politica-de-privacidad</loc>
+    <lastmod>2025-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://dotasolutions.vercel.app/cookies</loc>
+    <lastmod>2025-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://dotasolutions.vercel.app/404</loc>
+    <lastmod>2025-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
   </url>
 </urlset>

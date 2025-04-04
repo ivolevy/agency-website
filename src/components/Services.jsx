@@ -133,7 +133,7 @@ export default function Services() {
           >
             SOLUCIONES DIGITALES 100% PERSONALIZADAS
           </motion.span>
-          <motion.h2 
+          <motion.h1 
             className="text-3xl md:text-4xl font-bold mb-3 text-gray-800"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -141,7 +141,7 @@ export default function Services() {
             viewport={{ once: true }}
           >
             <u>Centraliza</u> tu negocio con sistemas de gestión personalizados
-          </motion.h2>
+          </motion.h1>
           <motion.p 
             className="text-gray-600 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: -20 }}
@@ -161,6 +161,7 @@ export default function Services() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Nuestros Servicios</h2>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
             <div>
               <h3 className="font-bold text-xl text-gray-800">Incremento de productividad</h3>

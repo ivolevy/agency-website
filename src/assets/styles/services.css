@@ -22,10 +22,31 @@
     .servicesTitle{
         font-size: 2.5rem;
     }
+    .services {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 @media (max-width: 768px){
     .servicesTitle{
         font-size: 2rem !important;
+    }
+    .services {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .borderRadius {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .servicesTitle{
+        font-size: 1.8rem !important;
+    }
+    .services {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

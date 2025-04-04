@@ -44,19 +44,21 @@ function Layout() {
     <>
       {!isLegalRoute && <Header />}
       
-      <Routes>
-        <Route path="/" element={<>
-          <Services />
-          <Steps />
-          <Projects />
-          <Faq />
-          <Contact />
-        </>} />
-        {LEGAL_ROUTES_CONFIG.map(({ path, element }) => (
-          <Route key={path} path={path} element={element} />
-        ))}
-        <Route path="*" element={<Navigate to="/404" />} />
-      </Routes>
+      <main className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<>
+            <Services />
+            <Steps />
+            <Projects />
+            <Faq />
+            <Contact />
+          </>} />
+          {LEGAL_ROUTES_CONFIG.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
+          <Route path="*" element={<Navigate to="/404" />} />
+        </Routes>
+      </main>
 
       {!isLegalRoute && <Footer />}
     </>

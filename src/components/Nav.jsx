@@ -26,8 +26,14 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <a href="/" title="Dota Solutions - Agencia Digital">
-          <img src={dota} alt="Dota Solutions - Agencia Digital que ofrece desarrollo web, SEO y publicidad" />
+        <a href="/" title="Dota Solutions - Desarrollo de Sistemas ERP y CRM">
+          <img 
+            src={dota} 
+            alt="Dota Solutions - Logo de la empresa especializada en desarrollo de sistemas ERP, CRM y sitios web personalizados" 
+            width="120"
+            height="40"
+            loading="lazy"
+          />
         </a>
       </div>
 

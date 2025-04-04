@@ -51,15 +51,15 @@ export const Projects = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <motion.span 
-            className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-lg text-xs font-medium mb-3"
+            className="inline-block px-3 py-1 bg-pink-50 text-pink-400 rounded-lg text-xs font-medium mb-3"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
             viewport={{ once: true }}
           >
-            NUESTROS PROYECTOS
+            ÚLTIMOS PROYECTOS
           </motion.span>
-          <motion.h2 
+          <motion.h1 
             className="servicesTitle text-center mb-3"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export const Projects = () => {
             viewport={{ once: true }}
           >
             <span className="underline">Proyectos</span> que transforman
-          </motion.h2>
+          </motion.h1>
           <motion.p 
             className="text-gray-600 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: -20 }}
@@ -79,11 +79,11 @@ export const Projects = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <motion.article
               key={project.id}
-              className="relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all"
+              className="relative bg-white rounded-xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ 
@@ -99,22 +99,25 @@ export const Projects = () => {
                 }
               }}
             >
-              <div className="relative aspect-video rounded-lg overflow-hidden mb-6">
+              <div className="relative aspect-video rounded-lg overflow-hidden mb-4 md:mb-6">
                 <img
                   src={project.img}
-                  alt={project.altText}
+                  alt={`${project.title} - ${project.description}`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width="400"
+                  height="225"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">{project.title}</h3>
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4">{project.title}</h2>
 
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
                 {project.tags.map(tag => (
                   <span 
                     key={tag} 
-                    className="px-3 py-1 bg-blue-100 text-blue-800 rounded-lg text-xs font-medium"
+                    className="px-2 md:px-3 py-1 bg-blue-100 text-blue-800 rounded-lg text-xs font-medium"
                   >
                     {tag}
                   </span>
