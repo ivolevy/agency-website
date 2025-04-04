@@ -19,7 +19,7 @@ export const Privacy = () => {
             <li>Requisitos y especificaciones del proyecto</li>
             <li>Datos de acceso a los sistemas desarrollados</li>
             <li>Información de facturación y pagos</li>
-          </ul>
+        </ul>
 
           <h2 className="text-xl font-semibold">2. Uso de la Información</h2>
           <p className="text-sm">
@@ -31,8 +31,8 @@ export const Privacy = () => {
             <li>Proporcionar soporte técnico y mantenimiento</li>
             <li>Gestionar la relación comercial y facturación</li>
             <li>Enviar actualizaciones sobre nuestros servicios</li>
-          </ul>
-
+        </ul>
+  
           <h2 className="text-xl font-semibold">3. Base Legal para el Tratamiento</h2>
           <p className="text-sm">
             El tratamiento de tus datos personales se basa en:
@@ -97,7 +97,7 @@ export const Privacy = () => {
           <ul className="list-disc pl-6 text-sm space-y-2">
             <li>Correo electrónico: <a href="mailto:solutionsdota@gmail.com" className="text-blue-600 hover:underline">solutionsdota@gmail.com</a></li>
             <li>Redes sociales: @dotasolutions en Instagram, TikTok y LinkedIn</li>
-          </ul>
+        </ul>
         </div>
       </div>
     );

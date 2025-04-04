@@ -80,9 +80,9 @@ export const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          {projects.map((project, index) => (
-            <motion.article
-              key={project.id}
+        {projects.map((project, index) => (
+          <motion.article
+            key={project.id}
               className="relative bg-white rounded-xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -100,11 +100,11 @@ export const Projects = () => {
               }}
             >
               <div className="relative aspect-video rounded-lg overflow-hidden mb-4 md:mb-6">
-                <img
-                  src={project.img}
+            <img
+              src={project.img}
                   alt={`${project.title} - ${project.description}`}
                   className="w-full h-full object-cover"
-                  loading="lazy"
+              loading="lazy"
                   width="400"
                   height="225"
                 />
@@ -144,8 +144,8 @@ export const Projects = () => {
                   <ExternalLink size={16} className="ml-2" />
                 </motion.a>
               </div>
-            </motion.article>
-          ))}
+          </motion.article>
+        ))}
         </div>
 
         <motion.div

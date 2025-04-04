@@ -290,8 +290,8 @@ form button {
     padding-right: 2.5%;
   }
   .menubar {
-    width: 100%;
-    left: -100%;
+    width: 60%;
+    left: -60%;
     padding: 15% 0;
   }
   .menubar.active {

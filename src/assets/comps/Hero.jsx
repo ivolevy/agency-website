@@ -2,8 +2,26 @@ import { motion } from "framer-motion";
 import "../styles/header.css";
 
 const containerVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  hidden: { opacity: 0 },
+  visible: { 
+    opacity: 1,
+    transition: { 
+      duration: 0.8,
+      ease: "easeOut",
+      staggerChildren: 0.2
+    } 
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0 },
+  visible: { 
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut"
+    }
+  }
 };
 
 export const Hero = () => {
@@ -20,8 +38,7 @@ export const Hero = () => {
         <motion.h1
           id="hero-title"
           className="text-5xl md:text-6xl font-bold text-black leading-tight heroTitle"
-          variants={containerVariants}
-          transition={{ delay: 0.2 }}
+          variants={itemVariants}
         >
           Soluciones Digitales <br /> 100% Personalizadas
         </motion.h1>
@@ -29,8 +46,7 @@ export const Hero = () => {
         {/* Subtítulo */}
         <motion.p
           className="heroText text-lg text-gray-600 mt-4 max-w-2xl mx-auto"
-          variants={containerVariants}
-          transition={{ delay: 0.4 }}
+          variants={itemVariants}
         >
           Digitaliza y centralizá tu negocio con soluciones web y de gestión 100% personalizadas.
         </motion.p>
@@ -38,8 +54,7 @@ export const Hero = () => {
         {/* Botones */}
         <motion.div
           className="mt-6 flex gap-4 justify-center"
-          variants={containerVariants}
-          transition={{ delay: 0.6 }}
+          variants={itemVariants}
         >
           <a
             className="border border-transparent font-light transition-all headerButton"
@@ -65,8 +80,7 @@ export const Hero = () => {
       {/* Texto adicional */}
       <motion.p
         className="mt-12 text-gray-500 text-sm"
-        variants={containerVariants}
-        transition={{ delay: 0.8 }}
+        variants={itemVariants}
       >
         Algunos de los sitios que monitoreamos:
       </motion.p>
