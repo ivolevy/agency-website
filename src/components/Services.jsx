@@ -23,7 +23,7 @@ const roiData = [
 ];
 
 // Componente de tarjeta mejorado
-const ServiceCard = ({ title, description, icon, metrics, color }) => (
+const ServiceCard = ({ title, description, metrics }) => (
   <motion.article
     className="relative bg-white borderRadius p-6 shadow-lg hover:shadow-xl transition-all"
     initial={{ opacity: 0, y: 20 }}
@@ -43,23 +43,9 @@ const ServiceCard = ({ title, description, icon, metrics, color }) => (
     aria-labelledby={`service-${title}`}
     role="article"
   >
-    <div className="flex items-start mb-3">
-      <motion.div 
-        className={`p-3 rounded-lg ${color} text-white mr-4`}
-        whileHover={{ 
-          scale: 1.05,
-          transition: {
-            duration: 0.1,
-            ease: "easeOut"
-          }
-        }}
-      >
-        {icon}
-      </motion.div>
-      <div>
-        <h3 id={`service-${title}`} className="font-semibold text-xl text-gray-800 mb-1">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-      </div>
+    <div className="mb-3">
+      <h3 id={`service-${title}`} className="font-semibold text-xl text-gray-800 mb-1">{title}</h3>
+      <p className="text-gray-600">{description}</p>
     </div>
     {metrics && (
       <div className="mt-3 pt-3 border-t border-gray-100">
@@ -161,7 +147,6 @@ export default function Services() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">Nuestros Servicios</h2>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
             <div>
               <h3 className="font-bold text-xl text-gray-800">Incremento de productividad</h3>
@@ -239,8 +224,6 @@ export default function Services() {
           <ServiceCard
             title="Centralización de datos"
             description="Unifica toda la información crítica de tu empresa en un solo sistema integrado, eliminando silos de información y duplicidades."
-            icon={<Database className="w-6 h-6" />}
-            color="bg-blue-500"
             metrics={[
               { 
                 label: "Reducción de errores", 
@@ -275,8 +258,6 @@ export default function Services() {
           <ServiceCard
             title="Automatización inteligente"
             description="Reducimos costos operativos al evitar el uso de herramientas dispersas, optimizando tareas repetitivas con soluciones personalizadas."
-            icon={<Zap className="w-6 h-6" />}
-            color="bg-amber-500"
             metrics={[
               { 
                 label: "Tareas automatizadas", 
@@ -310,8 +291,6 @@ export default function Services() {
           <ServiceCard
             title="Métricas en tiempo real"
             description="Dashboards personalizables con KPIs clave visibles en tiempo real, mejorando la precisión en proyecciones financieras y planificación."
-            icon={<BarChart2 className="w-6 h-6" />}
-            color="bg-purple-500"
             metrics={[
               { 
                 label: "Decisiones basadas en datos", 
@@ -345,8 +324,6 @@ export default function Services() {
           <ServiceCard
             title="Optimización de tiempos"
             description="Reduce tiempos de respuesta y mejora la experiencia del cliente, aumentando la retención y satisfacción."
-            icon={<Clock className="w-6 h-6" />}
-            color="bg-rose-500"
             metrics={[
               { 
                 label: "Tiempo de respuesta", 
