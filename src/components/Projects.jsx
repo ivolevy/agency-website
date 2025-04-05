@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import "../assets/styles/projects.css";
+import photoEditor from "../assets/images/projects/photoEditor.webp";
+
 import construction from "../assets/images/projects/constructionSystem.webp";
 
 export const Projects = () => {
@@ -13,33 +15,30 @@ export const Projects = () => {
       textColor: "text-yellow-400",
       bgColor: "bg-black",
       altText: "Imagen del proyecto Tengo un Plan",
-      tags: ["Dashboard", "Finanzas", "Reportes", "Análisis"],
       achievements: ["+ 5,000 usuarios activos", "98% satisfacción", "ROI 250%"],
       link: "#",
       github: "#"
     },
     {
       id: 2,
-      title: "estudio versus.",
+      title: "editor de imágenes centralizado",
       description: "Sistema de gestión integral para estudios de arquitectura y diseño",
-      img: "/images/proyecto2.jpg",
+      img: photoEditor,
       textColor: "text-black",
       bgColor: "bg-[#F5F1E5]",
       altText: "Imagen del proyecto estudio versus.",
-      tags: ["Proyectos", "Clientes", "Recursos", "Facturación"],
-      achievements: ["+ 200 estudios", "- 40% tiempo gestión", "+ 65% productividad"],
+      achievements: ["Background remover con IA", "Cropping", "Resizing", "Extension change"],
       link: "#",
       github: "#"
     },
     {
       id: 3,
-      title: "Construction Management",
+      title: "Gestión de construcción",
       description: "Sistema de gestión integral para empresas constructoras con control de stock, proveedores, proyectos y facturación",
       img: construction,
       textColor: "text-white",
       bgColor: "bg-gray-900",
       altText: "Dashboard del sistema de gestión de construcción",
-      tags: ["Inventario", "Proveedores", "Facturación", "Proyectos"],
       achievements: ["Control de inventario", "Gestión de proveedores", "Balance financiero", "Facturación"],
       link: "https://v0-construction-management-site.vercel.app",
       github: "#"
@@ -112,17 +111,6 @@ export const Projects = () => {
               </div>
 
               <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4">{project.title}</h2>
-
-              <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
-                {project.tags.map(tag => (
-                  <span 
-                    key={tag} 
-                    className="px-2 md:px-3 py-1 bg-blue-100 text-blue-800 rounded-lg text-xs font-medium"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
 
               <div className="space-y-3 mb-6">
                 {project.achievements.map(achievement => (
