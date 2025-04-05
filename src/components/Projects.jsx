@@ -1,23 +1,22 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import "../assets/styles/projects.css";
 import photoEditor from "../assets/images/projects/photoEditor.webp";
-
+import travelAgency from "../assets/images/projects/travelAgency.webp";
 import construction from "../assets/images/projects/constructionSystem.webp";
 
 export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Tengo un Plan",
-      description: "Plataforma de gestión financiera para emprendedores y pequeñas empresas",
-      img: "/images/proyecto1.jpg",
+      title: "Luxvoyage Travel Agency",
+      description: "Sitio web para agencia de viajes",
+      img: travelAgency,
       textColor: "text-yellow-400",
       bgColor: "bg-black",
-      altText: "Imagen del proyecto Tengo un Plan",
-      achievements: ["+ 5,000 usuarios activos", "98% satisfacción", "ROI 250%"],
-      link: "#",
-      github: "#"
+      altText: "Imagen del proyecto Luxvoyage",
+      achievements: ["Hero", "Destinations", "Testimonials", "Contact form"],
+      link: "https://kzmgoqtm1oedtwx22hyn.lite.vusercontent.net",
     },
     {
       id: 2,
@@ -28,8 +27,7 @@ export const Projects = () => {
       bgColor: "bg-[#F5F1E5]",
       altText: "Imagen del proyecto estudio versus.",
       achievements: ["Background remover con IA", "Cropping", "Resizing", "Extension change"],
-      link: "#",
-      github: "#"
+      link: "https://kzmgoqtm1oedtwx22hyn.lite.vusercontent.net",
     },
     {
       id: 3,
@@ -41,7 +39,6 @@ export const Projects = () => {
       altText: "Dashboard del sistema de gestión de construcción",
       achievements: ["Control de inventario", "Gestión de proveedores", "Balance financiero", "Facturación"],
       link: "https://v0-construction-management-site.vercel.app",
-      github: "#"
     },
   ];
 
@@ -50,7 +47,7 @@ export const Projects = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <motion.span 
-            className="inline-block px-3 py-1 bg-pink-50 text-pink-400 rounded-lg text-xs font-medium mb-3"
+            className="inline-block px-3 py-1 bg-pink-50 text-pink-400 borderRadius text-xs font-medium mb-3"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -82,7 +79,7 @@ export const Projects = () => {
         {projects.map((project, index) => (
           <motion.article
             key={project.id}
-              className="relative bg-white rounded-xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all"
+              className="relative bg-white borderRadius p-4 md:p-6 shadow-lg hover:shadow-xl transition-all"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ 
@@ -98,7 +95,7 @@ export const Projects = () => {
                 }
               }}
             >
-              <div className="relative aspect-video rounded-lg overflow-hidden mb-4 md:mb-6">
+              <div className="relative aspect-video borderRadius overflow-hidden mb-4 md:mb-6">
             <img
               src={project.img}
                   alt={`${project.title} - ${project.description}`}
@@ -115,7 +112,7 @@ export const Projects = () => {
               <div className="space-y-3 mb-6">
                 {project.achievements.map(achievement => (
                   <div key={achievement} className="flex items-center text-gray-600">
-                    <ArrowRight size={16} className="text-blue-600 mr-2" />
+                    <ArrowRight size={16} className="text-pink-500 mr-2" />
                     <span className="text-sm">{achievement}</span>
                   </div>
                 ))}
@@ -126,10 +123,9 @@ export const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
+                  className="inline-flex items-center text-pink-400 hover:text-pink-500 font-medium"
                 >
                   Ver proyecto
-                  <ExternalLink size={16} className="ml-2" />
                 </motion.a>
               </div>
           </motion.article>
@@ -145,7 +141,7 @@ export const Projects = () => {
         >
           <a 
             href="#contact" 
-            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-black text-white borderRadius font-medium hover:bg-pink-600 transition-colors no-underline"
           >
             ¿Listo para tu proyecto?
             <ArrowRight size={16} className="ml-2" />
