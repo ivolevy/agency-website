@@ -62,7 +62,14 @@
         font-size: 1rem;
     }
     .headerButton, .navButton2 {
-        width: 100%;
+        width: 20%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 612px){
+    .headerButton, .navButton2 {
+        width: 30%;
         margin-bottom: 10px;
     }
 }
