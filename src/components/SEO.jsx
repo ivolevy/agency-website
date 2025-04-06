@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
-  title = "Dota Solutions - Desarrollo de Sistemas ERP-CRM & Sitios Web Personalizados",
-  description = "Agencia Experta en el Desarrollo de Sistemas ERP-CRM & Sitios Web Personalizados. Soluciones tecnológicas innovadoras para potenciar tu negocio.",
-  keywords = "desarrollo web, ERP, CRM, sistemas personalizados, software empresarial, sitios web, desarrollo de software, programación",
+  title = "Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados",
+  description = "Agencia Experta en el Desarrollo de Sistemas Gestión & Sitios Web 100% Personalizados. Soluciones tecnológicas innovadoras para potenciar tu negocio.",
+  keywords = "desarrollo web, ERP, CRM, sistemas de gestion, software empresarial, sitios web, desarrollo de software, soluciones digitales",
   image = "/logo.webp",
   url = "https://dotasolutions.vercel.app"
 }) => {
