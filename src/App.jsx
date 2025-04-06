@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fontsource/museomoderno';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { HelmetProvider } from 'react-helmet-async';
+import { SEO } from './components/SEO';
 
 import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 
@@ -42,6 +44,7 @@ function Layout() {
 
   return (
     <>
+      <SEO />
       {!isLegalRoute && <Header />}
       
       <main className="min-h-screen">
@@ -67,13 +70,15 @@ function Layout() {
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/*" element={<Layout />} />
-      </Routes>
-      <Analytics />
-      <SpeedInsights />
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Routes>
+          <Route path="/*" element={<Layout />} />
+        </Routes>
+        <Analytics />
+        <SpeedInsights />
+      </Router>
+    </HelmetProvider>
   );
 }
 
