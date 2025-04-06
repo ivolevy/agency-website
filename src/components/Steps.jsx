@@ -3,7 +3,7 @@ import "../assets/styles/steps.css";
 
 export const Steps = () => {
   const steps = [
-    { id: 1, title: "Auditoría Gratuita", description: "Revisamos tu situación sin costo.", link: "https://calendly.com/solutionsdota/30min" },
+    { id: 1, title: "Auditoría Gratuita", description: "Revisamos tu situación sin costo.", link: "#contact" },
     { id: 2, title: "Evaluación del Caso", description: "Identificamos problemas y proponemos soluciones adecuadas." },
     { id: 3, title: "Discusión del Trabajo", description: "Definimos los detalles y objetivos del proyecto." },
     { id: 4, title: "Trabajo y Feedback", description: "Ejecutamos el proyecto y refinamos el trabajo según tus comentarios." },
@@ -34,13 +34,12 @@ export const Steps = () => {
               {step.link && (
                 <a
                   href={step.link}
-                  target="_blank"
                   rel="noopener noreferrer"
                   className="link text-pink-400 hover:underline"
                   aria-label={`Agenda una auditoría gratuita para ${step.title}`}
                   title={`Agendar una llamada para la ${step.title}`}
                 >
-                  Agendá una llamada.
+                  Hablemos!
                 </a>
               )}
             </div>

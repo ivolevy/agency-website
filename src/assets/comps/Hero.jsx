@@ -53,7 +53,7 @@ export const Hero = () => {
 
         {/* Botones */}
         <motion.div
-          className="mt-6 flex gap-2 justify-center"
+          className="mt-6 flex gap-4 justify-center"
           variants={itemVariants}
         >
           <a
@@ -72,7 +72,7 @@ export const Hero = () => {
             aria-label="Agendar una llamada"
             title="Agendar una llamada de 30 minutos con nosotros"
           >
-            Agendá una llamada
+            Mirá más
           </a>
         </motion.div>
       </motion.div>

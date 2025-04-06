@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import "../assets/styles/projects.css";
 import photoEditor from "../assets/images/projects/photoEditor.webp";
 import travelAgency from "../assets/images/projects/travelAgency.webp";
@@ -79,55 +79,49 @@ export const Projects = () => {
         {projects.map((project, index) => (
           <motion.article
             key={project.id}
-              className="relative bg-white borderRadius p-4 md:p-6 shadow-lg hover:shadow-xl transition-all"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ 
-                duration: 0.5,
-                ease: "easeOut"
-              }}
-              viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ 
-                scale: 1.01,
-                transition: {
-                  duration: 0.15,
-                  ease: "easeOut"
-                }
-              }}
-            >
-              <div className="relative aspect-video borderRadius overflow-hidden mb-4 md:mb-6">
-            <img
-              src={project.img}
-                  alt={`${project.title} - ${project.description}`}
-                  className="w-full h-full object-cover"
-              loading="lazy"
-                  width="400"
-                  height="225"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
+            className="relative bg-white borderRadius p-4 md:p-6 shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ 
+              duration: 0.5,
+              ease: "easeOut"
+            }}
+            viewport={{ once: true, amount: 0.03 }}
+          >
+            <div className="relative aspect-video borderRadius overflow-hidden mb-4 md:mb-6">
+              <img
+                src={project.img}
+                alt={`${project.title} - ${project.description}`}
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width="400"
+                height="225"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            </div>
 
-              <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4">{project.title}</h2>
+            <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4">{project.title}</h2>
 
-              <div className="space-y-3 mb-6">
-                {project.achievements.map(achievement => (
-                  <div key={achievement} className="flex items-center text-gray-600">
-                    <ArrowRight size={16} className="text-pink-500 mr-2" />
-                    <span className="text-sm">{achievement}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="space-y-3 mb-6">
+              {project.achievements.map(achievement => (
+                <div key={achievement} className="flex items-center text-gray-600">
+                  <ArrowRight size={16} className="text-pink-500 mr-2" />
+                  <span className="text-sm">{achievement}</span>
+                </div>
+              ))}
+            </div>
 
-              <div className="flex justify-between items-center pt-4 border-t border-gray-100">
-                <motion.a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-pink-400 hover:text-pink-500 font-medium"
-                >
-                  Ver proyecto
-                </motion.a>
-              </div>
+            <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+              <motion.a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-pink-400 hover:text-pink-500 font-medium"
+              >
+                Ver proyecto
+                <ArrowUpRight size={16} className="ml-2" />
+              </motion.a>
+            </div>
           </motion.article>
         ))}
         </div>
