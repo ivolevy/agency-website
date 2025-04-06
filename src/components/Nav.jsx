@@ -4,9 +4,9 @@ import "../assets/styles/contact.css";
 import dota from "../assets/images/logo/dota.webp";
 
 const menuItems = [
-  { id: "services", label: "Servicios", title: "Descubre nuestros servicios digitales" },
-  { id: "projects", label: "Proyectos", title: "Ver nuestros proyectos anteriores" },
-  { id: "contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar a trabajar juntos", className: "navButton" },
+  { id: "services", label: "Servicios", title: "Descubre nuestros servicios de sistemas ERP y CRM & sitios web personalizados" },
+  { id: "projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y sitios personalizados" },
+  { id: "contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar tu proyecto", className: "navButton" },
 ];
 
 export const NavComponent = () => {
@@ -29,7 +29,7 @@ export const NavComponent = () => {
         <a href="/" title="Dota Solutions - Desarrollo de Sistemas ERP y CRM">
           <img 
             src={dota} 
-            alt="Dota Solutions - Logo de la empresa especializada en desarrollo de sistemas ERP, CRM y sitios web personalizados" 
+            alt="Dota Solutions - Desarrollo de sistemas ERP, CRM y soluciones digitales personalizadas" 
             width="120"
             height="40"
             loading="lazy"
