@@ -213,13 +213,13 @@ export default function Services() {
               <p className="text-sm text-gray-600">Reducción de errores operativos</p>
             </div>
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-purple-600">320%</h4>
+              <h4 className="text-2xl font-bold text-purple-600">83%</h4>
               <p className="text-sm text-gray-600">ROI promedio en 18 meses</p>
             </div>
           </div>
         </motion.div>
 
-        {/* Tarjetas de beneficios mejoradas */}
+        {/* Tarjetas de beneficios */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <ServiceCard
             title="Centralización de datos"
@@ -227,133 +227,134 @@ export default function Services() {
             metrics={[
               { 
                 label: "Reducción de errores", 
-                value: "87%", 
+                value: "57%", 
                 color: "text-blue-600",
-                change: "-87% vs. sistemas separados",
+                change: "-57% vs. sistemas separados",
                 subtext: "Basado en 50+ implementaciones"
               },
               { 
                 label: "Acceso a información", 
-                value: "5.2x", 
+                value: "3.2x", 
                 color: "text-blue-600",
-                change: "+520% más rápido",
+                change: "+220% más rápido",
                 subtext: "Tiempo promedio de búsqueda"
               },
               { 
                 label: "Ahorro de tiempo", 
-                value: "12h/sem", 
+                value: "7h/sem", 
                 color: "text-blue-600",
                 subtext: "Por empleado administrativo"
               },
               { 
                 label: "Integridad de datos", 
-                value: "99.8%", 
+                value: "91.5%", 
                 color: "text-blue-600",
-                change: "+42% vs. sistemas genéricos",
+                change: "+30% vs. sistemas genéricos",
                 subtext: "Precisión en registros críticos"
               }
             ]}
           />
-          
+
           <ServiceCard
             title="Automatización inteligente"
             description="Reducimos costos operativos al evitar el uso de herramientas dispersas, optimizando tareas repetitivas con soluciones personalizadas."
             metrics={[
               { 
                 label: "Tareas automatizadas", 
-                value: "65%", 
+                value: "48%", 
                 color: "text-amber-600",
                 subtext: "De procesos administrativos"
               },
               { 
                 label: "Reducción de costos", 
-                value: "42%", 
+                value: "29%", 
                 color: "text-amber-600",
-                change: "-$15,800/mes promedio",
+                change: "-$6,200/mes promedio",
                 subtext: "En operaciones manuales"
               },
               { 
                 label: "Tiempo liberado", 
-                value: "18h/sem", 
+                value: "11h/sem", 
                 color: "text-amber-600",
                 subtext: "Por departamento"
               },
               { 
                 label: "ROI promedio", 
-                value: "320%", 
+                value: "83%", 
                 color: "text-amber-600",
-                change: "+320% en 18 meses",
+                change: "+180% en 18 meses",
                 subtext: "Retorno sobre inversión"
               }
             ]}
           />
-          
+
           <ServiceCard
             title="Métricas en tiempo real"
             description="Dashboards personalizables con KPIs clave visibles en tiempo real, mejorando la precisión en proyecciones financieras y planificación."
             metrics={[
               { 
                 label: "Decisiones basadas en datos", 
-                value: "+75%", 
+                value: "+42%", 
                 color: "text-purple-600",
                 subtext: "Incremento en decisiones informadas"
               },
               { 
                 label: "Tiempo de reacción", 
-                value: "-68%", 
+                value: "-49%", 
                 color: "text-purple-600",
-                change: "De 3.2 días a 1 día",
+                change: "De 3.2 días a 1.6 días",
                 subtext: "Ante cambios en el mercado"
               },
               { 
                 label: "Precisión de pronósticos", 
-                value: "92%", 
+                value: "83%", 
                 color: "text-purple-600",
-                change: "+27% vs. métodos tradicionales",
+                change: "+20% vs. métodos tradicionales",
                 subtext: "En proyecciones financieras"
               },
               { 
                 label: "Incremento en ventas", 
-                value: "+23%", 
+                value: "+14%", 
                 color: "text-purple-600",
                 subtext: "Promedio tras implementación"
               }
             ]}
           />
-          
+
           <ServiceCard
             title="Optimización de tiempos"
             description="Reduce tiempos de respuesta y mejora la experiencia del cliente, aumentando la retención y satisfacción."
             metrics={[
               { 
                 label: "Tiempo de respuesta", 
-                value: "-72%", 
+                value: "-51%", 
                 color: "text-rose-600",
-                change: "De 48h a 13.4h promedio",
+                change: "De 48h a 23.5h promedio",
                 subtext: "En resolución de solicitudes"
               },
               { 
                 label: "Satisfacción del cliente", 
-                value: "+48%", 
+                value: "+35%", 
                 color: "text-rose-600",
                 subtext: "Medido en NPS"
               },
               { 
                 label: "Retención de clientes", 
-                value: "+35%", 
+                value: "+22%", 
                 color: "text-rose-600",
                 change: "Incremento anual",
                 subtext: "Tras implementación"
               },
               { 
                 label: "Eficiencia operativa", 
-                value: "+61%", 
+                value: "+42%", 
                 color: "text-rose-600",
                 subtext: "En procesos críticos"
               }
             ]}
           />
         </div>
+
 
         {/* Sección de ROI */}
         <motion.div
