@@ -65,14 +65,13 @@ export const Hero = () => {
             Contactános
           </a>
           <a
-            href="https://calendly.com/solutionsdota/30min"
-            target="_blank"
+            href="#services"
             rel="noopener noreferrer"
             className="border border-black text-black font-light py-3 px-6 hover:bg-gray-100 transition-all navButton2"
-            aria-label="Agendar una llamada"
-            title="Agendar una llamada de 30 minutos con nosotros"
+            aria-label="Servicios"
+            title="Lo que sabemos hacer - Servicios"
           >
-            Mirá más
+            Servicios
           </a>
         </motion.div>
       </motion.div>
