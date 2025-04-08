@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
-  title = "Dota Solutions - Software a medida para tu empresa",
+  title = "Dota Solutions - Software a Medida para tu Empresa",
   description = "Desarrollamos Sistemas Gestión & Sitios Web 100% Personalizados. Soluciones tecnológicas innovadoras para potenciar tu negocio.",
   keywords = "desarrollo web, ERP, CRM, sistemas de gestion, software empresarial, sitios web, desarrollo de software, soluciones digitales",
   image = "/logo.webp",
