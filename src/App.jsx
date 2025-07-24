@@ -5,6 +5,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { HelmetProvider } from 'react-helmet-async';
 import { SEO } from './components/SEO';
+import { useEffect } from 'react';
+import ScrollToTop from './components/ScrollToTop';
 
 import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 
@@ -41,29 +43,35 @@ const LEGAL_ROUTES_CONFIG = [
 function Layout() {
   const location = useLocation();
   const isLegalRoute = LEGAL_ROUTES.includes(location.pathname);
-
+  let headerProps = {};
+  if (location.pathname === "/") {
+    headerProps = {};
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <>
       <SEO />
-      {!isLegalRoute && <Header />}
-      
+      {!isLegalRoute && <Header {...headerProps} />}
       <main className="min-h-screen">
         <Routes>
-          <Route path="/" element={<>
-            <Services />
-            <Steps />
-            <Projects />
-            <Faq />
-            <Contact />
-          </>} />
+          <Route path="/" element={
+            <>
+              <Services />
+              <Steps />
+              <Projects />
+              <Faq />
+              <Contact />
+            </>
+          } />
           {LEGAL_ROUTES_CONFIG.map(({ path, element }) => (
             <Route key={path} path={path} element={element} />
           ))}
           <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
       </main>
-
-      {!isLegalRoute && <Footer />}
+      <Footer />
     </>
   );
 }
@@ -72,6 +80,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/*" element={<Layout />} />
         </Routes>

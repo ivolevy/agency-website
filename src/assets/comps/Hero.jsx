@@ -24,7 +24,12 @@ const itemVariants = {
   }
 };
 
-export const Hero = () => {
+export const Hero = ({
+  title = "Soluciones Digitales <br /> 100% Personalizadas",
+  subtitle = "Digitaliza y centralizá tu negocio con soluciones web y de gestión 100% personalizadas.",
+  showButtons = true,
+  extraText = "Algunos de los sitios que monitoreamos:"
+}) => {
   return (
     <motion.section
       className="hero w-full h-screen flex flex-col items-center justify-center text-center bg-[#FAFAFA]"
@@ -39,50 +44,50 @@ export const Hero = () => {
           id="hero-title"
           className="text-5xl md:text-6xl font-bold text-black leading-tight heroTitle"
           variants={itemVariants}
-        >
-          Soluciones Digitales <br /> 100% Personalizadas
-        </motion.h1>
-
+          dangerouslySetInnerHTML={{ __html: title }}
+        />
         {/* Subtítulo */}
         <motion.p
           className="heroText text-lg text-gray-600 mt-4 max-w-2xl mx-auto"
           variants={itemVariants}
         >
-          Digitaliza y centralizá tu negocio con soluciones web y de gestión 100% personalizadas.
+          {subtitle}
         </motion.p>
-
         {/* Botones */}
-        <motion.div
-          className="mt-6 flex gap-4 justify-center"
+        {showButtons && (
+          <motion.div
+            className="mt-6 flex gap-4 justify-center"
+            variants={itemVariants}
+          >
+            <a
+              className="border border-transparent font-light transition-all headerButton"
+              aria-label="Contactarnos"
+              title="Haz clic para contactarnos y comenzar a mejorar tu presencia digital"
+              href="#contact"
+            >
+              Contactános
+            </a>
+            <a
+              href="#services"
+              rel="noopener noreferrer"
+              className="border border-black text-black font-light py-3 px-6 hover:bg-gray-100 transition-all navButton2"
+              aria-label="Servicios"
+              title="Lo que sabemos hacer - Servicios"
+            >
+              Servicios
+            </a>
+          </motion.div>
+        )}
+      </motion.div>
+      {/* Texto adicional */}
+      {extraText && (
+        <motion.p
+          className="mt-12 text-gray-500 text-sm"
           variants={itemVariants}
         >
-          <a
-            className="border border-transparent font-light transition-all headerButton"
-            aria-label="Contactarnos"
-            title="Haz clic para contactarnos y comenzar a mejorar tu presencia digital"
-            href="#contact"
-          >
-            Contactános
-          </a>
-          <a
-            href="#services"
-            rel="noopener noreferrer"
-            className="border border-black text-black font-light py-3 px-6 hover:bg-gray-100 transition-all navButton2"
-            aria-label="Servicios"
-            title="Lo que sabemos hacer - Servicios"
-          >
-            Servicios
-          </a>
-        </motion.div>
-      </motion.div>
-
-      {/* Texto adicional */}
-      <motion.p
-        className="mt-12 text-gray-500 text-sm"
-        variants={itemVariants}
-      >
-        Algunos de los sitios que monitoreamos:
-      </motion.p>
+          {extraText}
+        </motion.p>
+      )}
     </motion.section>
   );
 };

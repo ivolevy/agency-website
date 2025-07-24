@@ -1,12 +1,14 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "../assets/styles/nav.css";
 import "../assets/styles/contact.css";
 import dota from "../assets/images/logo/dota.webp";
 
 const menuItems = [
-  { id: "services", label: "Servicios", title: "Descubre nuestros servicios de sistemas ERP y CRM & sitios web personalizados" },
-  { id: "projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y sitios personalizados" },
-  { id: "contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar tu proyecto", className: "navButton" },
+  { to: "#top", label: "Inicio", title: "Volver al inicio", scroll: true },
+  { to: "#services", label: "Servicios", title: "Ver nuestros servicios", scroll: true },
+  { to: "/#projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y sitios personalizados" },
+  { to: "/#contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar tu proyecto", className: "navButton" },
 ];
 
 export const NavComponent = () => {
@@ -16,9 +18,11 @@ export const NavComponent = () => {
 
   // Función para hacer scroll suave
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
+    const section = id === 'top' ? document.body : document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+    } else if (id === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     setIsMenuOpen(false);
   };
@@ -26,7 +30,7 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <a href="/" title="Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados">
+        <a href="#top" title="Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados" onClick={e => { e.preventDefault(); scrollToSection('top'); }}>
           <img 
             src={dota} 
             alt="Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados" 
@@ -38,11 +42,13 @@ export const NavComponent = () => {
       </div>
 
       <ul className="desktop-menu">
-        {menuItems.map(({ id, label, className, title }) => (
-          <li key={id}>
-            <a href={`#${id}`} className={className} title={title} onClick={(e) => { e.preventDefault(); scrollToSection(id); }}>
-              {label}
-            </a>
+        {menuItems.map(({ to, label, className, title, scroll }) => (
+          <li key={to}>
+            {to.startsWith("#") || scroll ? (
+              <a href={to} className={className + ' anchor-link'} title={title} onClick={e => { e.preventDefault(); scrollToSection(to.replace('#', '')); }}>{label}</a>
+            ) : (
+              <a href={to} className={className} title={title}>{label}</a>
+            )}
           </li>
         ))}
       </ul>
@@ -60,11 +66,13 @@ export const NavComponent = () => {
 
       <div className={`menubar ${isMenuOpen ? "active" : ""}`}>
         <ul>
-          {menuItems.map(({ id, label, className, title }) => (
-            <li key={id}>
-              <a href={`#${id}`} className={className} title={title} onClick={(e) => { e.preventDefault(); scrollToSection(id); }}>
-                {label}
-              </a>
+          {menuItems.map(({ to, label, className, title, scroll }) => (
+            <li key={to}>
+              {to.startsWith("#") || scroll ? (
+                <a href={to} className={className + ' anchor-link'} title={title} onClick={e => { e.preventDefault(); scrollToSection(to.replace('#', '')); }}>{label}</a>
+              ) : (
+                <a href={to} className={className} title={title} onClick={() => setIsMenuOpen(false)}>{label}</a>
+              )}
             </li>
           ))}
         </ul>

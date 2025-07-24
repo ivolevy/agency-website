@@ -309,3 +309,16 @@ form button {
     margin-top: 10px;
   }
 }
+
+.active-pink {
+  background: none !important;
+  color: #ff80bf !important;
+  font-weight: normal !important;
+  border-radius: 0;
+}
+.active-gray {
+  background: none !important;
+  color: #2A2A2A !important;
+  font-weight: normal !important;
+  border-radius: 0;
+}
