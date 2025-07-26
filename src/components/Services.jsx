@@ -123,7 +123,7 @@ export default function Services() {
 
   return (
     <section className="w-full py-10" id="services">
-      <div className="container mx-auto px-4 md:px-4 px-2 max-w-6xl md:max-w-6xl max-w-full">
+      <div className="container mx-auto px-4 md:px-4 max-w-6xl">
         <div className="flex flex-col md:flex-row md:items-start md:gap-12 mb-10">
           <div className="md:w-1/3 mb-8 md:mb-0">
             <span className="inline-block px-3 py-1 bg-pink-50 text-pink-400 borderRadius text-xs font-medium mb-3">
