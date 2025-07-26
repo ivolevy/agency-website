@@ -28,7 +28,7 @@ export const Hero = ({
   title = "Soluciones Digitales <br /> 100% Personalizadas",
   subtitle = "Digitaliza y centralizá tu negocio con soluciones web y de gestión 100% personalizadas.",
   showButtons = true,
-  extraText = "Algunos de los sitios que monitoreamos:"
+  extraText = "Alcance internacional: Argentina, Uruguay, USA y más"
 }) => {
   return (
     <motion.section

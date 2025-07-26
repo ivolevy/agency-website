@@ -12,7 +12,7 @@ export const Footer = () => {
         
         {/* Sección Izquierda */}
         <div className="w-full md:w-1/3 text-center md:text-left text-sm font-medium text-black hidden md:block">
-          TRABAJA CON NOSOTROS · ACCESO USUARIOS
+          TRABAJA CON NOSOTROS · INICIA TU PROYECTO
         </div>
 
         {/* Sección de Enlaces CENTRADA */}

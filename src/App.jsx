@@ -71,7 +71,7 @@ function Layout() {
           <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
       </main>
-      <Footer />
+      {!isLegalRoute && <Footer />}
     </>
   );
 }

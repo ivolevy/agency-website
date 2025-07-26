@@ -45,13 +45,36 @@ export default function Services() {
   const [testimonioActual, setTestimonioActual] = useState(0);
   const [contadores, setContadores] = useState({ proyectos: 0, experiencia: 0, soporte: 0 });
   const [contadoresIniciados, setContadoresIniciados] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const siguienteTestimonio = () => {
-    setTestimonioActual((prev) => (prev + 1) % testimonios.length);
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setTestimonioActual((prev) => (prev + 1) % testimonios.length);
+        setIsTransitioning(false);
+      }, 250);
+    }
   };
 
   const anteriorTestimonio = () => {
-    setTestimonioActual((prev) => (prev - 1 + testimonios.length) % testimonios.length);
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setTestimonioActual((prev) => (prev - 1 + testimonios.length) % testimonios.length);
+        setIsTransitioning(false);
+      }, 250);
+    }
+  };
+
+  const cambiarTestimonio = (index) => {
+    if (!isTransitioning && index !== testimonioActual) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setTestimonioActual(index);
+        setIsTransitioning(false);
+      }, 250);
+    }
   };
 
   // Animación de contadores
@@ -77,8 +100,8 @@ export default function Services() {
   }, [contadoresIniciados]);
 
   const animateCounters = () => {
-    const duration = 400; // 0.4 segundos para que sea más rápido
-    const steps = 60;
+    const duration = 200; // 0.2 segundos para que sea más rápido
+    const steps = 30;
     const stepDuration = duration / steps;
 
     let step = 0;
@@ -87,8 +110,8 @@ export default function Services() {
       const progress = step / steps;
 
       setContadores({
-        proyectos: Math.floor(50 * progress),
-        experiencia: Math.floor(3 * progress), // Este subirá más rápido con la duración reducida
+        proyectos: Math.floor(12 * progress),
+        experiencia: Math.floor(2 * progress), // Este subirá más rápido con la duración reducida
         soporte: 24 // Este no cambia, es fijo
       });
 
@@ -138,70 +161,64 @@ export default function Services() {
         
         {/* Nueva sección: Estadísticas */}
         <div className="space-y-8 mt-16" id="stats-section">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="borderRadius shadow-md p-6 text-center" style={{background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)'}}>
-              <div className="text-3xl font-bold text-negro-mate mb-2">{contadores.proyectos}+</div>
-              <div className="text-negro-mate font-semibold">Proyectos entregados</div>
-            </div>
-            <div className="borderRadius shadow-md p-6 text-center" style={{background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)'}}>
-              <div className="text-3xl font-bold text-negro-mate mb-2">+{contadores.experiencia}</div>
-              <div className="text-negro-mate font-semibold">Años de experiencia</div>
-            </div>
-            <div className="borderRadius shadow-md p-6 text-center" style={{background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)'}}>
-              <div className="text-3xl font-bold text-negro-mate mb-2">{contadores.soporte}/7</div>
-              <div className="text-negro-mate font-semibold">Soporte técnico</div>
-            </div>
-          </div>
-
-          {/* Testimonios y Tecnologías en grid de 2 columnas */}
+          {/* Testimonios y Estadísticas en grid de 2 columnas */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Slider de Testimonios */}
-            <div className="bg-white borderRadius shadow-md p-8 relative">
-              <div className="text-center">
-                <svg width="32" height="32" fill="currentColor" className="text-rosa mx-auto mb-4"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                <p className="text-lg text-negro-mate italic mb-4 min-h-[4rem]">"{testimonios[testimonioActual].texto}"</p>
-                <span className="text-gris-oscuro font-semibold">{testimonios[testimonioActual].autor}</span><br/>
-                <span className="text-gris-oscuro text-sm">{testimonios[testimonioActual].cargo}</span>
+            <div className="bg-white borderRadius shadow-md p-8 relative overflow-hidden">
+              <div className="text-center relative">
+                <svg width="32" height="32" fill="currentColor" className="text-rosa mx-auto mb-4 transition-all duration-300 ease-in-out"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <div className={`transition-all duration-500 ease-in-out transform ${isTransitioning ? 'opacity-50 scale-95' : 'opacity-100 scale-100'}`}>
+                  <p className="text-lg text-negro-mate italic mb-4 min-h-[4rem] transition-all duration-500 ease-in-out">"{testimonios[testimonioActual].texto}"</p>
+                  <span className="text-gris-oscuro font-semibold transition-all duration-500 ease-in-out">{testimonios[testimonioActual].autor}</span><br/>
+                  <span className="text-gris-oscuro text-sm transition-all duration-500 ease-in-out">{testimonios[testimonioActual].cargo}</span>
+                </div>
               </div>
               
               {/* Botones de navegación */}
               <div className="flex justify-center mt-6 space-x-2">
-                <button onClick={anteriorTestimonio} className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
-                  <ChevronLeft size={16} className="text-gray-600" />
+                <button 
+                  onClick={anteriorTestimonio} 
+                  className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-all duration-300 ease-in-out transform hover:scale-110 active:scale-95"
+                >
+                  <ChevronLeft size={16} className="text-gray-600 transition-colors duration-300" />
                 </button>
                 <div className="flex space-x-1">
                   {testimonios.map((_, index) => (
                     <button
                       key={index}
-                      onClick={() => setTestimonioActual(index)}
-                      className={`w-2 h-2 rounded-full transition-colors ${
-                        index === testimonioActual ? 'bg-rosa' : 'bg-gray-300'
+                      onClick={() => cambiarTestimonio(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ease-in-out transform hover:scale-125 ${
+                        index === testimonioActual ? 'bg-rosa scale-125' : 'bg-gray-300 hover:bg-gray-400'
                       }`}
                     />
                   ))}
                 </div>
-                <button onClick={siguienteTestimonio} className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
-                  <ChevronRight size={16} className="text-gray-600" />
+                <button 
+                  onClick={siguienteTestimonio} 
+                  className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-all duration-300 ease-in-out transform hover:scale-110 active:scale-95"
+                >
+                  <ChevronRight size={16} className="text-gray-600 transition-colors duration-300" />
                 </button>
               </div>
             </div>
 
-            {/* Tecnologías */}
-            <div className="bg-white borderRadius shadow-md p-8">
-              <h3 className="text-xl font-bold text-negro-mate mb-6 text-center">Tecnologías que usamos</h3>
-              <div className="grid grid-cols-2 gap-4 text-center">
-                <div className="p-4 border border-gris-claro borderRadius">
-                  <div className="font-semibold text-negro-mate">React</div>
-                </div>
-                <div className="p-4 border border-gris-claro borderRadius">
-                  <div className="font-semibold text-negro-mate">Node.js</div>
-                </div>
-                <div className="p-4 border border-gris-claro borderRadius">
-                  <div className="font-semibold text-negro-mate">PostgreSQL</div>
-                </div>
-                <div className="p-4 border border-gris-claro borderRadius">
-                  <div className="font-semibold text-negro-mate">AWS</div>
-                </div>
+            {/* Estadísticas */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="borderRadius shadow-md p-6 flex flex-col items-center justify-center" style={{background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)'}}>
+                <div className="text-3xl font-bold text-white mb-2">+{contadores.proyectos}</div>
+                <div className="text-white font-semibold text-center">Proyectos entregados</div>
+              </div>
+              <div className="borderRadius shadow-md p-6 flex flex-col items-center justify-center" style={{background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)'}}>
+                <div className="text-3xl font-bold text-white mb-2">+{contadores.experiencia}</div>
+                <div className="text-white font-semibold text-center">Años de experiencia</div>
+              </div>
+              <div className="borderRadius shadow-md p-6 flex flex-col items-center justify-center" style={{background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)'}}>
+                <div className="text-3xl font-bold text-white mb-2">{contadores.soporte}/7</div>
+                <div className="text-white font-semibold text-center">Soporte técnico</div>
+              </div>
+              <div className="borderRadius shadow-md p-6 flex flex-col items-center justify-center" style={{background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)'}}>
+                <div className="text-3xl font-bold text-white mb-2">+3</div>
+                <div className="text-white font-semibold text-center">Países alcanzados</div>
               </div>
             </div>
           </div>

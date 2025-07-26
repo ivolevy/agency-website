@@ -7,3 +7,14 @@ Sitemap: https://dotasolutions.vercel.app/sitemap.xml
 
 # Rutas a no indexar
 Disallow: /404
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Crawl-delay para ser respetuoso con el servidor
+Crawl-delay: 1
+
+# Información adicional para bots
+# Dota Solutions - Soluciones Digitales 100% Personalizadas
+# Contacto: solutionsdota@gmail.com
+# Alcance: Argentina, Uruguay, USA
