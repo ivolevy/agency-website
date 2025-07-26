@@ -4,8 +4,8 @@
 export const preloadCriticalResources = () => {
   // Preload critical fonts
   const fonts = [
-    '/src/assets/fonts/hero/Hero-Regular.ttf',
-    '/src/assets/fonts/hero/Hero-Bold.ttf'
+    './assets/fonts/hero/Hero-Regular.ttf',
+    './assets/fonts/hero/Hero-Bold.ttf'
   ];
 
   fonts.forEach(font => {

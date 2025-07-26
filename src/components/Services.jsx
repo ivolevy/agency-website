@@ -154,8 +154,8 @@ export default function Services() {
                 <h3 className="text-2xl font-bold text-negro-mate mb-2">{service.title}</h3>
                 <p className="text-gris-oscuro text-base mb-2">{service.description}</p>
                 <div className="text-base font-semibold text-rosa mt-1">{service.highlight}</div>
-              </div>
-            ))}
+            </div>
+          ))}
           </div>
         </div>
         

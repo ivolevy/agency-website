@@ -15,19 +15,19 @@ import { Header } from './components/Header.jsx';
 import Services from './components/Services.jsx';
 
 // Lazy loading para componentes no críticos
-const Steps = lazy(() => import('./components/Steps.jsx').then(module => ({ default: module.Steps })));
-const Projects = lazy(() => import('./components/Projects.jsx').then(module => ({ default: module.Projects })));
-const Faq = lazy(() => import('./components/Faq.jsx').then(module => ({ default: module.Faq })));
-const Contact = lazy(() => import('./components/Contact.jsx').then(module => ({ default: module.Contact })));
-const Footer = lazy(() => import('./components/Footer.jsx').then(module => ({ default: module.Footer })));
+const Steps = lazy(() => import('./components/Steps.jsx'));
+const Projects = lazy(() => import('./components/Projects.jsx'));
+const Faq = lazy(() => import('./components/Faq.jsx'));
+const Contact = lazy(() => import('./components/Contact.jsx'));
+const Footer = lazy(() => import('./components/Footer.jsx'));
 
 /* legales */
-const Privacy = lazy(() => import('./assets/comps/legal/Privacy.jsx').then(module => ({ default: module.Privacy })));
-const Legal = lazy(() => import('./assets/comps/legal/Legal.jsx').then(module => ({ default: module.Legal })));
-const Cookies = lazy(() => import('./assets/comps/legal/Cookies.jsx').then(module => ({ default: module.Cookies })));
+const Privacy = lazy(() => import('./assets/comps/legal/Privacy.jsx'));
+const Legal = lazy(() => import('./assets/comps/legal/Legal.jsx'));
+const Cookies = lazy(() => import('./assets/comps/legal/Cookies.jsx'));
 
 /* 404 */
-const NotFound = lazy(() => import('./assets/comps/Notfound.jsx').then(module => ({ default: module.NotFound })));
+const NotFound = lazy(() => import('./assets/comps/Notfound.jsx'));
 
 // Loading component
 const LoadingSpinner = () => (
@@ -40,7 +40,7 @@ const LoadingSpinner = () => (
 const preloadFonts = () => {
   const link = document.createElement('link');
   link.rel = 'preload';
-  link.href = '/src/assets/fonts/hero/Hero-Regular.ttf';
+  link.href = './assets/fonts/hero/Hero-Regular.ttf';
   link.as = 'font';
   link.type = 'font/ttf';
   link.crossOrigin = 'anonymous';
