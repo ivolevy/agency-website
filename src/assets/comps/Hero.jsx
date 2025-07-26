@@ -6,20 +6,19 @@ const containerVariants = {
   visible: { 
     opacity: 1,
     transition: { 
-      duration: 0.4, // Reducido de 0.8 a 0.4
+      duration: 0.8,
       ease: "easeOut",
-      staggerChildren: 0.1 // Reducido de 0.2 a 0.1
+      staggerChildren: 0.2
     } 
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 10 }, // Agregado y: 10 para movimiento sutil
+  hidden: { opacity: 0 },
   visible: { 
     opacity: 1,
-    y: 0,
     transition: {
-      duration: 0.3, // Reducido de 0.6 a 0.3
+      duration: 0.6,
       ease: "easeOut"
     }
   }
@@ -38,7 +37,6 @@ export const Hero = ({
       initial="hidden"
       animate="visible"
       aria-labelledby="hero-title"
-      style={{ willChange: 'opacity' }} // Optimización de rendimiento
     >
       <motion.div className="relative">
         {/* Título principal */}
@@ -47,13 +45,11 @@ export const Hero = ({
           className="text-5xl md:text-6xl font-bold text-black leading-tight heroTitle"
           variants={itemVariants}
           dangerouslySetInnerHTML={{ __html: title }}
-          style={{ willChange: 'opacity, transform' }}
         />
         {/* Subtítulo */}
         <motion.p
           className="heroText text-lg text-gray-600 mt-4 max-w-2xl mx-auto"
           variants={itemVariants}
-          style={{ willChange: 'opacity, transform' }}
         >
           {subtitle}
         </motion.p>
@@ -62,7 +58,6 @@ export const Hero = ({
           <motion.div
             className="mt-6 flex gap-4 justify-center"
             variants={itemVariants}
-            style={{ willChange: 'opacity, transform' }}
           >
             <a
               className="border border-transparent font-light transition-all headerButton"
@@ -89,7 +84,6 @@ export const Hero = ({
         <motion.p
           className="mt-12 text-gray-500 text-sm"
           variants={itemVariants}
-          style={{ willChange: 'opacity, transform' }}
         >
           {extraText}
         </motion.p>
