@@ -286,8 +286,8 @@ form button {
 @media screen and (max-width: 768px) {
   nav {
     width: 95%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .menubar {
     width: 60%;

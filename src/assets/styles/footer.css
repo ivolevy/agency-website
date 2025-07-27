@@ -41,4 +41,15 @@
         width: 65px !important;
     }
   }
+
+@media screen and (max-width: 768px) {
+    .footer{
+      width: 95%;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+    }
+    .footerImg{
+        width: 65px !important;
+    }
+  }
   
