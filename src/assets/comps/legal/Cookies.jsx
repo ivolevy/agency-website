@@ -28,7 +28,7 @@ export const Cookies = () => {
           <p className="text-sm">
             <strong>Dota Solutions no tiene control directo sobre estas cookies</strong> y no es responsable por su uso, gestión o políticas de privacidad relacionadas.
           </p>
-  
+          
           <h2 className="text-xl font-semibold">4. Tecnologías Utilizadas</h2>
           <p className="text-sm">
             Nuestro sitio web utiliza tecnologías como Next.js, SQL, Vercel y Adobe. Estas tecnologías pueden generar cookies técnicas automáticamente para:
@@ -66,7 +66,7 @@ export const Cookies = () => {
           <p className="text-sm">
             El usuario acepta que el uso de cookies es bajo su propia responsabilidad y riesgo, y que Dota Solutions no tiene control sobre las cookies de proveedores externos.
           </p>
-
+  
           <h2 className="text-xl font-semibold">8. Actualizaciones de la Política</h2>
           <p className="text-sm">
             Nos reservamos el derecho de modificar esta política de cookies en cualquier momento. Los cambios serán notificados a través de nuestro sitio web, manteniendo la transparencia total que caracteriza nuestro enfoque.

@@ -1,25 +1,14 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, ArrowDown } from 'lucide-react';
 import "../assets/styles/projects.css";
 import photoEditor from "../assets/images/projects/photoEditor.webp";
-import travelAgency from "../assets/images/projects/travelAgency.webp";
-import construction from "../assets/images/projects/constructionSystem.webp";
+import restaurant from "../assets/images/projects/restaurant.webp";
+import lawyer from "../assets/images/projects/lawyer.webp";
 
 export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Luxvoyage Travel Agency",
-      description: "Sitio web para agencia de viajes",
-      img: travelAgency,
-      textColor: "text-yellow-400",
-      bgColor: "bg-black",
-      altText: "Imagen del proyecto Luxvoyage",
-      achievements: ["Hero", "Destinations", "Testimonials", "Contact form"],
-      link: "https://v0-centralized-image-editor.vercel.app",
-    },
-    {
-      id: 2,
       title: "editor de imágenes centralizado",
       description: "Sistema de gestión integral para estudios de arquitectura y diseño",
       img: photoEditor,
@@ -30,15 +19,26 @@ export const Projects = () => {
       link: "https://v0-centralized-image-editor.vercel.app",
     },
     {
+      id: 2,
+      title: "Mediterra Restaurant",
+      description: "Sitio web para restaurante mediterráneo de alta cocina",
+      img: restaurant,
+      textColor: "text-yellow-400",
+      bgColor: "bg-black",
+      altText: "Imagen del proyecto Mediterra Restaurant",
+      achievements: ["Form de reservas", "Menú", "Pedidos online", "Información"],
+      link: "https://v0-luxury-restaurant-design.vercel.app",
+    },
+    {
       id: 3,
-      title: "Gestión de construcción",
-      description: "Sistema de gestión integral para empresas constructoras con control de stock, proveedores, proyectos y facturación",
-      img: construction,
+      title: "Gestión abogado laboral",
+      description: "Sistema ERP integral para estudios jurídicos laborales con gestión de clientes, finanzas, escritos y agenda",
+      img: lawyer,
       textColor: "text-white",
       bgColor: "bg-gray-900",
-      altText: "Dashboard del sistema de gestión de construcción",
-      achievements: ["Control de inventario", "Gestión de proveedores", "Balance financiero", "Facturación"],
-      link: "https://v0-construction-management-site.vercel.app",
+      altText: "Dashboard del sistema de gestión para abogados laborales",
+      achievements: ["Gestión de clientes", "Finanzas", "Escritos", "Agenda"],
+      link: "https://v0-laboral-erp-interface.vercel.app",
     },
   ];
 
@@ -92,7 +92,7 @@ export const Projects = () => {
               <img
                 src={project.img}
                 alt={`${project.title} - ${project.description}`}
-                className="w-full h-full object-cover"
+                className="project-image"
                 loading="lazy"
                 width="400"
                 height="225"
@@ -138,7 +138,7 @@ export const Projects = () => {
             className="inline-flex items-center px-6 py-3 bg-black text-white borderRadius font-medium hover:bg-pink-600 transition-colors no-underline"
           >
             ¿Listo para tu proyecto?
-            <ArrowRight size={16} className="ml-2" />
+            <ArrowDown size={16} className="ml-2" />
           </a>
         </motion.div>
       </div>

@@ -1,20 +1,19 @@
 import "../assets/styles/services.css";
 import photoEditor from "../assets/images/projects/photoEditor.webp";
-import travelAgency from "../assets/images/projects/travelAgency.webp";
-import constructionSystem from "../assets/images/projects/constructionSystem.webp";
+import restaurant from "../assets/images/projects/restaurant.webp";
 import { ArrowDown, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const services = [
   {
     title: "Sitios web personalizados",
-    description: "Tu web lista para crecer: 100% a medida, SEO, hosting y autogestión fácil.",
-    highlight: "Panel autogestión fácil"
+    description: "Sitios web 100% personalizados con SEO optimizado que convierten leads.",
+    highlight: "¡Listo en 1 semana!"
   },
   {
     title: "Sistemas de gestión a medida (ERP)",
-    description: "Digitaliza y automatiza tu negocio, ERP 100% adaptado a tu rubro, automatización y reportes.",
-    highlight: "Automatización total"
+    description: "ERP adaptado a tu rubro con automatización total y reportes en tiempo real.",
+    highlight: "Ahorro del 70% en tiempo"
   }
 ];
 
@@ -140,7 +139,7 @@ export default function Services() {
                 href="#contact"
                 className="inline-flex items-center px-6 py-3 bg-black text-white borderRadius font-medium hover:bg-pink-600 transition-colors no-underline"
               >
-                Trabajemos juntos
+                                       ¡Empecemos!
                 <ArrowDown size={16} className="ml-2" />
               </a>
             </div>

@@ -25,7 +25,7 @@ export const SEO = ({
       <meta name="geo.placename" content="Argentina" />
       <meta name="geo.position" content="-34.6037;-58.3816" />
       <meta name="ICBM" content="-34.6037, -58.3816" />
-      
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
@@ -39,7 +39,7 @@ export const SEO = ({
       <meta property="og:locale" content="es_AR" />
       <meta property="og:locale:alternate" content="en_US" />
       <meta property="og:locale:alternate" content="fr_FR" />
-      
+
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@dotasolutions" />
@@ -48,7 +48,7 @@ export const SEO = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <meta name="twitter:image:alt" content="Dota Solutions - Soluciones Digitales 100% Personalizadas" />
-      
+
       {/* Otros Meta Tags Importantes */}
       <meta name="theme-color" content="#FFA7C4" />
       <meta name="msapplication-TileColor" content="#FFA7C4" />

@@ -5,3 +5,12 @@
 .projectClouds{
     border-radius: 35px;
 }
+
+/* Asegurar que todas las imágenes de proyectos tengan el mismo tamaño */
+.project-image {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
