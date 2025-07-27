@@ -16,7 +16,7 @@ export const Projects = () => {
       bgColor: "bg-black",
       altText: "Imagen del proyecto Luxvoyage",
       achievements: ["Hero", "Destinations", "Testimonials", "Contact form"],
-      link: "https://kzmgoqtm1oedtwx22hyn.lite.vusercontent.net",
+      link: "https://v0-centralized-image-editor.vercel.app",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export const Projects = () => {
       bgColor: "bg-[#F5F1E5]",
       altText: "Imagen del proyecto estudio versus.",
       achievements: ["Background remover con IA", "Cropping", "Resizing", "Extension change"],
-      link: "https://kzmgoqtm1oedtwx22hyn.lite.vusercontent.net",
+      link: "https://v0-centralized-image-editor.vercel.app",
     },
     {
       id: 3,
