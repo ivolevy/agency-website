@@ -60,7 +60,7 @@ export const SEO = ({
       <link rel="me" href="https://www.instagram.com/dotasolutions" />
       <link rel="me" href="https://www.linkedin.com/company/dota-solutions/" />
       <link rel="me" href="https://www.tiktok.com/@dotasolutions" />
-      
+
       {/* Preconnect para Performance */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

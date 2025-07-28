@@ -143,7 +143,7 @@ export default function Services() {
                 <ArrowDown size={16} className="ml-2" />
               </a>
             </div>
-        </div>
+    </div>
           <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {services.map((service, idx) => (
             <div
@@ -155,8 +155,8 @@ export default function Services() {
                 <div className="text-base font-semibold text-rosa mt-1">{service.highlight}</div>
             </div>
           ))}
-          </div>
         </div>
+      </div>
         
         {/* Nueva sección: Estadísticas */}
         <div className="space-y-8 mt-16" id="stats-section">
@@ -170,8 +170,8 @@ export default function Services() {
                   <p className="text-lg text-negro-mate italic mb-4 min-h-[4rem] transition-all duration-500 ease-in-out">"{testimonios[testimonioActual].texto}"</p>
                   <span className="text-gris-oscuro font-semibold transition-all duration-500 ease-in-out">{testimonios[testimonioActual].autor}</span><br/>
                   <span className="text-gris-oscuro text-sm transition-all duration-500 ease-in-out">{testimonios[testimonioActual].cargo}</span>
-                </div>
-              </div>
+      </div>
+    </div>
               
               {/* Botones de navegación */}
               <div className="flex justify-center mt-6 space-x-2">
@@ -198,7 +198,7 @@ export default function Services() {
                 >
                   <ChevronRight size={16} className="text-gray-600 transition-colors duration-300" />
                 </button>
-              </div>
+        </div>
             </div>
 
             {/* Estadísticas */}
@@ -221,7 +221,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-
+          
         </div>
 
         {/* Sección gráfica: ¿Por qué elegir una aplicación web? */}
@@ -254,9 +254,9 @@ export default function Services() {
               Nuestro enfoque permite <span className="text-rosa font-bold">entregas en semanas</span> sin costos ocultos, 
               garantizando transparencia total en cada proyecto.
             </p>
-          </div>
-        </div>
-        
+              </div>
+            </div>
+
       </div>
     </section>
   );
