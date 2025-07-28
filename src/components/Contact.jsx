@@ -56,8 +56,8 @@ export const Contact = () => {
     <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer" id="contact">
       {/* Lado Izquierdo: Información + Redes Sociales */}
       <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
-        <h3 className="text-3xl font-bold text-white contactSubtitle">Empecémos a crear juntos y dominá el mercado con nosotros</h3>
-        <p className="text-gray-600 mb-4 contactText">Contanos qué necesitas y charlemos sobre eso.</p>
+        <h3 className="text-3xl font-bold text-white contactSubtitle">Empecemos a crear juntos. Lleva tu facturación a otro nivel</h3>
+        <p className="text-gray-600 mb-4 contactText">Conversemos sobre cómo revolucionar tu negocio</p>
 
         {/* Redes Sociales */}
         <div className="flex items-center space-x-4 mb-4">

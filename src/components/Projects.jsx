@@ -71,7 +71,7 @@ export const Projects = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Descubre cómo ayudamos a empresas como la tuya a alcanzar sus objetivos
+            Descubre cómo ayudamos a clientes como vos a alcanzar sus objetivos (templates demostrativos)
           </motion.p>
         </div>
 
