@@ -14,6 +14,11 @@ const services = [
     title: "Sistemas de gestión a medida (ERP)",
     description: "ERP adaptado a tu rubro con automatización total y reportes en tiempo real.",
     highlight: "Ahorro del 70% en tiempo"
+  },
+  {
+    title: "E-commerce 100% personalizado",
+    description: "Tiendas online completas con panel de backoffice para gestionar clientes, productos, ventas y más.",
+    highlight: "Panel de administración completo"
   }
 ];
 
@@ -134,7 +139,7 @@ export default function Services() {
             <p className="text-gris-oscuro md:mx-0">
             Soluciones digitales para crecer, automatizar y destacar tu empresa.
           </p>
-            <div className="flex justify-center md:justify-start mt-6">
+            <div className="hidden md:flex justify-start mt-6">
               <a
                 href="#contact"
                 className="inline-flex items-center px-6 py-3 bg-black text-white borderRadius font-medium hover:bg-pink-600 transition-colors no-underline"
@@ -144,18 +149,44 @@ export default function Services() {
               </a>
             </div>
     </div>
-          <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {services.map((service, idx) => (
-            <div
-              key={service.title}
-                className={`borderRadius px-8 py-8 flex flex-col items-start text-left transition-all shadow-md bg-white ${idx === 0 ? 'ring-2 ring-rosa' : ''}`}
+          <div className="md:w-2/3">
+            {/* Primeros dos servicios en grid de 2 columnas */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+              {services.slice(0, 2).map((service, idx) => (
+                <div
+                  key={service.title}
+                  className={`borderRadius px-8 py-8 flex flex-col items-start text-left transition-all shadow-md bg-white ${idx === 0 ? 'ring-2 ring-rosa' : ''}`}
+                >
+                  <h3 className="text-2xl font-bold text-negro-mate mb-2">{service.title}</h3>
+                  <p className="text-gris-oscuro text-base mb-2">{service.description}</p>
+                  <div className="text-base font-semibold text-rosa mt-1">{service.highlight}</div>
+                </div>
+              ))}
+            </div>
+            
+            {/* Tercer servicio ocupando todo el ancho */}
+            {services.slice(2).map((service, idx) => (
+              <div
+                key={service.title}
+                className="borderRadius px-8 py-8 flex flex-col items-start text-left transition-all shadow-md bg-white"
               >
                 <h3 className="text-2xl font-bold text-negro-mate mb-2">{service.title}</h3>
                 <p className="text-gris-oscuro text-base mb-2">{service.description}</p>
                 <div className="text-base font-semibold text-rosa mt-1">{service.highlight}</div>
-            </div>
-          ))}
-        </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Botón CTA para móvil - aparece después de los servicios */}
+          <div className="flex md:hidden justify-center mt-8">
+            <a
+              href="#contact"
+              className="inline-flex items-center px-6 py-3 bg-black text-white borderRadius font-medium hover:bg-pink-600 transition-colors no-underline"
+            >
+              ¡Empecemos!
+              <ArrowDown size={16} className="ml-2" />
+            </a>
+          </div>
       </div>
         
         {/* Nueva sección: Estadísticas */}

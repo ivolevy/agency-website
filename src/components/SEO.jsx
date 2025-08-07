@@ -2,8 +2,8 @@ import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
   title = "Dota Solutions | Soluciones Digitales 100% Personalizadas | Argentina, Uruguay, USA",
-  description = "Desarrollamos sitios web personalizados y sistemas ERP a medida. Entregas en semanas sin costos ocultos. Soporte 24/7. Tecnologías Next.js, SQL, Vercel. Alcance internacional: Argentina, Uruguay, USA.",
-  keywords = "desarrollo web personalizado, sistemas ERP a medida, sitios web Argentina, Uruguay, USA, Next.js, SQL, Vercel, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, Buenos Aires, Montevideo, Miami",
+  description = "Desarrollamos sitios web personalizados, sistemas ERP a medida y e-commerce 100% personalizados. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7. Alcance internacional: Argentina, Uruguay, USA.",
+  keywords = "desarrollo web personalizado, sistemas ERP a medida, e-commerce personalizado, tiendas online, panel de administración, gestión de clientes, gestión de productos, sitios web Argentina, Uruguay, USA, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, Buenos Aires, Montevideo, Miami",
   image = "https://dotasolutions.vercel.app/dota.webp",
   url = "https://dotasolutions.vercel.app",
   type = "website"
@@ -73,7 +73,7 @@ export const SEO = ({
           "@type": "Organization",
           "name": "Dota Solutions",
           "alternateName": "Dota",
-          "description": "Soluciones digitales 100% personalizadas. Sitios web y sistemas ERP a medida con entregas en semanas sin costos ocultos.",
+          "description": "Soluciones digitales 100% personalizadas. Sitios web, sistemas ERP a medida y e-commerce personalizados con panel de backoffice completo. Entregas en semanas sin costos ocultos.",
           "url": "https://dotasolutions.vercel.app",
           "logo": "https://dotasolutions.vercel.app/dota.webp",
           "image": "https://dotasolutions.vercel.app/dota.webp",
@@ -136,6 +136,14 @@ export const SEO = ({
                   "name": "Sistemas ERP a Medida",
                   "description": "Sistemas de gestión empresarial con automatización total y soporte 24/7"
                 }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "E-commerce 100% Personalizado",
+                  "description": "Tiendas online completas con panel de backoffice para gestionar clientes, productos, ventas y más"
+                }
               }
             ]
           },
@@ -151,12 +159,11 @@ export const SEO = ({
           "knowsAbout": [
             "Desarrollo Web",
             "Sistemas ERP",
-            "Next.js",
-            "SQL",
-            "Vercel",
+            "E-commerce",
             "Automatización Empresarial",
             "SEO",
-            "Hosting"
+            "Hosting",
+            "Panel de Administración"
           ]
         })}
       </script>
@@ -167,7 +174,7 @@ export const SEO = ({
           "@context": "https://schema.org",
           "@type": "Service",
           "name": "Desarrollo de Soluciones Digitales",
-          "description": "Sitios web personalizados y sistemas ERP a medida con tecnologías modernas",
+          "description": "Sitios web personalizados, sistemas ERP a medida y e-commerce 100% personalizados con panel de backoffice completo",
           "provider": {
             "@type": "Organization",
             "name": "Dota Solutions"
