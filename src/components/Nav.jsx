@@ -5,7 +5,7 @@ import "../assets/styles/contact.css";
 import dota from "../assets/images/logo/dota.webp";
 
 const menuItems = [
-  { to: "#top", label: "Inicio", title: "Volver al inicio", scroll: true },
+  { to: "#header", label: "Inicio", title: "Volver al inicio", scroll: true },
   { to: "#services", label: "Servicios", title: "Ver nuestros servicios", scroll: true },
   { to: "/#projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y sitios personalizados" },
   { to: "/#contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar tu proyecto", className: "navButton" },
@@ -18,10 +18,10 @@ export const NavComponent = () => {
 
   // Función para hacer scroll suave
   const scrollToSection = (id) => {
-    const section = id === 'top' ? document.body : document.getElementById(id);
+    const section = id === 'top' || id === 'header' ? document.getElementById('header') : document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-    } else if (id === 'top') {
+    } else if (id === 'top' || id === 'header') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     setIsMenuOpen(false);
@@ -30,7 +30,7 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <a href="#top" title="Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados" onClick={e => { e.preventDefault(); scrollToSection('top'); }}>
+        <a href="#header" title="Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados" onClick={e => { e.preventDefault(); scrollToSection('header'); }}>
           <img 
             src={dota} 
             alt="Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados" 

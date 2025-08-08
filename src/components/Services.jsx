@@ -114,7 +114,7 @@ export default function Services() {
       const progress = step / steps;
 
       setContadores({
-        proyectos: Math.floor(12 * progress),
+        proyectos: Math.floor(19 * progress),
         experiencia: Math.floor(2 * progress), // Este subirá más rápido con la duración reducida
         soporte: 24 // Este no cambia, es fijo
       });
