@@ -1,5 +1,5 @@
 Contact: mailto:solutionsdota@gmail.com
-Expires: 2026-01-15T00:00:00.000Z
+Expires: 2026-01-27T00:00:00.000Z
 Preferred-Languages: es, en
-Canonical: https://dotasolutions.vercel.app/.well-known/security.txt
-Policy: https://dotasolutions.vercel.app/aviso-legal 
+Canonical: https://www.dotasolutions.agency/.well-known/security.txt
+Policy: https://www.dotasolutions.agency/aviso-legal 

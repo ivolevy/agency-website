@@ -1,8 +1,16 @@
+import { SEO } from '../../../components/SEO';
+
 export const Legal = () => {
   return (
-    <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
+    <>
+      <SEO 
+        title="Aviso Legal | Dota Solutions"
+        description="Aviso legal de Dota Solutions. Información legal sobre nuestros servicios de desarrollo web y sistemas ERP personalizados."
+        url="https://www.dotasolutions.agency/aviso-legal"
+      />
+      <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
       <h1 className="text-2xl font-semibold text-center">AVISO LEGAL</h1>
-      <p className="text-sm text-center"><strong>[Fecha de última actualización: Enero de 2025.]</strong></p>
+      <p className="text-sm text-center"><strong>[Fecha de última actualización: 27 de Enero de 2025.]</strong></p>
       
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">1. Información General</h2>
@@ -120,7 +128,8 @@ export const Legal = () => {
           <li>Correo electrónico: <a href="mailto:solutionsdota@gmail.com" className="text-blue-600 hover:underline">solutionsdota@gmail.com</a></li>
           <li>Redes sociales: @dotasolutions en Instagram, TikTok y LinkedIn</li>
         </ul>
+              </div>
       </div>
-    </div>
-  );
-};
+      </>
+    );
+  };

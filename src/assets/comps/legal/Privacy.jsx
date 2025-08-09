@@ -1,8 +1,16 @@
+import { SEO } from '../../../components/SEO';
+
 export const Privacy = () => {
     return (
-      <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
+      <>
+        <SEO 
+          title="Política de Privacidad | Dota Solutions"
+          description="Política de privacidad de Dota Solutions. Conoce cómo protegemos y manejamos tus datos personales en nuestros servicios de desarrollo web y sistemas ERP personalizados."
+          url="https://www.dotasolutions.agency/politica-de-privacidad"
+        />
+        <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
         <h1 className="text-2xl font-semibold text-center">Política de Privacidad de Dota Solutions</h1>
-        <p className="text-sm text-center"><strong>[Fecha de última actualización: Enero de 2025.]</strong></p>
+        <p className="text-sm text-center"><strong>[Fecha de última actualización: 27 de Enero de 2025.]</strong></p>
         
         <div className="space-y-4">
           <p className="text-sm">
@@ -126,7 +134,8 @@ export const Privacy = () => {
             <li>Correo electrónico: <a href="mailto:solutionsdota@gmail.com" className="text-blue-600 hover:underline">solutionsdota@gmail.com</a></li>
             <li>Redes sociales: @dotasolutions en Instagram, TikTok y LinkedIn</li>
         </ul>
-        </div>
+                </div>
       </div>
+      </>
     );
-};
+  };

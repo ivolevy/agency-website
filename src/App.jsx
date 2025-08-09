@@ -17,6 +17,7 @@ import { Projects } from './components/Projects.jsx';
 import { Faq } from './components/Faq.jsx';
 import { Contact } from './components/Contact.jsx';
 import { Footer } from './components/Footer.jsx';
+import { ContactCTA } from './components/ContactCTA.jsx';
 
 /* legales */
 import { Privacy } from './assets/comps/legal/Privacy.jsx';
@@ -72,6 +73,7 @@ function Layout() {
         </Routes>
       </main>
       {!isLegalRoute && <Footer />}
+      {!isLegalRoute && <ContactCTA />}
     </>
   );
 }

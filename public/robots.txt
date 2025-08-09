@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://dotasolutions.vercel.app/sitemap.xml
+Sitemap: https://www.dotasolutions.agency/sitemap.xml
 
 # Rutas a no indexar
 Disallow: /404

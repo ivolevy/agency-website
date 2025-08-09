@@ -1,8 +1,16 @@
+import { SEO } from '../../../components/SEO';
+
 export const Cookies = () => {
     return (
-      <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
+      <>
+        <SEO 
+          title="Política de Cookies | Dota Solutions"
+          description="Política de cookies de Dota Solutions. Información sobre el uso de cookies en nuestro sitio web y servicios."
+          url="https://www.dotasolutions.agency/cookies"
+        />
+        <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
         <h1 className="text-2xl font-semibold text-center">Política de Cookies de Dota Solutions</h1>
-        <p className="text-sm text-center"><strong>[Fecha de última actualización: Enero de 2025.]</strong></p>
+        <p className="text-sm text-center"><strong>[Fecha de última actualización: 27 de Enero de 2025.]</strong></p>
         
         <div className="space-y-4">
           <h2 className="text-xl font-semibold">1. ¿Qué son las Cookies?</h2>
@@ -82,6 +90,7 @@ export const Cookies = () => {
           </ul>
         </div>
       </div>
+      </>
     );
   };
   

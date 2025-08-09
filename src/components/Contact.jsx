@@ -4,6 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
 import "../assets/styles/contact.css";
+import "../assets/styles/contact-animations.css";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ export const Contact = () => {
   });
 
   const [status, setStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,10 +24,12 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setStatus("");
 
     const templateParams = {
       name: formData.name,
-      company: formData.company,
+      company: formData.company || null,
       email: formData.email,
       message: formData.message,
     };
@@ -38,10 +43,15 @@ export const Contact = () => {
       )
       .then(
         () => {
-          setStatus("Mensaje enviado con éxito");
+          setIsSubmitting(false);
+          setShowSuccess(true);
           setFormData({ name: "", company: "", email: "", message: "" });
+          setTimeout(() => {
+            setShowSuccess(false);
+          }, 3000);
         },
         (error) => {
+          setIsSubmitting(false);
           setStatus("Error al enviar el mensaje, intenta de nuevo.");
           console.error("Error al enviar:", error);
         }
@@ -110,10 +120,9 @@ export const Contact = () => {
           <input
             type="text"
             name="company"
-            placeholder="Tu Empresa"
+            placeholder="Tu Empresa (opcional)"
             value={formData.company}
             onChange={handleChange}
-            required
             className="w-full md:w-1/2 p-3 border border-gray-300 roundedForm focus:outline-none focus:ring-2 focus:ring-blue-500"
             aria-label="Empresa"
           />
@@ -141,11 +150,28 @@ export const Contact = () => {
           aria-label="Mensaje"
         ></textarea>
 
-        <button type="submit" className="contactButton mt-3">
-          Enviar Mensaje
+        <button 
+          type="submit" 
+          className={`contactButton mt-3 ${isSubmitting ? 'submitting' : ''}`}
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? (
+            <div className="loader-container">
+              <div className="loader"></div>
+            </div>
+          ) : (
+            'Enviar Mensaje'
+          )}
         </button>
 
-        {status && <p className="text-green-600 text-center mt-3">{status}</p>}
+        {showSuccess && (
+          <div className="success-notification">
+            <div className="success-icon">✓</div>
+            <p>Tu mensaje fue enviado exitosamente!</p>
+          </div>
+        )}
+
+        {status && <p className="error-message">{status}</p>}
       </form>
     </div>
     </>

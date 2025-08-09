@@ -4,8 +4,8 @@ export const SEO = ({
   title = "Dota Solutions | Soluciones Digitales 100% Personalizadas | Argentina, Uruguay, USA",
   description = "Desarrollamos sitios web personalizados, sistemas ERP a medida y e-commerce 100% personalizados. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7. Alcance internacional: Argentina, Uruguay, USA.",
   keywords = "desarrollo web personalizado, sistemas ERP a medida, e-commerce personalizado, tiendas online, panel de administración, gestión de clientes, gestión de productos, sitios web Argentina, Uruguay, USA, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, Buenos Aires, Montevideo, Miami",
-  image = "https://dotasolutions.vercel.app/dota.webp",
-  url = "https://dotasolutions.vercel.app",
+  image = "https://www.dotasolutions.agency/dota.webp",
+  url = "https://www.dotasolutions.agency",
   type = "website"
 }) => {
   return (
@@ -74,9 +74,9 @@ export const SEO = ({
           "name": "Dota Solutions",
           "alternateName": "Dota",
           "description": "Soluciones digitales 100% personalizadas. Sitios web, sistemas ERP a medida y e-commerce personalizados con panel de backoffice completo. Entregas en semanas sin costos ocultos.",
-          "url": "https://dotasolutions.vercel.app",
-          "logo": "https://dotasolutions.vercel.app/dota.webp",
-          "image": "https://dotasolutions.vercel.app/dota.webp",
+          "url": "https://www.dotasolutions.agency",
+          "logo": "https://www.dotasolutions.agency/dota.webp",
+          "image": "https://www.dotasolutions.agency/dota.webp",
           "email": "solutionsdota@gmail.com",
           "telephone": "+54-9-11-1234-5678",
           "address": {
