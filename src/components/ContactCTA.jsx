@@ -4,23 +4,30 @@ import { ContactPopup } from './ContactPopup';
 import '../assets/styles/contact-cta.css';
 
 export const ContactCTA = () => {
-  console.log('ContactCTA component mounted');
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
+    const updateVisibility = () => {
+      const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
       setIsVisible(scrollPosition > 0);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    
-    // Verificar estado inicial después de un pequeño delay
-    const timer = setTimeout(handleScroll, 100);
-    
+    // Estado inicial inmediato
+    updateVisibility();
+
+    // Escuchar múltiples eventos para compatibilidad amplia
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    window.addEventListener('wheel', updateVisibility, { passive: true });
+    window.addEventListener('touchmove', updateVisibility, { passive: true });
+
+    // Fallback por si ya se abre con scroll
+    const timer = setTimeout(updateVisibility, 200);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', updateVisibility);
+      window.removeEventListener('wheel', updateVisibility);
+      window.removeEventListener('touchmove', updateVisibility);
       clearTimeout(timer);
     };
   }, []);
@@ -33,10 +40,9 @@ export const ContactCTA = () => {
     setIsPopupOpen(false);
   };
 
-    console.log('ContactCTA rendering, isVisible:', isVisible);
-    return (
+  return (
     <>
-      <div className="contact-cta visible">
+      <div className={`contact-cta ${isVisible ? 'visible' : ''}`}>
         <button
           className="contact-cta-button"
           onClick={handleClick}
