@@ -1,5 +1,5 @@
 Contact: mailto:solutionsdota@gmail.com
 Expires: 2026-01-27T00:00:00.000Z
 Preferred-Languages: es, en
-Canonical: https://www.dotasolutions.agency/.well-known/security.txt
-Policy: https://www.dotasolutions.agency/aviso-legal 
+Canonical: https://dotasolutions.agency/.well-known/security.txt
+Policy: https://dotasolutions.agency/aviso-legal 
