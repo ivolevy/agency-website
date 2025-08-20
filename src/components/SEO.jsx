@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
-  title = "Dota Solutions | Soluciones Digitales 100% Personalizadas | Argentina, Uruguay, USA",
-  description = "Desarrollamos sitios web personalizados, sistemas ERP a medida y e-commerce 100% personalizados. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7. Alcance internacional: Argentina, Uruguay, USA.",
-  keywords = "desarrollo web personalizado, sistemas ERP a medida, e-commerce personalizado, tiendas online, panel de administración, gestión de clientes, gestión de productos, sitios web Argentina, Uruguay, USA, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, Buenos Aires, Montevideo, Miami",
+  title = "Dota Solutions | Desarrollo Web & Sistemas ERP a Medida",
+  description = "Desarrollamos sitios web personalizados, sistemas ERP a medida y e-commerce 100% personalizados. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7.",
+  keywords = "desarrollo web personalizado, sistemas ERP a medida, e-commerce personalizado, tiendas online, panel de administración, gestión de clientes, gestión de productos, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, desarrollo de aplicaciones web, sistemas de gestión, panel de control, backoffice, gestión de inventario, facturación electrónica, CRM personalizado, automatización de procesos, integración de sistemas, desarrollo full stack, React, Node.js, bases de datos, APIs, microservicios, cloud computing, AWS, Vercel, optimización web, responsive design, UX/UI, accesibilidad web, PWA, progressive web app",
   image = "https://dotasolutions.agency/dota.webp",
   url = "https://dotasolutions.agency",
   type = "website"
@@ -19,14 +19,24 @@ export const SEO = ({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href={url} />
       
-      {/* Idioma y Región */}
-      <meta name="language" content="Spanish" />
-      <meta name="geo.region" content="AR" />
-      <meta name="geo.placename" content="Argentina" />
-      <meta name="geo.position" content="-34.6037;-58.3816" />
-      <meta name="ICBM" content="-34.6037, -58.3816" />
-
-      {/* Open Graph / Facebook */}
+      {/* Meta Tags Adicionales para SEO */}
+      <meta name="application-name" content="Dota Solutions" />
+      <meta name="apple-mobile-web-app-title" content="Dota Solutions" />
+      <meta name="msapplication-TileColor" content="#FFA7C4" />
+      <meta name="theme-color" content="#FFA7C4" />
+      <meta name="color-scheme" content="light" />
+      <meta name="supported-color-schemes" content="light" />
+      
+      {/* Meta Tags para Redes Sociales */}
+      <meta name="twitter:site" content="@dotasolutions" />
+      <meta name="twitter:creator" content="@dotasolutions" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content="Dota Solutions - Desarrollo Web & Sistemas ERP a Medida" />
+      
+      {/* Meta Tags para Facebook/Open Graph */}
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
@@ -34,37 +44,39 @@ export const SEO = ({
       <meta property="og:image" content={image} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Dota Solutions - Soluciones Digitales 100% Personalizadas" />
+      <meta property="og:image:alt" content="Dota Solutions - Desarrollo Web & Sistemas ERP a Medida" />
       <meta property="og:site_name" content="Dota Solutions" />
       <meta property="og:locale" content="es_AR" />
       <meta property="og:locale:alternate" content="en_US" />
       <meta property="og:locale:alternate" content="fr_FR" />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@dotasolutions" />
-      <meta name="twitter:creator" content="@dotasolutions" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
-      <meta name="twitter:image:alt" content="Dota Solutions - Soluciones Digitales 100% Personalizadas" />
+      
+      {/* Idioma y Región */}
+      <meta name="language" content="Spanish" />
+      <meta name="geo.region" content="AR" />
+      <meta name="geo.placename" content="Argentina" />
+      <meta name="geo.position" content="-34.6037;-58.3816" />
+      <meta name="ICBM" content="-34.6037, -58.3816" />
 
       {/* Otros Meta Tags Importantes */}
-      <meta name="theme-color" content="#FFA7C4" />
-      <meta name="msapplication-TileColor" content="#FFA7C4" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="Dota Solutions" />
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="msapplication-config" content="/browserconfig.xml" />
       
       {/* Enlaces de Redes Sociales */}
       <link rel="me" href="https://www.instagram.com/dotasolutions" />
       <link rel="me" href="https://www.linkedin.com/company/dota-solutions/" />
       <link rel="me" href="https://www.tiktok.com/@dotasolutions" />
+      <link rel="me" href="https://wa.me/1138240929" />
 
       {/* Preconnect para Performance */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link rel="preconnect" href="https://www.google-analytics.com" />
+      <link rel="preconnect" href="https://www.googletagmanager.com" />
+      <link rel="preconnect" href="https://vercel.live" />
+      <link rel="dns-prefetch" href="https://unpkg.com" />
       
       {/* Schema.org Structured Data */}
       <script type="application/ld+json">
@@ -81,9 +93,7 @@ export const SEO = ({
           "telephone": "+54-9-11-1234-5678",
           "address": {
             "@type": "PostalAddress",
-            "addressCountry": "AR",
-            "addressRegion": "Buenos Aires",
-            "addressLocality": "Argentina"
+            "addressCountry": "AR"
           },
           "geo": {
             "@type": "GeoCoordinates",
@@ -100,7 +110,7 @@ export const SEO = ({
             "contactType": "customer service",
             "email": "solutionsdota@gmail.com",
             "availableLanguage": ["Spanish", "English"],
-            "areaServed": ["AR", "UY", "US"],
+            "areaServed": ["AR"],
             "hoursAvailable": {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -156,6 +166,8 @@ export const SEO = ({
           },
           "foundingDate": "2023",
           "numberOfEmployees": "5-10",
+          "vatID": "AR-12345678901",
+          "taxID": "30-12345678-9",
           "knowsAbout": [
             "Desarrollo Web",
             "Sistemas ERP",
@@ -183,14 +195,6 @@ export const SEO = ({
             {
               "@type": "Country",
               "name": "Argentina"
-            },
-            {
-              "@type": "Country", 
-              "name": "Uruguay"
-            },
-            {
-              "@type": "Country",
-              "name": "United States"
             }
           ],
           "serviceType": "Desarrollo de Software",
@@ -211,7 +215,24 @@ export const SEO = ({
           "@type": "WebSite",
           "name": "Dota Solutions",
           "alternateName": "DOTA",
-          "url": "https://dotasolutions.agency"
+          "url": "https://dotasolutions.agency",
+          "description": "Desarrollo web personalizado, sistemas ERP a medida y e-commerce 100% personalizados. Panel de backoffice completo para gestionar clientes, productos y ventas.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Dota Solutions",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://dotasolutions.agency/dota.webp"
+            }
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://dotasolutions.agency/#contact"
+            },
+            "query-input": "required name=search_term_string"
+          }
         })}
       </script>
     </Helmet>
