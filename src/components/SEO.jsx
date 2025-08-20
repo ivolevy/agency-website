@@ -203,6 +203,17 @@ export const SEO = ({
           }
         })}
       </script>
+
+      {/* Schema.org para Site Name (WebSite) */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Dota Solutions",
+          "alternateName": "DOTA",
+          "url": "https://dotasolutions.agency"
+        })}
+      </script>
     </Helmet>
   );
 }; 
