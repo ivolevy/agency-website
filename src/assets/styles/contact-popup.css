@@ -94,6 +94,12 @@
 .form-row {
   display: flex;
   gap: 12px;
+  width: 100%;
+}
+
+.form-row .form-input {
+  flex: 1;
+  min-width: 0;
 }
 
 .form-input,
@@ -186,6 +192,11 @@
   .form-row {
     flex-direction: column;
     gap: 16px;
+  }
+  
+  .form-row .form-input {
+    flex: none;
+    width: 100%;
   }
 }
 
