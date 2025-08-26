@@ -89,11 +89,16 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
+  width: 100%;
+}
+
+.contact-popup-form > * {
+  margin: 0;
 }
 
 .form-row {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   width: 100%;
 }
 
@@ -134,7 +139,7 @@
   cursor: pointer;
   font-size: 0.88rem;
   transition: all 0.2s ease-in-out;
-  margin-top: 8px;
+  margin-top: 0;
   width: auto;
   display: inline-flex;          /* center loader/text */
   align-items: center;           /* vertical center */
