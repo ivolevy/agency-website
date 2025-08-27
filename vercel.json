@@ -1,4 +1,7 @@
 {
+    "redirects": [
+      { "source": "/favicon.ico", "destination": "/icon.ico", "permanent": true }
+    ],
     "rewrites": [
       {
         "source": "/(.*)",

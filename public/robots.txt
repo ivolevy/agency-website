@@ -15,6 +15,6 @@ Disallow: /api/
 Crawl-delay: 1
 
 # Información adicional para bots
-# Dota Solutions - Soluciones Digitales 100% Personalizadas
+# Dota Solutions - Soluciones Digitales Personalizadas
 # Contacto: solutionsdota@gmail.com
 # Alcance: Argentina, Uruguay, USA

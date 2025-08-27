@@ -27,7 +27,7 @@ export const Legal = () => {
 
         <h2 className="text-xl font-semibold">2. Objeto</h2>
         <p className="text-sm">
-          Este sitio web tiene por objeto ofrecer información sobre los servicios de Dota Solutions, especializados en soluciones digitales 100% personalizadas. Nuestros servicios incluyen:
+          Este sitio web tiene por objeto ofrecer información sobre los servicios de Dota Solutions, especializados en soluciones digitales personalizadas. Nuestros servicios incluyen:
         </p>
         <ul className="list-disc pl-6 text-sm">
           <li>Sitios web personalizados con panel de autogestión</li>

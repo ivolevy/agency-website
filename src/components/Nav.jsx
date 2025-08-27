@@ -30,10 +30,10 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <a href="#header" title="Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados" onClick={e => { e.preventDefault(); scrollToSection('header'); }}>
+        <a href="#header" title="Dota Solutions - Soluciones Digitales Personalizadas" onClick={e => { e.preventDefault(); scrollToSection('header'); }}>
           <img 
             src={dota} 
-            alt="Dota Solutions - Desarrollo de Sistemas de Gestión & Sitios Web 100% Personalizados" 
+            alt="Dota Solutions - Soluciones Digitales Personalizadas" 
             width="120"
             height="40"
             loading="lazy"

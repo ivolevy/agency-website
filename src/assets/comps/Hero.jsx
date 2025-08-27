@@ -25,8 +25,8 @@ const itemVariants = {
 };
 
 export const Hero = ({
-  title = "Soluciones Digitales <br /> 100% Personalizadas",
-  subtitle = "Digitaliza y centralizá tu negocio con soluciones web y de gestión 100% personalizadas.",
+  title = "Soluciones Digitales <br /> Personalizadas",
+  subtitle = "Desarrollamos sistemas ERP | CRM y sitios web.",
   showButtons = true,
   extraText = "Alcance internacional: Argentina, Uruguay, USA y más"
 }) => {

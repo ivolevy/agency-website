@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 const services = [
   {
     title: "Sitios web personalizados",
-    description: "Sitios web 100% personalizados con SEO optimizado que convierten leads.",
+    description: "Sitios web personalizados con SEO optimizado que convierten leads.",
     highlight: "¡Listo en 1 semana!"
   },
   {
@@ -16,7 +16,7 @@ const services = [
     highlight: "Ahorro del 70% en tiempo"
   },
   {
-    title: "E-commerce 100% personalizado",
+    title: "E-commerce personalizado",
     description: "Tiendas online completas con panel de backoffice para gestionar clientes, productos, ventas y más.",
     highlight: "Panel de administración completo"
   }

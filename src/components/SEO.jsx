@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
-  title = "Dota Solutions | Desarrollo Web & Sistemas ERP a Medida",
-  description = "Desarrollamos sitios web personalizados, sistemas ERP a medida y e-commerce 100% personalizados. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7.",
+  title = "Dota Solutions | Soluciones Digitales Personalizadas",
+  description = "Desarrollamos sistemas ERP | CRM y sitios web. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7.",
   keywords = "desarrollo web personalizado, sistemas ERP a medida, e-commerce personalizado, tiendas online, panel de administración, gestión de clientes, gestión de productos, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, desarrollo de aplicaciones web, sistemas de gestión, panel de control, backoffice, gestión de inventario, facturación electrónica, CRM personalizado, automatización de procesos, integración de sistemas, desarrollo full stack, React, Node.js, bases de datos, APIs, microservicios, cloud computing, AWS, Vercel, optimización web, responsive design, UX/UI, accesibilidad web, PWA, progressive web app",
   image = "https://dotasolutions.agency/dota.webp",
   url = "https://dotasolutions.agency",
@@ -34,7 +34,7 @@ export const SEO = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="twitter:image:alt" content="Dota Solutions - Desarrollo Web & Sistemas ERP a Medida" />
+      <meta name="twitter:image:alt" content="Dota Solutions - Soluciones Digitales Personalizadas" />
       
       {/* Meta Tags para Facebook/Open Graph */}
       <meta property="og:type" content={type} />
@@ -44,7 +44,7 @@ export const SEO = ({
       <meta property="og:image" content={image} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Dota Solutions - Desarrollo Web & Sistemas ERP a Medida" />
+      <meta property="og:image:alt" content="Dota Solutions - Soluciones Digitales Personalizadas" />
       <meta property="og:site_name" content="Dota Solutions | Soluciones Digitales Personalizadas" />
       <meta property="og:locale" content="es_AR" />
       <meta property="og:locale:alternate" content="en_US" />
@@ -85,7 +85,7 @@ export const SEO = ({
           "@type": "Organization",
           "name": "Dota Solutions",
           "alternateName": "Dota",
-          "description": "Soluciones digitales 100% personalizadas. Sitios web, sistemas ERP a medida y e-commerce personalizados con panel de backoffice completo. Entregas en semanas sin costos ocultos.",
+          "description": "Soluciones digitales personalizadas. Desarrollamos sistemas ERP | CRM y sitios web con panel de backoffice completo. Entregas en semanas sin costos ocultos.",
                   "url": "https://dotasolutions.agency",
         "logo": "https://dotasolutions.agency/dota.webp",
         "image": "https://dotasolutions.agency/dota.webp",
@@ -136,7 +136,7 @@ export const SEO = ({
                 "itemOffered": {
                   "@type": "Service",
                   "name": "Sitios Web Personalizados",
-                  "description": "Sitios web 100% personalizados con panel de autogestión, SEO y hosting incluido"
+                  "description": "Sitios web personalizados con panel de autogestión, SEO y hosting incluido"
                 }
               },
               {
@@ -151,7 +151,7 @@ export const SEO = ({
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "E-commerce 100% Personalizado",
+                  "name": "E-commerce Personalizado",
                   "description": "Tiendas online completas con panel de backoffice para gestionar clientes, productos, ventas y más"
                 }
               }
@@ -186,7 +186,7 @@ export const SEO = ({
           "@context": "https://schema.org",
           "@type": "Service",
           "name": "Desarrollo de Soluciones Digitales",
-          "description": "Sitios web personalizados, sistemas ERP a medida y e-commerce 100% personalizados con panel de backoffice completo",
+          "description": "Desarrollamos sistemas ERP | CRM y sitios web con panel de backoffice completo",
           "provider": {
             "@type": "Organization",
             "name": "Dota Solutions"
@@ -216,7 +216,7 @@ export const SEO = ({
           "name": "Dota Solutions | Soluciones Digitales Personalizadas",
           "alternateName": ["DOTA", "Dota Solutions"],
           "url": "https://dotasolutions.agency",
-          "description": "Desarrollo web personalizado, sistemas ERP a medida y e-commerce 100% personalizados. Panel de backoffice completo para gestionar clientes, productos y ventas.",
+          "description": "Desarrollamos sistemas ERP | CRM y sitios web. Panel de backoffice completo para gestionar clientes, productos y ventas.",
           "publisher": {
             "@type": "Organization",
             "name": "Dota Solutions",
