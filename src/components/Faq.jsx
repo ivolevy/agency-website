@@ -5,11 +5,11 @@ import "../assets/styles/faq.css";
 const faqs = [
   {
     question: "¿Cuánto tiempo toma desarrollar sitios web y sistemas personalizados?",
-    answer: "Nuestros sitios web personalizados están listos en 1 semana, mientras que los sistemas ERP a medida se entregan en 2-3 semanas. Para e-commerce personalizados, el tiempo es de 2-4 semanas dependiendo de la complejidad. Siempre trabajamos con entregas incrementales para que puedas comenzar a usar las funcionalidades principales rápidamente."
+    answer: "Nuestros sitios web personalizados están listos en 1 semana, mientras que los sistemas ERP a medida se entregan en 2-3 semanas. Siempre trabajamos con entregas incrementales para que puedas comenzar a usar las funcionalidades principales rápidamente."
   },
   {
-    question: "¿Qué incluye el panel de backoffice del e-commerce?",
-    answer: "Nuestro panel de administración incluye gestión completa de productos (agregar, editar, eliminar), gestión de clientes y pedidos, control de inventario, reportes de ventas, gestión de pagos, configuración de envíos, y análisis de métricas. Todo está diseñado para ser intuitivo y fácil de usar, sin necesidad de conocimientos técnicos."
+    question: "¿Qué incluye el panel de backoffice de los sistemas?",
+    answer: "Nuestro panel de administración incluye gestión completa de clientes, productos, inventario, reportes en tiempo real, automatización de procesos, y análisis de métricas. Todo está diseñado para ser intuitivo y fácil de usar, sin necesidad de conocimientos técnicos."
   },
   {
     question: "¿Qué ventajas tiene un sistema personalizado sobre uno genérico?",

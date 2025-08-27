@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 export const SEO = ({
   title = "Dota Solutions | Soluciones Digitales Personalizadas",
   description = "Desarrollamos sistemas ERP | CRM y sitios web. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7.",
-  keywords = "desarrollo web personalizado, sistemas ERP a medida, e-commerce personalizado, tiendas online, panel de administración, gestión de clientes, gestión de productos, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, desarrollo de aplicaciones web, sistemas de gestión, panel de control, backoffice, gestión de inventario, facturación electrónica, CRM personalizado, automatización de procesos, integración de sistemas, desarrollo full stack, React, Node.js, bases de datos, APIs, microservicios, cloud computing, AWS, Vercel, optimización web, responsive design, UX/UI, accesibilidad web, PWA, progressive web app",
+  keywords = "desarrollo web personalizado, sistemas ERP a medida, panel de administración, gestión de clientes, gestión de productos, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, desarrollo de aplicaciones web, sistemas de gestión, panel de control, backoffice, gestión de inventario, facturación electrónica, CRM personalizado, automatización de procesos, integración de sistemas, desarrollo full stack, React, Node.js, bases de datos, APIs, microservicios, cloud computing, AWS, Vercel, optimización web, responsive design, UX/UI, accesibilidad web",
   image = "https://dotasolutions.agency/dota.webp",
   url = "https://dotasolutions.agency",
   type = "website"
@@ -151,8 +151,8 @@ export const SEO = ({
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "E-commerce Personalizado",
-                  "description": "Tiendas online completas con panel de backoffice para gestionar clientes, productos, ventas y más"
+                  "name": "Sistemas de Gestión Empresarial",
+                  "description": "Soluciones integrales para automatizar y optimizar todos los procesos de tu empresa"
                 }
               }
             ]
@@ -171,7 +171,6 @@ export const SEO = ({
           "knowsAbout": [
             "Desarrollo Web",
             "Sistemas ERP",
-            "E-commerce",
             "Automatización Empresarial",
             "SEO",
             "Hosting",
