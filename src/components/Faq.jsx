@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "¿Qué incluye el panel de backoffice de los sistemas?",
-    answer: "Nuestro panel de administración incluye gestión completa de clientes, productos, inventario, reportes en tiempo real, automatización de procesos, y análisis de métricas. Todo está diseñado para ser intuitivo y fácil de usar, sin necesidad de conocimientos técnicos."
+    answer: "Nuestro panel de administración incluye gestión completa de productos (agregar, editar, eliminar), gestión de clientes y pedidos, control de inventario, reportes de ventas, gestión de pagos, configuración de envíos, y análisis de métricas. Todo está diseñado para ser intuitivo y fácil de usar, sin necesidad de conocimientos técnicos."
   },
   {
     question: "¿Qué ventajas tiene un sistema personalizado sobre uno genérico?",
