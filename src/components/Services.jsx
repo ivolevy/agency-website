@@ -11,9 +11,9 @@ const services = [
     highlight: "¡Listo en 1 semana!"
   },
   {
-    title: "Sistemas de gestión a medida (ERP)",
-    description: "ERP adaptado a tu rubro con automatización total y reportes en tiempo real.",
-    highlight: "Ahorro del 70% en tiempo"
+    title: "Sistemas personalizados para tu negocio",
+    description: "Adaptado a tu rubro con automatización total y reportes en tiempo real.",
+    highlight: "Toma el control de tu negocio"
   },
 
 ];

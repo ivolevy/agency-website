@@ -26,7 +26,7 @@ const itemVariants = {
 
 export const Hero = ({
   title = "Soluciones Digitales <br /> Personalizadas",
-  subtitle = "Desarrollamos sistemas ERP | CRM y sitios web.",
+  subtitle = "Desarrollamos sistemas ERP y sitios web personalizados para tu negocio.",
   showButtons = true,
   extraText = "Alcance internacional: Argentina, Uruguay, USA y más"
 }) => {

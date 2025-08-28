@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
   title = "Dota Solutions | Soluciones Digitales Personalizadas",
-  description = "Desarrollamos sistemas ERP | CRM y sitios web. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7.",
+  description = "Desarrollamos sistemas ERP y sitios web personalizados para tu negocio. Ayudamos a empresas a crecer con herramientas digitales que se adaptan a sus necesidades. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7.",
   keywords = "desarrollo web personalizado, sistemas ERP a medida, panel de administración, gestión de clientes, gestión de productos, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, desarrollo de aplicaciones web, sistemas de gestión, panel de control, backoffice, gestión de inventario, facturación electrónica, CRM personalizado, automatización de procesos, integración de sistemas, desarrollo full stack, React, Node.js, bases de datos, APIs, microservicios, cloud computing, AWS, Vercel, optimización web, responsive design, UX/UI, accesibilidad web, PWA, progressive web app",
   image = "https://dotasolutions.agency/dota.webp",
   url = "https://dotasolutions.agency",
@@ -85,7 +85,7 @@ export const SEO = ({
           "@type": "Organization",
           "name": "Dota Solutions",
           "alternateName": "Dota",
-          "description": "Soluciones digitales personalizadas. Desarrollamos sistemas ERP | CRM y sitios web con panel de backoffice completo. Entregas en semanas sin costos ocultos.",
+          "description": "Soluciones digitales personalizadas. Desarrollamos sistemas ERP y sitios web personalizados para tu negocio. Ayudamos a empresas a crecer con herramientas digitales que se adaptan a sus necesidades.",
                   "url": "https://dotasolutions.agency",
         "logo": "https://dotasolutions.agency/dota.webp",
         "image": "https://dotasolutions.agency/dota.webp",
@@ -178,7 +178,7 @@ export const SEO = ({
           "@context": "https://schema.org",
           "@type": "Service",
           "name": "Desarrollo de Soluciones Digitales",
-          "description": "Desarrollamos sistemas ERP | CRM y sitios web con panel de backoffice completo",
+          "description": "Desarrollamos sistemas ERP y sitios web personalizados para tu negocio. Ayudamos a empresas a crecer con herramientas digitales que se adaptan a sus necesidades.",
           "provider": {
             "@type": "Organization",
             "name": "Dota Solutions"
@@ -208,7 +208,7 @@ export const SEO = ({
           "name": "Dota Solutions | Soluciones Digitales Personalizadas",
           "alternateName": ["DOTA", "Dota Solutions"],
           "url": "https://dotasolutions.agency",
-          "description": "Desarrollamos sistemas ERP | CRM y sitios web. Panel de backoffice completo para gestionar clientes, productos y ventas.",
+          "description": "Desarrollamos sistemas ERP y sitios web personalizados para tu negocio. Ayudamos a empresas a crecer con herramientas digitales que se adaptan a sus necesidades.",
           "publisher": {
             "@type": "Organization",
             "name": "Dota Solutions",
