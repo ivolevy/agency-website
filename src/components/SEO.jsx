@@ -45,7 +45,7 @@ export const SEO = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content="Dota Solutions - Soluciones Digitales Personalizadas" />
-      <meta property="og:site_name" content="Dota Solutions | Soluciones Digitales Personalizadas" />
+      <meta property="og:site_name" content="Dota Solutions" />
       <meta property="og:locale" content="es_AR" />
       <meta property="og:locale:alternate" content="en_US" />
       <meta property="og:locale:alternate" content="fr_FR" />
@@ -205,8 +205,8 @@ export const SEO = ({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Dota Solutions | Soluciones Digitales Personalizadas",
-          "alternateName": ["DOTA", "Dota Solutions"],
+          "name": "Dota Solutions",
+          "alternateName": ["Dota"],
           "url": "https://dotasolutions.agency",
           "description": "Desarrollamos sistemas ERP y sitios web personalizados para tu negocio. Ayudamos a empresas a crecer con herramientas digitales que se adaptan a sus necesidades.",
           "publisher": {

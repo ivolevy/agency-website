@@ -8,6 +8,7 @@ const menuItems = [
   { to: "#header", label: "Inicio", title: "Volver al inicio", scroll: true },
   { to: "#services", label: "Servicios", title: "Ver nuestros servicios", scroll: true },
   { to: "/#projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y sitios personalizados" },
+  { to: "#team", label: "Equipo", title: "Conoce nuestro equipo", scroll: true },
   { to: "/#contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar tu proyecto", className: "navButton" },
 ];
 
