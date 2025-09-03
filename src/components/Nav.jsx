@@ -21,7 +21,16 @@ export const NavComponent = () => {
   const scrollToSection = (id) => {
     const section = id === 'top' || id === 'header' ? document.getElementById('header') : document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const navbarHeight = 100; // Altura aproximada del navbar + padding extra
+      const sectionTop = section.offsetTop;
+      
+      // Usar setTimeout para asegurar que el scroll funcione correctamente
+      setTimeout(() => {
+        window.scrollTo({
+          top: sectionTop - navbarHeight,
+          behavior: 'smooth'
+        });
+      }, 100);
     } else if (id === 'top' || id === 'header') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
