@@ -122,7 +122,7 @@ export default function Services() {
   };
 
   return (
-    <section className="w-full py-10" id="services">
+    <section className="w-full py-10" id="services" style={{ scrollMarginTop: '80px' }}>
       <div className="container mx-auto px-4 md:px-4 max-w-6xl">
         <div className="flex flex-col md:flex-row md:items-start md:gap-12 mb-10">
           <div className="md:w-1/3 mb-8 md:mb-0">

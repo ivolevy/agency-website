@@ -71,8 +71,8 @@ export const Team = () => {
   };
 
   return (
-    <section className="w-full py-16 bg-[#FAFAFA]" id="team">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <section className="w-full py-16 bg-[#FAFAFA]" id="team" style={{ scrollMarginTop: '80px' }}>
+      <div className="container mx-auto px-4 md:px-4 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 bg-pink-50 text-pink-400 rounded-full text-xs font-medium mb-3">

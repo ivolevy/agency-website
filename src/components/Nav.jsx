@@ -5,10 +5,10 @@ import "../assets/styles/contact.css";
 import dota from "../assets/images/logo/dota.webp";
 
 const menuItems = [
-  { to: "#header", label: "Inicio", title: "Volver al inicio", scroll: true },
-  { to: "#services", label: "Servicios", title: "Ver nuestros servicios", scroll: true },
+  { to: "/#header", label: "Inicio", title: "Volver al inicio" },
+  { to: "/#services", label: "Servicios", title: "Ver nuestros servicios" },
   { to: "/#projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y sitios personalizados" },
-  { to: "#team", label: "Equipo", title: "Conoce nuestro equipo", scroll: true },
+  { to: "/#team", label: "Equipo", title: "Conoce nuestro equipo" },
   { to: "/#contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar tu proyecto", className: "navButton" },
 ];
 
@@ -40,7 +40,7 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <a href="#header" title="Dota Solutions - Soluciones Digitales Personalizadas" onClick={e => { e.preventDefault(); scrollToSection('header'); }}>
+        <a href="/#header" title="Dota Solutions - Soluciones Digitales Personalizadas">
           <img 
             src={dota} 
             alt="Dota Solutions - Soluciones Digitales Personalizadas" 

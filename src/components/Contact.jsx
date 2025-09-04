@@ -63,7 +63,7 @@ export const Contact = () => {
     <h2 className="servicesTitle text-center mb-5">
         Contacto
       </h2>
-    <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer" id="contact">
+    <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer" id="contact" style={{ scrollMarginTop: '200px' }}>
       {/* Lado Izquierdo: Información + Redes Sociales */}
       <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
         <h3 className="text-3xl font-bold text-white contactSubtitle">Empecemos a crear juntos. Lleva tu facturación a otro nivel!</h3>
