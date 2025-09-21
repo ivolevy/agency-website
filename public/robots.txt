@@ -10,6 +10,9 @@ Disallow: /404
 Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
+Disallow: /politica-de-privacidad
+Disallow: /aviso-legal
+Disallow: /cookies
 
 # Crawl-delay para ser respetuoso con el servidor
 Crawl-delay: 1

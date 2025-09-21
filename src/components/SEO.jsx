@@ -6,7 +6,8 @@ export const SEO = ({
   keywords = "desarrollo web personalizado, sistemas ERP a medida, panel de administración, gestión de clientes, gestión de productos, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, desarrollo de aplicaciones web, sistemas de gestión, panel de control, backoffice, gestión de inventario, facturación electrónica, CRM personalizado, automatización de procesos, integración de sistemas, desarrollo full stack, React, Node.js, bases de datos, APIs, microservicios, cloud computing, AWS, Vercel, optimización web, responsive design, UX/UI, accesibilidad web, PWA, progressive web app",
   image = "https://dotasolutions.agency/dota.webp",
   url = "https://dotasolutions.agency",
-  type = "website"
+  type = "website",
+  noindex = false
 }) => {
   return (
     <Helmet>
@@ -15,7 +16,7 @@ export const SEO = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content="Dota Solutions" />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href={url} />
       

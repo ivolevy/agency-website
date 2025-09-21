@@ -7,6 +7,7 @@ export const Legal = () => {
         title="Aviso Legal | Dota Solutions"
         description="Aviso legal de Dota Solutions. Información legal sobre nuestros servicios de desarrollo web y sistemas ERP personalizados."
         url="https://dotasolutions.agency/aviso-legal"
+        noindex={true}
       />
       <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
       <h1 className="text-2xl font-semibold text-center">AVISO LEGAL</h1>
