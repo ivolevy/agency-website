@@ -29,7 +29,7 @@ export const Footer = () => {
         <div className="w-full md:w-1/3 flex flex-col items-center justify-center min-h-[150px] 
                         md:items-end md:justify-end text-black">
           <div className="flex space-x-5">
-            <a href="https://www.linkedin.com/company/dota-solutions/?viewAsMember=true" target="_blank" className="text-2xl hover:text-gray-700 icon"><TbBrandLinkedinFilled /></a>
+            <a href="https://www.linkedin.com/company/dota-solutions/" target="_blank" className="text-2xl hover:text-gray-700 icon"><TbBrandLinkedinFilled /></a>
             <a href="https://www.instagram.com/dotasolutions/" target="_blank" className="text-2xl hover:text-gray-700 icon"><AiFillInstagram /></a>
             <a href="https://wa.me/1138240929" className="text-2xl hover:text-gray-700 icon"><FaWhatsapp /></a>
           </div>

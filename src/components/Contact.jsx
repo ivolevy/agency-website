@@ -80,7 +80,7 @@ export const Contact = () => {
             <AiFillInstagram className="contactIcon"/>
           </a>
           <a 
-            href="https://www.linkedin.com/dota-solutions" 
+            href="https://www.linkedin.com/company/dota-solutions/" 
             target="_blank" rel="noopener noreferrer" 
             className="text-blue-700 hover:text-blue-800 text-3xl"
             aria-label="Linkedin" title="Linkedin"
