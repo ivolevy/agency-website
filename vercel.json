@@ -44,6 +44,16 @@
           }
         ]
       }
+      ,
+      {
+        "source": "/(404|politica-de-privacidad|aviso-legal|cookies)$",
+        "headers": [
+          {
+            "key": "X-Robots-Tag",
+            "value": "noindex, nofollow"
+          }
+        ]
+      }
     ]
   }
   
