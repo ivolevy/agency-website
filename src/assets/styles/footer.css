@@ -26,6 +26,15 @@
     text-decoration: underline !important;
 }
 
+.ivanLevyLink {
+    color: #ff80bf !important;
+    text-decoration: none !important;
+}
+
+.ivanLevyLink:hover {
+    text-decoration: underline !important;
+}
+
 
 @media screen and (min-width: 1025px) {
     

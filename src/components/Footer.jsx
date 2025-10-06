@@ -48,7 +48,7 @@ export const Footer = () => {
         <img src={dota} alt="dota solutions" className="w-24 footerImg" />
       </div>
       <div className="text-center text-sm text-gray-600 mt-6">
-        Diseñado y desarrollado por <a href="https://ivanlevyportfolio.vercel.app" target="_blank" rel="noopener noreferrer" className="underline">Ivan levy</a>
+        Diseñado y desarrollado por <a href="https://ivanlevyportfolio.vercel.app" target="_blank" rel="noopener noreferrer" className="underline ivanLevyLink">Ivan levy</a>
       </div>
     </footer>
   );
