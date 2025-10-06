@@ -14,7 +14,7 @@ import { Header } from './components/Header.jsx';
 import Services from './components/Services.jsx';
 import { Steps } from './components/Steps.jsx';
 import { Projects } from './components/Projects.jsx';
-import { Team } from './components/Team.jsx';
+// import { Team } from './components/Team.jsx';
 import { Faq } from './components/Faq.jsx';
 import { Contact } from './components/Contact.jsx';
 import { Footer } from './components/Footer.jsx';
@@ -63,7 +63,7 @@ function Layout() {
               <Services />
               <Steps />
               <Projects />
-              <Team />
+              {/* Equipo ocultado a pedido */}
               <Faq />
               <Contact />
             </>

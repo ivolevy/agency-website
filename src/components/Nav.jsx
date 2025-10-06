@@ -8,7 +8,7 @@ const menuItems = [
   { to: "/#header", label: "Inicio", title: "Volver al inicio" },
   { to: "/#services", label: "Servicios", title: "Ver nuestros servicios" },
   { to: "/#projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y sitios personalizados" },
-  { to: "/#team", label: "Equipo", title: "Conoce nuestro equipo" },
+  // Equipo ocultado a pedido: { to: "/#team", label: "Equipo", title: "Conoce nuestro equipo" },
   { to: "/#contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar tu proyecto", className: "navButton" },
 ];
 
