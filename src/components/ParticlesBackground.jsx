@@ -40,7 +40,7 @@ export const ParticlesBackground = () => {
       { r: 234, g: 156, b: 156 }, // rosa salmón
     ];
 
-    const particleCount = Math.floor((canvas.width * canvas.height) / 2500);
+    const particleCount = Math.floor((canvas.width * canvas.height) / 8000);
     particlesRef.current = Array.from({ length: particleCount }, () => {
       const colorSet = colorSets[Math.floor(Math.random() * colorSets.length)];
       return {
@@ -102,7 +102,7 @@ export const ParticlesBackground = () => {
 
           if (distance < 120) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(255, 128, 191, ${(1 - distance / 120) * 0.12})`;
+            ctx.strokeStyle = `rgba(255, 128, 191, ${(1 - distance / 120) * 0.1})`;
             ctx.lineWidth = 0.5;
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
