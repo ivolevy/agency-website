@@ -46,10 +46,10 @@ export const ContactCTA = () => {
         <button
           className="contact-cta-button"
           onClick={handleClick}
-          aria-label="Quote your project"
-          title="Quote your project"
+          aria-label="Get a quote"
+          title="Get a quote"
         >
-          <span>Quote your project</span>
+          <span>Get a quote</span>
           <ArrowRight size={16} />
         </button>
       </div>

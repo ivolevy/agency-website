@@ -66,8 +66,8 @@ export const Contact = () => {
       <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer contact-card">
       {/* Left Side: Information + Social Media */}
       <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
-        <h3 className="text-white contactSubtitle" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '400', fontSize: '1.3rem' }}>Let's build something together. Take your business to the next level.</h3>
-        <p className="mb-4 contactText" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>Let's discuss how we can transform your business</p>
+        <h3 className="text-white contactSubtitle" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '400', fontSize: '1.3rem' }}>Cut costs and boost revenue with custom software.</h3>
+        <p className="mb-4 contactText" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>Let's discuss how automation and efficiency can drive your bottom line</p>
 
         {/* Redes Sociales */}
         <div className="flex items-center space-x-4 mb-4">

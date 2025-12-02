@@ -4,24 +4,24 @@ import "../assets/styles/faq.css";
 
 const faqs = [
   {
-    question: "How long does it take to develop custom websites and systems?",
-    answer: "Our custom websites are ready in 1 week, while custom ERP systems are delivered in 2-3 weeks. We always work with incremental deliveries so you can start using the main features quickly."
+    question: "How quickly will I see ROI on my investment?",
+    answer: "Most clients see positive ROI within the first quarter. Our custom websites are ready in 1 week, while ERP systems are delivered in 2-3 weeks with incremental releases. You start saving money and generating revenue from day one."
   },
   {
-    question: "What does the backoffice panel of the systems include?",
-    answer: "Our admin panel includes complete product management (add, edit, delete), customer and order management, inventory control, sales reports, payment management, shipping configuration, and metrics analysis. Everything is designed to be intuitive and easy to use, with no technical knowledge required."
+    question: "How much can I save on operational costs?",
+    answer: "Our systems automate manual processes, reducing labor costs by up to 60%. The admin panel includes automated inventory management, sales reporting, payment processing, and analytics—eliminating hours of manual work daily and cutting overhead significantly."
   },
   {
-    question: "What advantages does a custom system have over a generic one?",
-    answer: "A custom system adapts exactly to your processes and specific needs. This means greater efficiency, less time wasted on manual tasks, better integration with your existing systems, and a user experience optimized for your team. Plus, you can add unique features that give you a competitive advantage."
+    question: "How will this increase my revenue?",
+    answer: "Custom systems streamline sales processes, improve customer experience, and unlock new revenue streams. By automating workflows and reducing errors, you can handle more customers with the same resources, directly boosting your bottom line."
   },
   {
-    question: "How do you guarantee data security in the systems?",
-    answer: "We implement multiple layers of security: data encryption, two-factor authentication, automatic backups, and compliance with international security standards. Additionally, we perform regular audits and security updates to keep your system protected."
+    question: "What's the cost of not automating?",
+    answer: "Manual processes cost time and money. Every hour spent on repetitive tasks is revenue lost. Our systems eliminate these inefficiencies, allowing your team to focus on growth while automation handles the rest—saving thousands monthly."
   },
   {
-    question: "Do you offer technical support after delivery?",
-    answer: "Yes, we offer 24/7 technical support for all our systems. This includes maintenance, updates, troubleshooting, and assistance for new features. Our team is always available to ensure your system works perfectly."
+    question: "Do you offer ongoing support to maximize ROI?",
+    answer: "Yes, we provide 24/7 support to ensure your system continuously delivers value. We monitor performance, optimize processes, and add features that further reduce costs and increase revenue. Your investment keeps paying off year after year."
   }
 ];
 

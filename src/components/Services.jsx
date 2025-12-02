@@ -62,33 +62,33 @@ export default function Services() {
           <span className="services-badge">ABOUT US</span>
           
           <h1 className="services-title">
-            We turn ideas into digital solutions
+            Software that saves money and drives revenue
           </h1>
           
           <p className="services-description">
-            We believe technology has the power to transform businesses. 
-            Every project is a chance to build something unique that truly matters.
+            We build custom solutions that reduce operational costs, automate manual work, and increase your bottom line. 
+            Every project delivers measurable financial impact.
           </p>
 
           <div className="services-features">
             <div className="feature-item">
-              <h3 className="feature-title">Constant innovation</h3>
+              <h3 className="feature-title">Reduce operational costs</h3>
               <p className="feature-text">
-                We stay up-to-date with the latest trends and technologies to offer you cutting-edge solutions.
+                Automate repetitive tasks and eliminate manual processes. Cut overhead by up to 60% while improving accuracy and speed.
               </p>
             </div>
             
             <div className="feature-item">
-              <h3 className="feature-title">Personalized approach</h3>
+              <h3 className="feature-title">Increase revenue</h3>
               <p className="feature-text">
-                Every business is unique. We work with you to understand your specific needs and create tailored solutions.
+                Streamline sales processes, improve customer experience, and unlock new revenue streams. See measurable growth in your bottom line.
               </p>
             </div>
             
             <div className="feature-item">
-              <h3 className="feature-title">Commitment to results</h3>
+              <h3 className="feature-title">Fast ROI</h3>
               <p className="feature-text">
-                We don't just deliver projects—we make sure they work and add real value to your business.
+                Our solutions pay for themselves quickly. Most clients see positive ROI within the first quarter, with ongoing savings year after year.
               </p>
             </div>
           </div>

@@ -77,7 +77,7 @@ export const ContactPopup = ({ isOpen, onClose }) => {
         </button>
         
         <div className="contact-popup-content">
-          <h2 className="contact-popup-title">Quote your project</h2>
+          <h2 className="contact-popup-title">Get a quote</h2>
           <p className="contact-popup-subtitle">Let's talk about how to revolutionize your business</p>
           
           <form onSubmit={handleSubmit} className="contact-popup-form">

@@ -26,7 +26,7 @@ const itemVariants = {
 };
 
 export const Hero = ({
-  subtitle = "We craft tailored digital solutions that simplify your day-to-day, empower your team, and enhance your customers ratio"
+  subtitle = "Custom software that cuts costs, boosts revenue, and automates workflows. See measurable ROI in weeks, not years."
 }) => {
   return (
     <motion.section

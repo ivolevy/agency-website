@@ -73,15 +73,15 @@ export const Projects = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            See how we help businesses like yours reach their goals. Explore our demo templates below.
+            See how we help businesses cut costs and increase revenue. Explore our demo templates below.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-5">
         {projects.map((project, index) => (
           <motion.article
             key={project.id}
-            className="relative borderRadius p-4 md:p-6 shadow-lg project-card"
+            className="relative borderRadius p-3 md:p-4 shadow-lg project-card"
             style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)' }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,38 +91,38 @@ export const Projects = () => {
             }}
             viewport={{ once: true, amount: 0.03 }}
           >
-            <div className="relative aspect-video borderRadius overflow-hidden mb-4 md:mb-6">
+            <div className="relative aspect-video borderRadius overflow-hidden mb-3 md:mb-4">
               <img
                 src={project.img}
                 alt={`${project.title} - ${project.description}`}
                 className="project-image"
                 loading="lazy"
                 width="400"
-                height="225"
+                height="200"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>
 
-            <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-4" style={{ color: '#fff' }}>{project.title}</h2>
+            <h2 className="text-base md:text-lg font-semibold mb-2 md:mb-3" style={{ color: '#fff' }}>{project.title}</h2>
 
-            <div className="space-y-3 mb-6">
+            <div className="space-y-2 mb-4">
               {project.achievements.map(achievement => (
                 <div key={achievement} className="flex items-center" style={{ color: '#d1d1d1' }}>
-                  <ArrowRight size={16} className="text-pink-400 mr-2" />
-                  <span className="text-sm">{achievement}</span>
+                  <ArrowRight size={14} className="text-pink-400 mr-2" />
+                  <span className="text-xs md:text-sm">{achievement}</span>
                 </div>
               ))}
             </div>
 
-            <div className="flex justify-between items-center pt-4" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
+            <div className="flex justify-between items-center pt-3" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
               <motion.a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-pink-400 hover:text-pink-300 font-medium"
+                className="inline-flex items-center text-pink-400 hover:text-pink-300 font-medium text-sm"
               >
                 View project
-                <ArrowUpRight size={16} className="ml-2" />
+                <ArrowUpRight size={14} className="ml-2" />
               </motion.a>
             </div>
           </motion.article>
