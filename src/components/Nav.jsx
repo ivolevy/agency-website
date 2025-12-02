@@ -4,11 +4,11 @@ import "../assets/styles/nav.css";
 import "../assets/styles/contact.css";
 
 const menuItems = [
-  { to: "/#header", label: "Inicio", title: "Volver al inicio" },
-  { to: "/#services", label: "Servicios", title: "Ver nuestros servicios" },
-  { to: "/#projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y sitios personalizados" },
-  // Equipo ocultado a pedido: { to: "/#team", label: "Equipo", title: "Conoce nuestro equipo" },
-  { to: "/#contact", label: "Trabajemos juntos", title: "Contáctanos para comenzar tu proyecto", className: "navButton" },
+  { to: "/#header", label: "Home", title: "Return to home" },
+  { to: "/#services", label: "Services", title: "View our services" },
+  { to: "/#projects", label: "Projects", title: "View our custom systems and websites projects" },
+  // Team hidden by request: { to: "/#team", label: "Team", title: "Meet our team" },
+  { to: "/#contact", label: "Let's work together", title: "Contact us to start your project", className: "navButton" },
 ];
 
 export const NavComponent = () => {
@@ -16,14 +16,14 @@ export const NavComponent = () => {
 
   const toggleNav = () => setIsMenuOpen((prev) => !prev);
 
-  // Función para hacer scroll suave
+  // Smooth scroll function
   const scrollToSection = (id) => {
     const section = id === 'top' || id === 'header' ? document.getElementById('header') : document.getElementById(id);
     if (section) {
-      const navbarHeight = 100; // Altura aproximada del navbar + padding extra
+      const navbarHeight = 100; // Approximate navbar height + extra padding
       const sectionTop = section.offsetTop;
       
-      // Usar setTimeout para asegurar que el scroll funcione correctamente
+      // Use setTimeout to ensure scroll works correctly
       setTimeout(() => {
         window.scrollTo({
           top: sectionTop - navbarHeight,
@@ -39,10 +39,10 @@ export const NavComponent = () => {
   return (
     <nav>
       <div className="logo">
-        <a href="/#header" title="Dota Solutions - Soluciones Digitales Personalizadas">
+        <a href="/#header" title="Dota Solutions - Custom Digital Solutions">
           <img 
             src="/dota.png" 
-            alt="Dota Solutions - Soluciones Digitales Personalizadas" 
+            alt="Dota Solutions - Custom Digital Solutions" 
             width="120"
             height="40"
             loading="lazy"
@@ -65,7 +65,7 @@ export const NavComponent = () => {
       <button
         className={`hamburger ${isMenuOpen ? "hamburger-active" : ""}`}
         onClick={toggleNav}
-        aria-label="Abrir menú de navegación"
+        aria-label="Open navigation menu"
         aria-expanded={isMenuOpen}
       >
         <span className="line"></span>

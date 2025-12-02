@@ -9,22 +9,21 @@ export const Footer = () => {
     <footer className="footer p-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         
-        {/* Sección Izquierda */}
+        {/* Left Section */}
         <div className="w-full md:w-1/3 text-center md:text-left text-sm font-medium text-white hidden md:block">
-          TRABAJA CON NOSOTROS · INICIA TU PROYECTO
+          WORK WITH US · START YOUR PROJECT
         </div>
 
-        {/* Sección de Enlaces CENTRADA */}
+        {/* Center Links Section */}
         <div className="w-full md:w-1/3 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-2 text-center text-sm text-white">
-        <Link to="/aviso-legal" target="_blank" className="legalLinks">Aviso legal</Link>
+        <Link to="/aviso-legal" target="_blank" className="legalLinks">Legal Notice</Link>
           <span className="hidden md:inline">·</span>
-          {/* Aquí usa Link de React Router */}
-          <Link to="/politica-de-privacidad" target="_blank" className="legalLinks">Política de privacidad</Link>
+          <Link to="/politica-de-privacidad" target="_blank" className="legalLinks">Privacy Policy</Link>
           <span className="hidden md:inline">·</span>
           <Link to="/cookies" target="_blank" className="legalLinks">Cookies</Link>
         </div>
 
-        {/* Sección de Iconos y Correo (Centrada en Mobile) */}
+        {/* Icons and Email Section (Centered on Mobile) */}
         <div className="w-full md:w-1/3 flex flex-col items-center justify-center min-h-[150px] 
                         md:items-end md:justify-end text-white">
           <div className="flex space-x-5">
@@ -32,16 +31,16 @@ export const Footer = () => {
             <a href="https://www.instagram.com/dotasolutions/" target="_blank" className="text-2xl icon"><AiFillInstagram /></a>
             <a href="https://wa.me/1138240929" className="text-2xl icon"><FaWhatsapp /></a>
           </div>
-          {/* Correo Electrónico */}
+          {/* Email */}
           <div className="mt-2 text-sm text-gray-300">
             <a href="mailto:solutionsdota@gmail.com" className="hover:underline email">solutionsdota@gmail.com</a>
           </div>
         </div>
       </div>
 
-      {/* Copyright y Logo */}
+      {/* Copyright and Logo */}
       <div className="text-center text-sm text-gray-400 mt-4">
-        &copy; {new Date().getFullYear()} dota solutions. Todos los derechos reservados.
+        &copy; {new Date().getFullYear()} dota solutions. All rights reserved.
       </div>
       <div className="flex justify-center mt-4">
         <img src="/dota.png" alt="dota solutions" className="w-32 footerImg" />

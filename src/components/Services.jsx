@@ -59,36 +59,36 @@ export default function Services() {
     <section className="services-section" id="services" style={{ scrollMarginTop: '80px' }}>
       <div className="services-container">
         <div className="services-content">
-          <span className="services-badge">ACERCA DE NOSOTROS</span>
+          <span className="services-badge">ABOUT US</span>
           
           <h1 className="services-title">
-            Transformamos ideas en realidad digital
+            We turn ideas into digital solutions
           </h1>
           
           <p className="services-description">
-            Creemos en el poder de la tecnología para impulsar el crecimiento empresarial. 
-            Cada proyecto es una oportunidad de crear algo único que marque la diferencia.
+            We believe technology has the power to transform businesses. 
+            Every project is a chance to build something unique that truly matters.
           </p>
 
           <div className="services-features">
             <div className="feature-item">
-              <h3 className="feature-title">Innovación constante</h3>
+              <h3 className="feature-title">Constant innovation</h3>
               <p className="feature-text">
-                Nos mantenemos al día con las últimas tendencias y tecnologías para ofrecerte soluciones de vanguardia.
+                We stay up-to-date with the latest trends and technologies to offer you cutting-edge solutions.
               </p>
             </div>
             
             <div className="feature-item">
-              <h3 className="feature-title">Enfoque personalizado</h3>
+              <h3 className="feature-title">Personalized approach</h3>
               <p className="feature-text">
-                Cada negocio es único. Trabajamos contigo para entender tus necesidades específicas y crear soluciones a medida.
+                Every business is unique. We work with you to understand your specific needs and create tailored solutions.
               </p>
             </div>
             
             <div className="feature-item">
-              <h3 className="feature-title">Compromiso con resultados</h3>
+              <h3 className="feature-title">Commitment to results</h3>
               <p className="feature-text">
-                No solo entregamos proyectos, garantizamos que funcionen y generen valor real para tu empresa.
+                We don't just deliver projects—we make sure they work and add real value to your business.
               </p>
             </div>
           </div>
@@ -96,25 +96,25 @@ export default function Services() {
           <div className="services-stats" id="stats-section">
             <div className="stat-item">
               <div className="stat-number">+{contadores.proyectos}</div>
-              <div className="stat-label">Proyectos entregados</div>
+              <div className="stat-label">Projects delivered</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">+{contadores.experiencia}</div>
-              <div className="stat-label">Años de experiencia</div>
+              <div className="stat-label">Years of experience</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">{contadores.soporte}/7</div>
-              <div className="stat-label">Soporte técnico</div>
+              <div className="stat-label">Technical support</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">+{contadores.paises}</div>
-              <div className="stat-label">Países alcanzados</div>
+              <div className="stat-label">Countries reached</div>
             </div>
           </div>
 
           <div className="services-cta">
             <a href="#contact" className="cta-button">
-              Hablemos de tu proyecto
+              Let's talk about your project
             </a>
           </div>
         </div>

@@ -9,35 +9,35 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "editor de imágenes centralizado",
-      description: "Sistema de gestión integral para estudios de arquitectura y diseño",
+      title: "Centralized image editor",
+      description: "Comprehensive management system for architecture and design studios",
       img: photoEditor,
       textColor: "text-black",
       bgColor: "bg-[#F5F1E5]",
-      altText: "Imagen del proyecto estudio versus.",
-      achievements: ["Background remover con IA", "Cropping", "Resizing", "Extension change"],
+      altText: "Image of the studio versus project.",
+      achievements: ["AI background remover", "Cropping", "Resizing", "Extension change"],
       link: "https://v0-centralized-image-editor.vercel.app",
     },
     {
       id: 2,
       title: "Mediterra Restaurant",
-      description: "Sitio web para restaurante mediterráneo de alta cocina",
+      description: "Website for a high-end Mediterranean restaurant",
       img: restaurant,
       textColor: "text-yellow-400",
       bgColor: "bg-black",
-      altText: "Imagen del proyecto Mediterra Restaurant",
-      achievements: ["Form de reservas", "Menú", "Pedidos online", "Información"],
+      altText: "Image of the Mediterra Restaurant project",
+      achievements: ["Reservation form", "Menu", "Online orders", "Information"],
       link: "https://v0-luxury-restaurant-design.vercel.app",
     },
     {
       id: 3,
-      title: "Gestión abogado laboral",
-      description: "Sistema ERP integral para estudios jurídicos laborales con gestión de clientes, finanzas, escritos y agenda",
+      title: "Labor law attorney management",
+      description: "Comprehensive ERP system for labor law firms with client management, finances, documents, and scheduling",
       img: lawyer,
       textColor: "text-white",
       bgColor: "bg-gray-900",
-      altText: "Dashboard del sistema de gestión para abogados laborales",
-      achievements: ["Gestión de clientes", "Finanzas", "Escritos", "Agenda"],
+      altText: "Dashboard of the management system for labor attorneys",
+      achievements: ["Client management", "Finances", "Documents", "Schedule"],
       link: "https://v0-laboral-erp-interface.vercel.app",
     },
   ];
@@ -53,7 +53,7 @@ export const Projects = () => {
             transition={{ duration: 0.3 }}
             viewport={{ once: true }}
           >
-            ÚLTIMOS PROYECTOS
+            LATEST PROJECTS
           </motion.span>
           <motion.h1 
             className="servicesTitle text-center mb-3"
@@ -63,7 +63,7 @@ export const Projects = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <span className="underline">Proyectos</span> que transforman
+            <span className="underline">Projects</span> that make a difference
           </motion.h1>
           <motion.p 
             className="max-w-3xl mx-auto"
@@ -73,7 +73,7 @@ export const Projects = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Descubre cómo ayudamos a clientes como vos a alcanzar sus objetivos (templates demostrativos)
+            See how we help businesses like yours reach their goals. Explore our demo templates below.
           </motion.p>
         </div>
 
@@ -121,7 +121,7 @@ export const Projects = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-pink-400 hover:text-pink-300 font-medium"
               >
-                Ver proyecto
+                View project
                 <ArrowUpRight size={16} className="ml-2" />
               </motion.a>
             </div>
@@ -143,7 +143,7 @@ export const Projects = () => {
             onMouseEnter={(e) => e.currentTarget.style.opacity = '0.95'}
             onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
           >
-            ¿Listo para tu proyecto?
+            Ready to start your project?
             <ArrowDown size={16} className="ml-2" />
           </a>
         </motion.div>

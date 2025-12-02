@@ -4,24 +4,24 @@ import "../assets/styles/faq.css";
 
 const faqs = [
   {
-    question: "¿Cuánto tiempo toma desarrollar sitios web y sistemas personalizados?",
-    answer: "Nuestros sitios web personalizados están listos en 1 semana, mientras que los sistemas ERP a medida se entregan en 2-3 semanas. Siempre trabajamos con entregas incrementales para que puedas comenzar a usar las funcionalidades principales rápidamente."
+    question: "How long does it take to develop custom websites and systems?",
+    answer: "Our custom websites are ready in 1 week, while custom ERP systems are delivered in 2-3 weeks. We always work with incremental deliveries so you can start using the main features quickly."
   },
   {
-    question: "¿Qué incluye el panel de backoffice de los sistemas?",
-    answer: "Nuestro panel de administración incluye gestión completa de productos (agregar, editar, eliminar), gestión de clientes y pedidos, control de inventario, reportes de ventas, gestión de pagos, configuración de envíos, y análisis de métricas. Todo está diseñado para ser intuitivo y fácil de usar, sin necesidad de conocimientos técnicos."
+    question: "What does the backoffice panel of the systems include?",
+    answer: "Our admin panel includes complete product management (add, edit, delete), customer and order management, inventory control, sales reports, payment management, shipping configuration, and metrics analysis. Everything is designed to be intuitive and easy to use, with no technical knowledge required."
   },
   {
-    question: "¿Qué ventajas tiene un sistema personalizado sobre uno genérico?",
-    answer: "Un sistema personalizado se adapta exactamente a tus procesos y necesidades específicas. Esto significa mayor eficiencia, menos tiempo perdido en tareas manuales, mejor integración con tus sistemas existentes y una experiencia de usuario optimizada para tu equipo. Además, puedes agregar funcionalidades únicas que te den ventaja competitiva."
+    question: "What advantages does a custom system have over a generic one?",
+    answer: "A custom system adapts exactly to your processes and specific needs. This means greater efficiency, less time wasted on manual tasks, better integration with your existing systems, and a user experience optimized for your team. Plus, you can add unique features that give you a competitive advantage."
   },
   {
-    question: "¿Cómo garantizan la seguridad de los datos en los sistemas?",
-    answer: "Implementamos múltiples capas de seguridad: encriptación de datos, autenticación de dos factores, backups automáticos, y cumplimiento con estándares de seguridad internacionales. Además, realizamos auditorías regulares y actualizaciones de seguridad para mantener tu sistema protegido."
+    question: "How do you guarantee data security in the systems?",
+    answer: "We implement multiple layers of security: data encryption, two-factor authentication, automatic backups, and compliance with international security standards. Additionally, we perform regular audits and security updates to keep your system protected."
   },
   {
-    question: "¿Ofrecen soporte técnico después de la entrega?",
-    answer: "Sí, ofrecemos soporte técnico 24/7 para todos nuestros sistemas. Esto incluye mantenimiento, actualizaciones, resolución de problemas y asistencia para nuevas funcionalidades. Nuestro equipo está siempre disponible para asegurar que tu sistema funcione perfectamente."
+    question: "Do you offer technical support after delivery?",
+    answer: "Yes, we offer 24/7 technical support for all our systems. This includes maintenance, updates, troubleshooting, and assistance for new features. Our team is always available to ensure your system works perfectly."
   }
 ];
 
@@ -34,7 +34,7 @@ export const Faq = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-auto p-4 faqsSection">
-      <h2 className="text-2xl font-bold text-center mb-4 text-white">Preguntas frecuentes</h2>
+      <h2 className="text-2xl font-bold text-center mb-4 text-white">Frequently Asked Questions</h2>
       <div className="w-full max-w-3xl shadow-lg p-6 faqs">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b last:border-none">

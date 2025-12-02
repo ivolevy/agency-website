@@ -51,8 +51,8 @@ export const ContactPopup = ({ isOpen, onClose }) => {
         },
         (error) => {
           setIsSubmitting(false);
-          setStatus("Error al enviar el mensaje, intenta de nuevo.");
-          console.error("Error al enviar:", error);
+          setStatus("Error sending message, please try again.");
+          console.error("Error sending:", error);
         }
       );
   };
@@ -71,42 +71,42 @@ export const ContactPopup = ({ isOpen, onClose }) => {
         <button 
           className="contact-popup-close" 
           onClick={handleClose}
-          aria-label="Cerrar popup"
+          aria-label="Close popup"
         >
           <X size={24} />
         </button>
         
         <div className="contact-popup-content">
-          <h2 className="contact-popup-title">Cotiza tu proyecto</h2>
-          <p className="contact-popup-subtitle">Conversemos sobre cómo revolucionar tu negocio</p>
+          <h2 className="contact-popup-title">Quote your project</h2>
+          <p className="contact-popup-subtitle">Let's talk about how to revolutionize your business</p>
           
           <form onSubmit={handleSubmit} className="contact-popup-form">
             <div className="form-row">
               <input
                 type="text"
                 name="name"
-                placeholder="Tu nombre"
+                placeholder="Your name"
                 value={formData.name}
                 onChange={handleChange}
                 required
                 className="form-input"
-                aria-label="Nombre"
+                aria-label="Name"
               />
                              <input
                  type="text"
                  name="company"
-                 placeholder="Tu Empresa (opcional)"
+                 placeholder="Your Company (optional)"
                  value={formData.company}
                  onChange={handleChange}
                  className="form-input"
-                 aria-label="Empresa"
+                 aria-label="Company"
                />
             </div>
 
             <input
               type="email"
               name="email"
-              placeholder="Tu Email"
+              placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
               required
@@ -116,13 +116,13 @@ export const ContactPopup = ({ isOpen, onClose }) => {
 
             <textarea
               name="message"
-              placeholder="Contános tu caso"
+              placeholder="Tell us about your case"
               value={formData.message}
               onChange={handleChange}
               required
               rows="4"
               className="form-textarea"
-              aria-label="Mensaje"
+              aria-label="Message"
             ></textarea>
 
             <button 
@@ -135,14 +135,14 @@ export const ContactPopup = ({ isOpen, onClose }) => {
                   <div className="loader"></div>
                 </div>
               ) : (
-                'Enviar Mensaje'
+                'Send Message'
               )}
             </button>
 
             {showSuccess && (
               <div className="success-notification">
                 <div className="success-icon">✓</div>
-                <p>Tu mensaje fue enviado exitosamente!</p>
+                <p>Your message was sent successfully!</p>
               </div>
             )}
 

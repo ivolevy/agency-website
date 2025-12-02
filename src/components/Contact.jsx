@@ -52,8 +52,8 @@ export const Contact = () => {
         },
         (error) => {
           setIsSubmitting(false);
-          setStatus("Error al enviar el mensaje, intenta de nuevo.");
-          console.error("Error al enviar:", error);
+          setStatus("Error sending message, please try again.");
+          console.error("Error sending:", error);
         }
       );
   };
@@ -61,13 +61,13 @@ export const Contact = () => {
   return (
     <section className="contact-section" id="contact" style={{ scrollMarginTop: '200px' }}>
       <h1 className="text-center mb-5" style={{ color: '#fff', fontFamily: '"Instrument Serif", serif', fontWeight: '700' }}>
-        Contacto
+        Contact
       </h1>
       <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer contact-card">
-      {/* Lado Izquierdo: Información + Redes Sociales */}
+      {/* Left Side: Information + Social Media */}
       <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
-        <h3 className="text-white contactSubtitle" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '400', fontSize: '1.3rem' }}>Empecemos a crear juntos. Lleva tu facturación a otro nivel!</h3>
-        <p className="mb-4 contactText" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>Conversemos sobre cómo revolucionar tu negocio</p>
+        <h3 className="text-white contactSubtitle" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '400', fontSize: '1.3rem' }}>Let's build something together. Take your business to the next level.</h3>
+        <p className="mb-4 contactText" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>Let's discuss how we can transform your business</p>
 
         {/* Redes Sociales */}
         <div className="flex items-center space-x-4 mb-4">
@@ -104,34 +104,34 @@ export const Contact = () => {
 
       </div>
 
-      {/* Lado Derecho: Formulario */}
+      {/* Right Side: Form */}
       <form onSubmit={handleSubmit} className="lg:w-1/2 p-6 roundedForm responsiveForm shadow-md flex flex-col items-center text-center contact-form-card">
         <div className="flex flex-col md:flex-row gap-4 mb-4 w-full">
           <input
             type="text"
             name="name"
-            placeholder="Tu nombre"
+            placeholder="Your name"
             value={formData.name}
             onChange={handleChange}
             required
             className="w-full md:w-1/2 p-3 border border-gray-300 roundedForm focus:outline-none focus:ring-2 focus:ring-blue-500"
-            aria-label="Nombre"
+            aria-label="Name"
           />
           <input
             type="text"
             name="company"
-            placeholder="Tu Empresa (opcional)"
+            placeholder="Your Company (optional)"
             value={formData.company}
             onChange={handleChange}
             className="w-full md:w-1/2 p-3 border border-gray-300 roundedForm focus:outline-none focus:ring-2 focus:ring-blue-500"
-            aria-label="Empresa"
+            aria-label="Company"
           />
         </div>
 
         <input
           type="email"
           name="email"
-          placeholder="Tu Email"
+          placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
           required
@@ -141,13 +141,13 @@ export const Contact = () => {
 
         <textarea
           name="message"
-          placeholder="Contános tu caso"
+          placeholder="Tell us about your case"
           value={formData.message}
           onChange={handleChange}
           required
           rows="4"
           className="w-full p-3 border border-gray-300 roundedForm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          aria-label="Mensaje"
+          aria-label="Message"
         ></textarea>
 
         <button 
@@ -160,14 +160,14 @@ export const Contact = () => {
               <div className="loader"></div>
             </div>
           ) : (
-            'Enviar Mensaje'
+            'Send Message'
           )}
         </button>
 
         {showSuccess && (
           <div className="success-notification">
             <div className="success-icon">✓</div>
-            <p>Tu mensaje fue enviado exitosamente!</p>
+            <p>Your message was sent successfully!</p>
           </div>
         )}
 

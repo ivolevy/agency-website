@@ -3,18 +3,18 @@ import "../assets/styles/steps.css";
 
 export const Steps = () => {
   const steps = [
-    { id: 1, title: "Auditoría Gratuita", description: "Revisamos tu situación sin costo.", link: "#contact" },
-    { id: 2, title: "Evaluación del Caso", description: "Identificamos problemas y proponemos soluciones adecuadas." },
-    { id: 3, title: "Discusión del Trabajo", description: "Definimos los detalles y objetivos del proyecto." },
-    { id: 4, title: "Trabajo y Feedback", description: "Ejecutamos el proyecto y refinamos el trabajo según tus comentarios." },
-    { id: 5, title: "Entrega", description: "Recibes el resultado final listo para usar." },
-    { id: 6, title: "Mantenimiento", description: "Brindamos soporte y seguimiento post-entrega para garantizar la calidad." },
+    { id: 1, title: "Free Audit", description: "We review your situation at no cost.", link: "#contact" },
+    { id: 2, title: "Case Evaluation", description: "We identify issues and propose suitable solutions." },
+    { id: 3, title: "Project Discussion", description: "We define the details and objectives of the project." },
+    { id: 4, title: "Work & Feedback", description: "We execute the project and refine the work based on your feedback." },
+    { id: 5, title: "Delivery", description: "You receive the final result ready to use." },
+    { id: 6, title: "Maintenance", description: "We provide support and post-delivery follow-up to ensure quality." },
   ];
 
   return (
     <section className="flex flex-col items-center stepsSection py-20" aria-labelledby="steps-title">
       <h2 id="steps-title" className="text-lg mb-5 text-center stepsTitle" style={{ color: '#fff' }}>
-        Querés saber cómo vamos a <span className="text-pink-400">trabajar?</span> Mirá los pasos.
+        Curious about how we <span className="text-pink-400">work?</span> Here's our process.
       </h2>
       <div className="relative flex flex-col items-center w-full max-w-3xl" role="list">
         <div className="absolute w-1 bg-pink-400 rounded-full h-full left-1/2 transform -translate-x-1/2" style={{ opacity: 0.6 }}></div>
@@ -36,10 +36,10 @@ export const Steps = () => {
                   href={step.link}
                   rel="noopener noreferrer"
                   className="link text-pink-400 hover:underline"
-                  aria-label={`Agenda una auditoría gratuita para ${step.title}`}
-                  title={`Agendar una llamada para la ${step.title}`}
+                  aria-label={`Schedule a free audit for ${step.title}`}
+                  title={`Schedule a call for ${step.title}`}
                 >
-                  Hablemos!
+                  Let's talk!
                 </a>
               )}
             </div>

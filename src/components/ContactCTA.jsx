@@ -13,15 +13,15 @@ export const ContactCTA = () => {
       setIsVisible(scrollPosition > 0);
     };
 
-    // Estado inicial inmediato
+    // Immediate initial state
     updateVisibility();
 
-    // Escuchar múltiples eventos para compatibilidad amplia
+    // Listen to multiple events for broad compatibility
     window.addEventListener('scroll', updateVisibility, { passive: true });
     window.addEventListener('wheel', updateVisibility, { passive: true });
     window.addEventListener('touchmove', updateVisibility, { passive: true });
 
-    // Fallback por si ya se abre con scroll
+    // Fallback in case it already opens with scroll
     const timer = setTimeout(updateVisibility, 200);
 
     return () => {
@@ -46,10 +46,10 @@ export const ContactCTA = () => {
         <button
           className="contact-cta-button"
           onClick={handleClick}
-          aria-label="Cotizar proyecto"
-          title="Cotiza tu proyecto"
+          aria-label="Quote your project"
+          title="Quote your project"
         >
-          <span>Cotiza tu proyecto</span>
+          <span>Quote your project</span>
           <ArrowRight size={16} />
         </button>
       </div>
