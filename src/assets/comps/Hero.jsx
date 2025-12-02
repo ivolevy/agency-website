@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ArrowDown } from "lucide-react";
 import "../styles/header.css";
 
 const containerVariants = {
@@ -25,10 +26,7 @@ const itemVariants = {
 };
 
 export const Hero = ({
-  title = "Soluciones Digitales <br /> Personalizadas",
-  subtitle = "Desarrollamos sistemas ERP y sitios web personalizados para tu negocio.",
-  showButtons = true,
-  extraText = "Alcance internacional: Argentina, Uruguay, USA y más"
+  subtitle = "We craft tailored digital solutions that simplify your day-to-day, empower your team, and enhance your customers ratio"
 }) => {
   return (
     <motion.section
@@ -44,8 +42,9 @@ export const Hero = ({
           id="hero-title"
           className="text-5xl md:text-6xl font-bold text-white leading-tight heroTitle"
           variants={itemVariants}
-          dangerouslySetInnerHTML={{ __html: title }}
-        />
+        >
+          Building the future<br />with software
+        </motion.h1>
         {/* Subtítulo */}
         <motion.p
           className="heroText text-lg text-gray-300 mt-4 max-w-2xl mx-auto"
@@ -53,41 +52,26 @@ export const Hero = ({
         >
           {subtitle}
         </motion.p>
-        {/* Botones */}
-        {showButtons && (
-          <motion.div
-            className="mt-6 flex gap-4 justify-center"
-            variants={itemVariants}
-          >
-            <a
-              className="border border-transparent font-light transition-all headerButton"
-              aria-label="Contactarnos"
-              title="Haz clic para contactarnos y comenzar a mejorar tu presencia digital"
-              href="#contact"
-            >
-              Contactános
-            </a>
-            <a
-              href="#services"
-              rel="noopener noreferrer"
-              className="border border-white text-white font-light py-3 px-6 hover:bg-white hover:text-black transition-all navButton2"
-              aria-label="Servicios"
-              title="Lo que sabemos hacer - Servicios"
-            >
-              Servicios
-            </a>
-          </motion.div>
-        )}
-      </motion.div>
-      {/* Texto adicional */}
-      {extraText && (
-        <motion.p
-          className="mt-12 text-gray-400 text-sm"
+        {/* Flecha con texto */}
+        <motion.div
+          className="mt-12 flex flex-col items-center justify-center cursor-pointer group"
           variants={itemVariants}
+          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
         >
-          {extraText}
-        </motion.p>
-      )}
+          <motion.p
+            className="mb-2 text-sm"
+            style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', color: '#ff80bf' }}
+          >
+            become a doter
+          </motion.p>
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <ArrowDown size={24} className="text-pink-400" style={{ color: '#ff80bf' }} />
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </motion.section>
   );
 };
