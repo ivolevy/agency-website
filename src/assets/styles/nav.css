@@ -12,7 +12,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #0f0f0f;
   height: 65px;
   width: 100%;
   width: 50%;
@@ -48,7 +48,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #000 !important;
+  color: #fff !important;
   font-size: 0.83rem;
   font-weight: lighter;
   padding: 4px 8px;
@@ -56,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #4b5563 !important;
+  color: #ff80bf !important;
 }
 
 .navButton {
@@ -72,7 +72,8 @@ nav ul li a:hover {
 
 
 .navButton:hover {
-  color: #000 !important; /* Cambia a un color diferente */
+  opacity: 0.9;
+  transform: scale(1.05);
 }
 
 .navButton2{
@@ -82,8 +83,8 @@ nav ul li a:hover {
 }
 
 .navButton2:hover{
-  border: 1px solid #ea9c9c !important;
-  box-shadow: 0 0 5px #ea9c9c !important;
+  border: 1px solid #ff80bf !important;
+  box-shadow: 0 0 5px #ff80bf !important;
 }
 
 .hamburger {
@@ -94,7 +95,7 @@ nav ul li a:hover {
 .hamburger .line {
   width: 25px;
   height: 1px;
-  background-color: #000;
+  background-color: #fff;
   display: block;
   margin: 7px auto;
   transition: all 0.3s ease-in-out;
@@ -133,7 +134,7 @@ nav ul li a:hover {
   width: 60%;
   height: 100vh;
   padding: 20% 0;
-  background: #fff;
+  background: #0f0f0f;
   transition: all 0.5s ease-in;
   z-index: 2;
 }
@@ -157,7 +158,7 @@ nav ul li a:hover {
 
 .menubar ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 1rem;
   font-weight: 400;
   padding: 5px 10px;
@@ -165,7 +166,7 @@ nav ul li a:hover {
 }
 
 .menubar ul li a:hover {
-  color: #4b5563 !important;
+  color: #ff80bf !important;
 }
 
 /* Modal */
@@ -318,7 +319,7 @@ form button {
 }
 .active-gray {
   background: none !important;
-  color: #2A2A2A !important;
+  color: #fff !important;
   font-weight: normal !important;
   border-radius: 0;
 }

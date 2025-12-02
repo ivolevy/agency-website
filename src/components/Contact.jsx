@@ -59,15 +59,15 @@ export const Contact = () => {
   };
 
   return (
-    <>
-    <h2 className="servicesTitle text-center mb-5">
+    <section className="contact-section" id="contact" style={{ scrollMarginTop: '200px' }}>
+      <h2 className="servicesTitle text-center mb-5" style={{ color: '#fff' }}>
         Contacto
       </h2>
-    <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer" id="contact" style={{ scrollMarginTop: '200px' }}>
+      <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer contact-card">
       {/* Lado Izquierdo: Información + Redes Sociales */}
       <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
         <h3 className="text-3xl font-bold text-white contactSubtitle">Empecemos a crear juntos. Lleva tu facturación a otro nivel!</h3>
-        <p className="text-gray-600 mb-4 contactText">Conversemos sobre cómo revolucionar tu negocio</p>
+        <p className="text-gray-300 mb-4 contactText">Conversemos sobre cómo revolucionar tu negocio</p>
 
         {/* Redes Sociales */}
         <div className="flex items-center space-x-4 mb-4">
@@ -98,14 +98,14 @@ export const Contact = () => {
         </div>
 
         {/* Email */}
-        <p className="text-gray-600 ">
+        <p className="text-gray-300 ">
           <a href="mailto:solutionsdota@gmail.com" className="text-white contactEmail">solutionsdota@gmail.com</a>
         </p>
 
       </div>
 
       {/* Lado Derecho: Formulario */}
-      <form onSubmit={handleSubmit} className="lg:w-1/2 bg-white p-6 roundedForm responsiveForm shadow-md flex flex-col items-center text-center">
+      <form onSubmit={handleSubmit} className="lg:w-1/2 p-6 roundedForm responsiveForm shadow-md flex flex-col items-center text-center contact-form-card">
         <div className="flex flex-col md:flex-row gap-4 mb-4 w-full">
           <input
             type="text"
@@ -173,7 +173,7 @@ export const Contact = () => {
 
         {status && <p className="error-message">{status}</p>}
       </form>
-    </div>
-    </>
+      </div>
+    </section>
   );
 };

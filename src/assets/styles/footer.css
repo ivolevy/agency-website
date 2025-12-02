@@ -1,20 +1,25 @@
 .footer{
-    width: 98%;
-    background-color: #fff;
+    width: 100%;
+    background-color: #0f0f0f;
     border-radius: 35px 35px 0px 0px;
     height: auto;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px -8px 30px rgba(0, 0, 0, 0.35);
     overflow-x: hidden;
     margin: 0 auto;
 }
 
 .email{
     text-decoration: none;
-    color: #3a3a3a;
+    color: #fff;
 }
 
 .icon{
-    color: #000000;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.icon:hover{
+    color: #ff80bf;
 }
 
 .legalLinks {
@@ -42,9 +47,8 @@
 
 @media screen and (max-width: 1024px) {
     .footer{
-      padding-right: 3%;
-      width: 90%;
-      padding-left: 3%;
+      padding-right: 5%;
+      padding-left: 5%;
     }
     .footerImg{
         width: 65px !important;
@@ -53,9 +57,8 @@
   
 @media screen and (max-width: 768px) {
     .footer{
-      width: 95%;
-      padding-left: 2.5%;
-      padding-right: 2.5%;
+      padding-left: 5%;
+      padding-right: 5%;
     }
     .footerImg{
         width: 65px !important;

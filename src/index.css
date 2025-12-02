@@ -9,7 +9,7 @@ html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: "Instrument Serif", "Inria Serif", serif;
-    background-color: #fafafa  !important;
+    background-color: #000  !important;
 }
 
 /* Titulos principales con más peso y -2% tracking */

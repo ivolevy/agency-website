@@ -1,10 +1,17 @@
-#contact{
+.contact-section {
+    background-color: #000;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.contact-card{
     border-radius: 35px;
-    padding: 25px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-    margin-bottom: 80px;
+    padding: 40px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.35);
+    margin-bottom: 0;
     width: 80%;
-    background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .contactSpan{
@@ -25,10 +32,14 @@ input:focus, textarea:focus {
     border-radius: 35px;
 }
 
+.contact-form-card{
+    background-color: #fff;
+}
+
 .contactButton{
-    background-color: transparent !important;
-    border: 1px solid black;
-    color: #000 !important;
+    background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
+    border: none;
+    color: #fff !important;
     border-radius: 35px;
     padding: 12px 17px;
     cursor: pointer;
@@ -40,8 +51,8 @@ input:focus, textarea:focus {
 }
 
 .contactButton:hover{
-    border: 1px solid #ea9c9c !important;
-    box-shadow: 0 0 5px #ea9c9c !important;
+    box-shadow: 0 0 15px rgba(255, 128, 191, 0.5) !important;
+    transform: translateY(-2px);
 }
 
 .contactIcon{
@@ -64,7 +75,7 @@ input:focus, textarea:focus {
     .contactText{
         display: none;
     }
-    #contact {
+    .contact-card {
         width: 90%;
     }
 }
@@ -86,7 +97,7 @@ input:focus, textarea:focus {
     .responsiveForm{
         padding: 15px !important;
     }
-    #contact {
+    .contact-card {
         width: 95%;
         padding: 15px;
     }
@@ -101,7 +112,7 @@ input:focus, textarea:focus {
     .contactSubtitle{
         font-size: 1.1rem;
     }
-    #contact {
+    .contact-card {
         width: 100%;
         padding: 10px;
     }

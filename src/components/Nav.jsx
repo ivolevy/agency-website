@@ -2,7 +2,6 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/nav.css";
 import "../assets/styles/contact.css";
-import dota from "../assets/images/logo/dota.webp";
 
 const menuItems = [
   { to: "/#header", label: "Inicio", title: "Volver al inicio" },
@@ -42,7 +41,7 @@ export const NavComponent = () => {
       <div className="logo">
         <a href="/#header" title="Dota Solutions - Soluciones Digitales Personalizadas">
           <img 
-            src={dota} 
+            src="/dota.png" 
             alt="Dota Solutions - Soluciones Digitales Personalizadas" 
             width="120"
             height="40"

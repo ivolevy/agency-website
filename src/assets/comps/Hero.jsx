@@ -32,7 +32,7 @@ export const Hero = ({
 }) => {
   return (
     <motion.section
-      className="hero w-full h-screen flex flex-col items-center justify-center text-center bg-[#FAFAFA]"
+      className="hero w-full h-screen flex flex-col items-center justify-center text-center"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -42,13 +42,13 @@ export const Hero = ({
         {/* Título principal */}
         <motion.h1
           id="hero-title"
-          className="text-5xl md:text-6xl font-bold text-black leading-tight heroTitle"
+          className="text-5xl md:text-6xl font-bold text-white leading-tight heroTitle"
           variants={itemVariants}
           dangerouslySetInnerHTML={{ __html: title }}
         />
         {/* Subtítulo */}
         <motion.p
-          className="heroText text-lg text-gray-600 mt-4 max-w-2xl mx-auto"
+          className="heroText text-lg text-gray-300 mt-4 max-w-2xl mx-auto"
           variants={itemVariants}
         >
           {subtitle}
@@ -70,7 +70,7 @@ export const Hero = ({
             <a
               href="#services"
               rel="noopener noreferrer"
-              className="border border-black text-black font-light py-3 px-6 hover:bg-gray-100 transition-all navButton2"
+              className="border border-white text-white font-light py-3 px-6 hover:bg-white hover:text-black transition-all navButton2"
               aria-label="Servicios"
               title="Lo que sabemos hacer - Servicios"
             >
@@ -82,7 +82,7 @@ export const Hero = ({
       {/* Texto adicional */}
       {extraText && (
         <motion.p
-          className="mt-12 text-gray-500 text-sm"
+          className="mt-12 text-gray-400 text-sm"
           variants={itemVariants}
         >
           {extraText}

@@ -43,11 +43,11 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="w-full py-16" id="projects" style={{ scrollMarginTop: '80px' }}>
+    <section className="w-full py-16 projects-section" id="projects" style={{ scrollMarginTop: '80px', backgroundColor: '#000' }}>
       <div className="container mx-auto px-4 md:px-4 max-w-6xl">
         <div className="text-center mb-12">
           <motion.span 
-            className="inline-block px-3 py-1 bg-pink-50 text-pink-400 borderRadius text-xs font-medium mb-3"
+            className="inline-block px-3 py-1 bg-pink-400/20 text-pink-400 borderRadius text-xs font-medium mb-3"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -57,6 +57,7 @@ export const Projects = () => {
           </motion.span>
           <motion.h1 
             className="servicesTitle text-center mb-3"
+            style={{ color: '#fff' }}
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -65,7 +66,8 @@ export const Projects = () => {
             <span className="underline">Proyectos</span> que transforman
           </motion.h1>
           <motion.p 
-            className="text-gray-600 max-w-3xl mx-auto"
+            className="max-w-3xl mx-auto"
+            style={{ color: '#d1d1d1' }}
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -79,7 +81,8 @@ export const Projects = () => {
         {projects.map((project, index) => (
           <motion.article
             key={project.id}
-            className="relative bg-white borderRadius p-4 md:p-6 shadow-lg"
+            className="relative borderRadius p-4 md:p-6 shadow-lg project-card"
+            style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)' }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ 
@@ -100,23 +103,23 @@ export const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>
 
-            <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4">{project.title}</h2>
+            <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-4" style={{ color: '#fff' }}>{project.title}</h2>
 
             <div className="space-y-3 mb-6">
               {project.achievements.map(achievement => (
-                <div key={achievement} className="flex items-center text-gray-600">
-                  <ArrowRight size={16} className="text-pink-500 mr-2" />
+                <div key={achievement} className="flex items-center" style={{ color: '#d1d1d1' }}>
+                  <ArrowRight size={16} className="text-pink-400 mr-2" />
                   <span className="text-sm">{achievement}</span>
                 </div>
               ))}
             </div>
 
-            <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+            <div className="flex justify-between items-center pt-4" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
               <motion.a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-pink-400 hover:text-pink-500 font-medium"
+                className="inline-flex items-center text-pink-400 hover:text-pink-300 font-medium"
               >
                 Ver proyecto
                 <ArrowUpRight size={16} className="ml-2" />
@@ -135,7 +138,10 @@ export const Projects = () => {
         >
           <a 
             href="#contact" 
-            className="inline-flex items-center px-6 py-3 bg-black text-white borderRadius font-medium hover:bg-pink-600 transition-colors no-underline"
+            className="inline-flex items-center px-6 py-3 font-medium transition-colors no-underline"
+            style={{ background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)', color: '#fff', borderRadius: '35px' }}
+            onMouseEnter={(e) => e.currentTarget.style.opacity = '0.95'}
+            onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
           >
             ¿Listo para tu proyecto?
             <ArrowDown size={16} className="ml-2" />

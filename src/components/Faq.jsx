@@ -34,12 +34,12 @@ export const Faq = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-auto p-4 faqsSection">
-      <h2 className="text-2xl font-bold text-center mb-4">Preguntas frecuentes</h2>
-      <div className="w-full max-w-2xl shadow-lg p-6 faqs">
+      <h2 className="text-2xl font-bold text-center mb-4 text-white">Preguntas frecuentes</h2>
+      <div className="w-full max-w-3xl shadow-lg p-6 faqs">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b last:border-none">
             <button
-              className="flex justify-between items-center w-full p-4 text-left text-gray-900 font-medium hover:bg-gray-100 transition-all faqCard"
+              className="flex justify-between items-center w-full p-4 text-left text-white font-medium transition-all faqCard"
               onClick={() => toggleFAQ(index)}
               aria-expanded={openIndex === index}
               aria-controls={`faq-answer-${index}`}
@@ -51,9 +51,9 @@ export const Faq = () => {
                 }`}
               >
                 {openIndex === index ? (
-                  <FaMinus className="text-gray-500" />
+                  <FaMinus className="text-gray-400" />
                 ) : (
-                  <FaPlus className="text-gray-500" />
+                  <FaPlus className="text-gray-400" />
                 )}
               </span>
             </button>
@@ -64,7 +64,7 @@ export const Faq = () => {
               }`}
             >
               {openIndex === index && (
-                <div className="p-4 text-gray-600">{faq.answer}</div>
+                <div className="p-4 text-gray-300">{faq.answer}</div>
               )}
             </div>
           </div>

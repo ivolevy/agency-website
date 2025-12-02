@@ -13,11 +13,11 @@ export const Steps = () => {
 
   return (
     <section className="flex flex-col items-center stepsSection py-20" aria-labelledby="steps-title">
-      <h2 id="steps-title" className="text-lg mb-5 text-center stepsTitle">
+      <h2 id="steps-title" className="text-lg mb-5 text-center stepsTitle" style={{ color: '#fff' }}>
         Querés saber cómo vamos a <span className="text-pink-400">trabajar?</span> Mirá los pasos.
       </h2>
       <div className="relative flex flex-col items-center w-full max-w-3xl" role="list">
-        <div className="absolute w-1 bg-pink-300 rounded-full h-full left-1/2 transform -translate-x-1/2"></div>
+        <div className="absolute w-1 bg-pink-400 rounded-full h-full left-1/2 transform -translate-x-1/2" style={{ opacity: 0.6 }}></div>
         {steps.map((step, index) => (
           <motion.div
             key={step.id}
@@ -28,9 +28,9 @@ export const Steps = () => {
             viewport={{ once: true, amount: 0.3 }}
             role="listitem"
           >
-            <div className="w-1/2 flex flex-col items-center bg-white p-4 steps">
-              <h3 className="text-lg font-semibold mt-2 text-center stepsTitleSquare">{step.title}</h3>
-              <p className="text-gray-600 text-center">{step.description}</p>
+            <div className="w-1/2 flex flex-col items-center p-4 steps">
+              <h3 className="text-lg font-semibold mt-2 text-center stepsTitleSquare" style={{ color: '#fff' }}>{step.title}</h3>
+              <p className="text-center" style={{ color: '#d1d1d1' }}>{step.description}</p>
               {step.link && (
                 <a
                   href={step.link}

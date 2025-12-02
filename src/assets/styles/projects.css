@@ -2,6 +2,23 @@
    height: auto;
 }
 
+.projects-section {
+    background-color: #000;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+}
+
+.project-card {
+    border-radius: 35px;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 128, 191, 0.3) !important;
+    transform: translateY(-5px);
+}
+
 .projectClouds{
     border-radius: 35px;
 }

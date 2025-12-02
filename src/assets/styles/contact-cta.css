@@ -22,12 +22,12 @@
   padding: 12px 20px;
   border-radius: 50px;
   border: none;
-  background: linear-gradient(135deg, #000000 0%, #333333 100%);
+  background: linear-gradient(to bottom, #ff80bf, #ea9c9c);
   color: white;
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 15px rgba(255, 128, 191, 0.3);
   transition: all 0.3s ease;
   text-decoration: none;
   white-space: nowrap;
@@ -35,7 +35,8 @@
 
 .contact-cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 20px rgba(255, 128, 191, 0.4);
+  opacity: 0.95;
 }
 
 .contact-cta-button:active {
