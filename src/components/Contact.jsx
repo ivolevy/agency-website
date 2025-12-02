@@ -60,14 +60,14 @@ export const Contact = () => {
 
   return (
     <section className="contact-section" id="contact" style={{ scrollMarginTop: '200px' }}>
-      <h2 className="servicesTitle text-center mb-5" style={{ color: '#fff' }}>
+      <h1 className="text-center mb-5" style={{ color: '#fff', fontFamily: '"Instrument Serif", serif', fontWeight: '700' }}>
         Contacto
-      </h2>
+      </h1>
       <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer contact-card">
       {/* Lado Izquierdo: Información + Redes Sociales */}
       <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
-        <h3 className="text-3xl font-bold text-white contactSubtitle">Empecemos a crear juntos. Lleva tu facturación a otro nivel!</h3>
-        <p className="text-gray-300 mb-4 contactText">Conversemos sobre cómo revolucionar tu negocio</p>
+        <h3 className="text-white contactSubtitle" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '400', fontSize: '1.3rem' }}>Empecemos a crear juntos. Lleva tu facturación a otro nivel!</h3>
+        <p className="mb-4 contactText" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>Conversemos sobre cómo revolucionar tu negocio</p>
 
         {/* Redes Sociales */}
         <div className="flex items-center space-x-4 mb-4">
@@ -98,8 +98,8 @@ export const Contact = () => {
         </div>
 
         {/* Email */}
-        <p className="text-gray-300 ">
-          <a href="mailto:solutionsdota@gmail.com" className="text-white contactEmail">solutionsdota@gmail.com</a>
+        <p style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>
+          <a href="mailto:solutionsdota@gmail.com" className="contactEmail" style={{ color: '#fff', textDecoration: 'none' }}>solutionsdota@gmail.com</a>
         </p>
 
       </div>

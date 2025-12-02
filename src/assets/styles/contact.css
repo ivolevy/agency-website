@@ -59,6 +59,20 @@ input:focus, textarea:focus {
     color: #fff !important;
 }
 
+.contactSubtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.contactText {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: #d1d1d1;
+}
+
 @media (max-width: 1024px){
     .responsiveData{
         display: flex;
@@ -91,7 +105,7 @@ input:focus, textarea:focus {
         margin-bottom: 20px;
     }
     .contactSubtitle{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.2;
     }
     .responsiveForm{
@@ -110,7 +124,7 @@ input:focus, textarea:focus {
         padding-right: 9px !important;
     }
     .contactSubtitle{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .contact-card {
         width: 100%;
