@@ -78,12 +78,10 @@
 }
 
 .feature-title {
-    font-family: "Instrument Serif", serif;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
     margin-bottom: 12px;
-    letter-spacing: -0.02em;
 }
 
 .feature-text {

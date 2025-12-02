@@ -8,15 +8,12 @@ html, body {
     height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    font-family: "Instrument Serif", "Inria Serif", serif;
     background-color: #000  !important;
 }
 
-/* Titulos principales con más peso y -2% tracking */
-h1,
-h2,
-.heroTitle,
-.servicesTitle {
-    font-weight: 900;
+/* Solo los h1 tienen Instrument Serif en bold */
+h1 {
+    font-family: "Instrument Serif", serif;
+    font-weight: 700;
     letter-spacing: -0.02em; /* ≈ -2% */
 }
