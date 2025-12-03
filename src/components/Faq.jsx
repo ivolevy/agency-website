@@ -18,10 +18,6 @@ const faqs = [
   {
     question: "What's the cost of not automating?",
     answer: "Manual processes cost time and money every single day. Every hour spent on repetitive tasks is revenue lost and opportunity missed. Our systems eliminate these inefficiencies, allowing your team to focus on growth and strategy while automation handles routine work—saving thousands monthly and preventing costly errors."
-  },
-  {
-    question: "Do you offer ongoing support to maximize ROI?",
-    answer: "Yes, we provide continuous support to ensure your system keeps delivering value. We monitor performance, optimize processes using AI-powered insights, and add features that further reduce costs and increase revenue. Your investment keeps paying off year after year with ongoing improvements."
   }
 ];
 
