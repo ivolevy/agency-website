@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
-  title = "Dota Solutions | Soluciones Digitales Personalizadas",
-  description = "Desarrollamos sistemas ERP y sitios web personalizados para tu negocio. Ayudamos a empresas a crecer con herramientas digitales que se adaptan a sus necesidades. Panel de backoffice completo para gestionar clientes, productos y ventas. Entregas en semanas sin costos ocultos. Soporte 24/7.",
+  title = "Dota Solutions | Custom Software Solutions | Save Costs & Boost Revenue",
+  description = "Custom software that saves money and drives revenue. We build solutions that reduce operational costs by up to 60%, automate workflows, and deliver measurable ROI within the first quarter. Fast delivery, 24/7 support, and proven results.",
   keywords = "desarrollo web personalizado, sistemas ERP a medida, panel de administración, gestión de clientes, gestión de productos, automatización empresarial, panel autogestión, soporte técnico 24/7, entregas rápidas, sin costos ocultos, soluciones digitales, software a medida, gestión empresarial, digitalización, consultoría tecnológica, desarrollo de software, hosting, SEO, desarrollo de aplicaciones web, sistemas de gestión, panel de control, backoffice, gestión de inventario, facturación electrónica, CRM personalizado, automatización de procesos, integración de sistemas, desarrollo full stack, React, Node.js, bases de datos, APIs, microservicios, cloud computing, AWS, Vercel, optimización web, responsive design, UX/UI, accesibilidad web, PWA, progressive web app",
   image = "https://dotasolutions.agency/dota.webp",
   url = "https://dotasolutions.agency",
@@ -35,7 +35,7 @@ export const SEO = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="twitter:image:alt" content="Dota Solutions - Soluciones Digitales Personalizadas" />
+      <meta name="twitter:image:alt" content="Dota Solutions - Custom Software Solutions" />
       
       {/* Meta Tags para Facebook/Open Graph */}
       <meta property="og:type" content={type} />
@@ -45,16 +45,15 @@ export const SEO = ({
       <meta property="og:image" content={image} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Dota Solutions - Soluciones Digitales Personalizadas" />
+      <meta property="og:image:alt" content="Dota Solutions - Custom Software Solutions" />
       <meta property="og:site_name" content="Dota Solutions" />
-      <meta property="og:locale" content="es_AR" />
-      <meta property="og:locale:alternate" content="en_US" />
-      <meta property="og:locale:alternate" content="fr_FR" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale:alternate" content="es_AR" />
       
       {/* Idioma y Región */}
-      <meta name="language" content="Spanish" />
+      <meta name="language" content="English" />
       <meta name="geo.region" content="AR" />
-      <meta name="geo.placename" content="Argentina" />
+      <meta name="geo.placename" content="Argentina, Buenos Aires" />
       <meta name="geo.position" content="-34.6037;-58.3816" />
       <meta name="ICBM" content="-34.6037, -58.3816" />
 
