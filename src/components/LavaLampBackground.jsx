@@ -40,6 +40,9 @@ export const LavaLampBackground = () => {
     container.addEventListener("mousemove", handleMouseMove);
     container.addEventListener("mouseleave", handleMouseLeave);
 
+    // Detectar si es mobile
+    const isMobile = window.innerWidth <= 768;
+    
     // Configuración de blobs (bolas de lámpara de lava)
     const blobs = [];
     const blobCount = 4;
@@ -52,14 +55,18 @@ export const LavaLampBackground = () => {
       { r: 240, g: 120, b: 200 }, // Pink medio
     ];
 
+    // Velocidades más altas en mobile
+    const baseSpeed = isMobile ? 1.2 : 0.5;
+    const maxSpeed = isMobile ? 2.5 : 1;
+
     // Crear blobs
     for (let i = 0; i < blobCount; i++) {
       blobs.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         radius: 80 + Math.random() * 120,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
+        vx: (Math.random() - 0.5) * baseSpeed,
+        vy: (Math.random() - 0.5) * baseSpeed,
         color: colors[i % colors.length],
         opacity: 0.3 + Math.random() * 0.2,
       });
@@ -68,6 +75,11 @@ export const LavaLampBackground = () => {
     // Función de animación
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Detectar mobile dinámicamente
+      const isMobileNow = window.innerWidth <= 768;
+      const currentMaxSpeed = isMobileNow ? 2.5 : 1;
+      const variationFactor = isMobileNow ? 0.04 : 0.02;
 
       // Actualizar y dibujar blobs
       const mousePos = mousePosRef.current;
@@ -125,13 +137,13 @@ export const LavaLampBackground = () => {
         ctx.fill();
 
         // Variación suave de velocidad (movimiento más orgánico)
-        blob.vx += (Math.random() - 0.5) * 0.02;
-        blob.vy += (Math.random() - 0.5) * 0.02;
+        // Más variación en mobile para movimiento más dinámico
+        blob.vx += (Math.random() - 0.5) * variationFactor;
+        blob.vy += (Math.random() - 0.5) * variationFactor;
 
-        // Limitar velocidad máxima
-        const maxSpeed = 1;
-        blob.vx = Math.max(-maxSpeed, Math.min(maxSpeed, blob.vx));
-        blob.vy = Math.max(-maxSpeed, Math.min(maxSpeed, blob.vy));
+        // Limitar velocidad máxima (más alta en mobile)
+        blob.vx = Math.max(-currentMaxSpeed, Math.min(currentMaxSpeed, blob.vx));
+        blob.vy = Math.max(-currentMaxSpeed, Math.min(currentMaxSpeed, blob.vy));
       });
 
       // Dibujar conexiones suaves entre blobs cercanos
