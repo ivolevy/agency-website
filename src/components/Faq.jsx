@@ -22,10 +22,6 @@ const faqs = [
   {
     question: "Do you offer ongoing support to maximize ROI?",
     answer: "Yes, we provide continuous support to ensure your system keeps delivering value. We monitor performance, optimize processes using AI-powered insights, and add features that further reduce costs and increase revenue. Your investment keeps paying off year after year with ongoing improvements."
-  },
-  {
-    question: "How does AI enhance your development process?",
-    answer: "We leverage AI throughout development to deliver smarter, faster solutions. AI helps us analyze requirements more efficiently, generate optimized code, identify potential issues early, and continuously improve your system's performance. This means better solutions delivered faster, with ongoing optimization that adapts to your business needs."
   }
 ];
 
