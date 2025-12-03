@@ -5,23 +5,27 @@ import "../assets/styles/faq.css";
 const faqs = [
   {
     question: "How quickly will I see ROI on my investment?",
-    answer: "Most clients see positive ROI within the first quarter. Our custom websites are ready in 1 week, while ERP systems are delivered in 2-3 weeks with incremental releases. You start saving money and generating revenue from day one."
+    answer: "Most clients see positive ROI within the first quarter. Our AI-powered development process accelerates delivery while ensuring quality. You start saving money and generating revenue from day one, with measurable financial impact visible within weeks."
   },
   {
     question: "How much can I save on operational costs?",
-    answer: "Our systems automate manual processes, reducing labor costs by up to 60%. The admin panel includes automated inventory management, sales reporting, payment processing, and analytics—eliminating hours of manual work daily and cutting overhead significantly."
+    answer: "Our custom software solutions automate manual processes, reducing operational costs by up to 60%. By eliminating repetitive tasks, reducing errors, and streamlining workflows, you'll cut overhead significantly while improving accuracy and efficiency across your operations."
   },
   {
     question: "How will this increase my revenue?",
-    answer: "Custom systems streamline sales processes, improve customer experience, and unlock new revenue streams. By automating workflows and reducing errors, you can handle more customers with the same resources, directly boosting your bottom line."
+    answer: "Custom software streamlines sales processes, improves customer experience, and unlocks new revenue streams. By automating workflows and reducing bottlenecks, you can handle more customers with the same resources, directly boosting your bottom line. Our solutions also identify opportunities for growth through data-driven insights."
   },
   {
     question: "What's the cost of not automating?",
-    answer: "Manual processes cost time and money. Every hour spent on repetitive tasks is revenue lost. Our systems eliminate these inefficiencies, allowing your team to focus on growth while automation handles the rest—saving thousands monthly."
+    answer: "Manual processes cost time and money every single day. Every hour spent on repetitive tasks is revenue lost and opportunity missed. Our systems eliminate these inefficiencies, allowing your team to focus on growth and strategy while automation handles routine work—saving thousands monthly and preventing costly errors."
   },
   {
     question: "Do you offer ongoing support to maximize ROI?",
-    answer: "Yes, we provide 24/7 support to ensure your system continuously delivers value. We monitor performance, optimize processes, and add features that further reduce costs and increase revenue. Your investment keeps paying off year after year."
+    answer: "Yes, we provide continuous support to ensure your system keeps delivering value. We monitor performance, optimize processes using AI-powered insights, and add features that further reduce costs and increase revenue. Your investment keeps paying off year after year with ongoing improvements."
+  },
+  {
+    question: "How does AI enhance your development process?",
+    answer: "We leverage AI throughout development to deliver smarter, faster solutions. AI helps us analyze requirements more efficiently, generate optimized code, identify potential issues early, and continuously improve your system's performance. This means better solutions delivered faster, with ongoing optimization that adapts to your business needs."
   }
 ];
 
