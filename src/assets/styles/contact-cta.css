@@ -23,7 +23,7 @@
   border-radius: 50px;
   border: none;
   background: linear-gradient(to bottom, #ff80bf, #ea9c9c);
-  color: white;
+  color: #000;
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
@@ -34,9 +34,10 @@
 }
 
 .contact-cta-button:hover {
+  background: #0f0f0f;
+  color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0px 6px 20px rgba(255, 128, 191, 0.4);
-  opacity: 0.95;
+  box-shadow: 0px 6px 20px rgba(15, 15, 15, 0.4);
 }
 
 .contact-cta-button:active {
