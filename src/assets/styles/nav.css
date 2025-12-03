@@ -62,18 +62,18 @@ nav ul li a:hover {
 .navButton {
   border-radius: 35px;
   padding: 12px 17px;
-  color: #fff !important;
+  color: #000 !important;
   background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
   cursor: pointer;
   font-size: 0.88rem;
+  font-weight: 400;
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 
 .navButton:hover {
-  opacity: 0.9;
-  transform: scale(1.05);
+  color: #fff !important;
 }
 
 .navButton2{
@@ -273,7 +273,7 @@ form button {
     cursor: pointer;
   }
   .navButton:hover {
-    background-color: #000;
+    color: #fff !important;
   }
   .modal-content{
     width: 90%;

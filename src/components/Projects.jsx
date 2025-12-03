@@ -138,14 +138,18 @@ export const Projects = () => {
         >
           <a 
             href="#contact" 
-            className="inline-flex items-center px-6 py-3 font-medium transition-colors no-underline"
-            style={{ background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)', color: '#000', borderRadius: '35px' }}
+            className="inline-flex items-center px-6 py-3 transition-colors no-underline"
+            style={{ 
+              background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)', 
+              color: '#000', 
+              borderRadius: '35px', 
+              fontWeight: '400',
+              transition: 'all 0.3s ease'
+            }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#0f0f0f';
               e.currentTarget.style.color = '#fff';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'linear-gradient(to bottom, #ff80bf, #ea9c9c)';
               e.currentTarget.style.color = '#000';
             }}
           >

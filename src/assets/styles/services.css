@@ -144,7 +144,7 @@
     background: linear-gradient(to bottom, #ff80bf, #ea9c9c);
     color: #000;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 400;
     border-radius: 35px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -152,10 +152,7 @@
 }
 
 .cta-button:hover {
-    background: #0f0f0f;
     color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0px 6px 20px rgba(15, 15, 15, 0.4);
 }
 
 @media (max-width: 1024px) {

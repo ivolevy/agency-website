@@ -22,6 +22,18 @@
     text-decoration: none;
 }
 
+.contact-form-card input,
+.contact-form-card textarea {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
 input:focus, textarea:focus {
     outline: none !important;
     border-color: #ea9c9c !important;
@@ -33,7 +45,8 @@ input:focus, textarea:focus {
 }
 
 .contact-form-card{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .contactButton{
@@ -44,17 +57,15 @@ input:focus, textarea:focus {
     padding: 12px 17px;
     cursor: pointer;
     font-size: 0.88rem;
-    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    transition: all 0.3s ease;
     display: inline-flex;           /* center content */
     align-items: center;            /* vertical center */
     justify-content: center;        /* horizontal center */
 }
 
 .contactButton:hover{
-    background: #0f0f0f !important;
     color: #fff !important;
-    box-shadow: 0 0 15px rgba(15, 15, 15, 0.5) !important;
-    transform: translateY(-2px);
 }
 
 .contactIcon{

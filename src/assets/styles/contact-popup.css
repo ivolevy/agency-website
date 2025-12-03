@@ -23,7 +23,8 @@
 }
 
 .contact-popup {
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 35px;
   padding: 0;
   max-width: 500px;
@@ -52,7 +53,7 @@
   right: 20px;
   background: none;
   border: none;
-  color: #666;
+  color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
@@ -61,8 +62,8 @@
 }
 
 .contact-popup-close:hover {
-  background: #f5f5f5;
-  color: #333;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 .contact-popup-content {
@@ -72,14 +73,14 @@
 .contact-popup-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #fff;
   text-align: center;
   margin-bottom: 8px;
 }
 
 .contact-popup-subtitle {
   font-size: 1rem;
-  color: #666;
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -111,11 +112,17 @@
 .form-textarea {
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 35px;
   font-size: 14px;
   transition: all 0.2s ease;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .form-input:focus,
@@ -131,14 +138,15 @@
 }
 
 .form-button {
-  background-color: white;
-  border: 1px solid black;
-  color: black !important;
+  background: linear-gradient(to bottom, #ff80bf, #ea9c9c);
+  border: none;
+  color: #000 !important;
   border-radius: 35px;
   padding: 12px 40px;
   cursor: pointer;
   font-size: 0.88rem;
-  transition: all 0.2s ease-in-out;
+  font-weight: 400;
+  transition: all 0.3s ease;
   margin-top: 0;
   width: auto;
   display: inline-flex;          /* center loader/text */
@@ -148,10 +156,7 @@
 }
 
 .form-button:hover {
-  background: #0f0f0f !important;
   color: #fff !important;
-  border: 1px solid #0f0f0f !important;
-  box-shadow: 0 0 5px rgba(15, 15, 15, 0.5) !important;
 }
 
 .form-status {

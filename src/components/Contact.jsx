@@ -87,19 +87,39 @@ export const Contact = () => {
           >
             <TbBrandLinkedinFilled className="contactIcon"/>
           </a>
-          <a 
-            href="https://wa.me/1138240929" 
-            target="_blank" rel="noopener noreferrer" 
-            className="text-green-500 hover:text-green-600 text-3xl"
-            aria-label="Whatsapp" title="Whatsapp"
-          >
-            <FaWhatsapp className="contactIcon"/>
-          </a>
         </div>
 
         {/* Email */}
-        <p style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>
+        <p className="mb-4" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>
           <a href="mailto:solutionsdota@gmail.com" className="contactEmail" style={{ color: '#fff', textDecoration: 'none' }}>solutionsdota@gmail.com</a>
+        </p>
+
+        {/* WhatsApp Link */}
+        <p className="mb-4" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>
+          <a 
+            href="https://wa.me/1138240929?text=Hi!%20I'm%20interested%20in%20learning%20how%20your%20custom%20software%20solutions%20can%20help%20reduce%20costs%20and%20increase%20revenue%20for%20my%20business."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contactEmail"
+            style={{ 
+              color: '#25D366', 
+              textDecoration: 'underline',
+              textUnderlineOffset: '3px',
+              transition: 'all 0.3s ease',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = '#4ade80';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = '#25D366';
+            }}
+          >
+            <FaWhatsapp size={18} />
+            <span>Write us on WhatsApp</span>
+          </a>
         </p>
 
       </div>
