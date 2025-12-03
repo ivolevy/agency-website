@@ -1,43 +1,127 @@
-.steps{
-    border-radius: 25px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-    background-color: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.stepsSection{
-    height: auto;
+.stepsSection {
+    position: relative;
+    min-height: 70vh;
     background-color: #000;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    overflow: hidden;
 }
 
-.link{
-    margin-top: -15px;
-    margin-bottom: 15px;
+.stepsSection::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9), #000);
+    z-index: 2;
+    pointer-events: none;
 }
 
-@media (max-width: 1024px){
-    .stepsSection{
-        padding-left: 15px;
-        padding-right: 15px;
+.lava-lamp-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.steps-main-title {
+    font-family: "Instrument Serif", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.steps-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #d1d1d1;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+}
+
+.steps-description p {
+    margin-bottom: 24px;
+}
+
+.steps-description p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .steps-content {
+        padding: 0 30px;
+    }
+    
+    .steps-main-title {
+        font-size: 2.8rem;
+    }
+    
+    .steps-description {
+        font-size: 0.95rem;
     }
 }
 
-@media (max-width: 768px){
-    .steps{
-        font-size: 0.75rem;
-        padding: 12px !important;
+@media (max-width: 768px) {
+    .stepsSection {
+        padding: 60px 0;
+        min-height: 60vh;
     }
-    .stepsTitle{
-        padding: 0 6px 0 6px;
-        color: #fff;
+    
+    .steps-content {
+        padding: 0 20px;
+    }
+    
+    .steps-main-title {
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+    
+    .steps-description {
         font-size: 0.9rem;
+        line-height: 1.7;
     }
-    .stepsTitleSquare{
-        font-size: 0.8rem;
-        color: #fff;
+    
+    .steps-description p {
+        margin-bottom: 20px;
     }
-    .step-description{
-        display: none;
+}
+
+@media (max-width: 480px) {
+    .stepsSection {
+        padding: 40px 0;
+        min-height: 50vh;
+    }
+    
+    .steps-content {
+        padding: 0 15px;
+    }
+    
+    .steps-main-title {
+        font-size: 1.9rem;
+        margin-bottom: 24px;
+    }
+    
+    .steps-description {
+        font-size: 0.85rem;
     }
 }

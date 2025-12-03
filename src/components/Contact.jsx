@@ -193,7 +193,7 @@ export const Contact = () => {
 
         {status && <p className="error-message">{status}</p>}
       </form>
-      </div>
+    </div>
     </section>
   );
 };
