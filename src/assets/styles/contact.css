@@ -75,14 +75,14 @@ input:focus, textarea:focus {
 .contactSubtitle {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 
 .contactText {
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #d1d1d1;
 }
 

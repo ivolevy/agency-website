@@ -31,3 +31,28 @@
     object-position: center;
     border-radius: 8px;
 }
+
+.servicesTitle {
+    font-family: "Instrument Serif", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+@media (max-width: 1024px) {
+    .servicesTitle {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicesTitle {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicesTitle {
+        font-size: 1.9rem;
+    }
+}

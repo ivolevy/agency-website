@@ -66,8 +66,8 @@ export const Projects = () => {
             <span className="underline">Projects</span> that make a difference
           </motion.h1>
           <motion.p 
-            className="max-w-3xl mx-auto"
-            style={{ color: '#d1d1d1' }}
+            className="max-w-3xl mx-auto text-sm"
+            style={{ color: '#d1d1d1', fontSize: '0.9rem' }}
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -103,7 +103,7 @@ export const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>
 
-            <h2 className="text-base md:text-lg font-semibold mb-2 md:mb-3" style={{ color: '#fff' }}>{project.title}</h2>
+            <h2 className="text-sm md:text-base font-semibold mb-2 md:mb-3" style={{ color: '#fff' }}>{project.title}</h2>
 
             <div className="space-y-2 mb-4">
               {project.achievements.map(achievement => (
