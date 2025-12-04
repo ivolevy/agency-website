@@ -10,11 +10,11 @@ export const Legal = () => {
         noindex={true}
       />
       <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
-      <h1 className="text-2xl font-semibold text-center">AVISO LEGAL</h1>
-      <p className="text-sm text-center"><strong>[Fecha de última actualización: 27 de Enero de 2025.]</strong></p>
+      <h1 className="text-2xl font-semibold text-center" style={{ fontFamily: '"Inter", sans-serif' }}>AVISO LEGAL</h1>
+      <p className="text-sm text-center"><strong>[Fecha de última actualización: 3 de Diciembre de 2025.]</strong></p>
       
       <div className="space-y-4">
-        <h2 className="text-xl font-semibold">1. Información General</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>1. Información General</h2>
         <p className="text-sm">
           En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, te informamos que:
         </p>
@@ -26,7 +26,7 @@ export const Legal = () => {
           <li>Alcance internacional: Argentina, Uruguay, USA y más</li>
         </ul>
 
-        <h2 className="text-xl font-semibold">2. Objeto</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>2. Objeto</h2>
         <p className="text-sm">
           Este sitio web tiene por objeto ofrecer información sobre los servicios de Dota Solutions, especializados en soluciones digitales personalizadas. Nuestros servicios incluyen:
         </p>
@@ -38,27 +38,27 @@ export const Legal = () => {
           <li>Automatización de procesos empresariales</li>
         </ul>
 
-        <h2 className="text-xl font-semibold">3. Tecnologías y Enfoque</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>3. Tecnologías y Enfoque</h2>
         <p className="text-sm">
           Utilizamos tecnologías modernas como Next.js, SQL, Vercel y Adobe para desarrollar soluciones robustas y escalables. Nuestro enfoque permite entregas en semanas sin costos ocultos, garantizando transparencia total en cada proyecto.
         </p>
 
-        <h2 className="text-xl font-semibold">4. Propiedad Intelectual e Industrial</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>4. Propiedad Intelectual e Industrial</h2>
         <p className="text-sm">
           Todos los contenidos de este sitio web, incluyendo textos, fotografías, gráficos, imágenes, iconos, tecnología, software, enlaces y demás contenidos audiovisuales o sonoros, así como su diseño gráfico y códigos fuente, son propiedad intelectual de Dota Solutions o de terceros, sin que puedan entenderse cedidos al usuario ninguno de los derechos de explotación reconocidos por la normativa vigente en materia de propiedad intelectual.
         </p>
 
-        <h2 className="text-xl font-semibold">5. Condiciones de Uso</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>5. Condiciones de Uso</h2>
         <p className="text-sm">
           El usuario se compromete a utilizar el sitio web de conformidad con la ley, este aviso legal, y demás avisos e instrucciones puestos en su conocimiento.
         </p>
 
-        <h2 className="text-xl font-semibold">6. Condiciones de Entrega y Pagos</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>6. Condiciones de Entrega y Pagos</h2>
         <p className="text-sm">
           Nuestro enfoque permite entregas en semanas sin costos ocultos. Los sitios web se desarrollan en menos de dos semanas, mientras que los sistemas más complejos pueden requerir más tiempo según las funcionalidades solicitadas. En estos casos, se realizarán entregas incrementales para que puedas acceder a las funcionalidades principales lo antes posible. Los pagos se realizarán según lo acordado en el contrato firmado con el cliente.
         </p>
 
-        <h2 className="text-xl font-semibold">7. Condiciones Específicas de los Servicios</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>7. Condiciones Específicas de los Servicios</h2>
         <p className="text-sm">
           Las condiciones específicas de los servicios se detallarán en el contrato firmado con el cliente, incluyendo:
         </p>
@@ -70,7 +70,7 @@ export const Legal = () => {
           <li>Panel de autogestión para sitios web</li>
         </ul>
 
-        <h2 className="text-xl font-semibold">8. Limitación de Responsabilidad y Exención</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>8. Limitación de Responsabilidad y Exención</h2>
         <p className="text-sm">
           Dota Solutions se exonera de toda responsabilidad y no será responsable por:
         </p>
@@ -90,7 +90,7 @@ export const Legal = () => {
           En ningún caso la responsabilidad total de Dota Solutions excederá el monto pagado por el cliente por los servicios específicos en cuestión. El cliente acepta que el uso de nuestros servicios es bajo su propio riesgo y responsabilidad.
         </p>
 
-        <h2 className="text-xl font-semibold">9. Renuncia de Garantías</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>9. Renuncia de Garantías</h2>
         <p className="text-sm">
           Dota Solutions proporciona sus servicios "tal como están" y "según disponibilidad" sin garantías de ningún tipo, expresas o implícitas, incluyendo pero no limitándose a:
         </p>
@@ -106,22 +106,22 @@ export const Legal = () => {
           El cliente reconoce que Dota Solutions no garantiza que los servicios satisfagan sus requisitos específicos o que sean ininterrumpidos, oportunos, seguros o libres de errores.
         </p>
 
-        <h2 className="text-xl font-semibold">10. Modificaciones</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>10. Modificaciones</h2>
         <p className="text-sm">
           Dota Solutions se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su sitio web, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados en su sitio web.
         </p>
 
-        <h2 className="text-xl font-semibold">11. Enlaces</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>11. Enlaces</h2>
         <p className="text-sm">
           En el caso de que en el sitio web se dispusieran enlaces o hiperenlaces a otros sitios de Internet, Dota Solutions no ejercerá ningún tipo de control sobre dichos sitios y contenidos, y no será responsable por ningún daño o perjuicio derivado de su uso.
         </p>
 
-        <h2 className="text-xl font-semibold">12. Derecho de Exclusión</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>12. Derecho de Exclusión</h2>
         <p className="text-sm">
           Dota Solutions se reserva el derecho a denegar o retirar el acceso a su sitio web y/o los servicios ofrecidos sin necesidad de preaviso, a instancia propia o de un tercero, a aquellos usuarios que incumplan las presentes Condiciones Generales de Uso, sin responsabilidad alguna.
         </p>
 
-        <h2 className="text-xl font-semibold">13. Contacto</h2>
+        <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>13. Contacto</h2>
         <p className="text-sm">
           Para cualquier consulta relacionada con este aviso legal, puedes contactarnos en:
         </p>

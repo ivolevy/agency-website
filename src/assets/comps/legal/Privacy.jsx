@@ -10,15 +10,15 @@ export const Privacy = () => {
           noindex={true}
         />
         <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
-        <h1 className="text-2xl font-semibold text-center">Política de Privacidad de Dota Solutions</h1>
-        <p className="text-sm text-center"><strong>[Fecha de última actualización: 27 de Enero de 2025.]</strong></p>
+        <h1 className="text-2xl font-semibold text-center" style={{ fontFamily: '"Inter", sans-serif' }}>Política de Privacidad de Dota Solutions</h1>
+        <p className="text-sm text-center"><strong>[Fecha de última actualización: 3 de Diciembre de 2025.]</strong></p>
         
         <div className="space-y-4">
           <p className="text-sm">
             En Dota Solutions, nos tomamos muy en serio la privacidad de nuestros clientes y usuarios. Esta política de privacidad describe cómo recopilamos, usamos y protegemos tu información personal cuando utilizas nuestros servicios de soluciones digitales 100% personalizadas, incluyendo sitios web personalizados y sistemas de gestión a medida (ERP) con alcance internacional.
           </p>
 
-          <h2 className="text-xl font-semibold">1. Información que Recopilamos</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>1. Información que Recopilamos</h2>
           <p className="text-sm">
             Recopilamos la siguiente información cuando interactúas con nuestros servicios:
           </p>
@@ -31,7 +31,7 @@ export const Privacy = () => {
             <li>Datos de uso de nuestros servicios web</li>
         </ul>
 
-          <h2 className="text-xl font-semibold">2. Uso de la Información</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>2. Uso de la Información</h2>
           <p className="text-sm">
             Utilizamos la información recopilada para:
           </p>
@@ -44,7 +44,7 @@ export const Privacy = () => {
             <li>Mejorar nuestros servicios basándonos en el feedback</li>
         </ul>
   
-          <h2 className="text-xl font-semibold">3. Base Legal para el Tratamiento</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>3. Base Legal para el Tratamiento</h2>
           <p className="text-sm">
             El tratamiento de tus datos personales se basa en:
           </p>
@@ -55,7 +55,7 @@ export const Privacy = () => {
             <li>Nuestro interés legítimo en mejorar nuestros servicios</li>
           </ul>
 
-          <h2 className="text-xl font-semibold">4. Protección de Datos</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>4. Protección de Datos</h2>
           <p className="text-sm">
             Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos:
           </p>
@@ -68,7 +68,7 @@ export const Privacy = () => {
             <li>Uso de tecnologías seguras como Next.js, SQL y Vercel</li>
           </ul>
 
-          <h2 className="text-xl font-semibold">5. Compartir Información</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>5. Compartir Información</h2>
           <p className="text-sm">
             Podemos compartir tu información con:
           </p>
@@ -80,7 +80,7 @@ export const Privacy = () => {
             <li>Proveedores de servicios en Argentina, Uruguay, USA y otros países donde operamos</li>
           </ul>
 
-          <h2 className="text-xl font-semibold">6. Retención de Datos</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>6. Retención de Datos</h2>
           <p className="text-sm">
             Mantenemos tus datos personales mientras sea necesario para:
           </p>
@@ -92,7 +92,7 @@ export const Privacy = () => {
             <li>Proporcionar soporte técnico continuo</li>
           </ul>
 
-          <h2 className="text-xl font-semibold">7. Tus Derechos</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>7. Tus Derechos</h2>
           <p className="text-sm">
             Tienes derecho a:
           </p>
@@ -106,12 +106,12 @@ export const Privacy = () => {
             <li>Solicitar la portabilidad de tus datos</li>
           </ul>
 
-          <h2 className="text-xl font-semibold">8. Transferencias Internacionales</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>8. Transferencias Internacionales</h2>
           <p className="text-sm">
             Dado nuestro alcance internacional (Argentina, Uruguay, USA y más), tus datos pueden ser transferidos y procesados en estos países. Garantizamos que todas las transferencias cumplen con las regulaciones de protección de datos aplicables. Sin embargo, Dota Solutions no será responsable por cualquier incumplimiento de regulaciones locales de protección de datos en jurisdicciones específicas.
           </p>
 
-          <h2 className="text-xl font-semibold">9. Limitación de Responsabilidad</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>9. Limitación de Responsabilidad</h2>
           <p className="text-sm">
             Dota Solutions no será responsable por:
           </p>
@@ -127,7 +127,7 @@ export const Privacy = () => {
             En ningún caso nuestra responsabilidad excederá el monto pagado por los servicios en cuestión.
           </p>
 
-          <h2 className="text-xl font-semibold">10. Contacto</h2>
+          <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>10. Contacto</h2>
           <p className="text-sm">
             Para ejercer tus derechos o realizar consultas sobre privacidad, contáctanos en:
           </p>
