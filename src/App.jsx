@@ -53,7 +53,7 @@ function Layout() {
   }, [location.pathname]);
   return (
     <>
-      <div className="grain-overlay"></div>
+
       <CustomCursor />
       <SEO />
       {!isLegalRoute && <Header {...headerProps} />}

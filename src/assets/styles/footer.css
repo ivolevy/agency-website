@@ -1,4 +1,4 @@
-.footer{
+.footer {
     width: 100%;
     background-color: #0f0f0f;
     border-radius: 35px 35px 0px 0px;
@@ -6,19 +6,21 @@
     box-shadow: 0px -8px 30px rgba(0, 0, 0, 0.35);
     overflow-x: hidden;
     margin: 0 auto;
+    position: relative;
+    z-index: 100000;
 }
 
-.email{
+.email {
     text-decoration: none;
     color: #fff;
 }
 
-.icon{
+.icon {
     color: #fff;
     transition: color 0.3s ease;
 }
 
-.icon:hover{
+.icon:hover {
     color: #ff80bf;
 }
 
@@ -41,27 +43,26 @@
 }
 
 
-@media screen and (min-width: 1025px) {
-    
-}
+@media screen and (min-width: 1025px) {}
 
 @media screen and (max-width: 1024px) {
-    .footer{
-      padding-right: 5%;
-      padding-left: 5%;
+    .footer {
+        padding-right: 5%;
+        padding-left: 5%;
     }
-    .footerImg{
+
+    .footerImg {
         width: 65px !important;
     }
-  }
-  
+}
+
 @media screen and (max-width: 768px) {
-    .footer{
-      padding-left: 5%;
-      padding-right: 5%;
+    .footer {
+        padding-left: 5%;
+        padding-right: 5%;
     }
-    .footerImg{
+
+    .footerImg {
         width: 65px !important;
     }
-  }
-  
+}
