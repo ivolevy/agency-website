@@ -17,6 +17,7 @@ import { Projects } from './components/Projects.jsx';
 import { Contact } from './components/Contact.jsx';
 import { Footer } from './components/Footer.jsx';
 import { ContactCTA } from './components/ContactCTA.jsx';
+import { CustomCursor } from './components/CustomCursor.jsx';
 
 /* legales */
 import { Privacy } from './assets/comps/legal/Privacy.jsx';
@@ -52,6 +53,8 @@ function Layout() {
   }, [location.pathname]);
   return (
     <>
+      <div className="grain-overlay"></div>
+      <CustomCursor />
       <SEO />
       {!isLegalRoute && <Header {...headerProps} />}
       <main className="min-h-screen">

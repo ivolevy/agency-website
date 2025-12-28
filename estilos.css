@@ -1,0 +1,219 @@
+/* 
+ * Estilos CSS para replicar el diseño de Dota Solutions
+ * Copia estos estilos en tu proyecto
+ */
+
+/* Variables de colores */
+:root {
+  /* Rosas */
+  --rosa-principal: #ff80bf;        /* rgb(255, 128, 191) */
+  --rosa-claro: #FFA7C4;            /* rgb(255, 167, 196) */
+  --rosa-salmon: #ea9c9c;           /* rgb(234, 156, 156) */
+  
+  /* Grises */
+  --gris-claro: #D7D6CE;
+  --gris-oscuro: #2A2A2A;
+  --gris-opaco: #353535;
+  
+  /* Fondos */
+  --negro-mate: #090909;
+  --negro: #000000;
+  
+  /* Texto */
+  --texto-principal: #ffffff;
+  --texto-secundario: #d1d1d1;
+  --texto-acento: #ff80bf;
+}
+
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: var(--negro);
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 300;
+  color: var(--texto-principal);
+}
+
+/* Tipografías */
+h1 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--texto-principal);
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--texto-principal);
+}
+
+p, span, div, a {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 300;
+}
+
+.text-secondary {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: var(--texto-secundario);
+}
+
+/* Botones con estilo */
+.btn-primary {
+  background: linear-gradient(to bottom, var(--rosa-principal), var(--rosa-salmon));
+  color: var(--negro);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-size: 0.88rem;
+  box-shadow: 0px 4px 15px rgba(255, 128, 191, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 20px rgba(255, 128, 191, 0.4);
+  color: var(--negro);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Inputs con estilo */
+.input-styled {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--texto-principal);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.input-styled:focus {
+  outline: none;
+  border-color: var(--rosa-salmon);
+  box-shadow: 0 0 5px var(--rosa-salmon);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.input-styled::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Cards con estilo */
+.card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 128, 191, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Badge/Etiqueta */
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(255, 128, 191, 0.2);
+  color: var(--rosa-principal);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+/* Enlaces */
+a {
+  color: var(--rosa-principal);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--rosa-claro);
+  text-decoration: underline;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--negro);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rosa-principal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rosa-claro);
+}
+
+/* Utilidades */
+.text-rosa {
+  color: var(--rosa-principal);
+}
+
+.bg-rosa-gradient {
+  background: linear-gradient(to bottom, var(--rosa-principal), var(--rosa-salmon));
+}
+
+.shadow-rosa {
+  box-shadow: 0px 4px 15px rgba(255, 128, 191, 0.3);
+}
+
+.shadow-rosa-hover:hover {
+  box-shadow: 0px 6px 20px rgba(255, 128, 191, 0.4);
+}
+
+/* Partículas - contenedor */
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+/* Contenedor de contenido (debe estar por encima de las partículas) */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+
+
