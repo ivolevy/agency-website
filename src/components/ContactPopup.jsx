@@ -116,7 +116,7 @@ export const ContactPopup = ({ isOpen, onClose }) => {
 
             <textarea
               name="message"
-              placeholder="Tell us about your case"
+              placeholder="Tell us about your business"
               value={formData.message}
               onChange={handleChange}
               required

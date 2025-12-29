@@ -16,7 +16,7 @@ export const Steps = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Powered by AI throughout the process
+            AI-powered throughout the entire process
           </motion.h1>
           
           <motion.div

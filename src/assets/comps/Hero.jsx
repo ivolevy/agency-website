@@ -43,7 +43,7 @@ export const Hero = ({
           className="text-5xl md:text-6xl font-bold text-white leading-tight heroTitle"
           variants={itemVariants}
         >
-          Building the future<br />with software
+          Building scalable<br />digital solutions
         </motion.h1>
         {/* Subtítulo */}
         <motion.p
@@ -62,7 +62,7 @@ export const Hero = ({
             className="mb-2 text-sm"
             style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', color: '#ff80bf' }}
           >
-            become a doter
+            Work with Dota
           </motion.p>
           <motion.div
             animate={{ y: [0, 8, 0] }}

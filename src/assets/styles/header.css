@@ -1,7 +1,7 @@
-.header{
+.header {
     position: relative;
     height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
     background-color: #000;
 }
 
@@ -27,24 +27,25 @@
 }
 
 .headerButton {
-  border-radius: 35px;
-  padding: 12px 17px;
-  color: #fff !important;
-  background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
-  cursor: pointer;
-  font-size: 0.88rem;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    border-radius: 35px;
+    padding: 12px 17px;
+    color: #fff !important;
+    background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
+    cursor: pointer;
+    font-size: 0.88rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
 .headerButton:hover {
-  color: #000 !important; /* Cambia a un color diferente */
+    color: #000 !important;
+    /* Cambia a un color diferente */
 }
 
 .heroTitle {
@@ -69,6 +70,7 @@
     .heroTitle {
         font-size: 3rem;
     }
+
     .heroText {
         font-size: 0.95rem;
     }
@@ -80,20 +82,26 @@
         height: auto;
         min-height: 100vh;
     }
+
     .heroTitle {
         font-size: 3rem;
     }
+
     .heroText {
         font-size: 0.9rem;
     }
-    .headerButton, .navButton2 {
+
+    .headerButton,
+    .navButton2 {
         width: 20%;
         margin-bottom: 10px;
     }
 }
 
-@media (max-width: 612px){
-    .headerButton, .navButton2 {
+@media (max-width: 612px) {
+
+    .headerButton,
+    .navButton2 {
         width: 30%;
         margin-bottom: 10px;
     }
@@ -103,9 +111,11 @@
     .heroTitle {
         font-size: 2.5rem;
     }
+
     .heroText {
         font-size: 0.9rem;
     }
+
     .hero {
         padding: 0 15px;
     }

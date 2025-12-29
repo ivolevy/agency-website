@@ -31,7 +31,7 @@ export const Projects = () => {
     },
     {
       id: 3,
-      title: "Labor law attorney management",
+      title: "Labor law firm management system",
       description: "Comprehensive ERP system for labor law firms with client management, finances, documents, and scheduling",
       img: lawyer,
       textColor: "text-white",
@@ -103,7 +103,7 @@ export const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>
 
-            <h2 className="text-sm md:text-base font-semibold mb-2 md:mb-3" style={{ color: '#fff' }}>{project.title}</h2>
+            <h2 className="text-sm md:text-base font-semibold mb-2 md:mb-3" style={{ color: '#fff', fontFamily: '"MuseoModerno", sans-serif', letterSpacing: '0.02em', fontSize: '1.1rem' }}>{project.title}</h2>
 
             <div className="space-y-2 mb-4">
               {project.achievements.map(achievement => (
@@ -138,12 +138,13 @@ export const Projects = () => {
         >
           <a 
             href="#contact" 
-            className="inline-flex items-center px-6 py-3 transition-colors no-underline"
+            className="inline-flex items-center px-14 py-3 transition-colors no-underline"
             style={{ 
               background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)', 
               color: '#000', 
               borderRadius: '35px', 
-              fontWeight: '400',
+              fontWeight: '500',
+              fontFamily: '"Inter", sans-serif',
               transition: 'all 0.3s ease'
             }}
             onMouseEnter={(e) => {

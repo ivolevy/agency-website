@@ -1,4 +1,4 @@
-.nav{
+.nav {
   width: 100%;
   height: auto;
   position: fixed;
@@ -12,13 +12,16 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f0f0f;
+  background-color: rgba(15, 15, 15, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   height: 65px;
   width: 100%;
   width: 50%;
   border-radius: 40px;
   margin-top: 10px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 nav .logo {
@@ -32,21 +35,22 @@ nav .logo img {
   /*padding: 2px;*/
 }
 
-nav ul {
+nav ul.desktop-menu {
   list-style: none;
   display: flex;
-  justify-content: right; 
+  justify-content: flex-end;
+  align-items: center;
   flex-grow: 1;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-nav ul li {
+nav ul.desktop-menu li {
   margin-left: 1.5rem;
 }
 
-nav ul li a {
+nav ul.desktop-menu li a {
   text-decoration: none;
   color: #fff !important;
   font-size: 0.83rem;
@@ -55,34 +59,64 @@ nav ul li a {
   border-radius: 5px;
 }
 
-nav ul li a:hover {
+nav ul.desktop-menu li a:hover {
   color: #ff80bf !important;
 }
 
 .navButton {
-  border-radius: 35px;
-  padding: 12px 17px;
+  border-radius: 35px !important;
+  border: none !important;
+  padding: 8px 20px !important;
   color: #000 !important;
   background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
   cursor: pointer;
-  font-size: 0.88rem;
-  font-weight: 400;
+  font-size: 0.85rem !important;
+  font-weight: 300 !important;
+  font-family: "Inter", sans-serif !important;
   transition: all 0.3s ease;
   text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 
-.navButton:hover {
-  color: #fff !important;
+
+/* Increased specificity to override generic menu styles */
+nav ul.desktop-menu li a.navButtonPrimary,
+.navButtonPrimary {
+  border-radius: 35px !important;
+  border: none !important;
+  padding: 8px 20px !important;
+  color: #000 !important;
+  background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
+  cursor: pointer;
+  font-size: 0.8rem !important;
+  font-weight: 300 !important;
+  font-family: "Inter", sans-serif !important;
+  letter-spacing: -0.03em !important;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
 }
 
-.navButton2{
+nav ul.desktop-menu li a.navButtonPrimary:hover,
+.navButtonPrimary:hover {
+  color: #000 !important;
+  opacity: 1 !important;
+  /* Force no opacity change */
+  background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
+  /* Maintain background */
+}
+
+
+.navButton2 {
   background-color: transparent !important;
   border-radius: 35px;
   text-decoration: none;
 }
 
-.navButton2:hover{
+.navButton2:hover {
   border: 1px solid #ff80bf !important;
   box-shadow: 0 0 5px #ff80bf !important;
 }
@@ -128,15 +162,19 @@ nav ul li a:hover {
   position: absolute;
   top: 0;
   left: -60%;
-  display: flex;
+  display: none;
+  /* Hidden by default on desktop */
   justify-content: center;
   align-items: flex-start;
   width: 60%;
   height: 100vh;
   padding: 20% 0;
-  background: #0f0f0f;
+  background: rgba(15, 15, 15, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   transition: all 0.5s ease-in;
   z-index: 2;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .active {
@@ -198,19 +236,19 @@ nav ul li a:hover {
   width: 60%;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   border: none !important;
-  transform: scale(0.8);  
-  transition: transform 0.5s ease; 
+  transform: scale(0.8);
+  transition: transform 0.5s ease;
 }
 
 .modal.show .modal-content {
-  transform: scale(1); 
+  transform: scale(1);
 }
 
-.formButton{
+.formButton {
   transition: all 0.5s ease;
 }
 
-.formButton:hover{
+.formButton:hover {
   color: #767373 !important;
 }
 
@@ -254,30 +292,42 @@ form button {
   .hamburger {
     display: block;
   }
-  nav ul {
+
+  .menubar {
+    display: flex;
+    /* Show flex on mobile */
+  }
+
+  nav ul.desktop-menu {
     display: none;
   }
+
   .menubar.active ul {
     display: flex;
   }
+
   nav {
     padding-right: 5%;
     width: 90%;
     padding-left: 5%;
   }
+
   .navButton {
     border-radius: 35px !important;
     padding: 12px 17px !important;
     transition: 0.5s;
-    background-color: var(--rosa);  
+    background-color: var(--rosa);
     cursor: pointer;
   }
+
   .navButton:hover {
     color: #fff !important;
   }
-  .modal-content{
+
+  .modal-content {
     width: 90%;
   }
+
   nav .logo img {
     height: 32px;
     width: auto;
@@ -290,20 +340,25 @@ form button {
     padding-left: 5%;
     padding-right: 5%;
   }
+
   .menubar {
     width: 60%;
     left: -60%;
     padding: 15% 0;
   }
+
   .menubar.active {
     left: 0;
   }
+
   .menubar ul li {
     margin-bottom: 20px;
   }
+
   .menubar ul li a {
     font-size: 1.1rem;
   }
+
   .navButton {
     width: 100%;
     text-align: center;
@@ -317,6 +372,7 @@ form button {
   font-weight: normal !important;
   border-radius: 0;
 }
+
 .active-gray {
   background: none !important;
   color: #fff !important;

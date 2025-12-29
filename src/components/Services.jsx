@@ -67,7 +67,7 @@ export default function Services() {
           
           <p className="services-description">
             We build custom solutions that reduce operational costs, automate manual work, and increase your bottom line. 
-            Every project delivers measurable financial impact.
+            Every project delivers measurable financial results.
           </p>
 
           <div className="services-features">

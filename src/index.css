@@ -12,14 +12,46 @@ body {
     background-color: #000 !important;
     font-family: "MuseoModerno", sans-serif;
     font-weight: 300;
+    font-size: 1.1rem;
+    /* Increased base size */
+    line-height: 1.6;
+    /* Improved readability */
+    color: #e0e0e0;
+    /* Softer contrast */
+    letter-spacing: 0.02em;
+    /* Premium feel */
 }
 
-/* Solo los h1 tienen Instrument Serif en bold */
+/* Premium Editorial Typography */
 h1 {
     font-family: "Instrument Serif", serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    /* ≈ -2% */
+    font-weight: 400;
+    /* Lighter weight for elegance */
+    letter-spacing: -0.04em;
+    /* Tight spacing for display */
+    line-height: 1.1;
+    font-size: 4rem;
+    /* Base size */
+}
+
+h2,
+h3 {
+    font-family: "Instrument Serif", serif;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+}
+
+/* Responsive Scaling */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 7.5rem;
+    }
 }
 
 /* Custom Cursor */

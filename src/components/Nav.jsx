@@ -8,7 +8,7 @@ const menuItems = [
   { to: "/#services", label: "Services", title: "View our services" },
   { to: "/#projects", label: "Projects", title: "View our custom systems and websites projects" },
   // Team hidden by request: { to: "/#team", label: "Team", title: "Meet our team" },
-  { to: "/#contact", label: "Let's work together", title: "Contact us to start your project", className: "navButton" },
+  { to: "/#contact", label: "Let's work together", title: "Contact us to start your project", className: "navButtonPrimary" },
 ];
 
 export const NavComponent = () => {
@@ -37,6 +37,7 @@ export const NavComponent = () => {
   };
 
   return (
+    <>
     <nav>
       <div className="logo">
         <a href="/#header" title="Dota Solutions - Custom Digital Solutions">
@@ -54,7 +55,7 @@ export const NavComponent = () => {
         {menuItems.map(({ to, label, className, title, scroll }) => (
           <li key={to}>
             {to.startsWith("#") || scroll ? (
-              <a href={to} className={className + ' anchor-link'} title={title} onClick={e => { e.preventDefault(); scrollToSection(to.replace('#', '')); }}>{label}</a>
+              <a href={to} className={(className || '') + ' anchor-link'} title={title} onClick={e => { e.preventDefault(); scrollToSection(to.replace('#', '')); }}>{label}</a>
             ) : (
               <a href={to} className={className} title={title}>{label}</a>
             )}
@@ -72,20 +73,21 @@ export const NavComponent = () => {
         <span className="line"></span>
         <span className="line"></span>
       </button>
-
-      <div className={`menubar ${isMenuOpen ? "active" : ""}`}>
-        <ul>
-          {menuItems.map(({ to, label, className, title, scroll }) => (
-            <li key={to}>
-              {to.startsWith("#") || scroll ? (
-                <a href={to} className={className + ' anchor-link'} title={title} onClick={e => { e.preventDefault(); scrollToSection(to.replace('#', '')); }}>{label}</a>
-              ) : (
-                <a href={to} className={className} title={title} onClick={() => setIsMenuOpen(false)}>{label}</a>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
     </nav>
+
+    <div className={`menubar ${isMenuOpen ? "active" : ""}`}>
+      <ul>
+        {menuItems.map(({ to, label, className, title, scroll }) => (
+          <li key={to}>
+            {to.startsWith("#") || scroll ? (
+              <a href={to} className={className + ' anchor-link'} title={title} onClick={e => { e.preventDefault(); scrollToSection(to.replace('#', '')); }}>{label}</a>
+            ) : (
+              <a href={to} className={className} title={title} onClick={() => setIsMenuOpen(false)}>{label}</a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+    </>
   );
 };

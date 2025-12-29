@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1000;
+  z-index: 100001;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.4s ease-out;
@@ -53,7 +53,7 @@
     bottom: 15px;
     right: 15px;
   }
-  
+
   .contact-cta-button {
     padding: 10px 16px;
     font-size: 13px;

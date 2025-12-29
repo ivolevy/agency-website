@@ -118,7 +118,7 @@ export const Contact = () => {
             }}
           >
             <FaWhatsapp size={18} />
-            <span>Write us on WhatsApp</span>
+            <span>Chat with us on WhatsApp</span>
           </a>
         </p>
 
@@ -161,7 +161,7 @@ export const Contact = () => {
 
         <textarea
           name="message"
-          placeholder="Tell us about your case"
+          placeholder="Tell us about your business"
           value={formData.message}
           onChange={handleChange}
           required

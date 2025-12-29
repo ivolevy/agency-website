@@ -28,8 +28,24 @@ export const Faq = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const schemaFAQ = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <div className="flex flex-col justify-center items-center h-auto p-4 faqsSection">
+      {/* Inject FAQ Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
+      
       <h2 className="text-2xl font-bold text-center mb-4 text-white">Frequently Asked Questions</h2>
       <div className="w-full max-w-3xl shadow-lg p-6 faqs">
         {faqs.map((faq, index) => (
