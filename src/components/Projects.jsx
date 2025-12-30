@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight, ArrowDown } from 'lucide-react';
 import "../assets/styles/projects.css";
 import photoEditor from "../assets/images/projects/photoEditor.webp";
 import restaurant from "../assets/images/projects/restaurant.webp";
-import lawyer from "../assets/images/projects/lawyer.webp";
+import spoty from "../assets/images/projects/spoty.png";
 
 export const Projects = () => {
   const projects = [
@@ -31,14 +31,14 @@ export const Projects = () => {
     },
     {
       id: 3,
-      title: "Labor law firm management system",
-      description: "Comprehensive ERP system for labor law firms with client management, finances, documents, and scheduling",
-      img: lawyer,
-      textColor: "text-white",
-      bgColor: "bg-gray-900",
-      altText: "Dashboard of the management system for labor attorneys",
-      achievements: ["Client management", "Finances", "Documents", "Schedule"],
-      link: "https://v0-laboral-erp-interface.vercel.app",
+      title: "Spoty",
+      description: "AI-powered mass playlisting app for record labels",
+      img: spoty,
+      textColor: "text-white", // Keeping text white as it likely contrasts well with dark bg
+      bgColor: "bg-black", // Changed to black to fit 'Spotify' theme or just dark
+      altText: "Spoty app interface",
+      achievements: ["Mass Playlisting", "AI Analysis", "Label Mgmt", "Automation"],
+      link: "#",
     },
   ];
 
