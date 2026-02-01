@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
-  title = "Dota Solutions | Automatización B2B para Ganar Dinero y Ahorrar Tiempo",
+  title = "Dota Solutions | Sistemas B2B: Ganá más dinero trabajando menos",
   description = "Creamos sistemas a medida que trabajan por vos. Conseguí clientes de calidad más rápido, automatizá tu networking y ganá más dinero. Agencia en Argentina.",
   image = "https://dotasolutions.agency/dota.webp",
   url = "https://dotasolutions.agency",
