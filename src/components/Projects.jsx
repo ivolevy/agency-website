@@ -130,34 +130,23 @@ export const Projects = () => {
         </div>
 
         <motion.div
-          className="text-center mt-12"
+          className="text-center mt-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <a
-            href="#contact"
-            className="inline-flex items-center px-14 py-3 transition-colors no-underline"
-            style={{
-              background: 'linear-gradient(to bottom, #ff80bf, #ea9c9c)',
-              color: '#000',
-              borderRadius: '35px',
-              fontWeight: '500',
-              fontFamily: '"Inter", sans-serif',
-              transition: 'all 0.3s ease'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = '#fff';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = '#000';
-            }}
-          >
-            Ready to start your project?
-            ¿Listo para facturar más?
-            <ArrowDown size={16} className="ml-2" />
-          </a>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-white font-light mb-3" style={{ fontFamily: '"Inter", sans-serif' }}>
+              Tambien <span className="text-pink-400">Desarrollamos tu sistema a medida.</span>
+            </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors mt-2 border-b border-gray-700 hover:border-white pb-0.5 uppercase tracking-widest"
+            >
+              Consulta cotización <ArrowRight size={14} />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

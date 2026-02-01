@@ -8,7 +8,7 @@ const menuItems = [
   { to: "/#services", label: "Servicios", title: "Ver nuestros servicios" },
   { to: "/#projects", label: "Proyectos", title: "Ver nuestros proyectos de sistemas y webs" },
   // Team hidden by request: { to: "/#team", label: "Equipo", title: "Conoce al equipo" },
-  { to: "/#contact", label: "EMPEZAR AHORA", title: "Contáctanos para empezar tu proyecto", className: "navButtonPrimary" },
+  { to: "/#contact", label: "Empezar ahora", title: "Contáctanos para empezar tu proyecto", className: "navButtonPrimary" },
 ];
 
 export const NavComponent = () => {

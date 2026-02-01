@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 
 export const SEO = ({
-  title = "Dota Solutions | Custom Software & AI Development",
-  description = "We build custom software and AI solutions that automate workflows, reduce costs by up to 60%, and drive measurable revenue growth. Premium digital transformation for modern businesses.",
+  title = "Dota Solutions | Automatización B2B para Ganar Dinero y Ahorrar Tiempo",
+  description = "Creamos sistemas a medida que trabajan por vos. Conseguí clientes de calidad más rápido, automatizá tu networking y ganá más dinero. Agencia en Argentina.",
   image = "https://dotasolutions.agency/dota.webp",
   url = "https://dotasolutions.agency",
   type = "website",
@@ -18,8 +18,8 @@ export const SEO = ({
     "url": "https://dotasolutions.agency",
     "logo": "https://dotasolutions.agency/dota.webp",
     "image": "https://dotasolutions.agency/dota.webp",
-    "description": "Premium software agency specializing in AI-driven development, custom ERPs, and high-performance web applications.",
-    "email": "solutionsdota@gmail.com", // Consider using a professional domain email if available
+    "description": "Agencia de software enfocada 100% en hacerte ganar dinero. Automatización B2B, sistemas a medida y networking automático.",
+    "email": "solutionsdota@gmail.com",
     "sameAs": [
       "https://www.instagram.com/dotasolutions/",
       "https://www.linkedin.com/company/dota-solutions/",
@@ -32,59 +32,52 @@ export const SEO = ({
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "contactType": "customer service",
+      "contactType": "sales",
       "email": "solutionsdota@gmail.com",
-      "areaServed": ["AR", "US", "ES"],
-      "availableLanguage": ["English", "Spanish"]
+      "areaServed": ["AR", "UY", "US", "ES", "MX", "CO", "CL"],
+      "availableLanguage": ["Spanish", "English"]
     }
   };
 
   const schemaService = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Custom Software Development",
+    "name": "Desarrollo de Software B2B y Automatización",
     "provider": {
       "@type": "Organization",
       "name": "Dota Solutions"
     },
-    "serviceType": "Software Engineering & AI Integration",
+    "serviceType": "Business Automation & Custom Software",
     "areaServed": {
-      "@type": "World"
+      "@type": "Continent",
+      "name": "South America"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "End-to-End Digital Ecosystems",
+      "name": "Soluciones de Crecimiento B2B",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Intelligent Process Automation",
-            "description": "Bespoke algorithms designed to eliminate repetitive workflows, reducing operational friction and maximizing human capital efficiency."
+            "name": "Sistemas de Automatización de Negocios",
+            "description": "Automatizamos tareas operativas para que ahorres tiempo y reduzcas costos hasta un 60%."
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Next-Gen E-commerce Architectures",
-            "description": "High-conversion digital storefronts with headless capabilities, designed for scalability and immersive user experiences."
+            "name": "Networking Automatizado",
+            "description": "Herramientas para conseguir clientes de calidad más rápido y en automático."
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Enterprise ERP & CRM Core",
-            "description": "Custom-engineered business logic cores that unify data streams, sales pipelines, and resource planning into a single source of truth."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "AI-Driven Application Suites",
-            "description": "Integration of Large Language Models (LLMs) and predictive analytics to create software that adapts, learns, and generates value automonously."
+            "name": "Desarrollo de Software a Medida",
+            "description": "Sistemas personalizados diseñados específicamente para aumentar tu facturación."
           }
         }
       ]
@@ -101,9 +94,17 @@ export const SEO = ({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href={url} />
 
+      {/* Geo-Targeting Tags (Argentina/Latam Focus) */}
+      <meta name="geo.region" content="AR" />
+      <meta name="geo.placename" content="Buenos Aires, Argentina" />
+      <meta name="geo.position" content="-34.6037;-58.3816" />
+      <meta name="ICBM" content="-34.6037, -58.3816" />
+
       {/* Modern & Social Meta Tags (Open Graph) */}
       <meta property="og:site_name" content="Dota Solutions" />
-      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale" content="es_AR" />
+      <meta property="og:locale:alternate" content="es_419" />
+      <meta property="og:locale:alternate" content="en_US" />
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -112,7 +113,7 @@ export const SEO = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={title} />
-      
+
       {/* Twitter Cards */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@dotasolutions" />

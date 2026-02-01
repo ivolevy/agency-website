@@ -66,7 +66,7 @@ export const Contact = () => {
       <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer contact-card">
         {/* Left Side: Information + Social Media */}
         <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
-          <h3 className="text-white contactSubtitle" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '400', fontSize: '1.2rem' }}>Hagamos que ganes más dinero.</h3>
+          <h3 className="text-white contactSubtitle" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '400', fontSize: '1.2rem' }}>Te quedaste con dudas?</h3>
           <p className="mb-4 contactText" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.9rem', color: '#d1d1d1' }}>Hablemos de cómo vamos a llenar tus bolsillos.</p>
 
           {/* Redes Sociales */}

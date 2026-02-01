@@ -1,5 +1,6 @@
 import "../assets/styles/services.css";
 import { useState, useEffect } from 'react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Services() {
   const [contadores, setContadores] = useState({ proyectos: 0, experiencia: 0, soporte: 0, paises: 0 });
@@ -110,12 +111,6 @@ export default function Services() {
               <div className="stat-number">+{contadores.paises}</div>
               <div className="stat-label">Países alcanzados</div>
             </div>
-          </div>
-
-          <div className="services-cta">
-            <a href="#contact" className="cta-button">
-              QUIERO MI SISTEMA AUTOMÁTICO
-            </a>
           </div>
         </div>
       </div>
