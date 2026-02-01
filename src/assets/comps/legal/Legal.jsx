@@ -40,7 +40,7 @@ export const Legal = () => {
 
           <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>3. Tecnologías y Enfoque</h2>
           <p className="text-sm">
-            Utilizamos tecnologías modernas como Next.js, SQL, Vercel y Adobe para desarrollar soluciones robustas y escalables. Nuestro enfoque permite entregas en semanas sin costos ocultos, garantizando transparencia total en cada proyecto.
+            Utilizamos tecnologías modernas como Next.js, SQL, Vercel y Adobe para desarrollar soluciones robustas y escalables. Nuestro enfoque permite acceso inmediato al sistema, garantizando transparencia total en cada proyecto.
           </p>
 
           <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>4. Propiedad Intelectual e Industrial</h2>
@@ -55,7 +55,7 @@ export const Legal = () => {
 
           <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>6. Condiciones de Entrega y Pagos</h2>
           <p className="text-sm">
-            Nuestro enfoque permite entregas en semanas sin costos ocultos. Los sitios web se desarrollan en menos de dos semanas, mientras que los sistemas más complejos pueden requerir más tiempo según las funcionalidades solicitadas. En estos casos, se realizarán entregas incrementales para que puedas acceder a las funcionalidades principales lo antes posible. Los pagos se realizarán según lo acordado en el contrato firmado con el cliente.
+            Nuestras aplicaciones están listas para su uso inmediato. No hay tiempos de espera ni procesos de desarrollo largos. Accedés al software y comenzás a operar desde el primer momento. Los pagos se realizarán según lo acordado en el contrato firmado con el cliente.
           </p>
 
           <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>7. Condiciones Específicas de los Servicios</h2>
@@ -64,7 +64,7 @@ export const Legal = () => {
           </p>
           <ul className="list-disc pl-6 text-sm">
             <li>Funcionalidades incluidas y personalización</li>
-            <li>Plazos de entrega optimizados</li>
+            <li>Acceso inmediato a la plataforma</li>
             <li>Mantenimiento y soporte técnico 24/7</li>
             <li>Condiciones de pago transparentes</li>
             <li>Panel de autogestión para sitios web</li>

@@ -67,8 +67,8 @@ export default function Services() {
           </h1>
 
           <p className="services-description">
-            Creamos soluciones a medida que reducen costos operativos, automatizan el trabajo manual y aumentan tus ganancias netas.
-            Cada proyecto entrega resultados financieros medibles.
+            Ofrecemos soluciones listas para usar que reducen costos operativos, automatizan el trabajo manual y aumentan tus ganancias netas desde el primer día.
+            Cada sistema entrega resultados financieros medibles de inmediato.
           </p>
 
           <div className="services-features">
@@ -89,7 +89,7 @@ export default function Services() {
             <div className="feature-item">
               <h3 className="feature-title">ROI Rápido</h3>
               <p className="feature-text">
-                Nuestras soluciones se pagan solas rápidamente. La mayoría de clientes ven retorno de inversión positivo en el primer trimestre.
+                Nuestras soluciones están listas para usar y se pagan solas rápidamente. La mayoría de clientes ven retorno de inversión positivo en el primer mes de uso.
               </p>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function Services() {
           <div className="services-stats" id="stats-section">
             <div className="stat-item">
               <div className="stat-number">+{contadores.proyectos}</div>
-              <div className="stat-label">Proyectos entregados</div>
+              <div className="stat-label">Sistemas activos</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">+{contadores.experiencia}</div>

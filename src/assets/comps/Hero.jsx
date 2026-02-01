@@ -26,7 +26,7 @@ const itemVariants = {
 };
 
 export const Hero = ({
-  subtitle = "Conseguí más clientes, ganá más plata y ahorrá tiempo. Sistemas automáticos que trabajan por vos."
+  subtitle = "Sistemas automáticos listos para usar. Conseguí más clientes, ganá más plata y ahorrá tiempo hoy mismo."
 }) => {
   return (
     <motion.section
@@ -62,7 +62,7 @@ export const Hero = ({
             className="mb-2 text-sm"
             style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', color: '#ff80bf' }}
           >
-            Trabaja con Dota
+            Empezá ahora
           </motion.p>
           <motion.div
             animate={{ y: [0, 8, 0] }}

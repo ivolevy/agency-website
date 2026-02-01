@@ -27,12 +27,12 @@ export const Steps = () => {
             viewport={{ once: true }}
           >
             <p>
-              Usamos inteligencia artificial en cada etapa para entregarte soluciones más inteligentes, rápidas y eficientes.
-              Desde generación de código hasta análisis predictivo, la IA amplifica nuestras capacidades y acelera tu llegada al mercado.
+              Usamos inteligencia artificial en cada etapa para brindarte soluciones más inteligentes, listas para usar y eficientes.
+              Desde generación de código hasta análisis predictivo, la IA potencia nuestras herramientas y te permite operar desde el primer día.
             </p>
             <p>
-              Nuestro enfoque con IA significa que analizamos requerimientos complejos en segundos, encontramos oportunidades de ganancia automáticamente
-              y construimos sistemas que mejoran con el tiempo. No es solo software, es desarrollo inteligente que evoluciona con tu negocio.
+              Nuestro enfoque con IA significa que accedes a sistemas complejos en segundos, encontrás oportunidades de ganancia automáticamente
+              y utilizas herramientas que mejoran con el tiempo. No es solo software, es inteligencia aplicada lista para tu negocio.
             </p>
           </motion.div>
         </div>
