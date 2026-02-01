@@ -59,36 +59,36 @@ export default function Services() {
     <section className="services-section" id="services" style={{ scrollMarginTop: '80px' }}>
       <div className="services-container">
         <div className="services-content">
-          <span className="services-badge">ABOUT US</span>
-          
+          <span className="services-badge">SOBRE NOSOTROS</span>
+
           <h1 className="services-title">
-            Software that saves money and drives revenue
+            Software que te hace ganar dinero
           </h1>
-          
+
           <p className="services-description">
-            We build custom solutions that reduce operational costs, automate manual work, and increase your bottom line. 
-            Every project delivers measurable financial results.
+            Creamos soluciones a medida que reducen costos operativos, automatizan el trabajo manual y aumentan tus ganancias netas.
+            Cada proyecto entrega resultados financieros medibles.
           </p>
 
           <div className="services-features">
             <div className="feature-item">
-              <h3 className="feature-title">Reduce operational costs</h3>
+              <h3 className="feature-title">Reducí costos operativos</h3>
               <p className="feature-text">
-                Automate repetitive tasks and eliminate manual processes. Cut overhead by up to 60% while improving accuracy and speed.
+                Automatiza tareas repetitivas y elimina procesos manuales. Recortá gastos hasta un 60% mejorando precisión y velocidad.
               </p>
             </div>
-            
+
             <div className="feature-item">
-              <h3 className="feature-title">Increase revenue</h3>
+              <h3 className="feature-title">Aumentá tus ingresos</h3>
               <p className="feature-text">
-                Streamline sales processes, improve customer experience, and unlock new revenue streams. See measurable growth in your bottom line.
+                Optimizá procesos de venta, mejorá la experiencia del cliente y desbloqueá nuevas fuentes de ingresos. Crecimiento real en tu bolsillo.
               </p>
             </div>
-            
+
             <div className="feature-item">
-              <h3 className="feature-title">Fast ROI</h3>
+              <h3 className="feature-title">ROI Rápido</h3>
               <p className="feature-text">
-                Our solutions pay for themselves quickly. Most clients see positive ROI within the first quarter, with ongoing savings year after year.
+                Nuestras soluciones se pagan solas rápidamente. La mayoría de clientes ven retorno de inversión positivo en el primer trimestre.
               </p>
             </div>
           </div>
@@ -96,25 +96,25 @@ export default function Services() {
           <div className="services-stats" id="stats-section">
             <div className="stat-item">
               <div className="stat-number">+{contadores.proyectos}</div>
-              <div className="stat-label">Projects delivered</div>
+              <div className="stat-label">Proyectos entregados</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">+{contadores.experiencia}</div>
-              <div className="stat-label">Years of experience</div>
+              <div className="stat-label">Años de experiencia</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">{contadores.soporte}/7</div>
-              <div className="stat-label">Technical support</div>
+              <div className="stat-label">Soporte técnico</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">+{contadores.paises}</div>
-              <div className="stat-label">Countries reached</div>
+              <div className="stat-label">Países alcanzados</div>
             </div>
           </div>
 
           <div className="services-cta">
             <a href="#contact" className="cta-button">
-              Let's talk about your project
+              QUIERO MI SISTEMA AUTOMÁTICO
             </a>
           </div>
         </div>

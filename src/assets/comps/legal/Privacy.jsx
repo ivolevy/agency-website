@@ -1,35 +1,36 @@
 import { SEO } from '../../../components/SEO';
 
 export const Privacy = () => {
-    return (
-      <>
-        <SEO 
-          title="Política de Privacidad | Dota Solutions"
-          description="Política de privacidad de Dota Solutions. Conoce cómo protegemos y manejamos tus datos personales en nuestros servicios de desarrollo web y sistemas ERP personalizados."
-          url="https://dotasolutions.agency/politica-de-privacidad"
-          noindex={true}
-        />
-        <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
+  return (
+    <>
+      <SEO
+        title="Política de Privacidad | Dota Solutions"
+        description="Política de privacidad de Dota Solutions. Conoce cómo protegemos y manejamos tus datos personales en nuestros servicios de desarrollo web y sistemas ERP personalizados."
+        url="https://dotasolutions.agency/politica-de-privacidad"
+        noindex={true}
+      />
+      <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg">
         <h1 className="text-2xl font-semibold text-center" style={{ fontFamily: '"Inter", sans-serif' }}>Política de Privacidad de Dota Solutions</h1>
-        <p className="text-sm text-center"><strong>[Fecha de última actualización: 3 de Diciembre de 2025.]</strong></p>
-        
+        <p className="text-sm text-center"><strong>[Fecha de última actualización: 1 de Febrero de 2026.]</strong></p>
+
         <div className="space-y-4">
           <p className="text-sm">
-            En Dota Solutions, nos tomamos muy en serio la privacidad de nuestros clientes y usuarios. Esta política de privacidad describe cómo recopilamos, usamos y protegemos tu información personal cuando utilizas nuestros servicios de soluciones digitales 100% personalizadas, incluyendo sitios web personalizados y sistemas de gestión a medida (ERP) con alcance internacional.
+            En Dota Solutions, nos tomamos muy en serio la privacidad de nuestros clientes B2B. Esta política de privacidad describe cómo recopilamos, usamos y protegemos tu información personal y empresarial cuando utilizas nuestros servicios de sistemas a medida y automatización.
           </p>
 
           <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>1. Información que Recopilamos</h2>
           <p className="text-sm">
-            Recopilamos la siguiente información cuando interactúas con nuestros servicios:
+            Recopilamos únicamente la información necesaria para la prestación de nuestros servicios B2B. Los datos específicos incluyen:
           </p>
           <ul className="list-disc pl-6 text-sm space-y-2">
-            <li>Información de contacto (nombre completo, correo electrónico, teléfono)</li>
-            <li>Información de la empresa (nombre, tamaño, industria, país)</li>
-            <li>Requisitos y especificaciones del proyecto</li>
-            <li>Datos de acceso a los sistemas desarrollados</li>
-            <li>Información de facturación y pagos</li>
-            <li>Datos de uso de nuestros servicios web</li>
-        </ul>
+            <li><strong>Datos de Identificación:</strong> Nombre completo, cargo y rol en la empresa.</li>
+            <li><strong>Datos de Contacto:</strong> Dirección de correo electrónico y número de teléfono.</li>
+            <li><strong>Datos Empresariales:</strong> Nombre de la empresa, industria y necesidades operativas.</li>
+            <li><strong>Datos Técnicos:</strong> Requisitos del sistema y especificaciones del proyecto.</li>
+          </ul>
+          <p className="text-sm mt-2 font-bold">
+            IMPORTANTE: No recopilamos ni almacenamos datos bancarios, números de tarjetas de crédito ni información financiera sensible directamente en nuestros servidores. Cualquier transacción se gestiona a través de plataformas de pago externas seguras o transferencias bancarias directas sin intermediación de nuestro sitio web.
+          </p>
 
           <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>2. Uso de la Información</h2>
           <p className="text-sm">
@@ -42,8 +43,8 @@ export const Privacy = () => {
             <li>Gestionar la relación comercial y facturación transparente</li>
             <li>Enviar actualizaciones sobre nuestros servicios</li>
             <li>Mejorar nuestros servicios basándonos en el feedback</li>
-        </ul>
-  
+          </ul>
+
           <h2 className="text-xl font-semibold" style={{ fontFamily: '"Inter", sans-serif' }}>3. Base Legal para el Tratamiento</h2>
           <p className="text-sm">
             El tratamiento de tus datos personales se basa en:
@@ -134,9 +135,9 @@ export const Privacy = () => {
           <ul className="list-disc pl-6 text-sm space-y-2">
             <li>Correo electrónico: <a href="mailto:solutionsdota@gmail.com" className="text-blue-600 hover:underline">solutionsdota@gmail.com</a></li>
             <li>Redes sociales: @dotasolutions en Instagram, TikTok y LinkedIn</li>
-        </ul>
-                </div>
+          </ul>
+        </div>
       </div>
-      </>
-    );
-  };
+    </>
+  );
+};

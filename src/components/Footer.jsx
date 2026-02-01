@@ -8,17 +8,17 @@ export const Footer = () => {
   return (
     <footer className="footer p-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        
+
         {/* Left Section */}
         <div className="w-full md:w-1/3 text-center md:text-left text-sm font-medium text-white hidden md:block">
-          WORK WITH US · START YOUR PROJECT
+          DESARROLLADO POR <a href="https://www.linkedin.com/in/ivan-levy/" target="_blank" rel="noopener noreferrer" className="underline ivanLevyLink">IVAN LEVY</a>
         </div>
 
         {/* Center Links Section */}
         <div className="w-full md:w-1/3 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-2 text-center text-sm text-white">
-        <Link to="/aviso-legal" target="_blank" className="legalLinks">Legal Notice</Link>
+          <Link to="/aviso-legal" target="_blank" className="legalLinks">Aviso Legal</Link>
           <span className="hidden md:inline">·</span>
-          <Link to="/politica-de-privacidad" target="_blank" className="legalLinks">Privacy Policy</Link>
+          <Link to="/politica-de-privacidad" target="_blank" className="legalLinks">Política de Privacidad</Link>
           <span className="hidden md:inline">·</span>
           <Link to="/cookies" target="_blank" className="legalLinks">Cookies</Link>
         </div>
@@ -40,14 +40,11 @@ export const Footer = () => {
 
       {/* Copyright and Logo */}
       <div className="text-center text-sm text-gray-400 mt-4">
-        &copy; {new Date().getFullYear()} dota solutions. All rights reserved.
+        &copy; {new Date().getFullYear()} dota solutions. Todos los derechos reservados.
       </div>
       <div className="flex justify-center mt-4">
         <img src="/dota.png" alt="dota solutions" className="w-32 footerImg" />
       </div>
-     {/*  <div className="text-center text-sm text-gray-600 mt-6">
-        Diseñado y desarrollado por <a href="https://ivanlevyportfolio.vercel.app" target="_blank" rel="noopener noreferrer" className="underline ivanLevyLink">Ivan levy</a>
-      </div> */}
     </footer>
   );
 };

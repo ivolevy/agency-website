@@ -4,19 +4,19 @@ import "../styles/header.css";
 
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: { 
+  visible: {
     opacity: 1,
-    transition: { 
+    transition: {
       duration: 0.8,
       ease: "easeOut",
       staggerChildren: 0.2
-    } 
+    }
   },
 };
 
 const itemVariants = {
   hidden: { opacity: 0 },
-  visible: { 
+  visible: {
     opacity: 1,
     transition: {
       duration: 0.6,
@@ -26,7 +26,7 @@ const itemVariants = {
 };
 
 export const Hero = ({
-  subtitle = "Custom software that cuts costs, boosts revenue, and automates workflows. See measurable ROI in weeks, not years."
+  subtitle = "Conseguí más clientes, ganá más plata y ahorrá tiempo. Sistemas automáticos que trabajan por vos."
 }) => {
   return (
     <motion.section
@@ -43,7 +43,7 @@ export const Hero = ({
           className="text-5xl md:text-6xl font-bold text-white leading-tight heroTitle"
           variants={itemVariants}
         >
-          Building scalable<br />digital solutions
+          Automatizá tu negocio<br />sin mover un dedo
         </motion.h1>
         {/* Subtítulo */}
         <motion.p
@@ -62,7 +62,7 @@ export const Hero = ({
             className="mb-2 text-sm"
             style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', color: '#ff80bf' }}
           >
-            Work with Dota
+            Trabaja con Dota
           </motion.p>
           <motion.div
             animate={{ y: [0, 8, 0] }}

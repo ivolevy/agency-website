@@ -16,9 +16,9 @@ export const Steps = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            AI-powered throughout the entire process
+            IA potenciando todo el proceso
           </motion.h1>
-          
+
           <motion.div
             className="steps-description"
             initial={{ opacity: 0, y: 20 }}
@@ -27,14 +27,12 @@ export const Steps = () => {
             viewport={{ once: true }}
           >
             <p>
-              We leverage artificial intelligence at every stage of development to deliver smarter, faster, and more efficient solutions. 
-              From intelligent code generation and automated testing to predictive analytics and continuous optimization, AI amplifies our capabilities 
-              and accelerates your time to market.
+              Usamos inteligencia artificial en cada etapa para entregarte soluciones más inteligentes, rápidas y eficientes.
+              Desde generación de código hasta análisis predictivo, la IA amplifica nuestras capacidades y acelera tu llegada al mercado.
             </p>
             <p>
-              Our AI-powered approach means we can analyze complex requirements faster, identify optimization opportunities automatically, 
-              and build solutions that adapt and improve over time. This isn't just automation—it's intelligent development that learns 
-              and evolves with your business needs.
+              Nuestro enfoque con IA significa que analizamos requerimientos complejos en segundos, encontramos oportunidades de ganancia automáticamente
+              y construimos sistemas que mejoran con el tiempo. No es solo software, es desarrollo inteligente que evoluciona con tu negocio.
             </p>
           </motion.div>
         </div>

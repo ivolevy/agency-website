@@ -136,8 +136,17 @@ export const ParticlesBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="headerParticles"
-      style={{ backgroundColor: "transparent" }}
+      className="particles-background"
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        zIndex: -1,
+        backgroundColor: "transparent",
+        pointerEvents: "none"
+      }}
     />
   );
 };

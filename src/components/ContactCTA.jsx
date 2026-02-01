@@ -46,10 +46,10 @@ export const ContactCTA = () => {
         <button
           className="contact-cta-button"
           onClick={handleClick}
-          aria-label="Get a quote"
-          title="Get a quote"
+          aria-label="QUIERO AUTOMATIZAR YA"
+          title="QUIERO AUTOMATIZAR YA"
         >
-          <span>Get a quote</span>
+          <span>QUIERO AUTOMATIZAR YA</span>
           <ArrowRight size={16} />
         </button>
       </div>
