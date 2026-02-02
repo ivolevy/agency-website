@@ -9,6 +9,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
     background-color: #000 !important;
     font-family: "MuseoModerno", sans-serif;
     font-weight: 300;
