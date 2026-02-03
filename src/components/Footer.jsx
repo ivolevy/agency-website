@@ -42,9 +42,7 @@ export const Footer = () => {
       <div className="text-center text-sm text-gray-400 mt-4">
         &copy; {new Date().getFullYear()} dota solutions. Todos los derechos reservados.
       </div>
-      <div className="flex justify-center mt-4">
-        <img src="/dota.png" alt="dota solutions" className="w-32 footerImg" />
-      </div>
+      {/* Logo removed per user request */}
     </footer>
   );
 };

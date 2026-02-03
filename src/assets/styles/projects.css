@@ -1,72 +1,158 @@
-.projects {
-    height: auto;
-}
-
 .projects-section {
     background-color: #000;
-    margin-bottom: 0;
-    padding-bottom: 150px;
+    padding: 100px 0;
 }
 
-.project-card {
-    border-radius: 35px;
-    transition: all 0.3s ease;
-}
-
-.project-card:hover {
-    background-color: rgba(255, 255, 255, 0.08) !important;
-    border-color: rgba(255, 128, 191, 0.3) !important;
-    transform: translateY(-5px);
-}
-
-.projectClouds {
-    border-radius: 35px;
-}
-
-/* Ensure all project images have the same size */
-.project-image {
+.apple-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
     width: 100%;
-    height: 200px;
+    margin: 60px 0 0;
+}
+
+.showcase-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.showcase-visual {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #0a0a0a;
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.showcase-item:hover .showcase-visual {
+    transform: scale(0.99);
+}
+
+.showcase-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
-    border-radius: 8px;
+    transition: transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.servicesTitle {
-    font-family: "Instrument Serif", serif;
-    font-style: italic;
-    font-size: 3.2rem;
-    font-weight: 400;
-    letter-spacing: -0.02em;
+.showcase-item:hover .showcase-image {
+    transform: scale(1.05);
 }
 
-@media (max-width: 1024px) {
-    .servicesTitle {
-        font-size: 2.8rem;
-    }
+.showcase-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+    opacity: 0.4;
 }
 
-@media (max-width: 768px) {
-    .servicesTitle {
-        font-size: 2.3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .servicesTitle {
-        font-size: 1.9rem;
-    }
+.showcase-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
 }
 
 .projects-badge {
     display: inline-block;
-    padding: 8px 16px;
-    background-color: rgba(255, 128, 191, 0.2);
+    padding: 8px 20px;
+    background-color: rgba(255, 128, 191, 0.1);
     color: #ff80bf;
-    border-radius: 20px;
-    font-size: 0.75rem;
+    border-radius: 30px;
+    font-size: 0.7rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 24px;
+}
+
+.showcase-category {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.showcase-title {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.showcase-desc {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    max-width: 400px;
+    margin-bottom: 18px;
+}
+
+.showcase-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    opacity: 0.8;
+}
+
+.showcase-item:hover .showcase-pills {
+    opacity: 1;
+}
+
+.showcase-pill {
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 0.7rem;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+    .apple-showcase {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .apple-showcase {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .showcase-visual {
+        border-radius: 18px;
+    }
+
+    .showcase-title {
+        font-size: 1.6rem;
+    }
+
+    .showcase-desc {
+        font-size: 0.9rem;
+    }
 }

@@ -60,14 +60,14 @@ export const Contact = () => {
 
   return (
     <section className="contact-section" id="contact" style={{ scrollMarginTop: '200px' }}>
-      <h1 className="text-center mb-5" style={{ color: '#fff', fontFamily: '"Instrument Serif", serif', fontWeight: '700' }}>
+      <h1 className="text-center mb-5 sectionTitle">
         Contacto
       </h1>
       <div className="flex flex-col items-center lg:flex-row mx-auto text-center contactContainer contact-card">
         {/* Left Side: Information + Social Media */}
         <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
-          <h3 className="text-white contactSubtitle" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '400', fontSize: '1.2rem' }}>Te quedaste con dudas?</h3>
-          <p className="mb-4 contactText" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.9rem', color: '#d1d1d1' }}>Hablemos de cómo vamos a llenar tus bolsillos.</p>
+          <h3 className="contactSubtitle">Te quedaste con dudas?</h3>
+          <p className="mb-4 contactText">Hablemos de cómo vamos a llenar tus bolsillos.</p>
 
           {/* Redes Sociales */}
           <div className="flex items-center space-x-4 mb-4">
@@ -90,12 +90,12 @@ export const Contact = () => {
           </div>
 
           {/* Email */}
-          <p className="mb-4" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>
-            <a href="mailto:solutionsdota@gmail.com" className="contactEmail" style={{ color: '#fff', textDecoration: 'none' }}>solutionsdota@gmail.com</a>
+          <p className="mb-4 contactEmailContainer">
+            <a href="mailto:solutionsdota@gmail.com" className="contactEmail">solutionsdota@gmail.com</a>
           </p>
 
           {/* WhatsApp Link */}
-          <p className="mb-4" style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', fontSize: '0.95rem', color: '#d1d1d1' }}>
+          <p className="mb-4 contactWhatsAppContainer">
             <a
               href="https://wa.me/1138240929?text=Hola!%20Me%20interesa%20saber%20c%C3%B3mo%20sus%20soluciones%20de%20software%20pueden%20ayudarme%20a%20reducir%20costos%20y%20aumentar%20ganancias."
               target="_blank"

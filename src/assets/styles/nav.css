@@ -65,14 +65,15 @@ nav ul.desktop-menu li a:hover {
 
 .navButton {
   border-radius: 35px !important;
-  border: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   padding: 8px 20px !important;
-  color: #000 !important;
-  background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(4px);
   cursor: pointer;
   font-size: 0.85rem !important;
   font-weight: 300 !important;
-  font-family: "Inter", sans-serif !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
@@ -85,15 +86,16 @@ nav ul.desktop-menu li a:hover {
 nav ul.desktop-menu li a.navButtonPrimary,
 .navButtonPrimary {
   border-radius: 35px !important;
-  border: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
   padding: 8px 20px !important;
-  color: #000 !important;
-  background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(4px);
   cursor: pointer;
   font-size: 0.8rem !important;
-  font-weight: 300 !important;
-  font-family: "Inter", sans-serif !important;
-  letter-spacing: -0.03em !important;
+  font-weight: 400 !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  letter-spacing: -0.01em !important;
   transition: all 0.3s ease;
   text-decoration: none !important;
   display: inline-block !important;
@@ -102,11 +104,9 @@ nav ul.desktop-menu li a.navButtonPrimary,
 
 nav ul.desktop-menu li a.navButtonPrimary:hover,
 .navButtonPrimary:hover {
-  color: #000 !important;
-  opacity: 1 !important;
-  /* Force no opacity change */
-  background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
-  /* Maintain background */
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #fff !important;
 }
 
 

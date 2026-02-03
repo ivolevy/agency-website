@@ -1,10 +1,17 @@
 .contact-section {
     background-color: #000;
-    padding: 80px 0;
+    padding: 120px 0;
     width: 100%;
 }
 
-.contact-card{
+.sectionTitle {
+    font-family: "Instrument Serif", serif !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    color: #fff;
+}
+
+.contact-card {
     border-radius: 35px;
     padding: 40px;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.35);
@@ -14,11 +21,11 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.contactSpan{
+.contactSpan {
     margin-bottom: -5px;
 }
 
-.contactEmail{
+.contactEmail {
     text-decoration: none;
 }
 
@@ -34,115 +41,138 @@
     color: rgba(255, 255, 255, 0.5) !important;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none !important;
     border-color: #ea9c9c !important;
     box-shadow: 0 0 5px #ea9c9c !important;
-}  
+}
 
-.roundedForm{
+.roundedForm {
     border-radius: 35px;
 }
 
-.contact-form-card{
+.contact-form-card {
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.contactButton{
-    background: linear-gradient(to bottom, #ff80bf, #ea9c9c) !important;
-    border: none;
-    color: #000 !important;
+.contactButton {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(8px);
+    color: #fff !important;
     border-radius: 35px;
-    padding: 12px 17px;
+    padding: 14px 28px;
     cursor: pointer;
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     font-weight: 400;
     transition: all 0.3s ease;
-    display: inline-flex;           /* center content */
-    align-items: center;            /* vertical center */
-    justify-content: center;        /* horizontal center */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.contactButton:hover{
-    color: #fff !important;
+.contactButton:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-2px);
 }
 
-.contactIcon{
+.contactIcon {
     color: #fff !important;
 }
 
 .contactSubtitle {
-    font-family: "Inter", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
     color: #fff;
 }
 
 .contactText {
-    font-family: "Inter", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 300;
     font-size: 0.9rem;
     color: #d1d1d1;
 }
 
-@media (max-width: 1024px){
-    .responsiveData{
+.contactEmailContainer,
+.contactWhatsAppContainer {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: #d1d1d1;
+}
+
+@media (max-width: 1024px) {
+    .responsiveData {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-    .responsiveForm{
+
+    .responsiveForm {
         width: 100% !important;
     }
-    .contactSubtitle{
+
+    .contactSubtitle {
         margin-bottom: 20px;
     }
-    .contactText{
+
+    .contactText {
         display: none;
     }
+
     .contact-card {
         width: 90%;
     }
 }
 
-@media (max-width: 768px){
-    .contactContainer{
+@media (max-width: 768px) {
+    .contactContainer {
         width: 95% !important;
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
-    .responsiveData{
+
+    .responsiveData {
         padding: 10px;
         margin-bottom: 20px;
     }
-    .contactSubtitle{
+
+    .contactSubtitle {
         font-size: 1.1rem;
         line-height: 1.2;
     }
-    .responsiveForm{
+
+    .responsiveForm {
         padding: 15px !important;
     }
+
     .contact-card {
         width: 95%;
         padding: 15px;
     }
 }
 
-@media (max-width: 480px){
-    .contactContainer{
+@media (max-width: 480px) {
+    .contactContainer {
         width: 95% !important;
         padding-left: 9px !important;
         padding-right: 9px !important;
     }
-    .contactSubtitle{
+
+    .contactSubtitle {
         font-size: 1rem;
     }
+
     .contact-card {
         width: 100%;
         padding: 10px;
     }
+
     .contactButton {
         width: 100%;
     }
