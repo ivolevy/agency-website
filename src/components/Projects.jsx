@@ -47,13 +47,13 @@ export const Projects = () => {
       <div className="container mx-auto px-4 md:px-4 max-w-6xl">
         <div className="text-center mb-12">
           <motion.span
-            className="inline-block px-3 py-1 bg-pink-400/20 text-pink-400 borderRadius text-xs font-medium mb-3"
+            className="projects-badge"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
             viewport={{ once: true }}
           >
-            ULTIMOS PROYECTOS
+            NUESTROS SISTEMAS
           </motion.span>
           <motion.h1
             className="servicesTitle text-center mb-3"
@@ -63,7 +63,7 @@ export const Projects = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <span className="underline">Proyectos</span> que marcan la diferencia
+            <span className="underline">Sistemas</span> que impulsan tu rentabilidad
           </motion.h1>
           <motion.p
             className="max-w-3xl mx-auto text-sm"
@@ -73,16 +73,19 @@ export const Projects = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Mira cómo ayudamos a empresas a reducir costos y aumentar ingresos. Explora nuestras demos abajo.
+            Mira nuestras soluciones en acción. Implementaciones diseñadas para maximizar ganancias, optimizar operaciones y escalar tu negocio sin complicaciones.
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-5">
           {projects.map((project, index) => (
-            <motion.article
+            <motion.a
               key={project.id}
-              className="relative borderRadius p-3 md:p-4 shadow-lg project-card"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)' }}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative borderRadius p-3 md:p-4 shadow-lg project-card block no-underline"
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', cursor: 'pointer', textDecoration: 'none' }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -105,7 +108,7 @@ export const Projects = () => {
 
               <h2 className="text-sm md:text-base font-semibold mb-2 md:mb-3" style={{ color: '#fff', fontFamily: '"MuseoModerno", sans-serif', letterSpacing: '0.02em', fontSize: '1.1rem' }}>{project.title}</h2>
 
-              <div className="space-y-2 mb-4">
+              <div className="space-y-2 mb-2">
                 {project.achievements.map(achievement => (
                   <div key={achievement} className="flex items-center" style={{ color: '#d1d1d1' }}>
                     <ArrowRight size={14} className="text-pink-400 mr-2" />
@@ -113,38 +116,27 @@ export const Projects = () => {
                   </div>
                 ))}
               </div>
-
-              <div className="flex justify-between items-center pt-3" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
-                <motion.a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-pink-400 hover:text-pink-300 font-medium text-sm"
-                >
-                  Ver proyecto
-                  <ArrowUpRight size={14} className="ml-2" />
-                </motion.a>
-              </div>
-            </motion.article>
+            </motion.a>
           ))}
         </div>
 
         <motion.div
-          className="text-center mt-16"
+          className="text-center mt-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <div className="max-w-2xl mx-auto">
-            <p className="text-xl md:text-2xl text-white font-light mb-3" style={{ fontFamily: '"Inter", sans-serif' }}>
+          <div className="max-w-xl mx-auto py-6 px-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '24px' }}>
+            <p className="text-base md:text-lg text-white font-light mb-3" style={{ fontFamily: '"Inter", sans-serif' }}>
               Tambien <span className="text-pink-400">Desarrollamos tu sistema a medida.</span>
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors mt-2 border-b border-gray-700 hover:border-white pb-0.5 uppercase tracking-widest"
+              className="inline-flex items-center gap-2 text-xs text-gray-400 hover:text-pink-400 transition-all duration-300 mt-1 uppercase tracking-wider group"
             >
-              Consulta cotización <ArrowRight size={14} />
+              Consulta cotización
+              <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </motion.div>

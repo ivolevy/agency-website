@@ -26,6 +26,7 @@ body {
 /* Premium Editorial Typography */
 h1 {
     font-family: "Instrument Serif", serif;
+    font-style: italic;
     font-weight: 400;
     /* Lighter weight for elegance */
     letter-spacing: -0.04em;
@@ -38,6 +39,7 @@ h1 {
 h2,
 h3 {
     font-family: "Instrument Serif", serif;
+    font-style: italic;
     letter-spacing: -0.03em;
     font-weight: 400;
 }

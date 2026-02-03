@@ -1,5 +1,5 @@
-.projects{
-   height: auto;
+.projects {
+    height: auto;
 }
 
 .projects-section {
@@ -19,7 +19,7 @@
     transform: translateY(-5px);
 }
 
-.projectClouds{
+.projectClouds {
     border-radius: 35px;
 }
 
@@ -34,8 +34,9 @@
 
 .servicesTitle {
     font-family: "Instrument Serif", serif;
+    font-style: italic;
     font-size: 3.2rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: -0.02em;
 }
 
@@ -55,4 +56,17 @@
     .servicesTitle {
         font-size: 1.9rem;
     }
+}
+
+.projects-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgba(255, 128, 191, 0.2);
+    color: #ff80bf;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
 }

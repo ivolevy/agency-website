@@ -40,7 +40,7 @@ export const Hero = ({
         {/* Título principal */}
         <motion.h1
           id="hero-title"
-          className="text-5xl md:text-6xl font-bold text-white leading-tight heroTitle"
+          className="text-5xl md:text-6xl text-white leading-tight heroTitle"
           variants={itemVariants}
         >
           Automatizá tu negocio<br />sin mover un dedo
@@ -52,25 +52,6 @@ export const Hero = ({
         >
           {subtitle}
         </motion.p>
-        {/* Flecha con texto */}
-        <motion.div
-          className="mt-12 flex flex-col items-center justify-center cursor-pointer group"
-          variants={itemVariants}
-          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
-        >
-          <motion.p
-            className="mb-2 text-sm"
-            style={{ fontFamily: '"Inter", sans-serif', fontWeight: '300', color: '#ff80bf' }}
-          >
-            Empezá ahora
-          </motion.p>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <ArrowDown size={24} className="text-pink-400" style={{ color: '#ff80bf' }} />
-          </motion.div>
-        </motion.div>
       </motion.div>
     </motion.section>
   );

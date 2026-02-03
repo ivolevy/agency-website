@@ -36,8 +36,9 @@
 
 .services-title {
     font-family: "Instrument Serif", serif;
+    font-style: italic;
     font-size: 3.2rem;
-    font-weight: 900;
+    font-weight: 400;
     color: #fff;
     margin-bottom: 24px;
     letter-spacing: -0.02em;
@@ -126,6 +127,7 @@
     color: #fff;
     margin-bottom: 8px;
     font-family: "Instrument Serif", serif;
+    font-style: italic;
 }
 
 .stat-label {

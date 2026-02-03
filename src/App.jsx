@@ -16,7 +16,6 @@ import { Steps } from './components/Steps.jsx';
 import { Projects } from './components/Projects.jsx';
 import { Contact } from './components/Contact.jsx';
 import { Footer } from './components/Footer.jsx';
-import { ContactCTA } from './components/ContactCTA.jsx';
 import { CustomCursor } from './components/CustomCursor.jsx';
 
 /* legales */
@@ -74,7 +73,6 @@ function Layout() {
         </Routes>
       </main>
       {!isLegalRoute && <Footer />}
-      {!isLegalRoute && <ContactCTA />}
     </>
   );
 }
