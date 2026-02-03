@@ -67,61 +67,46 @@ export const Contact = () => {
         {/* Left Side: Information + Social Media */}
         <div className="lg:w-1/2 flex flex-col items-start justify-center text-left p-6 responsiveData">
           <h3 className="contactSubtitle">Te quedaste con dudas?</h3>
-          <p className="mb-4 contactText">Hablemos de cómo vamos a llenar tus bolsillos.</p>
+          <p className="contactText">Hablemos de cómo vamos a llenar tus bolsillos.</p>
 
-          {/* Redes Sociales */}
-          <div className="flex items-center space-x-4 mb-4">
-            <a
-              href="https://www.instagram.com/dotasolutions"
-              target="_blank" rel="noopener noreferrer"
-              className="text-pink-500 hover:text-pink-600 text-3xl"
-              aria-label="Instagram" title="Instagram"
-            >
-              <AiFillInstagram className="contactIcon" />
+          <div className="contact-info-list">
+            {/* Email Card */}
+            <a href="mailto:solutionsdota@gmail.com" className="contact-info-item">
+              <span style={{ color: '#ea9c9c', fontSize: '1.2rem' }}>@</span>
+              <span>solutionsdota@gmail.com</span>
             </a>
-            <a
-              href="https://www.linkedin.com/company/dota-solutions/"
-              target="_blank" rel="noopener noreferrer"
-              className="text-blue-700 hover:text-blue-800 text-3xl"
-              aria-label="Linkedin" title="Linkedin"
-            >
-              <TbBrandLinkedinFilled className="contactIcon" />
-            </a>
-          </div>
 
-          {/* Email */}
-          <p className="mb-4 contactEmailContainer">
-            <a href="mailto:solutionsdota@gmail.com" className="contactEmail">solutionsdota@gmail.com</a>
-          </p>
-
-          {/* WhatsApp Link */}
-          <p className="mb-4 contactWhatsAppContainer">
+            {/* WhatsApp Card */}
             <a
               href="https://wa.me/1138240929?text=Hola!%20Me%20interesa%20saber%20c%C3%B3mo%20sus%20soluciones%20de%20software%20pueden%20ayudarme%20a%20reducir%20costos%20y%20aumentar%20ganancias."
               target="_blank"
               rel="noopener noreferrer"
-              className="contactEmail"
-              style={{
-                color: '#25D366',
-                textDecoration: 'underline',
-                textUnderlineOffset: '3px',
-                transition: 'all 0.3s ease',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.color = '#4ade80';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.color = '#25D366';
-              }}
+              className="contact-info-item"
             >
-              <FaWhatsapp size={18} />
-              <span>Chatea con nosotros en WhatsApp</span>
+              <FaWhatsapp style={{ color: '#25D366' }} size={20} />
+              <span>Chatea con nosotros</span>
             </a>
-          </p>
+          </div>
 
+          {/* Redes Sociales */}
+          <div className="social-links">
+            <a
+              href="https://www.instagram.com/dotasolutions"
+              target="_blank" rel="noopener noreferrer"
+              className="social-link"
+              aria-label="Instagram" title="Instagram"
+            >
+              <AiFillInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/dota-solutions/"
+              target="_blank" rel="noopener noreferrer"
+              className="social-link"
+              aria-label="Linkedin" title="Linkedin"
+            >
+              <TbBrandLinkedinFilled />
+            </a>
+          </div>
         </div>
 
         {/* Right Side: Form */}

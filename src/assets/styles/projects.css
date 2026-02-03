@@ -54,23 +54,19 @@
 }
 
 .showcase-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    padding: 50px 40px;
+    padding: 24px 10px 0;
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 2;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
-    opacity: 0.9;
-    transition: opacity 0.5s ease;
+    transition: transform 0.3s ease;
 }
 
 .showcase-item:hover .showcase-content {
-    opacity: 1;
+    transform: translateY(-5px);
 }
 
 .projects-badge {
@@ -134,7 +130,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     font-size: 0.7rem;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 300;
 }
@@ -148,47 +144,18 @@
 @media (max-width: 768px) {
     .apple-showcase {
         grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-    .showcase-item {
-        flex-direction: column;
-    }
-
-    .showcase-visual {
-        border-radius: 18px;
-        aspect-ratio: 16 / 10;
+        gap: 50px;
     }
 
     .showcase-content {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        width: 100%;
-        padding: 24px 10px 0;
-        background: transparent;
-        opacity: 1;
-        text-align: left;
+        padding: 20px 5px 0;
     }
 
     .showcase-title {
         font-size: 1.8rem;
-        margin-bottom: 8px;
     }
 
     .showcase-desc {
         font-size: 0.95rem;
-        color: rgba(255, 255, 255, 0.7);
-        margin-bottom: 16px;
-    }
-
-    .showcase-pills {
-        justify-content: flex-start;
-        opacity: 1;
-    }
-
-    .showcase-pill {
-        padding: 5px 12px;
-        font-size: 0.75rem;
     }
 }
