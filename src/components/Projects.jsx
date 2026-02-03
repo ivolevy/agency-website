@@ -44,7 +44,7 @@ export const Projects = () => {
 
   return (
     <section className="w-full py-16 projects-section" id="projects" style={{ scrollMarginTop: '80px', backgroundColor: '#000' }}>
-      <div className="w-full">
+      <div className="w-full px-4 md:px-8">
         <div className="container mx-auto px-4 text-center mb-12">
           <motion.span
             className="projects-badge"
@@ -120,26 +120,6 @@ export const Projects = () => {
           ))}
         </div>
 
-        <motion.div
-          className="text-center mt-20 px-4"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="max-w-xl mx-auto py-8 px-6" style={{ backgroundColor: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '32px' }}>
-            <p className="text-lg text-white font-light mb-4" style={{ fontFamily: '"Plus Jakarta Sans", sans-serif' }}>
-              ¿Necesitás algo <span className="text-pink-400">a medida?</span>
-            </p>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 text-xs text-gray-400 hover:text-white transition-all duration-300 uppercase tracking-widest group"
-            >
-              Consulta cotización
-              <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </a>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

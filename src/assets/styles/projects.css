@@ -6,7 +6,7 @@
 .apple-showcase {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 30px;
     width: 100%;
     margin: 60px 0 0;
 }
@@ -25,6 +25,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
+    border-radius: 24px;
     overflow: hidden;
     background: #0a0a0a;
     transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
@@ -57,13 +58,19 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 60px;
+    padding: 50px 40px;
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 2;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+}
+
+.showcase-item:hover .showcase-content {
+    opacity: 1;
 }
 
 .projects-badge {
@@ -141,18 +148,47 @@
 @media (max-width: 768px) {
     .apple-showcase {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 60px;
+    }
+
+    .showcase-item {
+        flex-direction: column;
     }
 
     .showcase-visual {
         border-radius: 18px;
+        aspect-ratio: 16 / 10;
+    }
+
+    .showcase-content {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        padding: 24px 10px 0;
+        background: transparent;
+        opacity: 1;
+        text-align: left;
     }
 
     .showcase-title {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        margin-bottom: 8px;
     }
 
     .showcase-desc {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 16px;
+    }
+
+    .showcase-pills {
+        justify-content: flex-start;
+        opacity: 1;
+    }
+
+    .showcase-pill {
+        padding: 5px 12px;
+        font-size: 0.75rem;
     }
 }

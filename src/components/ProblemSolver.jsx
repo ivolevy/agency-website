@@ -1,8 +1,18 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { Clock, PhoneOff, TrendingDown, CheckCircle2 } from "lucide-react";
 import "../assets/styles/problem-solver.css";
 
 const ProblemSolver = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     const problems = [
         {
             icon: <Clock size={20} className="text-blue-400" />,
@@ -22,11 +32,11 @@ const ProblemSolver = () => {
     ];
 
     const pills = [
-        { text: "Ahorro de tiempo", color: "rgba(59, 130, 246, 0.5)", x: "10%", y: "20%" },
-        { text: "+ ROI", color: "rgba(236, 72, 153, 0.5)", x: "60%", y: "15%" },
-        { text: "Lead Calificado", color: "rgba(16, 185, 129, 0.5)", x: "30%", y: "50%" },
-        { text: "Monitoreo 24/7", color: "rgba(139, 92, 246, 0.5)", x: "70%", y: "60%" },
-        { text: "Control Total", color: "rgba(245, 158, 11, 0.5)", x: "20%", y: "80%" }
+        { text: "Ahorro de tiempo", color: "rgba(59, 130, 246, 0.5)", x: isMobile ? "2%" : "10%", y: isMobile ? "5%" : "20%" },
+        { text: "+ ROI", color: "rgba(236, 72, 153, 0.5)", x: isMobile ? "60%" : "60%", y: isMobile ? "15%" : "15%" },
+        { text: "Lead Calificado", color: "rgba(16, 185, 129, 0.5)", x: isMobile ? "5%" : "30%", y: isMobile ? "45%" : "50%" },
+        { text: "Monitoreo 24/7", color: "rgba(139, 92, 246, 0.5)", x: isMobile ? "50%" : "70%", y: isMobile ? "65%" : "60%" },
+        { text: "Control Total", color: "rgba(245, 158, 11, 0.5)", x: isMobile ? "15%" : "20%", y: isMobile ? "85%" : "80%" }
     ];
 
     return (
