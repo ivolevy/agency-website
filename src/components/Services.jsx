@@ -1,10 +1,29 @@
 import "../assets/styles/services.css";
 import { useState, useEffect } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, TrendingUp, Zap, DollarSign } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Services() {
   const [contadores, setContadores] = useState({ proyectos: 0, experiencia: 0, soporte: 0, paises: 0 });
   const [contadoresIniciados, setContadoresIniciados] = useState(false);
+
+  const features = [
+    {
+      title: "Reducí costos operativos",
+      text: "Automatiza tareas repetitivas y elimina procesos manuales. Recortá gastos hasta un 60% mejorando precisión y velocidad.",
+      icon: <Zap className="feature-icon" size={24} />
+    },
+    {
+      title: "Aumentá tus ingresos",
+      text: "Optimizá procesos de venta, mejorá la experiencia del cliente y desbloqueá nuevas fuentes de ingresos. Crecimiento real en tu bolsillo.",
+      icon: <TrendingUp className="feature-icon" size={24} />
+    },
+    {
+      title: "ROI Rápido",
+      text: "Nuestras soluciones están listas para usar y se pagan solas rápidamente. La mayoría de clientes ven retorno de inversión positivo en el primer mes de uso.",
+      icon: <DollarSign className="feature-icon" size={24} />
+    }
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -60,56 +79,72 @@ export default function Services() {
     <section className="services-section" id="services" style={{ scrollMarginTop: '80px' }}>
       <div className="services-container">
         <div className="services-content">
-          <span className="services-badge">SOBRE NOSOTROS</span>
+          <motion.span
+            className="services-badge"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            SOBRE NOSOTROS
+          </motion.span>
 
-          <h1 className="services-title">
+          <motion.h2
+            className="services-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
             Software que te hace ganar dinero
-          </h1>
+          </motion.h2>
 
-          <p className="services-description">
+          <motion.p
+            className="services-description"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
             Ofrecemos soluciones listas para usar que reducen costos operativos, automatizan el trabajo manual y aumentan tus ganancias netas desde el primer día.
-            Cada sistema entrega resultados financieros medibles de inmediato.
-          </p>
+          </motion.p>
 
           <div className="services-features">
-            <div className="feature-item">
-              <h3 className="feature-title">Reducí costos operativos</h3>
-              <p className="feature-text">
-                Automatiza tareas repetitivas y elimina procesos manuales. Recortá gastos hasta un 60% mejorando precisión y velocidad.
-              </p>
-            </div>
-
-            <div className="feature-item">
-              <h3 className="feature-title">Aumentá tus ingresos</h3>
-              <p className="feature-text">
-                Optimizá procesos de venta, mejorá la experiencia del cliente y desbloqueá nuevas fuentes de ingresos. Crecimiento real en tu bolsillo.
-              </p>
-            </div>
-
-            <div className="feature-item">
-              <h3 className="feature-title">ROI Rápido</h3>
-              <p className="feature-text">
-                Nuestras soluciones están listas para usar y se pagan solas rápidamente. La mayoría de clientes ven retorno de inversión positivo en el primer mes de uso.
-              </p>
-            </div>
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                className="feature-item"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 * index }}
+              >
+                <div className="feature-icon-wrapper">
+                  {feature.icon}
+                </div>
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-text">{feature.text}</p>
+              </motion.div>
+            ))}
           </div>
 
-          <div className="services-stats" id="stats-section">
-            <div className="stat-item">
-              <div className="stat-number">+{contadores.proyectos}</div>
-              <div className="stat-label">Sistemas activos</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">+{contadores.experiencia}</div>
-              <div className="stat-label">Años de experiencia</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">{contadores.soporte}/7</div>
-              <div className="stat-label">Soporte técnico</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">+{contadores.paises}</div>
-              <div className="stat-label">Países alcanzados</div>
+          <div className="services-stats-wrapper">
+            <div className="services-stats" id="stats-section">
+              <div className="stat-item">
+                <div className="stat-number">+{contadores.proyectos}</div>
+                <div className="stat-label">Sistemas activos</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">+{contadores.experiencia}</div>
+                <div className="stat-label">Años de experiencia</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">{contadores.soporte}/7</div>
+                <div className="stat-label">Soporte técnico</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">+{contadores.paises}</div>
+                <div className="stat-label">Países alcanzados</div>
+              </div>
             </div>
           </div>
         </div>
