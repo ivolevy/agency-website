@@ -1,72 +1,22 @@
 .projects-section {
     background-color: #000;
-    padding: 100px 0;
-}
-
-.apple-showcase {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    padding: 120px 0;
     width: 100%;
-    margin: 60px 0 0;
-}
-
-.showcase-item {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    cursor: pointer;
     overflow: hidden;
 }
 
-.showcase-visual {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 24px;
-    overflow: hidden;
-    background: #0a0a0a;
-    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+.projects-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-.showcase-item:hover .showcase-visual {
-    transform: scale(0.99);
-}
-
-.showcase-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.showcase-item:hover .showcase-image {
-    transform: scale(1.05);
-}
-
-.showcase-overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
-    opacity: 0.4;
-}
-
-.showcase-content {
-    position: relative;
-    width: 100%;
-    padding: 24px 10px 0;
-    text-align: left;
+.projects-header {
+    text-align: center;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    z-index: 2;
-    transition: transform 0.3s ease;
-}
-
-.showcase-item:hover .showcase-content {
-    transform: translateY(-5px);
+    align-items: center;
 }
 
 .projects-badge {
@@ -82,80 +32,220 @@
     margin-bottom: 24px;
 }
 
-.showcase-category {
+.projects-main-title {
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 0.7rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    max-width: 900px;
+}
+
+.projects-main-title .italic-text {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.projects-main-description {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.projects-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    color: #fff;
+    font-size: 1rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.4);
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.projects-primary-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Carousel Section */
+.projects-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+}
+
+.central-glow-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.perspective-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.carousel-card {
+    position: absolute;
+    width: 320px;
+    aspect-ratio: 3/4;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 2;
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #111;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+/* Card Positions */
+.card-pos--1 {
+    transform: translateX(-350px) rotateY(35deg) scale(0.85);
+    opacity: 0.6;
+    filter: blur(2px);
+}
+
+.card-pos-0 {
+    transform: translateX(0) rotateY(0) scale(1.1);
+    z-index: 10;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.card-pos-1 {
+    transform: translateX(350px) rotateY(-35deg) scale(0.85);
+    opacity: 0.6;
+    filter: blur(2px);
+}
+
+.card-active-glow {
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background: #10b981;
+    filter: blur(8px);
+    box-shadow: 0 0 20px 2px #10b981;
+}
+
+/* Features Grid */
+.projects-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bottom-feature-item {
+    text-align: left;
+}
+
+.bottom-feature-title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
     margin-bottom: 12px;
 }
 
-.showcase-title {
-    font-family: "Instrument Serif", serif;
-    font-style: italic;
-    font-size: 2rem;
-    color: #fff;
-    margin: 0 0 12px 0;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-}
-
-.showcase-desc {
+.bottom-feature-desc {
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 0.85rem;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.4);
     line-height: 1.5;
-    max-width: 400px;
-    margin-bottom: 18px;
 }
 
-.showcase-pills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 8px;
-    opacity: 0.8;
-}
+/* Responsive */
+@media (max-width: 1024px) {
+    .projects-main-title {
+        font-size: 2.8rem;
+    }
 
-.showcase-item:hover .showcase-pills {
-    opacity: 1;
-}
+    .card-pos--1 {
+        transform: translateX(-250px) rotateY(35deg) scale(0.8);
+    }
 
-.showcase-pill {
-    padding: 6px 14px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 300;
-}
-
-@media (max-width: 1200px) {
-    .apple-showcase {
-        grid-template-columns: repeat(2, 1fr);
+    .card-pos-1 {
+        transform: translateX(250px) rotateY(-35deg) scale(0.8);
     }
 }
 
 @media (max-width: 768px) {
-    .apple-showcase {
+    .projects-header {
+        margin-bottom: 50px;
+    }
+
+    .projects-main-title {
+        font-size: 2.2rem;
+    }
+
+    .projects-carousel-wrapper {
+        height: 400px;
+        perspective: none;
+    }
+
+    .perspective-carousel {
+        transform-style: flat;
+    }
+
+    .carousel-card {
+        width: 260px;
+    }
+
+    .card-pos--1,
+    .card-pos-1 {
+        display: none;
+    }
+
+    .projects-features-grid {
         grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .showcase-content {
-        padding: 20px 5px 0;
-    }
-
-    .showcase-title {
-        font-size: 1.8rem;
-    }
-
-    .showcase-desc {
-        font-size: 0.95rem;
+        gap: 30px;
     }
 }

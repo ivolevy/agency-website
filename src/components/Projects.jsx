@@ -12,9 +12,6 @@ export const Projects = () => {
       title: "Editor de imágenes centralizado",
       description: "Sistema de gestión integral para estudios de arquitectura y diseño",
       img: photoEditor,
-      textColor: "text-black",
-      bgColor: "bg-[#F5F1E5]",
-      altText: "Imagen del estudio versus proyecto.",
       achievements: ["Remover fondo con IA", "Recorte", "Redimensionado", "Cambio de extensión"],
       link: "https://v0-centralized-image-editor.vercel.app",
     },
@@ -23,9 +20,6 @@ export const Projects = () => {
       title: "Mediterra Restaurant",
       description: "Sitio web para restaurante mediterráneo de alta gama",
       img: restaurant,
-      textColor: "text-yellow-400",
-      bgColor: "bg-black",
-      altText: "Imagen del proyecto Mediterra Restaurant",
       achievements: ["Formulario de reserva", "Menú", "Pedidos online", "Información"],
       link: "https://v0-luxury-restaurant-design.vercel.app",
     },
@@ -34,18 +28,33 @@ export const Projects = () => {
       title: "Spoty",
       description: "App de playlisting masivo con IA para sellos discográficos",
       img: spoty,
-      textColor: "text-white", // Keeping text white as it likely contrasts well with dark bg
-      bgColor: "bg-black", // Changed to black to fit 'Spotify' theme or just dark
-      altText: "Interfaz de la app Spoty",
       achievements: ["Playlisting Masivo", "Análisis con IA", "Gestión de Sellos", "Automatización"],
       link: "#",
     },
   ];
 
+  const features = [
+    {
+      id: "feature-speed",
+      title: "Generación de Sistemas Ultra-Rápida",
+      description: "Escribe lo que imaginas y observa cómo la IA lo hace realidad en segundos."
+    },
+    {
+      id: "feature-custom",
+      title: "Múltiples Estilos y Personalización",
+      description: "Elige un estilo y ajusta detalles como color e iluminación a medida."
+    },
+    {
+      id: "feature-results",
+      title: "Resultados de Alta Calidad",
+      description: "Sistemas optimizados y listos para producción con un diseño impecable."
+    }
+  ];
+
   return (
-    <section className="w-full py-16 projects-section" id="projects" style={{ scrollMarginTop: '80px', backgroundColor: '#000' }}>
-      <div className="w-full px-4 md:px-8">
-        <div className="container mx-auto px-4 text-center mb-12">
+    <section className="projects-section" id="projects" style={{ scrollMarginTop: '80px' }}>
+      <div className="projects-container">
+        <div className="projects-header">
           <motion.span
             className="projects-badge"
             initial={{ opacity: 0, y: -10 }}
@@ -55,71 +64,77 @@ export const Projects = () => {
           >
             NUESTROS SISTEMAS
           </motion.span>
+
           <motion.h1
-            className="servicesTitle text-center mb-3"
-            style={{ color: '#fff' }}
+            className="projects-main-title"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <span className="underline">Sistemas</span> que impulsan tu rentabilidad
+            Sistemas que impulsan <span className="italic-text">tu rentabilidad</span>
           </motion.h1>
+
           <motion.p
-            className="max-w-2xl mx-auto"
-            style={{ color: 'rgba(255, 255, 255, 0.5)', fontSize: '0.85rem', lineHeight: '1.6' }}
+            className="projects-main-description"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Mira nuestras soluciones en acción. Implementaciones diseñadas para maximizar ganancias, optimizar operaciones y escalar tu negocio sin complicaciones.
+            Implementaciones diseñadas para maximizar ganancias, optimizar operaciones y escalar tu negocio sin complicaciones.
           </motion.p>
+
+          <motion.div
+            className="projects-cta-wrapper"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            <a href="#contact" className="projects-primary-btn" id="generate-system-btn">
+              Generar sistema <ArrowRight className="btn-icon" />
+            </a>
+          </motion.div>
         </div>
 
-        <div className="apple-showcase">
-          {projects.map((project, index) => (
-            <motion.a
-              key={project.id}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="showcase-item"
-              initial={{ opacity: 0, scale: 0.98, y: 30 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{
-                duration: 0.9,
-                delay: index * 0.15,
-                ease: [0.23, 1, 0.32, 1]
-              }}
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              <div className="showcase-visual">
-                <img
-                  src={project.img}
-                  alt={project.title}
-                  className="showcase-image"
-                  loading="lazy"
-                />
-                <div className="showcase-overlay" />
-              </div>
+        <div className="projects-carousel-wrapper">
+          <div className="central-glow-effect"></div>
 
-              <div className="showcase-content">
-                <h2 className="showcase-title">{project.title}</h2>
-                <p className="showcase-desc">{project.description}</p>
+          <div className="perspective-carousel">
+            {projects.map((project, index) => {
+              // Calculate side for perspective (central item is 1 in this 3-item array)
+              const position = index - 1; // -1 (left), 0 (center), 1 (right)
 
-                <div className="showcase-pills">
-                  {project.achievements.map((achievement, idx) => (
-                    <span key={idx} className="showcase-pill">
-                      {achievement}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </motion.a>
+              return (
+                <motion.a
+                  key={project.id}
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`carousel-card card-pos-${position}`}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="card-image-wrapper">
+                    <img src={project.img} alt={project.title} className="card-image" />
+                    {position === 0 && <div className="card-active-glow"></div>}
+                  </div>
+                </motion.a>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="projects-features-grid">
+          {features.map((feature) => (
+            <div key={feature.id} className="bottom-feature-item" id={feature.id}>
+              <h3 className="bottom-feature-title">{feature.title}</h3>
+              <p className="bottom-feature-desc">{feature.description}</p>
+            </div>
           ))}
         </div>
-
       </div>
     </section>
   );
