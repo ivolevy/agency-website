@@ -33,20 +33,15 @@
 }
 
 .projects-main-title {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    font-size: 3.2rem;
+    font-weight: 400;
     color: #fff;
     margin-bottom: 24px;
     letter-spacing: -0.02em;
     line-height: 1.1;
     max-width: 900px;
-}
-
-.projects-main-title .italic-text {
-    font-family: "Instrument Serif", serif;
-    font-style: italic;
-    font-weight: 400;
 }
 
 .projects-main-description {
@@ -85,121 +80,126 @@
     height: 18px;
 }
 
-/* Carousel Section */
-.projects-carousel-wrapper {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    margin-bottom: 100px;
+/* Systems List Section */
+.systems-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 1200px;
+    flex-direction: column;
+    gap: 160px;
+    margin-top: 80px;
 }
 
-.central-glow-effect {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 1;
-}
-
-.perspective-carousel {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.system-item {
     display: flex;
-    justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
+    gap: 80px;
 }
 
-.carousel-card {
-    position: absolute;
-    width: 320px;
-    aspect-ratio: 3/4;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-    z-index: 2;
+.system-item.reverse {
+    flex-direction: row-reverse;
 }
 
-.card-image-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #111;
+.system-text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.85;
+.system-item.reverse .system-text-content {
+    align-items: flex-start;
 }
 
-/* Card Positions */
-.card-pos--1 {
-    transform: translateX(-350px) rotateY(35deg) scale(0.85);
-    opacity: 0.6;
-    filter: blur(2px);
-}
-
-.card-pos-0 {
-    transform: translateX(0) rotateY(0) scale(1.1);
-    z-index: 10;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-}
-
-.card-pos-1 {
-    transform: translateX(350px) rotateY(-35deg) scale(0.85);
-    opacity: 0.6;
-    filter: blur(2px);
-}
-
-.card-active-glow {
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 4px;
-    background: #10b981;
-    filter: blur(8px);
-    box-shadow: 0 0 20px 2px #10b981;
-}
-
-/* Features Grid */
-.projects-features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.bottom-feature-item {
-    text-align: left;
-}
-
-.bottom-feature-title {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
+.system-title {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    font-size: 2.2rem;
+    font-weight: 400;
     color: #fff;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
 }
 
-.bottom-feature-desc {
+.system-description {
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.4);
-    line-height: 1.5;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.system-achievements {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+.achievement-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #ff80bf;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff80bf;
+}
+
+.system-view-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.system-view-more:hover {
+    border-color: #ff80bf;
+    color: #ff80bf;
+}
+
+.system-image-container {
+    flex: 1.2;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #0a0a0a;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.system-image-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 128, 191, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.system-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.system-image-container:hover .system-image {
+    transform: scale(1.02);
 }
 
 /* Responsive */
@@ -208,44 +208,45 @@
         font-size: 2.8rem;
     }
 
-    .card-pos--1 {
-        transform: translateX(-250px) rotateY(35deg) scale(0.8);
+    .system-item {
+        gap: 40px;
     }
 
-    .card-pos-1 {
-        transform: translateX(250px) rotateY(-35deg) scale(0.8);
+    .system-title {
+        font-size: 1.8rem;
     }
 }
 
 @media (max-width: 768px) {
-    .projects-header {
-        margin-bottom: 50px;
+    .projects-section {
+        padding: 80px 0;
     }
 
     .projects-main-title {
         font-size: 2.2rem;
     }
 
-    .projects-carousel-wrapper {
-        height: 400px;
-        perspective: none;
+    .systems-list {
+        gap: 80px;
     }
 
-    .perspective-carousel {
-        transform-style: flat;
-    }
-
-    .carousel-card {
-        width: 260px;
-    }
-
-    .card-pos--1,
-    .card-pos-1 {
-        display: none;
-    }
-
-    .projects-features-grid {
-        grid-template-columns: 1fr;
+    .system-item,
+    .system-item.reverse {
+        flex-direction: column;
         gap: 30px;
+        text-align: left;
+    }
+
+    .system-text-content {
+        order: 2;
+    }
+
+    .system-image-container {
+        order: 1;
+        width: 100%;
+    }
+
+    .system-description {
+        max-width: 100%;
     }
 }

@@ -72,7 +72,7 @@ export const Projects = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Sistemas que impulsan <span className="italic-text">tu rentabilidad</span>
+            Sistemas que impulsan tu rentabilidad
           </motion.h1>
 
           <motion.p
@@ -84,55 +84,45 @@ export const Projects = () => {
           >
             Implementaciones diseñadas para maximizar ganancias, optimizar operaciones y escalar tu negocio sin complicaciones.
           </motion.p>
-
-          <motion.div
-            className="projects-cta-wrapper"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <a href="#contact" className="projects-primary-btn" id="generate-system-btn">
-              Generar sistema <ArrowRight className="btn-icon" />
-            </a>
-          </motion.div>
         </div>
 
-        <div className="projects-carousel-wrapper">
-          <div className="central-glow-effect"></div>
-
-          <div className="perspective-carousel">
-            {projects.map((project, index) => {
-              // Calculate side for perspective (central item is 1 in this 3-item array)
-              const position = index - 1; // -1 (left), 0 (center), 1 (right)
-
-              return (
+        <div className="systems-list">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              className={`system-item ${index % 2 !== 0 ? 'reverse' : ''}`}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <div className="system-text-content">
+                <h2 className="system-title">{project.title}</h2>
+                <p className="system-description">{project.description}</p>
+                <ul className="system-achievements">
+                  {project.achievements.map((achievement, i) => (
+                    <li key={i} className="achievement-item">
+                      <div className="achievement-dot"></div>
+                      {achievement}
+                    </li>
+                  ))}
+                </ul>
                 <motion.a
-                  key={project.id}
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`carousel-card card-pos-${position}`}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+                  className="system-view-more"
+                  whileHover={{ x: 5 }}
                 >
-                  <div className="card-image-wrapper">
-                    <img src={project.img} alt={project.title} className="card-image" />
-                    {position === 0 && <div className="card-active-glow"></div>}
-                  </div>
+                  Ver más <ArrowRight size={18} />
                 </motion.a>
-              );
-            })}
-          </div>
-        </div>
+              </div>
 
-        <div className="projects-features-grid">
-          {features.map((feature) => (
-            <div key={feature.id} className="bottom-feature-item" id={feature.id}>
-              <h3 className="bottom-feature-title">{feature.title}</h3>
-              <p className="bottom-feature-desc">{feature.description}</p>
-            </div>
+              <div className="system-image-container">
+                <div className="system-image-glow"></div>
+                <img src={project.img} alt={project.title} className="system-image" />
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
