@@ -17,7 +17,7 @@ import { Steps } from './components/Steps.jsx';
 import { Projects } from './components/Projects.jsx';
 import { Contact } from './components/Contact.jsx';
 import { Footer } from './components/Footer.jsx';
-import { CustomCursor } from './components/CustomCursor.jsx';
+
 import ProblemSolver from './components/ProblemSolver.jsx';
 
 /* legales */
@@ -55,7 +55,7 @@ function Layout() {
   return (
     <>
 
-      <CustomCursor />
+
       <SEO />
       {!isLegalRoute && <Header {...headerProps} />}
       <main className="min-h-screen">
