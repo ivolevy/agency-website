@@ -22,7 +22,102 @@
             #000 100%);
     pointer-events: none;
     z-index: 5;
-    /* Asegurar que el vanish esté por encima de todo */
+}
+
+.mesh-container {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.mesh-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+}
+
+.glass-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    backdrop-filter: blur(60px) saturate(150%);
+    -webkit-backdrop-filter: blur(60px) saturate(150%);
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.aurora-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.blob-1 {
+    width: 80vw;
+    height: 80vw;
+    background: radial-gradient(circle, rgba(255, 80, 180, 0.25) 0%, transparent 70%);
+    top: -20%;
+    left: -10%;
+    animation: move1 25s infinite alternate ease-in-out;
+}
+
+.blob-2 {
+    width: 70vw;
+    height: 70vw;
+    background: radial-gradient(circle, rgba(140, 160, 255, 0.15) 0%, transparent 70%);
+    top: 10%;
+    right: -10%;
+    animation: move2 30s infinite alternate ease-in-out;
+}
+
+.blob-3 {
+    width: 90vw;
+    height: 90vw;
+    background: radial-gradient(circle, rgba(140, 80, 255, 0.15) 0%, transparent 70%);
+    bottom: -20%;
+    left: 10%;
+    animation: move3 35s infinite alternate ease-in-out;
+}
+
+@keyframes move1 {
+    from {
+        transform: translate(-10%, -10%) scale(1);
+    }
+
+    to {
+        transform: translate(10%, 10%) scale(1.1);
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: translate(10%, 10%) scale(1.1);
+    }
+
+    to {
+        transform: translate(-10%, -10%) scale(0.9);
+    }
+}
+
+@keyframes move3 {
+    from {
+        transform: translate(-5%, 10%) scale(1);
+    }
+
+    to {
+        transform: translate(5%, -10%) scale(1.2);
+    }
 }
 
 
