@@ -35,7 +35,7 @@ export default function Services() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
 
     const statsSection = document.querySelector('#stats-section');
@@ -83,7 +83,7 @@ export default function Services() {
             className="services-badge"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             SOBRE NOSOTROS
           </motion.span>
@@ -92,7 +92,7 @@ export default function Services() {
             className="services-title"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ delay: 0.1 }}
           >
             Software que te hace ganar dinero
@@ -102,7 +102,7 @@ export default function Services() {
             className="services-description"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ delay: 0.2 }}
           >
             Ofrecemos soluciones listas para usar que reducen costos operativos, automatizan el trabajo manual y aumentan tus ganancias netas desde el primer día.
@@ -115,7 +115,7 @@ export default function Services() {
                 className="feature-item"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ delay: 0.1 * index }}
               >
                 <div className="feature-icon-wrapper">

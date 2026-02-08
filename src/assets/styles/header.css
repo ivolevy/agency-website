@@ -21,7 +21,7 @@
             rgba(0, 0, 0, 0.7) 85%,
             #000 100%);
     pointer-events: none;
-    z-index: 5;
+    z-index: 1;
 }
 
 .mesh-container {
@@ -140,8 +140,8 @@
 
 
 .headerButton:hover {
+    background: #fff !important;
     color: #000 !important;
-    /* Cambia a un color diferente */
 }
 
 .heroTitle {
@@ -154,7 +154,7 @@
 
 .hero {
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .heroText {

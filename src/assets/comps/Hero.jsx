@@ -34,6 +34,7 @@ export const Hero = ({
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      viewport={{ once: true, amount: 0.1 }}
       aria-labelledby="hero-title"
     >
       <motion.div className="relative">

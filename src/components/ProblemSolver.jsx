@@ -47,7 +47,7 @@ const ProblemSolver = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.1 }}
                 >
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left Side: Text Content */}
@@ -65,7 +65,7 @@ const ProblemSolver = () => {
                                         initial={{ opacity: 0, x: -20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
                                         transition={{ delay: 0.2 + (index * 0.1) }}
-                                        viewport={{ once: true }}
+                                        viewport={{ once: true, amount: 0.1 }}
                                     >
                                         <div className="problem-icon-wrapper">
                                             {problem.icon}
