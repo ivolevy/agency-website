@@ -41,14 +41,14 @@ export const Hero = ({
         {/* Título principal */}
         <motion.h1
           id="hero-title"
-          className="text-5xl md:text-6xl text-white leading-tight heroTitle"
+          className="text-white heroTitle"
           variants={itemVariants}
         >
           Automatizá tu negocio<br />sin mover un dedo
         </motion.h1>
         {/* Subtítulo */}
         <motion.p
-          className="heroText text-gray-300 mt-4 max-w-2xl mx-auto"
+          className="heroText mx-auto"
           variants={itemVariants}
         >
           {subtitle}
