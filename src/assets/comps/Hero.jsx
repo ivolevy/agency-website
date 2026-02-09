@@ -48,7 +48,7 @@ export const Hero = ({
         </motion.h1>
         {/* Subtítulo */}
         <motion.p
-          className="heroText text-lg text-gray-300 mt-4 max-w-2xl mx-auto"
+          className="heroText text-gray-300 mt-4 max-w-2xl mx-auto"
           variants={itemVariants}
         >
           {subtitle}

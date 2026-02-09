@@ -1,252 +1,361 @@
+/* Main Section */
 .projects-section {
     background-color: #000;
-    padding: 120px 0;
+    padding: 160px 0;
     width: 100%;
     overflow: hidden;
+    color: #fff;
 }
 
 .projects-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-.projects-header {
+/* Header V2 */
+.projects-header-v2 {
     text-align: center;
-    margin-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 100px;
 }
 
-.projects-badge {
+.p-badge {
     display: inline-block;
-    padding: 8px 20px;
-    background-color: rgba(255, 128, 191, 0.1);
+    padding: 8px 18px;
+    background-color: rgba(255, 128, 191, 0.08);
     color: #ff80bf;
+    border: 1px solid rgba(255, 128, 191, 0.2);
     border-radius: 30px;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
-.projects-main-title {
+.p-section-title {
     font-family: "Instrument Serif", serif;
     font-style: italic;
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     font-weight: 400;
-    color: #fff;
-    margin-bottom: 24px;
     letter-spacing: -0.02em;
     line-height: 1.1;
-    max-width: 900px;
+    margin-bottom: 24px;
 }
 
-.projects-main-description {
+.p-section-description {
     font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.25rem;
     font-weight: 300;
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.5);
-    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 40px;
-    max-width: 600px;
 }
 
-.projects-primary-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 28px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.p-header-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
     border-radius: 40px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.projects-primary-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
+/* Features Grid */
+.p-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 120px;
 }
 
-.btn-icon {
-    width: 18px;
-    height: 18px;
-}
-
-/* Systems List Section */
-.systems-list {
+.p-feature-card {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 24px;
     display: flex;
     flex-direction: column;
-    gap: 160px;
-    margin-top: 80px;
 }
 
-.system-item {
+.f-header {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 12px;
+    margin-bottom: 16px;
 }
 
-.system-item.reverse {
-    flex-direction: row-reverse;
+.f-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
 }
 
-.system-text-content {
+.f-title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.f-text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.f-icon-container {
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Highlight Box */
+.p-highlight-box {
+    background: #0a0a0a;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 32px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 120px;
+}
+
+.p-highlight-content {
     flex: 1;
+    padding: 60px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
 }
 
-.system-item.reverse .system-text-content {
-    align-items: flex-start;
-}
-
-.system-title {
+.h-title {
     font-family: "Instrument Serif", serif;
     font-style: italic;
     font-size: 2.2rem;
     font-weight: 400;
-    color: #fff;
-    margin-bottom: 20px;
-    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin-bottom: 24px;
 }
 
-.system-description {
+.h-text {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
     line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 500px;
+    margin-bottom: 32px;
 }
 
-.system-achievements {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 40px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.achievement-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95rem;
-}
-
-.achievement-dot {
-    width: 6px;
-    height: 6px;
-    background-color: #ff80bf;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #ff80bf;
-}
-
-.system-view-more {
+.p-project-link {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.system-view-more:hover {
-    border-color: #ff80bf;
+    gap: 8px;
     color: #ff80bf;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
 }
 
-.system-image-container {
+.p-project-link:hover {
+    color: #fff;
+}
+
+.p-highlight-visual {
     flex: 1.2;
-    position: relative;
-    border-radius: 24px;
+    background: #000;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    background: #0a0a0a;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
 }
 
-.system-image-glow {
-    position: absolute;
-    top: 0;
-    left: 0;
+.p-highlight-visual.image-mode {
+    padding: 40px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.safari-frame {
     width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, rgba(255, 128, 191, 0.05) 0%, transparent 70%);
+    max-width: 600px;
+    /* Limitar ancho para controlar altura */
+    aspect-ratio: 16 / 10;
+    /* Proporción más compacta */
+    background: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.safari-header {
+    height: 40px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.safari-dots {
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.s-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.s-dot.red {
+    background: #ff5f56;
+}
+
+.s-dot.yellow {
+    background: #ffbd2e;
+}
+
+.s-dot.green {
+    background: #27c93f;
+}
+
+.safari-address {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 4px 40px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "Plus Jakarta Sans", sans-serif;
     pointer-events: none;
 }
 
-.system-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+.safari-content {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
 }
 
-.system-image-container:hover .system-image {
-    transform: scale(1.02);
+.p-project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.p-highlight-box:hover .p-project-img {
+    transform: scale(1.05);
+}
+
+/* Interoperability Section */
+.p-interop-section {
+    text-align: center;
+}
+
+.interop-title {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.interop-description {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 600px;
+    margin: 0 auto 60px;
+}
+
+.interop-visual {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.interop-svg {
+    width: 100%;
+    height: auto;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .projects-main-title {
+    .p-section-title {
         font-size: 2.8rem;
     }
 
-    .system-item {
-        gap: 40px;
+    .p-features-grid {
+        gap: 24px;
     }
 
-    .system-title {
-        font-size: 1.8rem;
+    .p-highlight-box {
+        flex-direction: column;
+    }
+
+    .p-highlight-visual {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
 }
 
 @media (max-width: 768px) {
     .projects-section {
-        padding: 80px 0;
+        padding: 100px 0;
     }
 
-    .projects-main-title {
+    .p-section-title {
         font-size: 2.2rem;
     }
 
-    .systems-list {
-        gap: 80px;
+    .p-features-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
-    .system-item,
-    .system-item.reverse {
-        flex-direction: column;
-        gap: 30px;
-        text-align: left;
+    .p-feature-card {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 24px 0 0 0;
     }
 
-    .system-text-content {
-        order: 2;
+    .p-highlight-content {
+        padding: 40px 24px;
     }
 
-    .system-image-container {
-        order: 1;
-        width: 100%;
+    .h-title {
+        font-size: 1.8rem;
     }
 
-    .system-description {
-        max-width: 100%;
+    .interop-title {
+        font-size: 2rem;
     }
 }

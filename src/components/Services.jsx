@@ -1,6 +1,6 @@
 import "../assets/styles/services.css";
 import { useState, useEffect } from 'react';
-import { ArrowRight, TrendingUp, Zap, DollarSign } from 'lucide-react';
+import { TrendingUp, Zap, DollarSign, BarChart3, Users, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Services() {
@@ -10,18 +10,21 @@ export default function Services() {
   const features = [
     {
       title: "Reducí costos operativos",
-      text: "Automatiza tareas repetitivas y elimina procesos manuales. Recortá gastos hasta un 60% mejorando precisión y velocidad.",
-      icon: <Zap className="feature-icon" size={24} />
+      text: "Automatiza tareas repetitivas y elimina procesos manuales. Recortá gastos hasta un 60% mejorando la precisión y velocidad de tu operación.",
+      color: "#ff80bf",
+      icon: <Zap size={24} />
     },
     {
       title: "Aumentá tus ingresos",
-      text: "Optimizá procesos de venta, mejorá la experiencia del cliente y desbloqueá nuevas fuentes de ingresos. Crecimiento real en tu bolsillo.",
-      icon: <TrendingUp className="feature-icon" size={24} />
+      text: "Optimizá tus procesos de venta y mejorá la conversión de clientes. Crecimiento real en tu bolsillo mediante tecnología inteligente.",
+      color: "#60a5fa",
+      icon: <TrendingUp size={24} />
     },
     {
-      title: "ROI Rápido",
-      text: "Nuestras soluciones están listas para usar y se pagan solas rápidamente. La mayoría de clientes ven retorno de inversión positivo en el primer mes de uso.",
-      icon: <DollarSign className="feature-icon" size={24} />
+      title: "ROI Inmediato",
+      text: "Nuestras aplicaciones se pagan solas rápidamente. La mayoría de nuestros clientes ven resultados positivos en el primer mes de uso.",
+      color: "#34d399",
+      icon: <DollarSign size={24} />
     }
   ];
 
@@ -76,78 +79,81 @@ export default function Services() {
   };
 
   return (
-    <section className="services-section" id="services" style={{ scrollMarginTop: '80px' }}>
+    <section className="services-section" id="services">
       <div className="services-container">
-        <div className="services-content">
+        <div className="services-header-v2">
           <motion.span
-            className="services-badge"
+            className="s-badge"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
           >
             SOBRE NOSOTROS
           </motion.span>
 
           <motion.h2
-            className="services-title"
+            className="s-section-title"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
             transition={{ delay: 0.1 }}
           >
-            Software que te hace ganar dinero
+            Software que escala tu rentabilidad
           </motion.h2>
 
           <motion.p
-            className="services-description"
+            className="s-section-description"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
             transition={{ delay: 0.2 }}
           >
-            Ofrecemos soluciones listas para usar que reducen costos operativos, automatizan el trabajo manual y aumentan tus ganancias netas desde el primer día.
+            No creamos solo código, diseñamos activos digitales para optimizar el flujo de caja y eliminar ineficiencias en tu negocio.
           </motion.p>
+        </div>
 
-          <div className="services-features">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                className="feature-item"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.1 }}
-                transition={{ delay: 0.1 * index }}
-              >
-                <div className="feature-icon-wrapper">
+        <div className="s-features-grid">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              className="s-feature-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 * index }}
+            >
+              <div className="sf-header">
+                <div className="sf-icon-wrapper" style={{ color: feature.color, backgroundColor: `${feature.color}15` }}>
                   {feature.icon}
                 </div>
-                <h3 className="feature-title">{feature.title}</h3>
-                <p className="feature-text">{feature.text}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="services-stats-wrapper">
-            <div className="services-stats" id="stats-section">
-              <div className="stat-item">
-                <div className="stat-number">+{contadores.proyectos}</div>
-                <div className="stat-label">Sistemas activos</div>
+                <h3 className="sf-title">{feature.title}</h3>
               </div>
-              <div className="stat-item">
-                <div className="stat-number">+{contadores.experiencia}</div>
-                <div className="stat-label">Años de experiencia</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">{contadores.soporte}/7</div>
-                <div className="stat-label">Soporte técnico</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">+{contadores.paises}</div>
-                <div className="stat-label">Países alcanzados</div>
-              </div>
-            </div>
-          </div>
+              <p className="sf-text">{feature.text}</p>
+            </motion.div>
+          ))}
         </div>
+
+        <div className="s-stats-divider"></div>
+
+        <motion.div
+          className="s-stats-clean"
+          id="stats-section"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
+          <div className="ss-item">
+            <span className="ss-number">+{contadores.proyectos}</span>
+            <span className="ss-label">Sistemas Activos</span>
+          </div>
+          <div className="ss-item">
+            <span className="ss-number">+{contadores.experiencia}</span>
+            <span className="ss-label">Años de Expertise</span>
+          </div>
+          <div className="ss-item">
+            <span className="ss-number">{contadores.soporte}/7</span>
+            <span className="ss-label">Soporte Técnico</span>
+          </div>
+          <div className="ss-item">
+            <span className="ss-number">+{contadores.paises}</span>
+            <span className="ss-label">Países Alcanzados</span>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

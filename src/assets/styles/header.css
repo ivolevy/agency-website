@@ -160,7 +160,7 @@
 .heroText {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     letter-spacing: 0.01em;
 }
@@ -171,7 +171,7 @@
     }
 
     .heroText {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -192,7 +192,7 @@
     }
 
     .heroText {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .headerButton,
@@ -217,7 +217,7 @@
     }
 
     .heroText {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .hero {
