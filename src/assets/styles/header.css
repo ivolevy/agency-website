@@ -1,8 +1,10 @@
 .header {
     position: relative;
     height: 100vh;
+    height: 100dvh;
     overflow: hidden;
-    /* background-color: #000;  Removed to allow particles visibility */
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -157,6 +159,8 @@
 .hero {
     position: relative;
     z-index: 10;
+    flex: 1;
+    width: 100%;
 }
 
 .heroText {
@@ -190,7 +194,8 @@
     .hero {
         padding: 0 20px;
         height: auto;
-        min-height: 100vh;
+        min-height: auto;
+        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -235,5 +240,25 @@
 
     .hero {
         padding: 0 15px;
+    }
+
+    .aurora-blob {
+        filter: blur(60px);
+        opacity: 0.8;
+    }
+
+    .blob-1 {
+        width: 150vw;
+        height: 150vw;
+    }
+
+    .blob-2 {
+        width: 140vw;
+        height: 140vw;
+    }
+
+    .blob-3 {
+        width: 160vw;
+        height: 160vw;
     }
 }

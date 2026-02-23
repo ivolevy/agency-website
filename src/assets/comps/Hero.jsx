@@ -30,7 +30,7 @@ export const Hero = ({
 }) => {
   return (
     <motion.section
-      className="hero w-full h-screen flex flex-col items-center justify-center text-center"
+      className="hero w-full flex flex-col items-center justify-center text-center"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
