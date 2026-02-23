@@ -11,7 +11,7 @@ export const Footer = () => {
 
         {/* Left Section */}
         <div className="w-full md:w-1/3 text-center md:text-left text-sm font-medium text-white hidden md:block">
-          DESARROLLADO POR <a href="https://www.linkedin.com/in/ivan-levy/" target="_blank" rel="noopener noreferrer" className="underline ivanLevyLink">IVAN LEVY</a>
+          ÚLTIMO <a href="https://b2b-client-acquisition-system.vercel.app/landing" target="_blank" rel="noopener noreferrer" className="underline ivanLevyLink">PROYECTO</a>
         </div>
 
         {/* Center Links Section */}
