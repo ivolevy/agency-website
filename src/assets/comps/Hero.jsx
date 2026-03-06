@@ -26,7 +26,7 @@ const itemVariants = {
 };
 
 export const Hero = ({
-  subtitle = "Sistemas automáticos listos para usar. Conseguí más clientes, ganá más plata y ahorrá tiempo hoy mismo - Desarrollado por Ivan Levy"
+  subtitle = "Sistemas automáticos listos para usar. Conseguí más clientes, ganá más plata y ahorrá tiempo hoy mismo"
 }) => {
   return (
     <motion.section
