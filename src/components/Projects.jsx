@@ -73,6 +73,14 @@ export const Projects = () => {
           >
             Automatizá tus procesos más complejos
           </motion.h2>
+          <motion.p
+            className="p-section-description"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Nos integramos con todas las herramientas que ya usás: Slack, WhatsApp, CRM y más.
+          </motion.p>
           {
             /**<motion.button
               className="p-header-btn"
@@ -145,47 +153,6 @@ export const Projects = () => {
           </div>
         </motion.div>
 
-        {/* Sección Final: Interoperabilidad */}
-        <div className="p-interop-section">
-          <motion.h3
-            className="interop-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-          >
-            Totalmente interoperable
-          </motion.h3>
-          <motion.p
-            className="interop-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-          >
-            Nos integramos con todas las herramientas que ya usás: Slack, WhatsApp, CRM y más.
-          </motion.p>
-
-          <div className="interop-visual">
-            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="interop-svg">
-              {/* Isometría simplificada */}
-              <motion.path
-                d="M200 150L280 110L200 70L120 110L200 150Z"
-                stroke="white"
-                strokeWidth="0.5"
-                strokeOpacity="0.3"
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              />
-              <motion.path
-                d="M200 190L280 150L200 110L120 150L200 190Z"
-                stroke="#ff80bf"
-                strokeWidth="1"
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              />
-              <path d="M120 150V190L200 230V190" stroke="white" strokeWidth="0.5" strokeOpacity="0.1" />
-              <path d="M280 150V190L200 230" stroke="white" strokeWidth="0.5" strokeOpacity="0.1" />
-            </svg>
-          </div>
-        </div>
       </div>
     </section>
   );
