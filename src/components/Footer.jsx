@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
 
         {/* Left Section - Google Partner */}
-        <div className="w-full md:w-1/3 flex items-center justify-center md:justify-start hidden md:flex">
+        <div className="w-full md:w-1/3 flex items-center justify-center md:justify-start">
           <div className="flex items-center space-x-3 bg-black/40 border border-white/40 rounded-xl px-4 py-2 hover:bg-black/60 transition-all duration-300 group cursor-pointer h-14">
             <svg width="24" height="24" viewBox="0 0 24 24" className="shrink-0">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
