@@ -2,6 +2,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fontsource/plus-jakarta-sans';
 import '@fontsource/instrument-serif';
+import '@fontsource/inter';
+import '@fontsource/museomoderno';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { HelmetProvider } from 'react-helmet-async';
