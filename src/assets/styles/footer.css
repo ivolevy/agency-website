@@ -61,7 +61,6 @@
 .google-partner-badge:hover {
     background-color: rgba(0, 0, 0, 0.6);
     border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-1px);
 }
 
 .google-text-badge {
