@@ -35,8 +35,54 @@
 .legalLinks:hover {
     text-decoration: underline !important;
 }
+/* Google Partner Badge Refined */
+.google-partner-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 8px 16px;
+    height: 52px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    user-select: none;
+    width: fit-content;
+    margin: 0 auto;
+}
 
+@media screen and (min-width: 768px) {
+    .google-partner-badge {
+        margin: 0;
+    }
+}
 
+.google-partner-badge:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.google-text-badge {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.partner-text-badge {
+    color: #94a3b8;
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    margin-top: 4px;
+    font-family: 'Inter', sans-serif !important;
+}
 
 @media screen and (min-width: 1025px) {}
 
